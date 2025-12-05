@@ -1,0 +1,590 @@
+[
+  {
+    "source_catalogue": "DEMO",
+    "raw_record": {
+      "demo_id": "DEMO_000001",
+      "title": "De Anima",
+      "author": "Aristoteles",
+      "publication_year": 1529,
+      "publication_place": "Venice",
+      "printer": "Anton Koberger",
+      "language": "lat",
+      "format": "Octavo",
+      "digital_facsimile_urls": [],
+      "source_catalogue": "DEMO"
+    },
+    "collection_date": "2025-11-16T16:27:03.976811",
+    "collector_version": "1.0.0",
+    "title": "De Anima",
+    "author": "Aristoteles",
+    "publication_year": 1529,
+    "publication_place": "Venice",
+    "demo_id": "DEMO_000001",
+    "printer": "Anton Koberger",
+    "language": "lat",
+    "format": "Octavo",
+    "digital_facsimile_urls": []
+  },
+  {
+    "source_catalogue": "DEMO",
+    "raw_record": {
+      "demo_id": "DEMO_000002",
+      "title": "Summa Theologica",
+      "author": "Quintilianus, Marcus Fabius",
+      "publication_year": 1451,
+      "publication_place": "Cologne",
+      "printer": "Christopher Plantin",
+      "language": "lat",
+      "format": "Quarto",
+      "digital_facsimile_urls": [
+        "https://books.google.com/books/sample"
+      ],
+      "source_catalogue": "DEMO"
+    },
+    "collection_date": "2025-11-16T16:27:03.976827",
+    "collector_version": "1.0.0",
+    "title": "Summa Theologica",
+    "author": "Quintilianus, Marcus Fabius",
+    "publication_year": 1451,
+    "publication_place": "Cologne",
+    "demo_id": "DEMO_000002",
+    "printer": "Christopher Plantin",
+    "language": "lat",
+    "format": "Quarto",
+    "digital_facsimile_urls": [
+      "https://books.google.com/books/sample"
+    ]
+  },
+  {
+    "source_catalogue": "DEMO",
+    "raw_record": {
+      "demo_id": "DEMO_000003",
+      "title": "Ethica Nicomachea",
+      "author": "Augustinus, Aurelius",
+      "publication_year": 1598,
+      "publication_place": "Nuremberg",
+      "printer": "Johann Weinreich",
+      "language": "lat",
+      "format": "Folio",
+      "digital_facsimile_urls": [
+        "https://example.com/facsimile"
+      ],
+      "source_catalogue": "DEMO"
+    },
+    "collection_date": "2025-11-16T16:27:03.976833",
+    "collector_version": "1.0.0",
+    "title": "Ethica Nicomachea",
+    "author": "Augustinus, Aurelius",
+    "publication_year": 1598,
+    "publication_place": "Nuremberg",
+    "demo_id": "DEMO_000003",
+    "printer": "Johann Weinreich",
+    "language": "lat",
+    "format": "Folio",
+    "digital_facsimile_urls": [
+      "https://example.com/facsimile"
+    ]
+  },
+  {
+    "source_catalogue": "DEMO",
+    "raw_record": {
+      "demo_id": "DEMO_000004",
+      "title": "Institutio Oratoria",
+      "author": "Lullus, Raimundus",
+      "publication_year": 1468,
+      "publication_place": "Cologne",
+      "printer": "Johann Fust",
+      "language": "lat",
+      "format": "Quarto",
+      "digital_facsimile_urls": [
+        "https://books.google.com/books/sample"
+      ],
+      "source_catalogue": "DEMO"
+    },
+    "collection_date": "2025-11-16T16:27:03.976857",
+    "collector_version": "1.0.0",
+    "title": "Institutio Oratoria",
+    "author": "Lullus, Raimundus",
+    "publication_year": 1468,
+    "publication_place": "Cologne",
+    "demo_id": "DEMO_000004",
+    "printer": "Johann Fust",
+    "language": "lat",
+    "format": "Quarto",
+    "digital_facsimile_urls": [
+      "https://books.google.com/books/sample"
+    ]
+  },
+  {
+    "source_catalogue": "DEMO",
+    "raw_record": {
+      "demo_id": "DEMO_000005",
+      "title": "Divina Commedia",
+      "author": "Lullus, Raimundus",
+      "publication_year": 1541,
+      "publication_place": "Wittenberg",
+      "printer": "Johannes Petreius",
+      "language": "lat",
+      "format": "Folio",
+      "digital_facsimile_urls": [
+        "https://example.com/facsimile"
+      ],
+      "source_catalogue": "DEMO"
+    },
+    "collection_date": "2025-11-16T16:27:03.976860",
+    "collector_version": "1.0.0",
+    "title": "Divina Commedia",
+    "author": "Lullus, Raimundus",
+    "publication_year": 1541,
+    "publication_place": "Wittenberg",
+    "demo_id": "DEMO_000005",
+    "printer": "Johannes Petreius",
+    "language": "lat",
+    "format": "Folio",
+    "digital_facsimile_urls": [
+      "https://example.com/facsimile"
+    ]
+  },
+  {
+    "source_catalogue": "DEMO",
+    "raw_record": {
+      "demo_id": "DEMO_000006",
+      "title": "De Rerum Natura",
+      "author": "Copernicus, Nicolaus",
+      "publication_year": 1576,
+      "publication_place": "Antwerp",
+      "printer": "Johannes Petreius",
+      "language": "lat",
+      "format": "Octavo",
+      "digital_facsimile_urls": [
+        "https://example.com/facsimile"
+      ],
+      "source_catalogue": "DEMO"
+    },
+    "collection_date": "2025-11-16T16:27:03.976862",
+    "collector_version": "1.0.0",
+    "title": "De Rerum Natura",
+    "author": "Copernicus, Nicolaus",
+    "publication_year": 1576,
+    "publication_place": "Antwerp",
+    "demo_id": "DEMO_000006",
+    "printer": "Johannes Petreius",
+    "language": "lat",
+    "format": "Octavo",
+    "digital_facsimile_urls": [
+      "https://example.com/facsimile"
+    ]
+  },
+  {
+    "source_catalogue": "DEMO",
+    "raw_record": {
+      "demo_id": "DEMO_000007",
+      "title": "De Revolutionibus Orbium Coelestium",
+      "author": "Cicero, Marcus Tullius",
+      "publication_year": 1565,
+      "publication_place": "Lyon",
+      "printer": "Sebastian Gryphius",
+      "language": "lat",
+      "format": "Quarto",
+      "digital_facsimile_urls": [
+        "https://example.com/facsimile"
+      ],
+      "source_catalogue": "DEMO"
+    },
+    "collection_date": "2025-11-16T16:27:03.976867",
+    "collector_version": "1.0.0",
+    "title": "De Revolutionibus Orbium Coelestium",
+    "author": "Cicero, Marcus Tullius",
+    "publication_year": 1565,
+    "publication_place": "Lyon",
+    "demo_id": "DEMO_000007",
+    "printer": "Sebastian Gryphius",
+    "language": "lat",
+    "format": "Quarto",
+    "digital_facsimile_urls": [
+      "https://example.com/facsimile"
+    ]
+  },
+  {
+    "source_catalogue": "DEMO",
+    "raw_record": {
+      "demo_id": "DEMO_000008",
+      "title": "Divina Commedia",
+      "author": "Quintilianus, Marcus Fabius",
+      "publication_year": 1450,
+      "publication_place": "Wittenberg",
+      "printer": "Johann Fust",
+      "language": "lat",
+      "format": "Folio",
+      "digital_facsimile_urls": [
+        "https://example.com/facsimile"
+      ],
+      "source_catalogue": "DEMO"
+    },
+    "collection_date": "2025-11-16T16:27:03.976869",
+    "collector_version": "1.0.0",
+    "title": "Divina Commedia",
+    "author": "Quintilianus, Marcus Fabius",
+    "publication_year": 1450,
+    "publication_place": "Wittenberg",
+    "demo_id": "DEMO_000008",
+    "printer": "Johann Fust",
+    "language": "lat",
+    "format": "Folio",
+    "digital_facsimile_urls": [
+      "https://example.com/facsimile"
+    ]
+  },
+  {
+    "source_catalogue": "DEMO",
+    "raw_record": {
+      "demo_id": "DEMO_000009",
+      "title": "Historia Naturalis",
+      "author": "Aristoteles",
+      "publication_year": 1578,
+      "publication_place": "Basel",
+      "printer": "Aldus Manutius",
+      "language": "lat",
+      "format": "Octavo",
+      "digital_facsimile_urls": [
+        "https://books.google.com/books/sample"
+      ],
+      "source_catalogue": "DEMO"
+    },
+    "collection_date": "2025-11-16T16:27:03.976871",
+    "collector_version": "1.0.0",
+    "title": "Historia Naturalis",
+    "author": "Aristoteles",
+    "publication_year": 1578,
+    "publication_place": "Basel",
+    "demo_id": "DEMO_000009",
+    "printer": "Aldus Manutius",
+    "language": "lat",
+    "format": "Octavo",
+    "digital_facsimile_urls": [
+      "https://books.google.com/books/sample"
+    ]
+  },
+  {
+    "source_catalogue": "DEMO",
+    "raw_record": {
+      "demo_id": "DEMO_000010",
+      "title": "De Revolutionibus Orbium Coelestium",
+      "author": "Copernicus, Nicolaus",
+      "publication_year": 1576,
+      "publication_place": "Lyon",
+      "printer": "Sebastian Gryphius",
+      "language": "lat",
+      "format": "Octavo",
+      "digital_facsimile_urls": [
+        "https://example.com/facsimile"
+      ],
+      "source_catalogue": "DEMO"
+    },
+    "collection_date": "2025-11-16T16:27:03.976873",
+    "collector_version": "1.0.0",
+    "title": "De Revolutionibus Orbium Coelestium",
+    "author": "Copernicus, Nicolaus",
+    "publication_year": 1576,
+    "publication_place": "Lyon",
+    "demo_id": "DEMO_000010",
+    "printer": "Sebastian Gryphius",
+    "language": "lat",
+    "format": "Octavo",
+    "digital_facsimile_urls": [
+      "https://example.com/facsimile"
+    ]
+  },
+  {
+    "source_catalogue": "DEMO",
+    "raw_record": {
+      "demo_id": "DEMO_000011",
+      "title": "De Civitate Dei",
+      "author": "Quintilianus, Marcus Fabius",
+      "publication_year": 1580,
+      "publication_place": "Antwerp",
+      "printer": "Anton Koberger",
+      "language": "lat",
+      "format": "Quarto",
+      "digital_facsimile_urls": [],
+      "source_catalogue": "DEMO"
+    },
+    "collection_date": "2025-11-16T16:27:03.976875",
+    "collector_version": "1.0.0",
+    "title": "De Civitate Dei",
+    "author": "Quintilianus, Marcus Fabius",
+    "publication_year": 1580,
+    "publication_place": "Antwerp",
+    "demo_id": "DEMO_000011",
+    "printer": "Anton Koberger",
+    "language": "lat",
+    "format": "Quarto",
+    "digital_facsimile_urls": []
+  },
+  {
+    "source_catalogue": "DEMO",
+    "raw_record": {
+      "demo_id": "DEMO_000012",
+      "title": "De Anima",
+      "author": "Aristoteles",
+      "publication_year": 1495,
+      "publication_place": "London",
+      "printer": "Henri Estienne",
+      "language": "lat",
+      "format": "Folio",
+      "digital_facsimile_urls": [
+        "https://books.google.com/books/sample"
+      ],
+      "source_catalogue": "DEMO"
+    },
+    "collection_date": "2025-11-16T16:27:03.976877",
+    "collector_version": "1.0.0",
+    "title": "De Anima",
+    "author": "Aristoteles",
+    "publication_year": 1495,
+    "publication_place": "London",
+    "demo_id": "DEMO_000012",
+    "printer": "Henri Estienne",
+    "language": "lat",
+    "format": "Folio",
+    "digital_facsimile_urls": [
+      "https://books.google.com/books/sample"
+    ]
+  },
+  {
+    "source_catalogue": "DEMO",
+    "raw_record": {
+      "demo_id": "DEMO_000013",
+      "title": "De Anima",
+      "author": "Thomas Aquinas",
+      "publication_year": 1591,
+      "publication_place": "Rome",
+      "printer": "Johannes Petreius",
+      "language": "lat",
+      "format": "Octavo",
+      "digital_facsimile_urls": [
+        "https://example.com/facsimile"
+      ],
+      "source_catalogue": "DEMO"
+    },
+    "collection_date": "2025-11-16T16:27:03.976879",
+    "collector_version": "1.0.0",
+    "title": "De Anima",
+    "author": "Thomas Aquinas",
+    "publication_year": 1591,
+    "publication_place": "Rome",
+    "demo_id": "DEMO_000013",
+    "printer": "Johannes Petreius",
+    "language": "lat",
+    "format": "Octavo",
+    "digital_facsimile_urls": [
+      "https://example.com/facsimile"
+    ]
+  },
+  {
+    "source_catalogue": "DEMO",
+    "raw_record": {
+      "demo_id": "DEMO_000014",
+      "title": "Ethica Nicomachea",
+      "author": "Lullus, Raimundus",
+      "publication_year": 1512,
+      "publication_place": "Venice",
+      "printer": "Johannes Petreius",
+      "language": "lat",
+      "format": "Octavo",
+      "digital_facsimile_urls": [
+        "https://example.com/facsimile"
+      ],
+      "source_catalogue": "DEMO"
+    },
+    "collection_date": "2025-11-16T16:27:03.976881",
+    "collector_version": "1.0.0",
+    "title": "Ethica Nicomachea",
+    "author": "Lullus, Raimundus",
+    "publication_year": 1512,
+    "publication_place": "Venice",
+    "demo_id": "DEMO_000014",
+    "printer": "Johannes Petreius",
+    "language": "lat",
+    "format": "Octavo",
+    "digital_facsimile_urls": [
+      "https://example.com/facsimile"
+    ]
+  },
+  {
+    "source_catalogue": "DEMO",
+    "raw_record": {
+      "demo_id": "DEMO_000015",
+      "title": "Summa Theologica",
+      "author": "Dante Alighieri",
+      "publication_year": 1574,
+      "publication_place": "Nuremberg",
+      "printer": "Johann Fust",
+      "language": "lat",
+      "format": "Octavo",
+      "digital_facsimile_urls": [
+        "https://books.google.com/books/sample"
+      ],
+      "source_catalogue": "DEMO"
+    },
+    "collection_date": "2025-11-16T16:27:03.976883",
+    "collector_version": "1.0.0",
+    "title": "Summa Theologica",
+    "author": "Dante Alighieri",
+    "publication_year": 1574,
+    "publication_place": "Nuremberg",
+    "demo_id": "DEMO_000015",
+    "printer": "Johann Fust",
+    "language": "lat",
+    "format": "Octavo",
+    "digital_facsimile_urls": [
+      "https://books.google.com/books/sample"
+    ]
+  },
+  {
+    "source_catalogue": "DEMO",
+    "raw_record": {
+      "demo_id": "DEMO_000016",
+      "title": "Ethica Nicomachea",
+      "author": "Aristoteles",
+      "publication_year": 1481,
+      "publication_place": "Nuremberg",
+      "printer": "Christopher Plantin",
+      "language": "lat",
+      "format": "Quarto",
+      "digital_facsimile_urls": [
+        "https://example.com/facsimile"
+      ],
+      "source_catalogue": "DEMO"
+    },
+    "collection_date": "2025-11-16T16:27:03.976885",
+    "collector_version": "1.0.0",
+    "title": "Ethica Nicomachea",
+    "author": "Aristoteles",
+    "publication_year": 1481,
+    "publication_place": "Nuremberg",
+    "demo_id": "DEMO_000016",
+    "printer": "Christopher Plantin",
+    "language": "lat",
+    "format": "Quarto",
+    "digital_facsimile_urls": [
+      "https://example.com/facsimile"
+    ]
+  },
+  {
+    "source_catalogue": "DEMO",
+    "raw_record": {
+      "demo_id": "DEMO_000017",
+      "title": "Institutio Oratoria",
+      "author": "Cicero, Marcus Tullius",
+      "publication_year": 1477,
+      "publication_place": "Lyon",
+      "printer": "Johann Weinreich",
+      "language": "lat",
+      "format": "Folio",
+      "digital_facsimile_urls": [],
+      "source_catalogue": "DEMO"
+    },
+    "collection_date": "2025-11-16T16:27:03.976886",
+    "collector_version": "1.0.0",
+    "title": "Institutio Oratoria",
+    "author": "Cicero, Marcus Tullius",
+    "publication_year": 1477,
+    "publication_place": "Lyon",
+    "demo_id": "DEMO_000017",
+    "printer": "Johann Weinreich",
+    "language": "lat",
+    "format": "Folio",
+    "digital_facsimile_urls": []
+  },
+  {
+    "source_catalogue": "DEMO",
+    "raw_record": {
+      "demo_id": "DEMO_000018",
+      "title": "Divina Commedia",
+      "author": "Quintilianus, Marcus Fabius",
+      "publication_year": 1481,
+      "publication_place": "Cologne",
+      "printer": "Sebastian Gryphius",
+      "language": "lat",
+      "format": "Folio",
+      "digital_facsimile_urls": [
+        "https://books.google.com/books/sample"
+      ],
+      "source_catalogue": "DEMO"
+    },
+    "collection_date": "2025-11-16T16:27:03.976888",
+    "collector_version": "1.0.0",
+    "title": "Divina Commedia",
+    "author": "Quintilianus, Marcus Fabius",
+    "publication_year": 1481,
+    "publication_place": "Cologne",
+    "demo_id": "DEMO_000018",
+    "printer": "Sebastian Gryphius",
+    "language": "lat",
+    "format": "Folio",
+    "digital_facsimile_urls": [
+      "https://books.google.com/books/sample"
+    ]
+  },
+  {
+    "source_catalogue": "DEMO",
+    "raw_record": {
+      "demo_id": "DEMO_000019",
+      "title": "De Revolutionibus Orbium Coelestium",
+      "author": "Aristoteles",
+      "publication_year": 1550,
+      "publication_place": "Cologne",
+      "printer": "William Caxton",
+      "language": "lat",
+      "format": "Quarto",
+      "digital_facsimile_urls": [
+        "https://books.google.com/books/sample"
+      ],
+      "source_catalogue": "DEMO"
+    },
+    "collection_date": "2025-11-16T16:27:03.976890",
+    "collector_version": "1.0.0",
+    "title": "De Revolutionibus Orbium Coelestium",
+    "author": "Aristoteles",
+    "publication_year": 1550,
+    "publication_place": "Cologne",
+    "demo_id": "DEMO_000019",
+    "printer": "William Caxton",
+    "language": "lat",
+    "format": "Quarto",
+    "digital_facsimile_urls": [
+      "https://books.google.com/books/sample"
+    ]
+  },
+  {
+    "source_catalogue": "DEMO",
+    "raw_record": {
+      "demo_id": "DEMO_000020",
+      "title": "Ethica Nicomachea",
+      "author": "Dante Alighieri",
+      "publication_year": 1539,
+      "publication_place": "Basel",
+      "printer": "Christopher Plantin",
+      "language": "lat",
+      "format": "Octavo",
+      "digital_facsimile_urls": [
+        "https://example.com/facsimile"
+      ],
+      "source_catalogue": "DEMO"
+    },
+    "collection_date": "2025-11-16T16:27:03.976892",
+    "collector_version": "1.0.0",
+    "title": "Ethica Nicomachea",
+    "author": "Dante Alighieri",
+    "publication_year": 1539,
+    "publication_place": "Basel",
+    "demo_id": "DEMO_000020",
+    "printer": "Christopher Plantin",
+    "language": "lat",
+    "format": "Octavo",
+    "digital_facsimile_urls": [
+      "https://example.com/facsimile"
+    ]
+  }
+]

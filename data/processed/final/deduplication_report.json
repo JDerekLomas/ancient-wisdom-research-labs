@@ -1,0 +1,18 @@
+{
+  "timestamp": "2025-11-16T16:27:37.470352",
+  "statistics": {
+    "total_records": 20,
+    "duplicate_groups": 0,
+    "unique_records": 20,
+    "processing_time": 0.007429
+  },
+  "original_count": 20,
+  "deduplicated_count": 20,
+  "duplicate_reduction_rate": 0.0,
+  "catalogue_breakdown": {
+    "DEMO": 20
+  },
+  "catalogue_survival": {
+    "DEMO": 20
+  }
+}

@@ -1,0 +1,6 @@
+﻿title,author,publication_year,publication_place,language,source_catalogue,neo_latin_score,is_neo_latin,digitization_status,translation_status,research_priority
+Tractatus Theologico-Politicus,"Spinoza, Baruch",1670,Amsterdam,lat,DEMO,0.94,True,not_found,possibly_translated,7.659999999999999
+Ars Magna et Ultima,Raimundus Lullus,1515,Barcelona,lat,DEMO,0.91,True,metadata_only,not_translated,7.54
+De Revolutionibus Orbium Coelestium,"Copernicus, Nicolaus",1543,Nuremberg,lat,DEMO,0.95,True,digitized,not_translated,7.1
+Institutio Principum Christiani,"Calvin, Johannes",1536,Geneva,lat,DEMO,0.92,True,preview_only,not_translated,6.9799999999999995
+Summa Theologica,Thomas Aquinas,1485,Paris,lat,DEMO,0.9,True,not_found,translated,6.9

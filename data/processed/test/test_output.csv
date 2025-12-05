@@ -1,0 +1,5 @@
+﻿title,author,publication_year,publication_place,printer,language,source_catalogue,vd16_id,digital_facsimile_urls,ustc_id,title_normalized,author_normalized,title_first,author_first,year_bucket
+De Revolutionibus Orbium Coelestium,"Copernicus, Nicolaus",1543,Nuremberg,Johannes Petreius,lat,VD16,VD16_123456,[],,de revolutionibus orbium coelestium,copernicus nicolaus,de ,cop,308
+DE REVOLUTIONIBUS ORBIVM COELESTIVM,N. Copernicus,1543,Norimbergae,I. Petreium,lat,USTC,,['https://example.com/facsimile'],USTC_789012,de revolutionibus orbivm coelestivm,n copernicus,de ,n c,308
+Ars Magna,"Lullus, Raimundus",1515,Paris,,lat,VD16,VD16_234567,[],,ars magna,lullus raimundus,ars,lul,303
+Summa Theologica,Thomas Aquinas,1485,Basel,,lat,USTC,,[],USTC_345678,summa theologica,thomas aquinas,sum,tho,297

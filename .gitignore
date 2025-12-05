@@ -1,0 +1,21 @@
+# Python
+venv/
+__pycache__/
+*.py[cod]
+.env
+
+# Data files (too large for git)
+data/raw/ustc/*.csv
+data/raw/ustc/*.json
+*.accdb
+
+# OS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Node (for viz app)
+node_modules/
+.next/

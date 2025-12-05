@@ -1,0 +1,4 @@
+﻿title,authors,publication_year,publisher,language,description,source,identifier,has_full_text,categories,google_books_id,extracted_year,neo_latin_score,is_neo_latin,digitization_status,translation_status,research_priority
+E,,,,"l, a, t",M,InternetArchive,A1110377,False,,,,0.0,False,not_found,not_translated,6.0
+M,,,D,"l, a, t",T,InternetArchive,jbc.bj.uj.edu.pl.NDIGSTDR036063,False,,,,0.0,False,metadata_only,not_translated,3.9000000000000004
+De Civitate Dei,Augustinus,1485.0,Johann Amerbach,lat,Augustine's monumental work on Christian philosophy,Sample,,,Theology,sample_5,1485.0,0.5,True,metadata_only,not_translated,5.9

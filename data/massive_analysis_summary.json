@@ -1,0 +1,13 @@
+{
+  "total_books": 9000,
+  "year_range": [
+    1460,
+    1696
+  ],
+  "centuries": {
+    "1400": 4000,
+    "1500": 1600,
+    "1600": 3400
+  },
+  "translation_opportunities": 600,
+  "famous_author_works": 

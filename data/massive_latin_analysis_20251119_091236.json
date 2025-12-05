@@ -1,0 +1,50 @@
+{
+  "dataset_summary": {
+    "total_books": 91,
+    "year_range": [
+      1460,
+      1696
+    ],
+    "centuries": {
+      "1400": 40,
+      "1500": 17,
+      "1600": 34
+    },
+    "languages": {
+      "Latin": 84,
+      "Greek": 2,
+      "latin": 1,
+      "english-handwritten": 1,
+      "Latin and German": 1,
+      "Dutch": 1,
+      "French": 1
+    },
+    "translation_status": {
+      "translation_uncertain": 71,
+      "likely_translated": 13,
+      "unlikely_translated": 7
+    }
+  },
+  "famous_authors": {
+    "total_famous_works": 5,
+    "categories": {
+      "cicero": {
+        "count": 1,
+        "category": "Classical"
+      },
+      "virgil": {
+        "count": 2,
+        "category": "Classical"
+      },
+      "duns scotus": {
+        "count": 1,
+        "category": "Medieval"
+      },
+      "erasmus": {
+        "count": 1,
+        "category": "Renaissance"
+      }
+    }
+  },
+  "work_types": {
+    "Bibles": 

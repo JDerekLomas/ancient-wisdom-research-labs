@@ -1,0 +1,11 @@
+﻿title,author,publication_year,publication_place,language,source_catalogue,neo_latin_score,is_neo_latin,digitization_status,translation_status,research_priority
+De Revolutionibus Orbium Coelestium,"Copernicus, Nicolaus",1543,Nuremberg,lat,DEMO,0.95,True,digitized,not_translated,7.1
+Commentaria in Aristotelem de Caelo,"Pomponazzi, Pietro",1520,Padua,lat,DEMO,0.87,True,preview_only,not_translated,6.779999999999999
+Ars Magna et Ultima,Raimundus Lullus,1515,Barcelona,lat,DEMO,0.91,True,metadata_only,not_translated,7.54
+Disputationes de Controversiis,"Bellarminus, Robertus",1586,Rome,lat,DEMO,0.89,True,digitized,translated,4.16
+Tractatus Theologico-Politicus,"Spinoza, Baruch",1670,Amsterdam,lat,DEMO,0.94,True,not_found,possibly_translated,7.659999999999999
+De Jure Belli ac Pacis,"Grotius, Hugo",1625,Paris,lat,DEMO,0.88,True,preview_only,translated,4.12
+Institutio Principum Christiani,"Calvin, Johannes",1536,Geneva,lat,DEMO,0.92,True,preview_only,not_translated,6.9799999999999995
+Summa Theologica,Thomas Aquinas,1485,Paris,lat,DEMO,0.9,True,not_found,translated,6.9
+Ars Nova,Anonymous,1320,Paris,lat,DEMO,0.82,False,preview_only,not_translated,6.579999999999999
+Novum Organum,"Bacon, Francis",1620,London,lat,DEMO,0.8,False,preview_only,not_translated,6.500000000000002

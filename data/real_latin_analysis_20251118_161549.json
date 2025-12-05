@@ -1,0 +1,182 @@
+{
+  "summary": {
+    "total_books": 2700,
+    "year_range": [
+      1460,
+      1696
+    ],
+    "centuries": {
+      "1400": 1200,
+      "1500": 510,
+      "1600": 990
+    },
+    "languages": {
+      "Latin": 2490,
+      "Greek": 60,
+      "latin": 30,
+      "english-handwritten": 30,
+      "Latin and German": 30,
+      "Dutch": 30,
+      "French": 30
+    },
+    "translation_status": {
+      "possibly_translated": 2340,
+      "translated": 240,
+      "not_translated": 120
+    }
+  },
+  "famous_authors_found": 270,
+  "research_opportunities": 120,
+  "sample_works": [
+    {
+      "identifier": "McGillLibrary-osl_liber-moralitatum-elegantissimus-magnaurm_folioWZ230F225L1477-24947",
+      "title": "Liber moralitatum elegantissimus magnaurm re naturalium Lumen animae dictus. : Cum septem apparitoribus necnon sanctorum docto[rum] orthodoxe fidei professorum. Poetarum etiam ac oratorum auctoritatibus per modu[m] pharatre s[ecundu]m ordinem alphabeti collectis feliciter incipit",
+      "creator": "Farinator, Matthias, active 1477. https://id.oclc.org/worldcat/entity/E39PBJc3HyJ4XVXY94QXGtdhHC",
+      "date": "1477-01-01T00:00:00Z",
+      "year": 1477,
+      "language": "Latin",
+      "description": "[370] leaves ; 29 cm.",
+      "publisher": "[Augsburg] : ... per me Anthonium Sorg ciuem Augusten. artis impressorie magistrum",
+      "source": "Internet Archive",
+      "collected_date": "2025-11-18T16:14:37.462130",
+      "clean_year": 1477,
+      "title_length": 280,
+      "translation_status": "possibly_translated"
+    },
+    {
+      "identifier": "McGillLibrary-osl_de-sermonum-proprietate_folioWZ230H873s1467-24097",
+      "title": "De sermonum proprietate",
+      "creator": "Rabanus Maurus, Archbishop of Mainz, 784?-856",
+      "date": "1467-01-01T00:00:00Z",
+      "year": 1467,
+      "language": "Latin",
+      "description": "170 unnumbered leaves (first and last 2 blank) ; (fol.)",
+      "publisher": "[Strassburg] : ['R' Printer (Adolf Rusch)]",
+      "source": "Internet Archive",
+      "collected_date": "2025-11-18T16:14:37.462157",
+      "clean_year": 1467,
+      "title_length": 23,
+      "translation_status": "possibly_translated"
+    },
+    {
+      "identifier": "McGillLibrary-osl_de-visione-dei-etc_folioWZ230N6391500-24094",
+      "title": "De visione dei, etc",
+      "creator": "Nicholas, of Cusa, Cardinal, 1401-1464",
+      "date": "1488-01-01T00:00:00Z",
+      "year": 1488,
+      "language": "Latin",
+      "description": "170 leaves 24 cm",
+      "publisher": "[Strassburg] [M. Flach]",
+      "source": "Internet Archive",
+      "collected_date": "2025-11-18T16:14:37.462166",
+      "clean_year": 1488,
+      "title_length": 19,
+      "translation_status": "possibly_translated"
+    },
+    {
+      "identifier": "McGillLibrary-osl_c-plynii-secvndi-natvralis-historiae_folioWZ230P728h1473-24052",
+      "title": "C. Plynii secvndi Natvralis historiae liber primvs de his qvae singvlis libris continentvr incipit foeliciter",
+      "creator": "Pliny, the Elder",
+      "date": "1473-01-01T00:00:00Z",
+      "year": 1473,
+      "language": "Latin",
+      "description": "[794] p. ; 40 cm. (fol.)",
+      "publisher": "[Rome : Conradus Sweynheym and Arnoldus Pannartz]",
+      "source": "Internet Archive",
+      "collected_date": "2025-11-18T16:14:37.462175",
+      "clean_year": 1473,
+      "title_length": 109,
+      "translation_status": "translated"
+    },
+    {
+      "identifier": "McGillLibrary-osl_incipit-prohemium-proprietatibus_folioWZ230B287p1482-24055",
+      "title": "Incipit p[ro]hemium de p[ro]prietatibus reru[m] fratris Bartholomei A[n]glici de ordine fratrum minorum",
+      "creator": "Bartholomaeus, Anglicus, active 13th century",
+      "date": "1482-01-01T00:00:00Z",
+      "year": 1482,
+      "language": "Latin",
+      "description": "[572] pages ; 30 cm (Folio)",
+      "publisher": "[Lyon] : [Nicolaus Philippi and Marcus Reinhart]",
+      "source": "Internet Archive",
+      "collected_date": "2025-11-18T16:14:37.462183",
+      "clean_year": 1482,
+      "title_length": 103,
+      "translation_status": "possibly_translated"
+    },
+    {
+      "identifier": "McGillLibrary-osl_theologia-naturalis-sive-liber-creaturarum_folioWZ230R2738t1496-23848",
+      "title": "Theologia naturalis, sive Liber creaturarum",
+      "creator": "Raymond, of Sabunde, -1436",
+      "date": "1496-01-01T00:00:00Z",
+      "year": 1496,
+      "language": "Latin",
+      "description": "162 leaves in 2 columns, 1 leaf, blank, wanting. 29 cm",
+      "publisher": "Strassburg (Argentine), Martinus Flach",
+      "source": "Internet Archive",
+      "collected_date": "2025-11-18T16:14:37.462193",
+      "clean_year": 1496,
+      "title_length": 43,
+      "translation_status": "possibly_translated"
+    },
+    {
+      "identifier": "McGillLibrary-osl_libellus-de-egritudinibus-infantium_WZ230B1441472-1473-23851",
+      "title": "Libellus de egritudinibus infantium",
+      "creator": "Bagellardo, Paolo, -1492?",
+      "date": "1472-01-01T00:00:00Z",
+      "year": 1472,
+      "language": "Latin",
+      "description": "[40] leaves ; 19 cm. (4to)",
+      "publisher": "[Padua : Bartholomaeus de Valdezoccho and Martinus de Septem Arboribus]",
+      "source": "Internet Archive",
+      "collected_date": "2025-11-18T16:14:37.462200",
+      "clean_year": 1472,
+      "title_length": 35,
+      "translation_status": "possibly_translated"
+    },
+    {
+      "identifier": "McGillLibrary-osl_de-peste-de-venenis_folioWZ230G898p-23833",
+      "title": "De peste. De venenis",
+      "creator": "Guainerio, Antonio, -1440",
+      "date": "1487-01-01T00:00:00Z",
+      "year": 1487,
+      "language": "Latin",
+      "description": "43 unnumbl. leaves 28 cm (fol.)",
+      "publisher": "[Venice] [Reynaldus de Novimagio]",
+      "source": "Internet Archive",
+      "collected_date": "2025-11-18T16:14:37.462206",
+      "clean_year": 1487,
+      "title_length": 20,
+      "translation_status": "possibly_translated"
+    },
+    {
+      "identifier": "McGillLibrary-osl_ioannis-scoti-theologi-subtilissimi_folioWZ230D926s1472-23836",
+      "title": "Ioannis Scoti theologi subtilissimi sup[er] p[ri]mu[m] sente[n]tia[rum]",
+      "creator": "Duns Scotus, John, approximately 1266-1308",
+      "date": "1472-01-01T00:00:00Z",
+      "year": 1472,
+      "language": "Latin",
+      "description": "224 unnumbered leaves (210 and 224 blank) ; 34 cm (fol.)",
+      "publisher": "[Venice] : Windelinu[m] Spirensem",
+      "source": "Internet Archive",
+      "collected_date": "2025-11-18T16:14:37.462373",
+      "clean_year": 1472,
+      "title_length": 71,
+      "translation_status": "possibly_translated"
+    },
+    {
+      "identifier": "McGillLibrary-osl_corona-florida-medicinae_folioWZ230G289c1491-23823",
+      "title": "Corona florida medicinae, sive, De conservatione sanitatis",
+      "creator": "Gazio, Antonio, 1449-1528",
+      "date": "1491-01-01T00:00:00Z",
+      "year": 1491,
+      "language": "Latin",
+      "description": "1 volume ; 32 cm (fol.)",
+      "publisher": "Venice : Joannes and Gregorius de Gregoriis, de Forlivio",
+      "source": "Internet Archive",
+      "collected_date": "2025-11-18T16:14:37.462381",
+      "clean_year": 1491,
+      "title_length": 58,
+      "translation_status": "possibly_translated"
+    }
+  ]
+}

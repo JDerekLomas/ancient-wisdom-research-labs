@@ -1,0 +1,6 @@
+﻿title,authors,publication_year,publisher,language,description,source,identifier,has_full_text,categories,google_books_id,extracted_year,neo_latin_score,is_neo_latin,digitization_status,translation_status,research_priority
+De Principiis Philosophiae,Renatus Cartesius,1644.0,Lodowijk Elsevier,lat,Cartesian philosophical work laying foundations for modern philosophy,Sample,,,Philosophy,sample_1,1644.0,0.6000000000000001,True,preview_only,not_translated,5.700000000000001
+Ethica,Baruch de Spinoza,1677.0,Rasp,lat,Spinoza's major work on ethics and metaphysics,Sample,,,Philosophy,sample_2,1677.0,0.7,True,digitized,not_translated,6.099999999999999
+De Revolutionibus Orbium Coelestium,Nicolaus Copernicus,1543.0,Johannes Petreius,lat,Copernican heliocentric model of the universe,Sample,,,Science,sample_3,1543.0,1.0,True,preview_only,not_translated,7.3
+Commentaria in Aristotelem,Pietro Pomponazzi,1521.0,Aldus Manutius,lat,Aristotelian commentaries challenging scholastic tradition,Sample,,,Philosophy,sample_4,1521.0,1.0,True,digitized,possibly_translated,5.2
+De Civitate Dei,Augustinus,1485.0,Johann Amerbach,lat,Augustine's monumental work on Christian philosophy,Sample,,,Theology,sample_5,1485.0,0.5,True,metadata_only,not_translated,5.9

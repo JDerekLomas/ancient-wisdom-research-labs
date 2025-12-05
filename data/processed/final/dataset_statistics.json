@@ -1,0 +1,41 @@
+{
+  "total_records": 20,
+  "date_range": {
+    "earliest": 1458,
+    "latest": 1582
+  },
+  "catalogue_coverage": {},
+  "language_distribution": {
+    "lat": 20
+  },
+  "century_distribution": {
+    "16": 13,
+    "15": 7
+  },
+  "digital_facsimile_coverage": 0.6,
+  "average_completeness": 1.0,
+  "top_authors": {
+    "Thomas Aquinas": 4,
+    "Augustinus, Aurelius": 3,
+    "Copernicus, Nicolaus": 3,
+    "Cicero, Marcus Tullius": 2,
+    "Dante Alighieri": 2,
+    "Aristoteles": 2,
+    "Plinius Secundus, Gaius": 2,
+    "Quintilianus, Marcus Fabius": 1,
+    "Lucretius, Titus": 1
+  },
+  "top_places": {
+    "London": 4,
+    "Antwerp": 3,
+    "Lyon": 2,
+    "Basel": 2,
+    "Nuremberg": 2,
+    "Rome": 2,
+    "Paris": 2,
+    "Wittenberg": 1,
+    "Cologne": 1,
+    "Venice": 1
+  },
+  "duplicate_reduction_rate": 0.0
+}
