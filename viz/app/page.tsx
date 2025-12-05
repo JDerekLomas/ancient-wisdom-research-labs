@@ -1,266 +1,275 @@
 import Link from "next/link";
 
 export default function Home() {
+  // Language data for the mini chart
+  const languages = [
+    { name: "Latin", count: 503486, color: "#7c3a2e" },
+    { name: "German", count: 340480, color: "#9a7b4f" },
+    { name: "French", count: 241569, color: "#6b5f52" },
+    { name: "English", count: 164363, color: "#a65846" },
+    { name: "Other", count: 378680, color: "#c9bfb0" },
+  ];
+  const totalEditions = 1628578;
+
   return (
-    <div className="min-h-screen bg-slate-950 text-white">
-      {/* Hero Section */}
-      <header className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-amber-900/20 via-violet-900/20 to-cyan-900/20" />
-        <div className="relative max-w-5xl mx-auto px-8 py-20 text-center">
-          <div className="text-amber-400/80 text-sm uppercase tracking-[0.3em] mb-4">
-            Source Library Project
-          </div>
-          <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            <span className="bg-gradient-to-r from-amber-300 via-violet-300 to-cyan-300 bg-clip-text text-transparent">
-              Ancient Wisdom
-            </span>
-            <br />
-            <span className="text-slate-300 text-4xl md:text-5xl">Research Labs</span>
-          </h1>
-          <p className="text-xl md:text-2xl text-slate-400 max-w-3xl mx-auto mb-8">
-            Mapping the hidden libraries of Western esotericism.
-            From Hermes Trismegistus to the Rosicrucians&mdash;500,000 Latin works
-            that shaped the modern world remain untranslated.
-          </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <Link
-              href="/explore"
-              className="px-8 py-4 bg-violet-600 hover:bg-violet-500 rounded-xl font-semibold text-lg transition-colors"
-            >
-              Explore the Data
+    <div className="min-h-screen">
+      {/* Header */}
+      <header className="border-b border-[#e0d8cc]">
+        <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+          <Link href="/" className="text-xl font-semibold text-[#1a1612]" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
+            Ancient Wisdom Research
+          </Link>
+          <nav className="flex gap-8 text-sm">
+            <Link href="/explore" className="text-[#6b5f52] hover:text-[#1a1612] transition-colors">
+              Data
             </Link>
-            <Link
-              href="/roadmap"
-              className="px-8 py-4 bg-amber-600/80 hover:bg-amber-500 rounded-xl font-semibold text-lg transition-colors"
-            >
-              Translation Roadmap
+            <Link href="/blog" className="text-[#6b5f52] hover:text-[#1a1612] transition-colors">
+              Research
             </Link>
-          </div>
+            <Link href="/roadmap" className="text-[#6b5f52] hover:text-[#1a1612] transition-colors">
+              Roadmap
+            </Link>
+            <a href="https://github.com/JDerekLomas/ancient-wisdom-research-labs" className="text-[#6b5f52] hover:text-[#1a1612] transition-colors">
+              GitHub
+            </a>
+          </nav>
         </div>
       </header>
 
-      {/* What We Do */}
-      <section className="max-w-5xl mx-auto px-8 py-16">
-        <h2 className="text-3xl font-bold text-center mb-12">What We Study</h2>
-        <div className="grid md:grid-cols-3 gap-8">
-          <div className="bg-slate-900/50 border border-slate-800 rounded-xl p-6 hover:border-amber-500/50 transition-colors">
-            <div className="text-4xl mb-4">📜</div>
-            <h3 className="text-xl font-semibold mb-2 text-amber-300">The Hidden Corpus</h3>
-            <p className="text-slate-400">
-              533,000 Latin works printed 1450-1700. Theology, philosophy, alchemy, magic,
-              natural philosophy&mdash;the intellectual DNA of modernity, largely unread.
-            </p>
-          </div>
-          <div className="bg-slate-900/50 border border-slate-800 rounded-xl p-6 hover:border-violet-500/50 transition-colors">
-            <div className="text-4xl mb-4">🔮</div>
-            <h3 className="text-xl font-semibold mb-2 text-violet-300">Esoteric Traditions</h3>
-            <p className="text-slate-400">
-              Hermetica, Kabbalah, alchemy, Rosicrucianism, natural magic&mdash;tracing how
-              ancient wisdom flowed through Renaissance publishing into the modern age.
-            </p>
-          </div>
-          <div className="bg-slate-900/50 border border-slate-800 rounded-xl p-6 hover:border-cyan-500/50 transition-colors">
-            <div className="text-4xl mb-4">🤖</div>
-            <h3 className="text-xl font-semibold mb-2 text-cyan-300">AI Translation</h3>
-            <p className="text-slate-400">
-              Using large language models to unlock texts that will never receive
-              professional translation. Making the inaccessible accessible.
-            </p>
-          </div>
+      {/* Hero */}
+      <section className="max-w-4xl mx-auto px-6 py-20 text-center">
+        <p className="text-[#9a7b4f] text-sm uppercase tracking-[0.2em] mb-6">
+          Mapping Hidden Libraries
+        </p>
+        <h1 className="text-5xl md:text-6xl mb-6 leading-tight" style={{ fontFamily: 'Cormorant Garamond, serif', fontWeight: 600 }}>
+          500,000 Latin Works<br />
+          <span className="text-[#6b5f52]">Remain Untranslated</span>
+        </h1>
+        <p className="text-xl text-[#3d352d] max-w-2xl mx-auto mb-10 leading-relaxed">
+          The Universal Short Title Catalogue documents 1.6 million books printed between 1450 and 1700.
+          Nearly a third are in Latin. Less than 2% have English translations.
+        </p>
+        <div className="flex gap-4 justify-center">
+          <Link
+            href="/explore"
+            className="px-6 py-3 bg-[#7c3a2e] text-[#faf7f2] rounded-lg hover:bg-[#a65846] transition-colors text-sm font-medium"
+          >
+            Explore the Data
+          </Link>
+          <Link
+            href="/blog"
+            className="px-6 py-3 border border-[#c9bfb0] text-[#3d352d] rounded-lg hover:border-[#7c3a2e] hover:text-[#7c3a2e] transition-colors text-sm font-medium"
+          >
+            Read Research
+          </Link>
         </div>
       </section>
 
-      {/* The Numbers */}
-      <section className="bg-slate-900/30 py-16">
-        <div className="max-w-5xl mx-auto px-8">
-          <h2 className="text-3xl font-bold text-center mb-12">The Scale of the Problem</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-violet-400">533K</div>
-              <div className="text-slate-400 mt-2">Latin editions</div>
-              <div className="text-slate-600 text-sm">USTC 1450-1700</div>
+      {/* Data Visualization Section */}
+      <section className="bg-[#f0ebe3] py-16">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Chart */}
+            <div className="bg-[#fffdf9] rounded-xl p-8 border border-[#e0d8cc]">
+              <h3 className="text-lg mb-6 text-[#1a1612]" style={{ fontFamily: 'Cormorant Garamond, serif', fontWeight: 600 }}>
+                Language Distribution, 1450–1700
+              </h3>
+              <div className="space-y-4">
+                {languages.map((lang) => (
+                  <div key={lang.name}>
+                    <div className="flex justify-between text-sm mb-1">
+                      <span className="text-[#3d352d]">{lang.name}</span>
+                      <span className="text-[#6b5f52] font-mono text-xs">
+                        {((lang.count / totalEditions) * 100).toFixed(1)}%
+                      </span>
+                    </div>
+                    <div className="h-3 bg-[#f0ebe3] rounded-full overflow-hidden">
+                      <div
+                        className="h-full rounded-full transition-all duration-500"
+                        style={{
+                          width: `${(lang.count / totalEditions) * 100}%`,
+                          backgroundColor: lang.color,
+                        }}
+                      />
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <p className="text-xs text-[#6b5f52] mt-6 pt-4 border-t border-[#e0d8cc]">
+                Source: USTC Database, 1,628,578 editions
+              </p>
             </div>
-            <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-cyan-400">~100K</div>
-              <div className="text-slate-400 mt-2">Unique works</div>
-              <div className="text-slate-600 text-sm">Estimated</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-amber-400">3%</div>
-              <div className="text-slate-400 mt-2">Translated</div>
-              <div className="text-slate-600 text-sm">To English</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-red-400">97%</div>
-              <div className="text-slate-400 mt-2">Inaccessible</div>
-              <div className="text-slate-600 text-sm">To non-Latinists</div>
+
+            {/* Stats */}
+            <div className="space-y-8">
+              <div>
+                <div className="text-5xl text-[#7c3a2e] mb-2" style={{ fontFamily: 'Cormorant Garamond, serif', fontWeight: 700 }}>
+                  503,486
+                </div>
+                <div className="text-[#3d352d]">Latin editions in the USTC</div>
+                <p className="text-sm text-[#6b5f52] mt-2">
+                  Theology, philosophy, law, medicine, poetry—the intellectual foundation of the modern world.
+                </p>
+              </div>
+              <div>
+                <div className="text-5xl text-[#9a7b4f] mb-2" style={{ fontFamily: 'Cormorant Garamond, serif', fontWeight: 700 }}>
+                  ~2%
+                </div>
+                <div className="text-[#3d352d]">Have English translations</div>
+                <p className="text-sm text-[#6b5f52] mt-2">
+                  Most translations cover classical authors. Renaissance and early modern Latin remains inaccessible.
+                </p>
+              </div>
+              <div>
+                <div className="text-5xl text-[#6b5f52] mb-2" style={{ fontFamily: 'Cormorant Garamond, serif', fontWeight: 700 }}>
+                  1670s
+                </div>
+                <div className="text-[#3d352d]">When German overtook Latin</div>
+                <p className="text-sm text-[#6b5f52] mt-2">
+                  Latin dominated European publishing for two centuries before vernaculars took over.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Research Tracks */}
-      <section className="max-w-5xl mx-auto px-8 py-16">
-        <h2 className="text-3xl font-bold text-center mb-4">Research Tracks</h2>
-        <p className="text-slate-400 text-center mb-12 max-w-2xl mx-auto">
-          Explore our ongoing investigations into the hidden libraries of the Renaissance
+      <section className="max-w-6xl mx-auto px-6 py-20">
+        <h2 className="text-3xl text-center mb-4" style={{ fontFamily: 'Cormorant Garamond, serif', fontWeight: 600 }}>
+          Current Research
+        </h2>
+        <p className="text-center text-[#6b5f52] mb-12 max-w-xl mx-auto">
+          Investigating the hidden libraries of the Renaissance through data analysis and AI translation
         </p>
 
-        <div className="grid md:grid-cols-2 gap-6">
-          {/* Esoteric Track */}
-          <Link href="/blog/esoteric-timeline" className="group">
-            <div className="bg-gradient-to-br from-amber-900/30 to-violet-900/30 border border-amber-500/30 rounded-xl p-6 h-full hover:border-amber-500/60 transition-colors">
-              <div className="flex items-center gap-3 mb-4">
-                <span className="text-2xl">🌙</span>
-                <h3 className="text-xl font-semibold text-amber-300">Esoteric Traditions</h3>
-              </div>
-              <p className="text-slate-300 mb-4">
-                Visual timeline of hermetic, alchemical, and occult publishing from Ficino to
-                the Rosicrucians. 280 years of esoteric thought mapped.
+        <div className="grid md:grid-cols-3 gap-6">
+          <Link href="/blog/death-of-latin" className="group">
+            <article className="h-full p-6 bg-[#fffdf9] border border-[#e0d8cc] rounded-xl hover:border-[#7c3a2e] transition-colors">
+              <div className="text-xs text-[#9a7b4f] uppercase tracking-wider mb-3">Data Analysis</div>
+              <h3 className="text-xl mb-3 group-hover:text-[#7c3a2e] transition-colors" style={{ fontFamily: 'Cormorant Garamond, serif', fontWeight: 600 }}>
+                The Death of Latin
+              </h3>
+              <p className="text-[#6b5f52] text-sm leading-relaxed">
+                What 1.6 million books tell us about when Latin lost its dominance as Europe&apos;s lingua franca.
               </p>
-              <div className="text-amber-400 group-hover:underline text-sm">
-                View Timeline →
-              </div>
-            </div>
+            </article>
           </Link>
 
-          {/* Translation Research */}
           <Link href="/blog/hunting-for-translations" className="group">
-            <div className="bg-gradient-to-br from-violet-900/30 to-cyan-900/30 border border-violet-500/30 rounded-xl p-6 h-full hover:border-violet-500/60 transition-colors">
-              <div className="flex items-center gap-3 mb-4">
-                <span className="text-2xl">📚</span>
-                <h3 className="text-xl font-semibold text-violet-300">Translation Landscape</h3>
-              </div>
-              <p className="text-slate-300 mb-4">
-                Comprehensive mapping of existing Latin-English translations. 3,232 volumes
-                catalogued across 45+ sources.
+            <article className="h-full p-6 bg-[#fffdf9] border border-[#e0d8cc] rounded-xl hover:border-[#7c3a2e] transition-colors">
+              <div className="text-xs text-[#9a7b4f] uppercase tracking-wider mb-3">Research</div>
+              <h3 className="text-xl mb-3 group-hover:text-[#7c3a2e] transition-colors" style={{ fontFamily: 'Cormorant Garamond, serif', fontWeight: 600 }}>
+                Mapping Translations
+              </h3>
+              <p className="text-[#6b5f52] text-sm leading-relaxed">
+                3,232 translation volumes catalogued across 45+ sources. What&apos;s been translated and what hasn&apos;t.
               </p>
-              <div className="text-violet-400 group-hover:underline text-sm">
-                Read Research →
-              </div>
-            </div>
+            </article>
           </Link>
 
-          {/* Data Explorer */}
-          <Link href="/explore" className="group">
-            <div className="bg-gradient-to-br from-cyan-900/30 to-emerald-900/30 border border-cyan-500/30 rounded-xl p-6 h-full hover:border-cyan-500/60 transition-colors">
-              <div className="flex items-center gap-3 mb-4">
-                <span className="text-2xl">📊</span>
-                <h3 className="text-xl font-semibold text-cyan-300">USTC Data Explorer</h3>
-              </div>
-              <p className="text-slate-300 mb-4">
-                Interactive visualizations of the Universal Short Title Catalogue.
-                Languages, places, subjects, timelines.
+          <Link href="/blog/esoteric-timeline" className="group">
+            <article className="h-full p-6 bg-[#fffdf9] border border-[#e0d8cc] rounded-xl hover:border-[#7c3a2e] transition-colors">
+              <div className="text-xs text-[#9a7b4f] uppercase tracking-wider mb-3">Visualization</div>
+              <h3 className="text-xl mb-3 group-hover:text-[#7c3a2e] transition-colors" style={{ fontFamily: 'Cormorant Garamond, serif', fontWeight: 600 }}>
+                Esoteric Timeline
+              </h3>
+              <p className="text-[#6b5f52] text-sm leading-relaxed">
+                280 years of hermetic, alchemical, and occult publishing from Ficino to the Rosicrucians.
               </p>
-              <div className="text-cyan-400 group-hover:underline text-sm">
-                Explore Data →
-              </div>
-            </div>
+            </article>
           </Link>
+        </div>
 
-          {/* Translation Roadmap */}
-          <Link href="/roadmap" className="group">
-            <div className="bg-gradient-to-br from-emerald-900/30 to-amber-900/30 border border-emerald-500/30 rounded-xl p-6 h-full hover:border-emerald-500/60 transition-colors">
-              <div className="flex items-center gap-3 mb-4">
-                <span className="text-2xl">🗺️</span>
-                <h3 className="text-xl font-semibold text-emerald-300">Translation Roadmap</h3>
-              </div>
-              <p className="text-slate-300 mb-4">
-                Priority works for translation, organized by tradition. Browse 1,200+
-                Latin works by edition count.
-              </p>
-              <div className="text-emerald-400 group-hover:underline text-sm">
-                View Roadmap →
-              </div>
-            </div>
+        <div className="text-center mt-10">
+          <Link href="/blog" className="text-[#7c3a2e] hover:underline text-sm">
+            View all research →
           </Link>
         </div>
       </section>
 
-      {/* Latest Research */}
-      <section className="bg-slate-900/30 py-16">
-        <div className="max-w-5xl mx-auto px-8">
-          <div className="flex justify-between items-center mb-8">
-            <h2 className="text-3xl font-bold">Latest Research</h2>
-            <Link href="/blog" className="text-violet-400 hover:underline">
-              View all →
-            </Link>
+      {/* Translation Gap Visualization */}
+      <section className="bg-[#f0ebe3] py-16">
+        <div className="max-w-4xl mx-auto px-6">
+          <h2 className="text-3xl text-center mb-12" style={{ fontFamily: 'Cormorant Garamond, serif', fontWeight: 600 }}>
+            The Translation Gap by Period
+          </h2>
+
+          <div className="space-y-6">
+            {[
+              { period: "Classical (240 BCE – 600 CE)", translated: 75, label: "~75% translated" },
+              { period: "Patristic (100 – 800 CE)", translated: 65, label: "~65% translated" },
+              { period: "Medieval (600 – 1450)", translated: 25, label: "~25% translated" },
+              { period: "Renaissance (1450 – 1700)", translated: 2, label: "<2% translated" },
+              { period: "Scientific (1600 – 1900)", translated: 1, label: "<1% translated" },
+            ].map((item) => (
+              <div key={item.period} className="bg-[#fffdf9] rounded-lg p-5 border border-[#e0d8cc]">
+                <div className="flex justify-between items-center mb-2">
+                  <span className="text-[#1a1612] font-medium">{item.period}</span>
+                  <span className="text-sm text-[#6b5f52]">{item.label}</span>
+                </div>
+                <div className="h-4 bg-[#f0ebe3] rounded-full overflow-hidden">
+                  <div
+                    className="h-full rounded-full"
+                    style={{
+                      width: `${item.translated}%`,
+                      backgroundColor: item.translated > 50 ? '#7c3a2e' : item.translated > 10 ? '#9a7b4f' : '#c9bfb0',
+                    }}
+                  />
+                </div>
+              </div>
+            ))}
           </div>
-          <div className="grid md:grid-cols-3 gap-6">
-            <Link href="/blog/hunting-for-translations" className="group">
-              <article className="bg-slate-900/50 border border-slate-800 rounded-xl p-5 h-full hover:border-violet-500/50 transition-colors">
-                <span className="text-xs px-2 py-1 bg-amber-500/20 text-amber-300 rounded">
-                  Research Report
-                </span>
-                <h3 className="text-lg font-semibold mt-3 mb-2 group-hover:text-violet-400 transition-colors">
-                  Hunting for Translations
-                </h3>
-                <p className="text-slate-400 text-sm">
-                  3,232 translation volumes catalogued. Coverage rates by period revealed.
-                </p>
-              </article>
-            </Link>
-            <Link href="/blog/esoteric-timeline" className="group">
-              <article className="bg-slate-900/50 border border-slate-800 rounded-xl p-5 h-full hover:border-violet-500/50 transition-colors">
-                <span className="text-xs px-2 py-1 bg-violet-500/20 text-violet-300 rounded">
-                  Visualization
-                </span>
-                <h3 className="text-lg font-semibold mt-3 mb-2 group-hover:text-violet-400 transition-colors">
-                  Esoteric Timeline
-                </h3>
-                <p className="text-slate-400 text-sm">
-                  Scroll through 280 years of hermetic and alchemical publishing.
-                </p>
-              </article>
-            </Link>
-            <Link href="/blog/death-of-latin" className="group">
-              <article className="bg-slate-900/50 border border-slate-800 rounded-xl p-5 h-full hover:border-violet-500/50 transition-colors">
-                <span className="text-xs px-2 py-1 bg-cyan-500/20 text-cyan-300 rounded">
-                  Data
-                </span>
-                <h3 className="text-lg font-semibold mt-3 mb-2 group-hover:text-violet-400 transition-colors">
-                  The Death of Latin
-                </h3>
-                <p className="text-slate-400 text-sm">
-                  What 1.6 million books tell us about when Latin lost dominance.
-                </p>
-              </article>
-            </Link>
-          </div>
+
+          <p className="text-center text-[#6b5f52] text-sm mt-8">
+            The vast majority of Latin literature is early modern—and largely untranslated.
+          </p>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="max-w-4xl mx-auto px-6 py-20 text-center">
+        <h2 className="text-3xl mb-4" style={{ fontFamily: 'Cormorant Garamond, serif', fontWeight: 600 }}>
+          Help Map the Hidden Libraries
+        </h2>
+        <p className="text-[#6b5f52] mb-8 max-w-xl mx-auto">
+          We&apos;re building tools to identify untranslated works and prioritize them for AI-assisted translation.
+          The data and code are open source.
+        </p>
+        <div className="flex gap-4 justify-center">
+          <Link
+            href="/roadmap"
+            className="px-6 py-3 bg-[#7c3a2e] text-[#faf7f2] rounded-lg hover:bg-[#a65846] transition-colors text-sm font-medium"
+          >
+            View Translation Roadmap
+          </Link>
+          <a
+            href="https://github.com/JDerekLomas/ancient-wisdom-research-labs"
+            className="px-6 py-3 border border-[#c9bfb0] text-[#3d352d] rounded-lg hover:border-[#7c3a2e] hover:text-[#7c3a2e] transition-colors text-sm font-medium"
+          >
+            GitHub Repository
+          </a>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-slate-800 py-12">
-        <div className="max-w-5xl mx-auto px-8">
+      <footer className="border-t border-[#e0d8cc] py-10">
+        <div className="max-w-6xl mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="text-center md:text-left">
-              <div className="text-lg font-semibold text-slate-300">Ancient Wisdom Research Labs</div>
-              <div className="text-slate-500 text-sm">Part of the Source Library Project</div>
+              <div className="text-[#1a1612] font-medium" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
+                Ancient Wisdom Research Labs
+              </div>
+              <div className="text-[#6b5f52] text-sm">
+                Data from Universal Short Title Catalogue, University of St Andrews
+              </div>
             </div>
-            <div className="flex gap-6 text-sm">
-              <Link href="/explore" className="text-slate-400 hover:text-white transition-colors">
-                Data Explorer
-              </Link>
-              <Link href="/roadmap" className="text-slate-400 hover:text-white transition-colors">
-                Roadmap
-              </Link>
-              <Link href="/blog" className="text-slate-400 hover:text-white transition-colors">
-                Research
-              </Link>
-              <Link href="/blog/methodology" className="text-slate-400 hover:text-white transition-colors">
-                Methods
-              </Link>
-              <a
-                href="https://github.com/JDerekLomas/latinclaude"
-                className="text-slate-400 hover:text-white transition-colors"
-              >
-                GitHub
-              </a>
+            <div className="flex gap-6 text-sm text-[#6b5f52]">
+              <Link href="/explore" className="hover:text-[#1a1612] transition-colors">Data</Link>
+              <Link href="/blog" className="hover:text-[#1a1612] transition-colors">Research</Link>
+              <Link href="/roadmap" className="hover:text-[#1a1612] transition-colors">Roadmap</Link>
+              <Link href="/blog/methodology" className="hover:text-[#1a1612] transition-colors">Methods</Link>
             </div>
-          </div>
-          <div className="text-center text-slate-600 text-sm mt-8">
-            Data from Universal Short Title Catalogue (USTC), University of St Andrews
           </div>
         </div>
       </footer>
