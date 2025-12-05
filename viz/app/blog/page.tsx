@@ -29,6 +29,13 @@ const posts = [
     excerpt: "Only 416 Latin works ever appeared in Latin-English bilingual editions. The numbers reveal a staggering accessibility crisis.",
     tag: "Data",
   },
+  {
+    slug: "famous-humanists",
+    title: "Even Ficino Isn't Fully Translated",
+    date: "December 2024",
+    excerpt: "You'd think the famous Renaissance humanists would be fully available. They're not. Ficino, Pico, Valla—vast bodies of work remain untranslated.",
+    tag: "Research",
+  },
 ];
 
 export default function BlogIndex() {
