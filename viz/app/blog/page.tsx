@@ -85,12 +85,12 @@ export default function BlogIndex() {
     <div className="min-h-screen bg-slate-950 text-white">
       <header className="border-b border-slate-800">
         <div className="max-w-4xl mx-auto px-8 py-6">
-          <Link href="/" className="text-violet-400 hover:underline text-sm">
-            ← Back to visualization
+          <Link href="/" className="text-amber-400 hover:underline text-sm">
+            ← Ancient Wisdom Research Labs
           </Link>
           <h1 className="text-4xl font-bold mt-4">Research Notes</h1>
           <p className="text-slate-400 mt-2">
-            Exploring the hidden Latin heritage of the Renaissance
+            Exploring the hidden libraries of Western esotericism
           </p>
         </div>
       </header>

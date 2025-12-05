@@ -1,432 +1,268 @@
-"use client";
-
-import { useEffect, useState } from "react";
-import {
-  AreaChart,
-  Area,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  ResponsiveContainer,
-  BarChart,
-  Bar,
-  Legend,
-  PieChart,
-  Pie,
-  Cell,
-} from "recharts";
-
-interface VizData {
-  summary: {
-    total_ustc_records: number;
-    total_latin_works: number;
-    latin_percentage: number;
-    date_range: string;
-    source: string;
-  };
-  latin_vs_vernacular: {
-    decade: number;
-    latin: number;
-    vernacular: number;
-    latin_pct: number;
-    vernacular_pct: number;
-  }[];
-  languages: { language: string; count: number; pct: number }[];
-  latin_by_year: { year: number; count: number }[];
-  accessibility_funnel: { stage: string; count: number; pct: number }[];
-  digitization: {
-    total_latin_works: number;
-    estimated_digitized: number;
-    estimated_ocr: number;
-    estimated_translated: number;
-    untranslated: number;
-  };
-  top_places: { place: string; count: number }[];
-  classifications: { name: string; count: number }[];
-  key_insight: { title: string; message: string };
-}
-
-const COLORS = [
-  "#8b5cf6", "#06b6d4", "#10b981", "#f59e0b", "#ef4444",
-  "#ec4899", "#6366f1", "#14b8a6", "#f97316", "#84cc16",
-];
+import Link from "next/link";
 
 export default function Home() {
-  const [data, setData] = useState<VizData | null>(null);
-
-  useEffect(() => {
-    fetch("/viz_data.json")
-      .then((res) => res.json())
-      .then(setData);
-  }, []);
-
-  if (!data) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-slate-950 text-white">
-        <div className="text-xl">Loading Latin Bibliography Data...</div>
-      </div>
-    );
-  }
-
   return (
     <div className="min-h-screen bg-slate-950 text-white">
       {/* Hero Section */}
       <header className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-violet-900/20 to-cyan-900/20" />
-        <div className="relative max-w-6xl mx-auto px-8 py-16 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">
-            The Hidden Renaissance
+        <div className="absolute inset-0 bg-gradient-to-br from-amber-900/20 via-violet-900/20 to-cyan-900/20" />
+        <div className="relative max-w-5xl mx-auto px-8 py-20 text-center">
+          <div className="text-amber-400/80 text-sm uppercase tracking-[0.3em] mb-4">
+            Source Library Project
+          </div>
+          <h1 className="text-5xl md:text-7xl font-bold mb-6">
+            <span className="bg-gradient-to-r from-amber-300 via-violet-300 to-cyan-300 bg-clip-text text-transparent">
+              Ancient Wisdom
+            </span>
+            <br />
+            <span className="text-slate-300 text-4xl md:text-5xl">Research Labs</span>
           </h1>
-          <p className="text-xl md:text-2xl text-slate-300 mb-6">
-            {data.summary.total_latin_works.toLocaleString()} Latin works printed 1450–1700
+          <p className="text-xl md:text-2xl text-slate-400 max-w-3xl mx-auto mb-8">
+            Mapping the hidden libraries of Western esotericism.
+            From Hermes Trismegistus to the Rosicrucians&mdash;500,000 Latin works
+            that shaped the modern world remain untranslated.
           </p>
-          <div className="inline-block bg-red-500/20 border border-red-500/50 rounded-lg px-6 py-4">
-            <p className="text-lg text-red-300">
-              Only <span className="font-bold text-2xl text-red-400">~2,000</span> have English translations
-            </p>
+          <div className="flex flex-wrap gap-4 justify-center">
+            <Link
+              href="/explore"
+              className="px-8 py-4 bg-violet-600 hover:bg-violet-500 rounded-xl font-semibold text-lg transition-colors"
+            >
+              Explore the Data
+            </Link>
+            <Link
+              href="/roadmap"
+              className="px-8 py-4 bg-amber-600/80 hover:bg-amber-500 rounded-xl font-semibold text-lg transition-colors"
+            >
+              Translation Roadmap
+            </Link>
           </div>
         </div>
       </header>
 
-      <main className="max-w-6xl mx-auto px-8 py-12 space-y-16">
-
-        {/* Key Stats */}
-        <section className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div className="bg-slate-900/50 border border-slate-800 rounded-xl p-6 text-center">
-            <div className="text-3xl md:text-4xl font-bold text-violet-400">
-              {data.summary.total_ustc_records.toLocaleString()}
-            </div>
-            <div className="text-slate-400 mt-2">Total Works in USTC</div>
-          </div>
-          <div className="bg-slate-900/50 border border-slate-800 rounded-xl p-6 text-center">
-            <div className="text-3xl md:text-4xl font-bold text-cyan-400">
-              {data.summary.total_latin_works.toLocaleString()}
-            </div>
-            <div className="text-slate-400 mt-2">Latin Works</div>
-          </div>
-          <div className="bg-slate-900/50 border border-slate-800 rounded-xl p-6 text-center">
-            <div className="text-3xl md:text-4xl font-bold text-amber-400">
-              ~27%
-            </div>
-            <div className="text-slate-400 mt-2">Digitized (USTC)</div>
-          </div>
-          <div className="bg-slate-900/50 border border-slate-800 rounded-xl p-6 text-center">
-            <div className="text-3xl md:text-4xl font-bold text-red-400">
-              ~2K
-            </div>
-            <div className="text-slate-400 mt-2">English Translations</div>
-          </div>
-        </section>
-
-        {/* Accessibility Funnel */}
-        <section>
-          <h2 className="text-2xl font-semibold mb-2">The Accessibility Gap</h2>
-          <p className="text-slate-400 mb-6">How much of Renaissance Latin literature can you actually read?</p>
-          <div className="bg-slate-900/50 border border-slate-800 rounded-xl p-6">
-            <div className="space-y-4">
-              {data.accessibility_funnel.map((item, i) => (
-                <div key={item.stage} className="relative">
-                  <div className="flex justify-between mb-1">
-                    <span className="text-sm font-medium">{item.stage}</span>
-                    <span className="text-sm text-slate-400">
-                      {item.count.toLocaleString()} ({item.pct}%)
-                    </span>
-                  </div>
-                  <div className="w-full bg-slate-800 rounded-full h-8 overflow-hidden">
-                    <div
-                      className={`h-full rounded-full transition-all duration-1000 ${
-                        i === 0 ? 'bg-violet-600' :
-                        i === 1 ? 'bg-cyan-600' :
-                        i === 2 ? 'bg-amber-600' :
-                        'bg-emerald-600'
-                      }`}
-                      style={{ width: `${item.pct}%` }}
-                    />
-                  </div>
-                </div>
-              ))}
-            </div>
-            <p className="text-slate-500 text-sm mt-6 italic">
-              Estimates based on Internet Archive, Google Books, and HathiTrust coverage research.{" "}
-              <a href="/blog/methodology" className="text-violet-400 hover:underline">
-                See methodology
-              </a>
+      {/* What We Do */}
+      <section className="max-w-5xl mx-auto px-8 py-16">
+        <h2 className="text-3xl font-bold text-center mb-12">What We Study</h2>
+        <div className="grid md:grid-cols-3 gap-8">
+          <div className="bg-slate-900/50 border border-slate-800 rounded-xl p-6 hover:border-amber-500/50 transition-colors">
+            <div className="text-4xl mb-4">📜</div>
+            <h3 className="text-xl font-semibold mb-2 text-amber-300">The Hidden Corpus</h3>
+            <p className="text-slate-400">
+              533,000 Latin works printed 1450-1700. Theology, philosophy, alchemy, magic,
+              natural philosophy&mdash;the intellectual DNA of modernity, largely unread.
             </p>
           </div>
-        </section>
-
-        {/* Latin vs Vernacular Over Time */}
-        <section>
-          <h2 className="text-2xl font-semibold mb-2">The Decline of Latin</h2>
-          <p className="text-slate-400 mb-6">Latin dominated early printing but steadily gave way to vernacular languages</p>
-          <div className="bg-slate-900/50 border border-slate-800 rounded-xl p-6 h-96">
-            <ResponsiveContainer width="100%" height="100%">
-              <AreaChart data={data.latin_vs_vernacular}>
-                <CartesianGrid strokeDasharray="3 3" stroke="#334155" />
-                <XAxis
-                  dataKey="decade"
-                  stroke="#9CA3AF"
-                  tick={{ fill: "#9CA3AF" }}
-                  tickFormatter={(v) => `${v}s`}
-                />
-                <YAxis
-                  stroke="#9CA3AF"
-                  tick={{ fill: "#9CA3AF" }}
-                  tickFormatter={(v) => `${v}%`}
-                  domain={[0, 100]}
-                />
-                <Tooltip
-                  contentStyle={{
-                    backgroundColor: "#1e293b",
-                    border: "1px solid #334155",
-                    borderRadius: "8px",
-                  }}
-                  formatter={(value: number, name: string) => [
-                    `${value}%`,
-                    name === 'latin_pct' ? 'Latin' : 'Vernacular'
-                  ]}
-                  labelFormatter={(label) => `${label}s`}
-                />
-                <Legend formatter={(value) => value === 'latin_pct' ? 'Latin' : 'Vernacular'} />
-                <Area
-                  type="monotone"
-                  dataKey="latin_pct"
-                  stackId="1"
-                  stroke="#8b5cf6"
-                  fill="#8b5cf6"
-                  name="latin_pct"
-                />
-                <Area
-                  type="monotone"
-                  dataKey="vernacular_pct"
-                  stackId="1"
-                  stroke="#06b6d4"
-                  fill="#06b6d4"
-                  name="vernacular_pct"
-                />
-              </AreaChart>
-            </ResponsiveContainer>
+          <div className="bg-slate-900/50 border border-slate-800 rounded-xl p-6 hover:border-violet-500/50 transition-colors">
+            <div className="text-4xl mb-4">🔮</div>
+            <h3 className="text-xl font-semibold mb-2 text-violet-300">Esoteric Traditions</h3>
+            <p className="text-slate-400">
+              Hermetica, Kabbalah, alchemy, Rosicrucianism, natural magic&mdash;tracing how
+              ancient wisdom flowed through Renaissance publishing into the modern age.
+            </p>
           </div>
-        </section>
+          <div className="bg-slate-900/50 border border-slate-800 rounded-xl p-6 hover:border-cyan-500/50 transition-colors">
+            <div className="text-4xl mb-4">🤖</div>
+            <h3 className="text-xl font-semibold mb-2 text-cyan-300">AI Translation</h3>
+            <p className="text-slate-400">
+              Using large language models to unlock texts that will never receive
+              professional translation. Making the inaccessible accessible.
+            </p>
+          </div>
+        </div>
+      </section>
 
-        {/* Language Breakdown */}
-        <section>
-          <h2 className="text-2xl font-semibold mb-2">Languages of Renaissance Print</h2>
-          <p className="text-slate-400 mb-6">Distribution across {data.summary.total_ustc_records.toLocaleString()} printed works</p>
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-slate-900/50 border border-slate-800 rounded-xl p-6 h-80">
-              <ResponsiveContainer width="100%" height="100%">
-                <PieChart>
-                  <Pie
-                    data={data.languages}
-                    cx="50%"
-                    cy="50%"
-                    innerRadius={60}
-                    outerRadius={100}
-                    fill="#8884d8"
-                    paddingAngle={2}
-                    dataKey="count"
-                    nameKey="language"
-                  >
-                    {data.languages.map((_, index) => (
-                      <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-                    ))}
-                  </Pie>
-                  <Tooltip
-                    contentStyle={{
-                      backgroundColor: "#1e293b",
-                      border: "1px solid #334155",
-                      borderRadius: "8px",
-                    }}
-                    formatter={(value: number, name: string) => [
-                      `${value.toLocaleString()} (${((value / data.summary.total_ustc_records) * 100).toFixed(1)}%)`,
-                      name
-                    ]}
-                  />
-                </PieChart>
-              </ResponsiveContainer>
+      {/* The Numbers */}
+      <section className="bg-slate-900/30 py-16">
+        <div className="max-w-5xl mx-auto px-8">
+          <h2 className="text-3xl font-bold text-center mb-12">The Scale of the Problem</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="text-center">
+              <div className="text-4xl md:text-5xl font-bold text-violet-400">533K</div>
+              <div className="text-slate-400 mt-2">Latin editions</div>
+              <div className="text-slate-600 text-sm">USTC 1450-1700</div>
             </div>
-            <div className="bg-slate-900/50 border border-slate-800 rounded-xl p-6">
-              <div className="space-y-3">
-                {data.languages.map((lang, i) => (
-                  <div key={lang.language} className="flex items-center justify-between">
-                    <div className="flex items-center gap-3">
-                      <div
-                        className="w-3 h-3 rounded-full"
-                        style={{ backgroundColor: COLORS[i % COLORS.length] }}
-                      />
-                      <span>{lang.language}</span>
-                    </div>
-                    <div className="text-slate-400">
-                      {lang.count.toLocaleString()} <span className="text-slate-500">({lang.pct}%)</span>
-                    </div>
-                  </div>
-                ))}
+            <div className="text-center">
+              <div className="text-4xl md:text-5xl font-bold text-cyan-400">~100K</div>
+              <div className="text-slate-400 mt-2">Unique works</div>
+              <div className="text-slate-600 text-sm">Estimated</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl md:text-5xl font-bold text-amber-400">3%</div>
+              <div className="text-slate-400 mt-2">Translated</div>
+              <div className="text-slate-600 text-sm">To English</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl md:text-5xl font-bold text-red-400">97%</div>
+              <div className="text-slate-400 mt-2">Inaccessible</div>
+              <div className="text-slate-600 text-sm">To non-Latinists</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Research Tracks */}
+      <section className="max-w-5xl mx-auto px-8 py-16">
+        <h2 className="text-3xl font-bold text-center mb-4">Research Tracks</h2>
+        <p className="text-slate-400 text-center mb-12 max-w-2xl mx-auto">
+          Explore our ongoing investigations into the hidden libraries of the Renaissance
+        </p>
+
+        <div className="grid md:grid-cols-2 gap-6">
+          {/* Esoteric Track */}
+          <Link href="/blog/esoteric-timeline" className="group">
+            <div className="bg-gradient-to-br from-amber-900/30 to-violet-900/30 border border-amber-500/30 rounded-xl p-6 h-full hover:border-amber-500/60 transition-colors">
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-2xl">🌙</span>
+                <h3 className="text-xl font-semibold text-amber-300">Esoteric Traditions</h3>
+              </div>
+              <p className="text-slate-300 mb-4">
+                Visual timeline of hermetic, alchemical, and occult publishing from Ficino to
+                the Rosicrucians. 280 years of esoteric thought mapped.
+              </p>
+              <div className="text-amber-400 group-hover:underline text-sm">
+                View Timeline →
               </div>
             </div>
-          </div>
-        </section>
+          </Link>
 
-        {/* Latin Publications Timeline */}
-        <section>
-          <h2 className="text-2xl font-semibold mb-2">Latin Publishing Over Time</h2>
-          <p className="text-slate-400 mb-6">Annual output of Latin works 1450–1700</p>
-          <div className="bg-slate-900/50 border border-slate-800 rounded-xl p-6 h-80">
-            <ResponsiveContainer width="100%" height="100%">
-              <AreaChart data={data.latin_by_year}>
-                <CartesianGrid strokeDasharray="3 3" stroke="#334155" />
-                <XAxis
-                  dataKey="year"
-                  stroke="#9CA3AF"
-                  tick={{ fill: "#9CA3AF" }}
-                />
-                <YAxis stroke="#9CA3AF" tick={{ fill: "#9CA3AF" }} />
-                <Tooltip
-                  contentStyle={{
-                    backgroundColor: "#1e293b",
-                    border: "1px solid #334155",
-                    borderRadius: "8px",
-                  }}
-                  formatter={(value: number) => [value.toLocaleString(), 'Latin works']}
-                />
-                <Area
-                  type="monotone"
-                  dataKey="count"
-                  stroke="#8b5cf6"
-                  fill="url(#latinGradient)"
-                  strokeWidth={2}
-                />
-                <defs>
-                  <linearGradient id="latinGradient" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="5%" stopColor="#8b5cf6" stopOpacity={0.8} />
-                    <stop offset="95%" stopColor="#8b5cf6" stopOpacity={0.1} />
-                  </linearGradient>
-                </defs>
-              </AreaChart>
-            </ResponsiveContainer>
-          </div>
-        </section>
-
-        {/* Two Column: Places and Subjects */}
-        <div className="grid md:grid-cols-2 gap-8">
-          {/* Top Printing Centers */}
-          <section>
-            <h2 className="text-2xl font-semibold mb-2">Latin Printing Centers</h2>
-            <p className="text-slate-400 mb-6">Where Latin books were printed</p>
-            <div className="bg-slate-900/50 border border-slate-800 rounded-xl p-6 h-96">
-              <ResponsiveContainer width="100%" height="100%">
-                <BarChart
-                  data={data.top_places.slice(0, 12)}
-                  layout="vertical"
-                  margin={{ left: 80 }}
-                >
-                  <CartesianGrid strokeDasharray="3 3" stroke="#334155" />
-                  <XAxis type="number" stroke="#9CA3AF" tick={{ fill: "#9CA3AF" }} />
-                  <YAxis
-                    type="category"
-                    dataKey="place"
-                    stroke="#9CA3AF"
-                    tick={{ fill: "#9CA3AF", fontSize: 11 }}
-                    width={75}
-                  />
-                  <Tooltip
-                    contentStyle={{
-                      backgroundColor: "#1e293b",
-                      border: "1px solid #334155",
-                      borderRadius: "8px",
-                    }}
-                    formatter={(value: number) => [value.toLocaleString(), 'Works']}
-                  />
-                  <Bar dataKey="count" fill="#06b6d4" radius={[0, 4, 4, 0]} />
-                </BarChart>
-              </ResponsiveContainer>
+          {/* Translation Research */}
+          <Link href="/blog/hunting-for-translations" className="group">
+            <div className="bg-gradient-to-br from-violet-900/30 to-cyan-900/30 border border-violet-500/30 rounded-xl p-6 h-full hover:border-violet-500/60 transition-colors">
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-2xl">📚</span>
+                <h3 className="text-xl font-semibold text-violet-300">Translation Landscape</h3>
+              </div>
+              <p className="text-slate-300 mb-4">
+                Comprehensive mapping of existing Latin-English translations. 3,232 volumes
+                catalogued across 45+ sources.
+              </p>
+              <div className="text-violet-400 group-hover:underline text-sm">
+                Read Research →
+              </div>
             </div>
-          </section>
+          </Link>
 
-          {/* Subject Classifications */}
-          <section>
-            <h2 className="text-2xl font-semibold mb-2">What Was Being Written</h2>
-            <p className="text-slate-400 mb-6">Subject classifications of Latin works</p>
-            <div className="bg-slate-900/50 border border-slate-800 rounded-xl p-6 h-96">
-              <ResponsiveContainer width="100%" height="100%">
-                <BarChart
-                  data={data.classifications.slice(0, 12)}
-                  layout="vertical"
-                  margin={{ left: 100 }}
-                >
-                  <CartesianGrid strokeDasharray="3 3" stroke="#334155" />
-                  <XAxis type="number" stroke="#9CA3AF" tick={{ fill: "#9CA3AF" }} />
-                  <YAxis
-                    type="category"
-                    dataKey="name"
-                    stroke="#9CA3AF"
-                    tick={{ fill: "#9CA3AF", fontSize: 11 }}
-                    width={95}
-                  />
-                  <Tooltip
-                    contentStyle={{
-                      backgroundColor: "#1e293b",
-                      border: "1px solid #334155",
-                      borderRadius: "8px",
-                    }}
-                    formatter={(value: number) => [value.toLocaleString(), 'Works']}
-                  />
-                  <Bar dataKey="count" fill="#10b981" radius={[0, 4, 4, 0]} />
-                </BarChart>
-              </ResponsiveContainer>
+          {/* Data Explorer */}
+          <Link href="/explore" className="group">
+            <div className="bg-gradient-to-br from-cyan-900/30 to-emerald-900/30 border border-cyan-500/30 rounded-xl p-6 h-full hover:border-cyan-500/60 transition-colors">
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-2xl">📊</span>
+                <h3 className="text-xl font-semibold text-cyan-300">USTC Data Explorer</h3>
+              </div>
+              <p className="text-slate-300 mb-4">
+                Interactive visualizations of the Universal Short Title Catalogue.
+                Languages, places, subjects, timelines.
+              </p>
+              <div className="text-cyan-400 group-hover:underline text-sm">
+                Explore Data →
+              </div>
             </div>
-          </section>
+          </Link>
+
+          {/* Translation Roadmap */}
+          <Link href="/roadmap" className="group">
+            <div className="bg-gradient-to-br from-emerald-900/30 to-amber-900/30 border border-emerald-500/30 rounded-xl p-6 h-full hover:border-emerald-500/60 transition-colors">
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-2xl">🗺️</span>
+                <h3 className="text-xl font-semibold text-emerald-300">Translation Roadmap</h3>
+              </div>
+              <p className="text-slate-300 mb-4">
+                Priority works for translation, organized by tradition. Browse 1,200+
+                Latin works by edition count.
+              </p>
+              <div className="text-emerald-400 group-hover:underline text-sm">
+                View Roadmap →
+              </div>
+            </div>
+          </Link>
         </div>
+      </section>
 
-        {/* Call to Action */}
-        <section className="text-center py-12">
-          <div className="bg-gradient-to-r from-violet-900/30 to-cyan-900/30 border border-violet-500/30 rounded-2xl p-8">
-            <h2 className="text-3xl font-bold mb-4">500,000+ Works Waiting to be Discovered</h2>
-            <p className="text-slate-300 text-lg mb-6 max-w-2xl mx-auto">
-              The vast majority of Renaissance intellectual output—theology, medicine, law, philosophy,
-              science, poetry—remains locked in Latin, inaccessible to modern readers.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-              <a
-                href="/blog"
-                className="px-6 py-3 bg-violet-600 hover:bg-violet-500 rounded-lg font-semibold transition-colors"
-              >
-                Read the Research
-              </a>
-              <a
-                href="/timelines"
-                className="px-6 py-3 bg-cyan-600 hover:bg-cyan-500 rounded-lg font-semibold transition-colors"
-              >
-                Explore Timelines
-              </a>
-              <a
-                href="/map"
-                className="px-6 py-3 bg-emerald-600 hover:bg-emerald-500 rounded-lg font-semibold transition-colors"
-              >
-                Animated Map
-              </a>
+      {/* Latest Research */}
+      <section className="bg-slate-900/30 py-16">
+        <div className="max-w-5xl mx-auto px-8">
+          <div className="flex justify-between items-center mb-8">
+            <h2 className="text-3xl font-bold">Latest Research</h2>
+            <Link href="/blog" className="text-violet-400 hover:underline">
+              View all →
+            </Link>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            <Link href="/blog/hunting-for-translations" className="group">
+              <article className="bg-slate-900/50 border border-slate-800 rounded-xl p-5 h-full hover:border-violet-500/50 transition-colors">
+                <span className="text-xs px-2 py-1 bg-amber-500/20 text-amber-300 rounded">
+                  Research Report
+                </span>
+                <h3 className="text-lg font-semibold mt-3 mb-2 group-hover:text-violet-400 transition-colors">
+                  Hunting for Translations
+                </h3>
+                <p className="text-slate-400 text-sm">
+                  3,232 translation volumes catalogued. Coverage rates by period revealed.
+                </p>
+              </article>
+            </Link>
+            <Link href="/blog/esoteric-timeline" className="group">
+              <article className="bg-slate-900/50 border border-slate-800 rounded-xl p-5 h-full hover:border-violet-500/50 transition-colors">
+                <span className="text-xs px-2 py-1 bg-violet-500/20 text-violet-300 rounded">
+                  Visualization
+                </span>
+                <h3 className="text-lg font-semibold mt-3 mb-2 group-hover:text-violet-400 transition-colors">
+                  Esoteric Timeline
+                </h3>
+                <p className="text-slate-400 text-sm">
+                  Scroll through 280 years of hermetic and alchemical publishing.
+                </p>
+              </article>
+            </Link>
+            <Link href="/blog/death-of-latin" className="group">
+              <article className="bg-slate-900/50 border border-slate-800 rounded-xl p-5 h-full hover:border-violet-500/50 transition-colors">
+                <span className="text-xs px-2 py-1 bg-cyan-500/20 text-cyan-300 rounded">
+                  Data
+                </span>
+                <h3 className="text-lg font-semibold mt-3 mb-2 group-hover:text-violet-400 transition-colors">
+                  The Death of Latin
+                </h3>
+                <p className="text-slate-400 text-sm">
+                  What 1.6 million books tell us about when Latin lost dominance.
+                </p>
+              </article>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="border-t border-slate-800 py-12">
+        <div className="max-w-5xl mx-auto px-8">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+            <div className="text-center md:text-left">
+              <div className="text-lg font-semibold text-slate-300">Ancient Wisdom Research Labs</div>
+              <div className="text-slate-500 text-sm">Part of the Source Library Project</div>
+            </div>
+            <div className="flex gap-6 text-sm">
+              <Link href="/explore" className="text-slate-400 hover:text-white transition-colors">
+                Data Explorer
+              </Link>
+              <Link href="/roadmap" className="text-slate-400 hover:text-white transition-colors">
+                Roadmap
+              </Link>
+              <Link href="/blog" className="text-slate-400 hover:text-white transition-colors">
+                Research
+              </Link>
+              <Link href="/blog/methodology" className="text-slate-400 hover:text-white transition-colors">
+                Methods
+              </Link>
               <a
                 href="https://github.com/JDerekLomas/latinclaude"
-                className="px-6 py-3 bg-slate-700 hover:bg-slate-600 rounded-lg font-semibold transition-colors"
+                className="text-slate-400 hover:text-white transition-colors"
               >
-                View on GitHub
+                GitHub
               </a>
             </div>
           </div>
-        </section>
-      </main>
-
-      <footer className="border-t border-slate-800 py-8 text-center text-slate-500 text-sm">
-        <p>
-          Built with USTC data • Visualization by{" "}
-          <a
-            href="https://github.com/JDerekLomas/latinclaude"
-            className="text-violet-400 hover:underline"
-          >
-            latinclaude
-          </a>
-        </p>
+          <div className="text-center text-slate-600 text-sm mt-8">
+            Data from Universal Short Title Catalogue (USTC), University of St Andrews
+          </div>
+        </div>
       </footer>
     </div>
   );
