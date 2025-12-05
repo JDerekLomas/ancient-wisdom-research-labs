@@ -1235,32 +1235,34 @@
   "accessibility_funnel": [
     {
       "stage": "Total Latin Works in USTC",
-      "count": 521206,
+      "count": 533320,
       "pct": 100
     },
     {
-      "stage": "Digitized (scan exists)",
-      "count": 93817,
-      "pct": 18
-    },
-    {
-      "stage": "Searchable (OCR/transcribed)",
-      "count": 41696,
-      "pct": 8
+      "stage": "Digitized (USTC links, ~27%)",
+      "count": 145000,
+      "pct": 27
     },
     {
       "stage": "Translated to English",
-      "count": 15636,
-      "pct": 3
+      "count": 1000,
+      "pct": 0.2
     }
   ],
   "digitization": {
-    "total_latin_works": 521206,
-    "estimated_digitized": 93817,
-    "estimated_ocr": 41696,
-    "estimated_translated": 15636,
-    "untranslated": 505569,
-    "sources": "Estimates based on Internet Archive, Google Books, HathiTrust coverage research"
+    "total_latin_works": 533320,
+    "ustc_digital_links_all": 450000,
+    "ustc_digitization_rate": 27,
+    "estimated_latin_digitized": 145000,
+    "translation_series_count": 1000,
+    "translation_rate_pct": 0.19,
+    "sources": {
+      "ustc": "USTC About page: 450,000 editions with digital links out of 1.65M total (27%)",
+      "itatti": "I Tatti Renaissance Library: 100 volumes (March 2025)",
+      "loeb_latin": "Loeb Classical Library Latin volumes: ~158",
+      "doml": "Dumbarton Oaks Medieval Library Latin: ~50 volumes",
+      "other_estimate": "Other academic presses: ~700 (conservative estimate)"
+    }
   },
   "top_places": [
     {
@@ -1408,6 +1410,6 @@
   ],
   "key_insight": {
     "title": "The Hidden Renaissance",
-    "message": "Of 521,206 Latin works printed 1450-1700, only ~3% have ever been translated to English. 97% of Renaissance thought remains inaccessible to most readers."
+    "message": "Of 533,320 Latin works printed 1450-1700, only ~1,000 (0.2%) have English translations. 99.8% of Renaissance Latin thought remains inaccessible to English readers."
   }
 }

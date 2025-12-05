@@ -83,7 +83,7 @@ export default function Home() {
           </p>
           <div className="inline-block bg-red-500/20 border border-red-500/50 rounded-lg px-6 py-4">
             <p className="text-lg text-red-300">
-              <span className="font-bold text-2xl text-red-400">97%</span> have never been translated to English
+              <span className="font-bold text-2xl text-red-400">99.8%</span> have never been translated to English
             </p>
           </div>
         </div>
@@ -107,13 +107,13 @@ export default function Home() {
           </div>
           <div className="bg-slate-900/50 border border-slate-800 rounded-xl p-6 text-center">
             <div className="text-3xl md:text-4xl font-bold text-amber-400">
-              ~{Math.round(data.digitization.estimated_digitized / 1000)}K
+              ~27%
             </div>
-            <div className="text-slate-400 mt-2">Digitized Scans</div>
+            <div className="text-slate-400 mt-2">Digitized (USTC)</div>
           </div>
           <div className="bg-slate-900/50 border border-slate-800 rounded-xl p-6 text-center">
             <div className="text-3xl md:text-4xl font-bold text-red-400">
-              ~{Math.round(data.digitization.estimated_translated / 1000)}K
+              ~1K
             </div>
             <div className="text-slate-400 mt-2">English Translations</div>
           </div>
