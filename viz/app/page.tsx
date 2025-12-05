@@ -384,15 +384,20 @@ export default function Home() {
               The vast majority of Renaissance intellectual output—theology, medicine, law, philosophy,
               science, poetry—remains locked in Latin, inaccessible to modern readers.
             </p>
-            <p className="text-slate-400">
-              Data from the Universal Short Title Catalogue (USTC) •
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+              <a
+                href="/blog"
+                className="px-6 py-3 bg-violet-600 hover:bg-violet-500 rounded-lg font-semibold transition-colors"
+              >
+                Read the Research
+              </a>
               <a
                 href="https://github.com/JDerekLomas/latinclaude"
-                className="text-violet-400 hover:underline ml-1"
+                className="px-6 py-3 bg-slate-700 hover:bg-slate-600 rounded-lg font-semibold transition-colors"
               >
                 View on GitHub
               </a>
-            </p>
+            </div>
           </div>
         </section>
       </main>
