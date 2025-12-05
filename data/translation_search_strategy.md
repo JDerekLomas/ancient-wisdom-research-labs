@@ -12,6 +12,17 @@ No master list exists. Translations are scattered across:
 - Anthologies and readers
 - Open access repositories
 
+## Major Discovery: The Philological Museum
+
+**Dana Sutton's Philological Museum** (University of Birmingham) is a critical resource:
+- **79,760 items** in the Analytic Bibliography of Neo-Latin Texts (as of Nov 2024)
+- Houses the **largest collection** of electronic critical editions and translations of British neo-Latin texts
+- URL: https://philological.cal.bham.ac.uk/
+- Includes: letters, plays, poems, essays - principally British humanists 16th-17th century
+- Many texts include facing-page or parallel English translations
+
+**Priority Action**: Scrape/catalogue the Philological Museum systematically. This alone could yield thousands of translations not counted in our estimates.
+
 ## Search Strategy for Agents
 
 ### Phase 1: Structured Series Scraping
