@@ -72,6 +72,13 @@ const posts = [
     tag: "Research",
   },
   {
+    slug: "forgotten-1600s",
+    title: "The Forgotten Seicento: Thinkers of the 1600s You Can't Read",
+    date: "December 2025",
+    excerpt: "Kircher, Sennert, Weyer, Liceti. 324,690 Latin works from the Scientific Revolution—and the scholars behind them who remain untranslated.",
+    tag: "Research",
+  },
+  {
     slug: "renaissance-bestsellers",
     title: "Renaissance Bestsellers Nobody Reads",
     date: "December 2025",
