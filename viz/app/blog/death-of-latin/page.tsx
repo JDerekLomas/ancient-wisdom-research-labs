@@ -1,373 +1,384 @@
+import BlogLayout from "../BlogLayout";
 import Link from "next/link";
 
 export default function DeathOfLatin() {
   return (
-    <div className="min-h-screen bg-slate-950 text-white">
-      <header className="border-b border-slate-800">
-        <div className="max-w-3xl mx-auto px-8 py-6">
-          <Link href="/blog" className="text-violet-400 hover:underline text-sm">
-            ← Back to Research Notes
-          </Link>
+    <BlogLayout
+      title="The Death of Latin? What 1.6 Million Books Tell Us"
+      tag="Data"
+      prevPost={{ href: "/blog/mapping-translations", title: "Mapping Translations" }}
+    >
+      <p style={{
+        fontFamily: 'Newsreader, Georgia, serif',
+        fontSize: '22px',
+        lineHeight: 1.6,
+        color: '#444',
+        marginBottom: '32px',
+      }}>
+        Ask most people when Latin died and you'll get a vague answer: "the Renaissance"
+        or "when vernacular literature took off." But thanks to 1.6 million books in the
+        Universal Short Title Catalogue, we can pinpoint the answer precisely.
+      </p>
+
+      <p style={{
+        fontSize: '24px',
+        fontWeight: 600,
+        color: '#9e4a3a',
+        margin: '32px 0',
+      }}>
+        German overtook Latin in the 1670s.
+      </p>
+
+      <h2>The Data</h2>
+
+      <p>
+        The USTC, maintained by the University of St Andrews, catalogs every known book printed
+        in Europe during the first 250 years of printing. We analyzed the complete database
+        (1,628,578 editions) by language and decade. Here's what emerged:
+      </p>
+
+      <figure style={{
+        background: '#f5f0e8',
+        border: '1px solid #e0d8c8',
+        borderRadius: '8px',
+        padding: '24px',
+        margin: '32px 0',
+      }}>
+        <h3 style={{ fontSize: '18px', fontWeight: 600, marginBottom: '16px', color: '#1a1612' }}>Language Distribution (1450-1700)</h3>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <span style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#444' }}>
+              <span style={{ width: '12px', height: '12px', borderRadius: '2px', background: '#8B0000' }}></span>
+              Latin
+            </span>
+            <span style={{ fontFamily: 'monospace', color: '#546b8a' }}>503,486 (30.9%)</span>
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <span style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#444' }}>
+              <span style={{ width: '12px', height: '12px', borderRadius: '2px', background: '#1E3A5F' }}></span>
+              German
+            </span>
+            <span style={{ fontFamily: 'monospace', color: '#546b8a' }}>340,480 (20.9%)</span>
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <span style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#444' }}>
+              <span style={{ width: '12px', height: '12px', borderRadius: '2px', background: '#2E5A88' }}></span>
+              French
+            </span>
+            <span style={{ fontFamily: 'monospace', color: '#546b8a' }}>241,569 (14.8%)</span>
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <span style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#444' }}>
+              <span style={{ width: '12px', height: '12px', borderRadius: '2px', background: '#4A7FB0' }}></span>
+              English
+            </span>
+            <span style={{ fontFamily: 'monospace', color: '#546b8a' }}>164,363 (10.1%)</span>
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <span style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#444' }}>
+              <span style={{ width: '12px', height: '12px', borderRadius: '2px', background: '#F4A460' }}></span>
+              Dutch
+            </span>
+            <span style={{ fontFamily: 'monospace', color: '#546b8a' }}>114,540 (7.0%)</span>
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <span style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#444' }}>
+              <span style={{ width: '12px', height: '12px', borderRadius: '2px', background: '#228B22' }}></span>
+              Italian
+            </span>
+            <span style={{ fontFamily: 'monospace', color: '#546b8a' }}>113,282 (7.0%)</span>
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <span style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#444' }}>
+              <span style={{ width: '12px', height: '12px', borderRadius: '2px', background: '#DAA520' }}></span>
+              Spanish
+            </span>
+            <span style={{ fontFamily: 'monospace', color: '#546b8a' }}>97,700 (6.0%)</span>
+          </div>
         </div>
-      </header>
+      </figure>
 
-      <article className="max-w-3xl mx-auto px-8 py-12">
-        <div className="mb-8">
-          <span className="text-xs px-2 py-1 bg-violet-500/20 text-violet-300 rounded">
-            Data
-          </span>
-          <span className="text-slate-500 text-sm ml-3">December 2024</span>
+      <p>
+        Latin wasn't just important—it was <em>dominant</em>. Nearly a third of everything
+        printed in early modern Europe was in Latin.
+      </p>
+
+      <h2>The Rise and Fall</h2>
+
+      <h3 style={{ color: '#1a1612', fontSize: '20px', marginTop: '32px' }}>The Early Days (1450s-1470s)</h3>
+
+      <p>
+        In the first decades of printing, Latin was king. When Gutenberg printed his Bible,
+        when the first presses spread across Europe, the market was overwhelmingly Latin.
+        In the 1470s, Latin accounted for <strong style={{ color: '#1a1612' }}>79%</strong> of all editions.
+      </p>
+
+      <p>
+        Why? The audience for books was small: clergy, scholars, lawyers. These were people
+        who read Latin as a matter of course. The infrastructure of learning—universities,
+        monasteries, courts—ran on Latin.
+      </p>
+
+      <h3 style={{ color: '#1a1612', fontSize: '20px', marginTop: '32px' }}>The Reformation Spike (1520s)</h3>
+
+      <p>
+        Then came Luther.
+      </p>
+
+      <p>
+        The 1520s saw an explosion of German-language printing. German editions jumped from
+        1,870 in the 1510s to <strong style={{ color: '#1a1612' }}>8,343</strong> in the 1520s—a
+        346% increase. For one decade, German nearly matched Latin in output.
+      </p>
+
+      <figure style={{
+        background: '#f5f0e8',
+        border: '1px solid #e0d8c8',
+        borderRadius: '8px',
+        padding: '24px',
+        margin: '32px 0',
+      }}>
+        <h3 style={{ fontSize: '18px', fontWeight: 600, marginBottom: '16px', color: '#1a1612' }}>The Reformation Effect</h3>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '14px' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', color: '#444' }}>
+            <span>1510s German editions:</span>
+            <span style={{ fontFamily: 'monospace' }}>1,870</span>
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'space-between', color: '#444' }}>
+            <span>1520s German editions:</span>
+            <span style={{ fontFamily: 'monospace', color: '#c9a86c' }}>8,343</span>
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'space-between', color: '#228B22' }}>
+            <span>Increase:</span>
+            <span style={{ fontFamily: 'monospace' }}>+346%</span>
+          </div>
         </div>
+      </figure>
 
-        <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-          The Death of Latin? What 1.6 Million Books Tell Us
-        </h1>
+      <p>
+        This was the pamphlet war of the Reformation: vernacular polemics, translated Bibles,
+        popular religious tracts. For the first time, printing reached beyond the educated elite.
+      </p>
 
-        <div className="prose prose-invert prose-lg max-w-none">
-          <p className="text-xl text-slate-300 mb-8">
-            Ask most people when Latin died and you&apos;ll get a vague answer: &ldquo;the Renaissance&rdquo;
-            or &ldquo;when vernacular literature took off.&rdquo; But thanks to 1.6 million books in the
-            Universal Short Title Catalogue, we can pinpoint the answer precisely.
-          </p>
+      <p>
+        But Latin recovered. The 1530s saw German drop back while Latin held steady.
+        The scholarly infrastructure remained Latin.
+      </p>
 
-          <p className="text-2xl font-semibold text-violet-400 mb-8">
-            German overtook Latin in the 1670s.
-          </p>
+      <h3 style={{ color: '#1a1612', fontSize: '20px', marginTop: '32px' }}>The Long Plateau (1550s-1660s)</h3>
 
-          <h2 className="text-2xl font-semibold mt-12 mb-4">The Data</h2>
+      <p>
+        For over a century, Latin maintained its position. The numbers kept growing:
+      </p>
 
-          <p className="text-slate-300 mb-4">
-            The USTC, maintained by the University of St Andrews, catalogs every known book printed
-            in Europe during the first 250 years of printing. We analyzed the complete database
-            (1,628,578 editions) by language and decade. Here&apos;s what emerged:
-          </p>
-
-          <div className="bg-slate-900 border border-slate-700 rounded-lg p-6 my-8">
-            <h3 className="text-lg font-semibold mb-4">Language Distribution (1450-1700)</h3>
-            <div className="space-y-3">
-              <div className="flex justify-between items-center">
-                <span className="flex items-center gap-2">
-                  <span className="w-3 h-3 rounded" style={{backgroundColor: '#8B0000'}}></span>
-                  Latin
-                </span>
-                <span className="font-mono text-cyan-400">503,486 (30.9%)</span>
-              </div>
-              <div className="flex justify-between items-center">
-                <span className="flex items-center gap-2">
-                  <span className="w-3 h-3 rounded" style={{backgroundColor: '#1E3A5F'}}></span>
-                  German
-                </span>
-                <span className="font-mono text-cyan-400">340,480 (20.9%)</span>
-              </div>
-              <div className="flex justify-between items-center">
-                <span className="flex items-center gap-2">
-                  <span className="w-3 h-3 rounded" style={{backgroundColor: '#2E5A88'}}></span>
-                  French
-                </span>
-                <span className="font-mono text-cyan-400">241,569 (14.8%)</span>
-              </div>
-              <div className="flex justify-between items-center">
-                <span className="flex items-center gap-2">
-                  <span className="w-3 h-3 rounded" style={{backgroundColor: '#4A7FB0'}}></span>
-                  English
-                </span>
-                <span className="font-mono text-cyan-400">164,363 (10.1%)</span>
-              </div>
-              <div className="flex justify-between items-center">
-                <span className="flex items-center gap-2">
-                  <span className="w-3 h-3 rounded" style={{backgroundColor: '#F4A460'}}></span>
-                  Dutch
-                </span>
-                <span className="font-mono text-cyan-400">114,540 (7.0%)</span>
-              </div>
-              <div className="flex justify-between items-center">
-                <span className="flex items-center gap-2">
-                  <span className="w-3 h-3 rounded" style={{backgroundColor: '#228B22'}}></span>
-                  Italian
-                </span>
-                <span className="font-mono text-cyan-400">113,282 (7.0%)</span>
-              </div>
-              <div className="flex justify-between items-center">
-                <span className="flex items-center gap-2">
-                  <span className="w-3 h-3 rounded" style={{backgroundColor: '#DAA520'}}></span>
-                  Spanish
-                </span>
-                <span className="font-mono text-cyan-400">97,700 (6.0%)</span>
-              </div>
-            </div>
+      <figure style={{
+        background: '#f5f0e8',
+        border: '1px solid #e0d8c8',
+        borderRadius: '8px',
+        padding: '24px',
+        margin: '32px 0',
+      }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '14px' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', color: '#444' }}>
+            <span>1550s:</span>
+            <span style={{ fontFamily: 'monospace' }}>15,357 Latin editions</span>
           </div>
-
-          <p className="text-slate-300 mb-4">
-            Latin wasn&apos;t just important—it was <em>dominant</em>. Nearly a third of everything
-            printed in early modern Europe was in Latin.
-          </p>
-
-          <h2 className="text-2xl font-semibold mt-12 mb-4">The Rise and Fall</h2>
-
-          <h3 className="text-xl font-semibold mt-8 mb-3 text-slate-200">The Early Days (1450s-1470s)</h3>
-
-          <p className="text-slate-300 mb-4">
-            In the first decades of printing, Latin was king. When Gutenberg printed his Bible,
-            when the first presses spread across Europe, the market was overwhelmingly Latin.
-            In the 1470s, Latin accounted for <strong className="text-white">79%</strong> of all editions.
-          </p>
-
-          <p className="text-slate-300 mb-4">
-            Why? The audience for books was small: clergy, scholars, lawyers. These were people
-            who read Latin as a matter of course. The infrastructure of learning—universities,
-            monasteries, courts—ran on Latin.
-          </p>
-
-          <h3 className="text-xl font-semibold mt-8 mb-3 text-slate-200">The Reformation Spike (1520s)</h3>
-
-          <p className="text-slate-300 mb-4">
-            Then came Luther.
-          </p>
-
-          <p className="text-slate-300 mb-4">
-            The 1520s saw an explosion of German-language printing. German editions jumped from
-            1,870 in the 1510s to <strong className="text-white">8,343</strong> in the 1520s—a
-            346% increase. For one decade, German nearly matched Latin in output.
-          </p>
-
-          <div className="bg-slate-900 border border-slate-700 rounded-lg p-6 my-8">
-            <h3 className="text-lg font-semibold mb-4">The Reformation Effect</h3>
-            <div className="space-y-2 text-sm">
-              <div className="flex justify-between">
-                <span>1510s German editions:</span>
-                <span className="font-mono">1,870</span>
-              </div>
-              <div className="flex justify-between">
-                <span>1520s German editions:</span>
-                <span className="font-mono text-amber-400">8,343</span>
-              </div>
-              <div className="flex justify-between text-emerald-400">
-                <span>Increase:</span>
-                <span className="font-mono">+346%</span>
-              </div>
-            </div>
+          <div style={{ display: 'flex', justifyContent: 'space-between', color: '#444' }}>
+            <span>1600s:</span>
+            <span style={{ fontFamily: 'monospace' }}>30,939 Latin editions</span>
           </div>
-
-          <p className="text-slate-300 mb-4">
-            This was the pamphlet war of the Reformation: vernacular polemics, translated Bibles,
-            popular religious tracts. For the first time, printing reached beyond the educated elite.
-          </p>
-
-          <p className="text-slate-300 mb-4">
-            But Latin recovered. The 1530s saw German drop back while Latin held steady.
-            The scholarly infrastructure remained Latin.
-          </p>
-
-          <h3 className="text-xl font-semibold mt-8 mb-3 text-slate-200">The Long Plateau (1550s-1660s)</h3>
-
-          <p className="text-slate-300 mb-4">
-            For over a century, Latin maintained its position. The numbers kept growing:
-          </p>
-
-          <div className="bg-slate-900 border border-slate-700 rounded-lg p-6 my-8">
-            <div className="space-y-2 text-sm">
-              <div className="flex justify-between">
-                <span>1550s:</span>
-                <span className="font-mono">15,357 Latin editions</span>
-              </div>
-              <div className="flex justify-between">
-                <span>1600s:</span>
-                <span className="font-mono">30,939 Latin editions</span>
-              </div>
-              <div className="flex justify-between text-violet-400">
-                <span>1660s (peak):</span>
-                <span className="font-mono">37,292 Latin editions</span>
-              </div>
-            </div>
+          <div style={{ display: 'flex', justifyContent: 'space-between', color: '#9e4a3a' }}>
+            <span>1660s (peak):</span>
+            <span style={{ fontFamily: 'monospace' }}>37,292 Latin editions</span>
           </div>
-
-          <p className="text-slate-300 mb-4">
-            This was the golden age of Neo-Latin: scientific treatises, humanist scholarship,
-            international correspondence, university disputations. Newton&apos;s <em>Principia</em> (1687)
-            was in Latin. So were Spinoza&apos;s <em>Ethics</em> (1677), Leibniz&apos;s philosophical works,
-            and virtually all academic publications.
-          </p>
-
-          <h3 className="text-xl font-semibold mt-8 mb-3 text-slate-200">The Tipping Point (1670s)</h3>
-
-          <p className="text-slate-300 mb-4">
-            Then, almost suddenly, the lines crossed.
-          </p>
-
-          <div className="bg-slate-900 border border-slate-700 rounded-lg p-6 my-8">
-            <h3 className="text-lg font-semibold mb-4">The Crossover</h3>
-            <table className="w-full text-sm">
-              <thead>
-                <tr className="border-b border-slate-600">
-                  <th className="text-left py-2">Decade</th>
-                  <th className="text-right py-2">Latin</th>
-                  <th className="text-right py-2">German</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td className="py-2">1660s</td>
-                  <td className="text-right font-mono text-violet-400">37,292</td>
-                  <td className="text-right font-mono">32,716</td>
-                </tr>
-                <tr className="bg-slate-800/50">
-                  <td className="py-2 font-semibold">1670s</td>
-                  <td className="text-right font-mono">36,483</td>
-                  <td className="text-right font-mono text-emerald-400">41,446</td>
-                </tr>
-                <tr>
-                  <td className="py-2">1680s</td>
-                  <td className="text-right font-mono">33,325</td>
-                  <td className="text-right font-mono text-emerald-400">45,893</td>
-                </tr>
-                <tr>
-                  <td className="py-2">1690s</td>
-                  <td className="text-right font-mono">33,090</td>
-                  <td className="text-right font-mono text-emerald-400">49,233</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <p className="text-slate-300 mb-4">
-            German didn&apos;t just overtake Latin—it accelerated while Latin declined. By the 1690s,
-            German output was 49% higher than Latin.
-          </p>
-
-          <h2 className="text-2xl font-semibold mt-12 mb-4">What Happened?</h2>
-
-          <p className="text-slate-300 mb-4">
-            Several factors converged in the late 17th century:
-          </p>
-
-          <ul className="text-slate-300 space-y-4 mb-6">
-            <li>
-              <strong className="text-white">The rise of national academies.</strong> The Royal Society (1660),
-              the Académie des Sciences (1666), and similar institutions began publishing in vernacular
-              languages. Science, once Latin&apos;s stronghold, started switching.
-            </li>
-            <li>
-              <strong className="text-white">Growing literacy.</strong> Education expanded beyond Latin-trained
-              elites. A new reading public wanted books in their own languages.
-            </li>
-            <li>
-              <strong className="text-white">Philosophical shift.</strong> Thinkers like Descartes and Locke
-              deliberately chose vernaculars to reach wider audiences. The idea that serious thought
-              required Latin was fading.
-            </li>
-            <li>
-              <strong className="text-white">German institutional strength.</strong> The Holy Roman Empire&apos;s
-              fragmented political structure paradoxically created a unified literary market. German
-              became the common language of a dispersed but culturally connected region.
-            </li>
-          </ul>
-
-          <h2 className="text-2xl font-semibold mt-12 mb-4">The English Exception</h2>
-
-          <p className="text-slate-300 mb-4">
-            One striking pattern: English printing exploded in the 1640s.
-          </p>
-
-          <div className="bg-slate-900 border border-slate-700 rounded-lg p-6 my-8">
-            <div className="space-y-2 text-sm">
-              <div className="flex justify-between">
-                <span>1630s English editions:</span>
-                <span className="font-mono">6,767</span>
-              </div>
-              <div className="flex justify-between">
-                <span>1640s English editions:</span>
-                <span className="font-mono text-amber-400">24,112</span>
-              </div>
-              <div className="flex justify-between text-emerald-400">
-                <span>Increase:</span>
-                <span className="font-mono">+256%</span>
-              </div>
-            </div>
-          </div>
-
-          <p className="text-slate-300 mb-4">
-            That&apos;s the English Civil War and Interregnum. Pamphlets, newsbooks, political tracts,
-            religious controversy. England&apos;s revolution was fought as much in print as on battlefields.
-          </p>
-
-          <p className="text-slate-300 mb-4">
-            The 1640s spike in English (24,112 editions) briefly made it the second-most-printed
-            language in Europe, surpassing German (20,521) and approaching Latin (30,143).
-          </p>
-
-          <h2 className="text-2xl font-semibold mt-12 mb-4">What This Means for Latin Today</h2>
-
-          <p className="text-slate-300 mb-4">
-            The USTC data reveals something important: <strong className="text-white">Latin didn&apos;t die
-            in 1700</strong>. It was still producing 33,000+ editions per decade at the end of the
-            17th century—more than at any point before 1600.
-          </p>
-
-          <p className="text-slate-300 mb-4">
-            Latin&apos;s &ldquo;death&rdquo; was relative, not absolute. It was overtaken, not abandoned. And the
-            corpus it left behind is staggering.
-          </p>
-
-          <p className="text-slate-300 mb-4">
-            Of those 503,486 Latin editions in the USTC, how many have been translated into English?
-          </p>
-
-          <p className="text-2xl font-semibold text-red-400 my-8">
-            Less than 2%.
-          </p>
-
-          <p className="text-slate-300 mb-4">
-            The university publications (147,859 editions), the religious texts (118,250), the legal
-            commentaries (35,243), the medical treatises (13,357)—the vast majority remain accessible
-            only to those who can read Latin.
-          </p>
-
-          <p className="text-slate-300 mb-4">
-            We tend to think of Latin literature as a solved problem: Cicero, Virgil, Augustine,
-            the &ldquo;classics.&rdquo; But the USTC reveals a different picture. The real Latin corpus
-            isn&apos;t ancient—it&apos;s early modern. And it&apos;s largely untranslated.
-          </p>
-
-          <div className="bg-slate-900/50 border border-violet-500/30 rounded-lg p-6 my-8">
-            <p className="text-slate-300 italic">
-              Want to explore the data yourself? View the{" "}
-              <Link href="/ustc-language-chart.html" className="text-violet-400 hover:underline">
-                interactive visualization
-              </Link>{" "}
-              showing language distribution across all 25 decades.
-            </p>
-          </div>
-
-          <p className="text-slate-400 text-sm mt-8">
-            <strong>Source:</strong> Universal Short Title Catalogue, University of St Andrews.
-            Direct analysis of USTC Editions July 2025.accdb database export.{" "}
-            <a href="https://ustc.ac.uk" className="text-violet-400 hover:underline">ustc.ac.uk</a>
-          </p>
         </div>
+      </figure>
 
-        <div className="mt-16 pt-8 border-t border-slate-800 flex justify-between">
-          <Link
-            href="/blog/mapping-translations"
-            className="text-violet-400 hover:underline"
-          >
-            ← Mapping Translations
-          </Link>
-          <Link
-            href="/blog"
-            className="text-violet-400 hover:underline"
-          >
-            All Posts →
-          </Link>
+      <p>
+        This was the golden age of Neo-Latin: scientific treatises, humanist scholarship,
+        international correspondence, university disputations. Newton's <em>Principia</em> (1687)
+        was in Latin. So were Spinoza's <em>Ethics</em> (1677), Leibniz's philosophical works,
+        and virtually all academic publications.
+      </p>
+
+      <h3 style={{ color: '#1a1612', fontSize: '20px', marginTop: '32px' }}>The Tipping Point (1670s)</h3>
+
+      <p>
+        Then, almost suddenly, the lines crossed.
+      </p>
+
+      <figure style={{
+        background: '#f5f0e8',
+        border: '1px solid #e0d8c8',
+        borderRadius: '8px',
+        padding: '24px',
+        margin: '32px 0',
+      }}>
+        <h3 style={{ fontSize: '18px', fontWeight: 600, marginBottom: '16px', color: '#1a1612' }}>The Crossover</h3>
+        <table style={{ width: '100%', fontSize: '14px' }}>
+          <thead>
+            <tr style={{ borderBottom: '1px solid #c9a86c' }}>
+              <th style={{ textAlign: 'left', padding: '8px 0', color: '#1a1612' }}>Decade</th>
+              <th style={{ textAlign: 'right', padding: '8px 0', color: '#1a1612' }}>Latin</th>
+              <th style={{ textAlign: 'right', padding: '8px 0', color: '#1a1612' }}>German</th>
+            </tr>
+          </thead>
+          <tbody style={{ color: '#444' }}>
+            <tr>
+              <td style={{ padding: '8px 0' }}>1660s</td>
+              <td style={{ textAlign: 'right', fontFamily: 'monospace', color: '#9e4a3a' }}>37,292</td>
+              <td style={{ textAlign: 'right', fontFamily: 'monospace' }}>32,716</td>
+            </tr>
+            <tr style={{ background: '#faf8f4' }}>
+              <td style={{ padding: '8px 0', fontWeight: 600 }}>1670s</td>
+              <td style={{ textAlign: 'right', fontFamily: 'monospace' }}>36,483</td>
+              <td style={{ textAlign: 'right', fontFamily: 'monospace', color: '#228B22' }}>41,446</td>
+            </tr>
+            <tr>
+              <td style={{ padding: '8px 0' }}>1680s</td>
+              <td style={{ textAlign: 'right', fontFamily: 'monospace' }}>33,325</td>
+              <td style={{ textAlign: 'right', fontFamily: 'monospace', color: '#228B22' }}>45,893</td>
+            </tr>
+            <tr>
+              <td style={{ padding: '8px 0' }}>1690s</td>
+              <td style={{ textAlign: 'right', fontFamily: 'monospace' }}>33,090</td>
+              <td style={{ textAlign: 'right', fontFamily: 'monospace', color: '#228B22' }}>49,233</td>
+            </tr>
+          </tbody>
+        </table>
+      </figure>
+
+      <p>
+        German didn't just overtake Latin—it accelerated while Latin declined. By the 1690s,
+        German output was 49% higher than Latin.
+      </p>
+
+      <h2>What Happened?</h2>
+
+      <p>
+        Several factors converged in the late 17th century:
+      </p>
+
+      <ul>
+        <li>
+          <strong style={{ color: '#1a1612' }}>The rise of national academies.</strong> The Royal Society (1660),
+          the Académie des Sciences (1666), and similar institutions began publishing in vernacular
+          languages. Science, once Latin's stronghold, started switching.
+        </li>
+        <li>
+          <strong style={{ color: '#1a1612' }}>Growing literacy.</strong> Education expanded beyond Latin-trained
+          elites. A new reading public wanted books in their own languages.
+        </li>
+        <li>
+          <strong style={{ color: '#1a1612' }}>Philosophical shift.</strong> Thinkers like Descartes and Locke
+          deliberately chose vernaculars to reach wider audiences. The idea that serious thought
+          required Latin was fading.
+        </li>
+        <li>
+          <strong style={{ color: '#1a1612' }}>German institutional strength.</strong> The Holy Roman Empire's
+          fragmented political structure paradoxically created a unified literary market. German
+          became the common language of a dispersed but culturally connected region.
+        </li>
+      </ul>
+
+      <h2>The English Exception</h2>
+
+      <p>
+        One striking pattern: English printing exploded in the 1640s.
+      </p>
+
+      <figure style={{
+        background: '#f5f0e8',
+        border: '1px solid #e0d8c8',
+        borderRadius: '8px',
+        padding: '24px',
+        margin: '32px 0',
+      }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '14px' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', color: '#444' }}>
+            <span>1630s English editions:</span>
+            <span style={{ fontFamily: 'monospace' }}>6,767</span>
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'space-between', color: '#444' }}>
+            <span>1640s English editions:</span>
+            <span style={{ fontFamily: 'monospace', color: '#c9a86c' }}>24,112</span>
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'space-between', color: '#228B22' }}>
+            <span>Increase:</span>
+            <span style={{ fontFamily: 'monospace' }}>+256%</span>
+          </div>
         </div>
-      </article>
+      </figure>
 
-      <footer className="border-t border-slate-800 py-8 text-center text-slate-500 text-sm">
-        <p>
-          <a href="https://github.com/JDerekLomas/latinclaude" className="text-violet-400 hover:underline">
-            View project on GitHub
-          </a>
+      <p>
+        That's the English Civil War and Interregnum. Pamphlets, newsbooks, political tracts,
+        religious controversy. England's revolution was fought as much in print as on battlefields.
+      </p>
+
+      <p>
+        The 1640s spike in English (24,112 editions) briefly made it the second-most-printed
+        language in Europe, surpassing German (20,521) and approaching Latin (30,143).
+      </p>
+
+      <h2>What This Means for Latin Today</h2>
+
+      <p>
+        The USTC data reveals something important: <strong style={{ color: '#1a1612' }}>Latin didn't die
+        in 1700</strong>. It was still producing 33,000+ editions per decade at the end of the
+        17th century—more than at any point before 1600.
+      </p>
+
+      <p>
+        Latin's "death" was relative, not absolute. It was overtaken, not abandoned. And the
+        corpus it left behind is staggering.
+      </p>
+
+      <p>
+        Of those 503,486 Latin editions in the USTC, how many have been translated into English?
+      </p>
+
+      <p style={{
+        fontSize: '24px',
+        fontWeight: 600,
+        color: '#9e4a3a',
+        margin: '32px 0',
+      }}>
+        Less than 2%.
+      </p>
+
+      <p>
+        The university publications (147,859 editions), the religious texts (118,250), the legal
+        commentaries (35,243), the medical treatises (13,357)—the vast majority remain accessible
+        only to those who can read Latin.
+      </p>
+
+      <p>
+        We tend to think of Latin literature as a solved problem: Cicero, Virgil, Augustine,
+        the "classics." But the USTC reveals a different picture. The real Latin corpus
+        isn't ancient—it's early modern. And it's largely untranslated.
+      </p>
+
+      <figure style={{
+        background: '#faf8f4',
+        border: '1px solid #d0c4b0',
+        borderRadius: '8px',
+        padding: '24px',
+        margin: '32px 0',
+      }}>
+        <p style={{ color: '#444', fontStyle: 'italic' }}>
+          Want to explore the data yourself? View the{" "}
+          <Link href="/ustc-language-chart.html" style={{ color: '#9e4a3a' }}>
+            interactive visualization
+          </Link>{" "}
+          showing language distribution across all 25 decades.
         </p>
-      </footer>
-    </div>
+      </figure>
+
+      <p style={{ color: '#666', fontSize: '14px', marginTop: '32px' }}>
+        <strong>Source:</strong> Universal Short Title Catalogue, University of St Andrews.
+        Direct analysis of USTC Editions July 2025.accdb database export.{" "}
+        <a href="https://ustc.ac.uk" style={{ color: '#9e4a3a' }}>ustc.ac.uk</a>
+      </p>
+    </BlogLayout>
   );
 }

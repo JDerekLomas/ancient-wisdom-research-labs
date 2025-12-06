@@ -2,53 +2,271 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Inter:wght@400;500;600&display=swap');
+/* Typography imports */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Inter:wght@400;500;600&display=swap');
 
+/* Design tokens */
 :root {
-  --bg: #fdfcfa;
-  --text: #111;
-  --text-secondary: #555;
+  /* Warm paper palette */
+  --bg-cream: #fdfcf9;
+  --bg-warm: #f5f0e8;
+  --bg-white: #fff;
+  --bg-dark: #1a1612;
+
+  /* Text colors */
+  --text-primary: #1a1612;
+  --text-secondary: #444;
   --text-muted: #888;
-  --accent: #b44;
-  --border: #e5e5e5;
+  --text-faint: #aaa;
+
+  /* Accent colors */
+  --accent-rust: #9e4a3a;
+  --accent-gold: #c9a86c;
+  --accent-sage: #8b9a7d;
+  --accent-slate: #546b8a;
+
+  /* Borders */
+  --border-light: #e8e4dc;
+  --border-medium: #d4cfc4;
+}
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--bg);
-  color: var(--text);
+  background: var(--bg-cream);
+  color: var(--text-primary);
   font-family: 'Newsreader', Georgia, serif;
-  font-size: 19px;
+  font-size: 18px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3 {
-  font-family: 'Newsreader', Georgia, serif;
-  font-weight: 500;
-  letter-spacing: -0.02em;
+/* Typography */
+h1, h2, h3, h4 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
 }
 
 .sans {
-  font-family: 'Inter', -apple-system, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
+/* Links */
 a {
   color: inherit;
-  text-decoration-color: #ccc;
+  text-decoration-color: var(--border-medium);
   text-underline-offset: 3px;
+  transition: text-decoration-color 0.2s;
 }
 
 a:hover {
-  text-decoration-color: var(--accent);
+  text-decoration-color: var(--accent-rust);
 }
 
+/* Selection */
 ::selection {
-  background: rgba(180, 68, 68, 0.15);
+  background: rgba(158, 74, 58, 0.15);
 }
 
-/* Reset all the old dark theme stuff */
-.min-h-screen { background: var(--bg) !important; }
-.bg-slate-950, .bg-slate-900, .bg-slate-900\/50, .bg-slate-900\/30 { background: transparent !important; }
-.text-white { color: var(--text) !important; }
-.text-slate-300, .text-slate-400, .text-slate-500 { color: var(--text-secondary) !important; }
-.border-slate-800, .border-slate-700 { border-color: var(--border) !important; }
+/* Focus states */
+:focus-visible {
+  outline: 2px solid var(--accent-rust);
+  outline-offset: 2px;
+}
+
+/* Utility classes for consistent styling */
+.container-narrow {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.container-medium {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.container-wide {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Section spacing */
+.section {
+  padding: 100px 24px;
+}
+
+.section-compact {
+  padding: 60px 24px;
+}
+
+/* Cards */
+.card {
+  background: var(--bg-white);
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.card-warm {
+  background: var(--bg-warm);
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  padding: 24px;
+}
+
+/* Labels */
+.label {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* Chart styling */
+.chart-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.chart-value {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Button styles */
+.btn-primary {
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  background: var(--accent-rust);
+  padding: 12px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.btn-primary:hover {
+  background: #8a3f32;
+  text-decoration: none;
+}
+
+.btn-secondary {
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-primary);
+  background: var(--accent-gold);
+  padding: 12px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.btn-secondary:hover {
+  background: #b89a5c;
+  text-decoration: none;
+}
+
+/* Dark section utilities */
+.dark-section {
+  background: var(--bg-dark);
+  color: #fff;
+}
+
+.dark-section a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.dark-section a:hover {
+  color: #fff;
+}
+
+/* Prose styling for essays */
+.prose {
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: 19px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+.prose p {
+  margin-bottom: 1.5em;
+}
+
+.prose h2 {
+  font-size: 28px;
+  margin-top: 2em;
+  margin-bottom: 0.75em;
+  color: var(--text-primary);
+}
+
+.prose h3 {
+  font-size: 22px;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  color: var(--text-primary);
+}
+
+.prose a {
+  color: var(--accent-rust);
+}
+
+.prose strong {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.prose em {
+  font-style: italic;
+}
+
+.prose ul, .prose ol {
+  margin: 1.5em 0;
+  padding-left: 1.5em;
+}
+
+.prose li {
+  margin-bottom: 0.5em;
+}
+
+.prose blockquote {
+  border-left: 3px solid var(--border-medium);
+  padding-left: 1.5em;
+  margin: 2em 0;
+  font-style: italic;
+  color: var(--text-muted);
+}
+
+/* Figure styling */
+.prose figure {
+  margin: 3em 0;
+  padding: 2em 0;
+  border-top: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.prose figcaption {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 1em;
+}
+
+/* Remove old dark theme overrides */
+/* These are no longer needed with unified light theme */

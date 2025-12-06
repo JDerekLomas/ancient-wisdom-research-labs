@@ -1,223 +1,208 @@
-import Link from "next/link";
+import BlogLayout from "../BlogLayout";
 
 export default function ForgottenAuthors() {
   return (
-    <div className="min-h-screen bg-slate-950 text-white">
-      <header className="border-b border-slate-800">
-        <div className="max-w-3xl mx-auto px-8 py-6">
-          <Link href="/blog" className="text-violet-400 hover:underline text-sm">
-            ← Back to Research Notes
-          </Link>
-        </div>
-      </header>
+    <BlogLayout
+      title="The Forgotten Giants: Prolific Authors You've Never Heard Of"
+      tag="Research"
+      prevPost={{ href: "/blog/why-latin-matters", title: "Why Latin Matters" }}
+      nextPost={{ href: "/blog/renaissance-bestsellers", title: "Renaissance Bestsellers" }}
+    >
+      <p style={{
+        fontFamily: 'Newsreader, Georgia, serif',
+        fontSize: '22px',
+        lineHeight: 1.6,
+        color: '#444',
+        marginBottom: '32px',
+      }}>
+        Jakob Martini wrote 836 works. Johann Gerhard wrote 697. Samuel Stryk wrote 642.
+        You&apos;ve never read a word they wrote—because almost none of it has been translated.
+      </p>
 
-      <article className="max-w-3xl mx-auto px-8 py-12">
-        <div className="mb-8">
-          <span className="text-xs px-2 py-1 bg-violet-500/20 text-violet-300 rounded">
-            Research
-          </span>
-          <span className="text-slate-500 text-sm ml-3">December 2024</span>
-        </div>
+      <h2>The Numbers</h2>
 
-        <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-          The Forgotten Giants: Prolific Authors You&apos;ve Never Heard Of
-        </h1>
+      <p>
+        When we analyze the Universal Short Title Catalogue, a striking pattern emerges.
+        The most prolific Latin authors of the Renaissance aren&apos;t the names in our textbooks.
+        Yes, Cicero leads with 4,659 editions and Erasmus follows with 2,825—authors we
+        recognize, whose work has been translated and studied.
+      </p>
 
-        <div className="prose prose-invert prose-lg max-w-none">
-          <p className="text-xl text-slate-300 mb-8">
-            Jakob Martini wrote 836 works. Johann Gerhard wrote 697. Samuel Stryk wrote 642.
-            You&apos;ve never read a word they wrote—because almost none of it has been translated.
-          </p>
+      <p>
+        But just below them is a vast tier of authors who published hundreds of works each,
+        shaped their fields for generations, and are now almost entirely unknown outside
+        specialist circles.
+      </p>
 
-          <h2 className="text-2xl font-semibold mt-12 mb-4">The Numbers</h2>
+      <h2>The Forgotten 181</h2>
 
-          <p className="text-slate-300 mb-4">
-            When we analyze the Universal Short Title Catalogue, a striking pattern emerges.
-            The most prolific Latin authors of the Renaissance aren&apos;t the names in our textbooks.
-            Yes, Cicero leads with 4,659 editions and Erasmus follows with 2,825—authors we
-            recognize, whose work has been translated and studied.
-          </p>
+      <p>
+        We identified <strong>181 neo-Latin authors</strong> who each
+        published 100 or more works but are not classical authors (like Virgil or Ovid) and
+        are not among the handful of Renaissance figures with substantial modern translations
+        (like Erasmus or Luther).
+      </p>
 
-          <p className="text-slate-300 mb-4">
-            But just below them is a vast tier of authors who published hundreds of works each,
-            shaped their fields for generations, and are now almost entirely unknown outside
-            specialist circles.
-          </p>
+      <p>Here are the top 20:</p>
 
-          <h2 className="text-2xl font-semibold mt-12 mb-4">The Forgotten 181</h2>
+      <figure style={{
+        background: '#f5f0e8',
+        border: '1px solid #e0d8c8',
+        borderRadius: '8px',
+        padding: '24px',
+        margin: '32px 0',
+        overflow: 'hidden',
+      }}>
+        <table style={{
+          width: '100%',
+          fontFamily: 'Inter, sans-serif',
+          fontSize: '14px',
+          borderCollapse: 'collapse',
+        }}>
+          <thead>
+            <tr style={{ borderBottom: '2px solid #e0d8c8' }}>
+              <th style={{ textAlign: 'left', padding: '12px 8px', color: '#1a1612', fontWeight: 600 }}>Author</th>
+              <th style={{ textAlign: 'right', padding: '12px 8px', color: '#1a1612', fontWeight: 600 }}>Works</th>
+              <th style={{ textAlign: 'left', padding: '12px 8px', color: '#1a1612', fontWeight: 600 }}>Field</th>
+            </tr>
+          </thead>
+          <tbody>
+            {[
+              ["Jakob Martini", "836", "Theology, Philosophy"],
+              ["Johann Gerhard", "697", "Lutheran Theology"],
+              ["Johann Deutschmann", "660", "Theology"],
+              ["Samuel Stryk", "642", "Law"],
+              ["Rudolph Goclenius", "571", "Medicine, Philosophy"],
+              ["Abraham Calov", "548", "Lutheran Orthodoxy"],
+              ["Georg Adam Struve", "539", "Law"],
+              ["Hermann Conring", "510", "Political Theory"],
+              ["Johannes Coccejus", "484", "Covenant Theology"],
+              ["Georg Wolfgang Wedel", "476", "Medicine"],
+              ["Johannes Hoornbeek", "460", "Reformed Theology"],
+              ["Balthasar Meisner", "451", "Anthropology, Theology"],
+              ["Juan Luis Vives", "446", "Humanism, Education"],
+              ["Niccolò Tedeschi", "439", "Canon Law"],
+              ["Christian Gueinz", "432", "Theology"],
+              ["Jacobus Revius", "422", "Reformed Theology"],
+              ["Samuel Maresius", "419", "Reformed Theology"],
+              ["Werner Rolfinck", "408", "Medicine, Anatomy"],
+              ["Christoph Besold", "405", "Law, Political Theory"],
+              ["Konrad Samuel Schurzfleisch", "389", "History"],
+            ].map(([author, works, field], i) => (
+              <tr key={i} style={{ borderBottom: '1px solid #e0d8c8' }}>
+                <td style={{ padding: '12px 8px', color: '#1a1612' }}>{author}</td>
+                <td style={{ padding: '12px 8px', textAlign: 'right', fontFamily: 'monospace', color: '#9e4a3a', fontWeight: 600 }}>{works}</td>
+                <td style={{ padding: '12px 8px', color: '#666' }}>{field}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </figure>
 
-          <p className="text-slate-300 mb-4">
-            We identified <strong className="text-white">181 neo-Latin authors</strong> who each
-            published 100 or more works but are not classical authors (like Virgil or Ovid) and
-            are not among the handful of Renaissance figures with substantial modern translations
-            (like Erasmus or Luther).
-          </p>
+      <h2>Who Were These People?</h2>
 
-          <p className="text-slate-300 mb-4">Here are the top 20:</p>
+      <h3 style={{ color: '#9e4a3a' }}>Johann Gerhard (1582-1637)</h3>
+      <p>
+        The most important Lutheran theologian after Luther and Melanchthon. His
+        <em> Loci Theologici</em> (23 volumes) was the definitive systematic theology
+        of Lutheran orthodoxy, used as a textbook for over a century. His devotional
+        works were translated into many languages during his lifetime—but today, only
+        fragments exist in English. 697 published works; perhaps a dozen partially translated.
+      </p>
 
-          <div className="bg-slate-900 border border-slate-700 rounded-lg overflow-hidden my-8">
-            <table className="w-full text-sm">
-              <thead className="bg-slate-800">
-                <tr>
-                  <th className="text-left p-3">Author</th>
-                  <th className="text-right p-3">Works</th>
-                  <th className="text-left p-3">Field</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-slate-700">
-                <tr><td className="p-3">Jakob Martini</td><td className="text-right p-3 font-mono text-violet-400">836</td><td className="p-3 text-slate-400">Theology, Philosophy</td></tr>
-                <tr><td className="p-3">Johann Gerhard</td><td className="text-right p-3 font-mono text-violet-400">697</td><td className="p-3 text-slate-400">Lutheran Theology</td></tr>
-                <tr><td className="p-3">Johann Deutschmann</td><td className="text-right p-3 font-mono text-violet-400">660</td><td className="p-3 text-slate-400">Theology</td></tr>
-                <tr><td className="p-3">Samuel Stryk</td><td className="text-right p-3 font-mono text-violet-400">642</td><td className="p-3 text-slate-400">Law</td></tr>
-                <tr><td className="p-3">Rudolph Goclenius</td><td className="text-right p-3 font-mono text-violet-400">571</td><td className="p-3 text-slate-400">Medicine, Philosophy</td></tr>
-                <tr><td className="p-3">Abraham Calov</td><td className="text-right p-3 font-mono text-violet-400">548</td><td className="p-3 text-slate-400">Lutheran Orthodoxy</td></tr>
-                <tr><td className="p-3">Georg Adam Struve</td><td className="text-right p-3 font-mono text-violet-400">539</td><td className="p-3 text-slate-400">Law</td></tr>
-                <tr><td className="p-3">Hermann Conring</td><td className="text-right p-3 font-mono text-violet-400">510</td><td className="p-3 text-slate-400">Political Theory</td></tr>
-                <tr><td className="p-3">Johannes Coccejus</td><td className="text-right p-3 font-mono text-violet-400">484</td><td className="p-3 text-slate-400">Covenant Theology</td></tr>
-                <tr><td className="p-3">Georg Wolfgang Wedel</td><td className="text-right p-3 font-mono text-violet-400">476</td><td className="p-3 text-slate-400">Medicine</td></tr>
-                <tr><td className="p-3">Johannes Hoornbeek</td><td className="text-right p-3 font-mono text-violet-400">460</td><td className="p-3 text-slate-400">Reformed Theology</td></tr>
-                <tr><td className="p-3">Balthasar Meisner</td><td className="text-right p-3 font-mono text-violet-400">451</td><td className="p-3 text-slate-400">Anthropology, Theology</td></tr>
-                <tr><td className="p-3">Juan Luis Vives</td><td className="text-right p-3 font-mono text-violet-400">446</td><td className="p-3 text-slate-400">Humanism, Education</td></tr>
-                <tr><td className="p-3">Niccolò Tedeschi</td><td className="text-right p-3 font-mono text-violet-400">439</td><td className="p-3 text-slate-400">Canon Law</td></tr>
-                <tr><td className="p-3">Christian Gueinz</td><td className="text-right p-3 font-mono text-violet-400">432</td><td className="p-3 text-slate-400">Theology</td></tr>
-                <tr><td className="p-3">Jacobus Revius</td><td className="text-right p-3 font-mono text-violet-400">422</td><td className="p-3 text-slate-400">Reformed Theology</td></tr>
-                <tr><td className="p-3">Samuel Maresius</td><td className="text-right p-3 font-mono text-violet-400">419</td><td className="p-3 text-slate-400">Reformed Theology</td></tr>
-                <tr><td className="p-3">Werner Rolfinck</td><td className="text-right p-3 font-mono text-violet-400">408</td><td className="p-3 text-slate-400">Medicine, Anatomy</td></tr>
-                <tr><td className="p-3">Christoph Besold</td><td className="text-right p-3 font-mono text-violet-400">405</td><td className="p-3 text-slate-400">Law, Political Theory</td></tr>
-                <tr><td className="p-3">Konrad Samuel Schurzfleisch</td><td className="text-right p-3 font-mono text-violet-400">389</td><td className="p-3 text-slate-400">History</td></tr>
-              </tbody>
-            </table>
-          </div>
+      <h3 style={{ color: '#9e4a3a' }}>Samuel Stryk (1640-1710)</h3>
+      <p>
+        One of the most influential jurists in German legal history. His <em>Usus modernus
+        pandectarum</em> shaped how Roman law was applied in German courts and influenced
+        legal education for generations. The &ldquo;usus modernus&rdquo; tradition he defined
+        is still studied in legal history—but scholars must read him in Latin. 642 works;
+        effectively zero English translations.
+      </p>
 
-          <h2 className="text-2xl font-semibold mt-12 mb-4">Who Were These People?</h2>
+      <h3 style={{ color: '#9e4a3a' }}>Hermann Conring (1606-1681)</h3>
+      <p>
+        A polymath who made major contributions to political theory, history, and medicine.
+        His <em>De origine juris Germanici</em> founded the field of German legal history.
+        He was one of the first to study politics empirically rather than purely philosophically.
+        Leibniz called him the most learned man in Germany. 510 works; almost nothing in English.
+      </p>
 
-          <h3 className="text-xl font-semibold mt-8 mb-3 text-violet-400">Johann Gerhard (1582-1637)</h3>
-          <p className="text-slate-300 mb-4">
-            The most important Lutheran theologian after Luther and Melanchthon. His
-            <em> Loci Theologici</em> (23 volumes) was the definitive systematic theology
-            of Lutheran orthodoxy, used as a textbook for over a century. His devotional
-            works were translated into many languages during his lifetime—but today, only
-            fragments exist in English. 697 published works; perhaps a dozen partially translated.
-          </p>
+      <h3 style={{ color: '#9e4a3a' }}>Georg Wolfgang Wedel (1645-1721)</h3>
+      <p>
+        Professor of medicine at Jena who supervised hundreds of medical dissertations and
+        wrote extensively on pharmacology, chemistry, and medical practice. His works
+        document the state of medical knowledge at a crucial transitional period. 476 works;
+        zero translations.
+      </p>
 
-          <h3 className="text-xl font-semibold mt-8 mb-3 text-violet-400">Samuel Stryk (1640-1710)</h3>
-          <p className="text-slate-300 mb-4">
-            One of the most influential jurists in German legal history. His <em>Usus modernus
-            pandectarum</em> shaped how Roman law was applied in German courts and influenced
-            legal education for generations. The &ldquo;usus modernus&rdquo; tradition he defined
-            is still studied in legal history—but scholars must read him in Latin. 642 works;
-            effectively zero English translations.
-          </p>
+      <h2>The German University System</h2>
 
-          <h3 className="text-xl font-semibold mt-8 mb-3 text-violet-400">Hermann Conring (1606-1681)</h3>
-          <p className="text-slate-300 mb-4">
-            A polymath who made major contributions to political theory, history, and medicine.
-            His <em>De origine juris Germanici</em> founded the field of German legal history.
-            He was one of the first to study politics empirically rather than purely philosophically.
-            Leibniz called him the most learned man in Germany. 510 works; almost nothing in English.
-          </p>
+      <p>
+        A striking pattern in the data: most of these forgotten giants are German, and most
+        wrote primarily for the university system. The &ldquo;works&rdquo; we&apos;re counting include:
+      </p>
 
-          <h3 className="text-xl font-semibold mt-8 mb-3 text-violet-400">Georg Wolfgang Wedel (1645-1721)</h3>
-          <p className="text-slate-300 mb-4">
-            Professor of medicine at Jena who supervised hundreds of medical dissertations and
-            wrote extensively on pharmacology, chemistry, and medical practice. His works
-            document the state of medical knowledge at a crucial transitional period. 476 works;
-            zero translations.
-          </p>
+      <ul>
+        <li><strong>Disputations</strong> — Formal academic debates that
+        were published as pamphlets</li>
+        <li><strong>Dissertations</strong> — Supervised theses, often
+        published under the professor&apos;s name</li>
+        <li><strong>Lecture schedules</strong> — Official academic
+        announcements</li>
+        <li><strong>Funeral orations</strong> — Formal eulogies for
+        prominent figures</li>
+      </ul>
 
-          <h2 className="text-2xl font-semibold mt-12 mb-4">The German University System</h2>
+      <p>
+        This explains the huge numbers. But it doesn&apos;t diminish their importance. These
+        disputations and dissertations <em>were</em> how knowledge was produced and transmitted
+        in early modern Europe. They document intellectual debates that shaped theology, law,
+        medicine, and philosophy.
+      </p>
 
-          <p className="text-slate-300 mb-4">
-            A striking pattern in the data: most of these forgotten giants are German, and most
-            wrote primarily for the university system. The &ldquo;works&rdquo; we&apos;re counting include:
-          </p>
+      <h2>What Are We Missing?</h2>
 
-          <ul className="text-slate-300 space-y-2 mb-6">
-            <li><strong className="text-white">Disputations</strong> — Formal academic debates that
-            were published as pamphlets</li>
-            <li><strong className="text-white">Dissertations</strong> — Supervised theses, often
-            published under the professor&apos;s name</li>
-            <li><strong className="text-white">Lecture schedules</strong> — Official academic
-            announcements</li>
-            <li><strong className="text-white">Funeral orations</strong> — Formal eulogies for
-            prominent figures</li>
-          </ul>
+      <p>
+        The untranslated works of these authors contain:
+      </p>
 
-          <p className="text-slate-300 mb-4">
-            This explains the huge numbers. But it doesn&apos;t diminish their importance. These
-            disputations and dissertations <em>were</em> how knowledge was produced and transmitted
-            in early modern Europe. They document intellectual debates that shaped theology, law,
-            medicine, and philosophy.
-          </p>
+      <ul>
+        <li><strong>Lost debates</strong> — Theological controversies that
+        defined confessional identities</li>
+        <li><strong>Legal reasoning</strong> — How jurists adapted Roman
+        law to early modern conditions</li>
+        <li><strong>Medical knowledge</strong> — What doctors actually
+        believed and practiced</li>
+        <li><strong>Political theory</strong> — Ideas about sovereignty,
+        natural law, and government</li>
+        <li><strong>Educational methods</strong> — How universities
+        actually functioned</li>
+      </ul>
 
-          <h2 className="text-2xl font-semibold mt-12 mb-4">What Are We Missing?</h2>
+      <p>
+        We have the famous names—Hobbes, Locke, Descartes. But they were part of a larger
+        conversation conducted largely in Latin. We&apos;ve translated the tips of icebergs
+        while the masses beneath remain submerged.
+      </p>
 
-          <p className="text-slate-300 mb-4">
-            The untranslated works of these authors contain:
-          </p>
+      <h2>A Research Opportunity</h2>
 
-          <ul className="text-slate-300 space-y-2 mb-6">
-            <li><strong className="text-white">Lost debates</strong> — Theological controversies that
-            defined confessional identities</li>
-            <li><strong className="text-white">Legal reasoning</strong> — How jurists adapted Roman
-            law to early modern conditions</li>
-            <li><strong className="text-white">Medical knowledge</strong> — What doctors actually
-            believed and practiced</li>
-            <li><strong className="text-white">Political theory</strong> — Ideas about sovereignty,
-            natural law, and government</li>
-            <li><strong className="text-white">Educational methods</strong> — How universities
-            actually functioned</li>
-          </ul>
+      <p>
+        These 181 authors represent a massive opportunity for scholarship:
+      </p>
 
-          <p className="text-slate-300 mb-4">
-            We have the famous names—Hobbes, Locke, Descartes. But they were part of a larger
-            conversation conducted largely in Latin. We&apos;ve translated the tips of icebergs
-            while the masses beneath remain submerged.
-          </p>
+      <ul>
+        <li>Together they published over <strong>50,000 works</strong></li>
+        <li>Many are digitized but unreadable (no OCR, no transcription)</li>
+        <li>Almost none have modern critical editions</li>
+        <li>Translation would open entire fields of inquiry</li>
+      </ul>
 
-          <h2 className="text-2xl font-semibold mt-12 mb-4">A Research Opportunity</h2>
-
-          <p className="text-slate-300 mb-4">
-            These 181 authors represent a massive opportunity for scholarship:
-          </p>
-
-          <ul className="text-slate-300 space-y-2 mb-6">
-            <li>Together they published over <strong className="text-white">50,000 works</strong></li>
-            <li>Many are digitized but unreadable (no OCR, no transcription)</li>
-            <li>Almost none have modern critical editions</li>
-            <li>Translation would open entire fields of inquiry</li>
-          </ul>
-
-          <p className="text-slate-300 mb-4">
-            The question isn&apos;t whether these works matter. Scholars in relevant fields know they
-            do. The question is whether we can make them accessible—and modern AI might finally
-            make that possible.
-          </p>
-        </div>
-
-        <div className="mt-16 pt-8 border-t border-slate-800 flex justify-between">
-          <Link
-            href="/blog/why-latin-matters"
-            className="text-violet-400 hover:underline"
-          >
-            ← Why Latin Matters
-          </Link>
-          <Link
-            href="/blog/renaissance-bestsellers"
-            className="text-violet-400 hover:underline"
-          >
-            Renaissance Bestsellers →
-          </Link>
-        </div>
-      </article>
-
-      <footer className="border-t border-slate-800 py-8 text-center text-slate-500 text-sm">
-        <p>
-          <a href="https://github.com/JDerekLomas/latinclaude" className="text-violet-400 hover:underline">
-            View project on GitHub
-          </a>
-        </p>
-      </footer>
-    </div>
+      <p>
+        The question isn&apos;t whether these works matter. Scholars in relevant fields know they
+        do. The question is whether we can make them accessible—and modern AI might finally
+        make that possible.
+      </p>
+    </BlogLayout>
   );
 }

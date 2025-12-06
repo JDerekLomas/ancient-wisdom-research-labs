@@ -1,281 +1,678 @@
 import Link from "next/link";
 
+// Important untranslated figures
+const forgottenAuthors = [
+  { name: "Cornelis Drebbel", editions: 12, field: "Inventor of the submarine, perpetual motion", translated: 0 },
+  { name: "Isaac Casaubon", editions: 89, field: "Classical philology, exposed Hermetica dating", translated: 0 },
+  { name: "Giambattista della Porta", editions: 156, field: "Natural magic, optics, cryptography", translated: 0 },
+];
+
+// Subject breakdown
+const subjects = [
+  { name: "Theology", count: 127000, pct: 25.2, translated: "< 1%" },
+  { name: "Law", count: 68000, pct: 13.5, translated: "< 1%" },
+  { name: "Philosophy", count: 42000, pct: 8.3, translated: "~3%" },
+  { name: "Medicine", count: 38000, pct: 7.5, translated: "< 1%" },
+  { name: "Natural Philosophy", count: 31000, pct: 6.2, translated: "~2%" },
+  { name: "Poetry & Literature", count: 28000, pct: 5.6, translated: "~5%" },
+];
+
 export default function Home() {
-  // Language data for the mini chart
-  const languages = [
-    { name: "Latin", count: 503486, color: "#7c3a2e" },
-    { name: "German", count: 340480, color: "#9a7b4f" },
-    { name: "French", count: 241569, color: "#6b5f52" },
-    { name: "English", count: 164363, color: "#a65846" },
-    { name: "Other", count: 378680, color: "#c9bfb0" },
-  ];
-  const totalEditions = 1628578;
 
   return (
-    <div className="min-h-screen">
-      {/* Header */}
-      <header className="border-b border-[#e0d8cc]">
-        <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-          <Link href="/" className="text-xl font-semibold text-[#1a1612]" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
-            Ancient Wisdom Research
+    <main className="min-h-screen" style={{ background: '#fdfcf9' }}>
+      {/* Navigation */}
+      <nav style={{
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        right: 0,
+        background: 'rgba(253, 252, 249, 0.95)',
+        backdropFilter: 'blur(8px)',
+        borderBottom: '1px solid #e8e4dc',
+        zIndex: 100,
+        padding: '16px 24px',
+      }}>
+        <div style={{
+          maxWidth: '1200px',
+          margin: '0 auto',
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+        }}>
+          <Link href="/" style={{
+            fontFamily: 'Inter, sans-serif',
+            fontSize: '12px',
+            fontWeight: 500,
+            letterSpacing: '0.1em',
+            color: '#666',
+            textDecoration: 'none',
+          }}>
+            SECOND RENAISSANCE RESEARCH
           </Link>
-          <nav className="flex gap-8 text-sm">
-            <Link href="/explore" className="text-[#6b5f52] hover:text-[#1a1612] transition-colors">
-              Data
-            </Link>
-            <Link href="/blog" className="text-[#6b5f52] hover:text-[#1a1612] transition-colors">
-              Blog
-            </Link>
-            <Link href="/roadmap" className="text-[#6b5f52] hover:text-[#1a1612] transition-colors">
-              Roadmap
-            </Link>
-            <Link href="/blog/methodology" className="text-[#6b5f52] hover:text-[#1a1612] transition-colors">
-              Methods
-            </Link>
-            <a href="https://github.com/JDerekLomas/ancient-wisdom-research-labs" className="text-[#6b5f52] hover:text-[#1a1612] transition-colors">
-              GitHub
+          <div style={{ display: 'flex', gap: '32px', alignItems: 'center' }}>
+            <Link href="/explore" style={{ fontFamily: 'Inter, sans-serif', fontSize: '13px', color: '#555', textDecoration: 'none' }}>Explore</Link>
+            <Link href="/roadmap" style={{ fontFamily: 'Inter, sans-serif', fontSize: '13px', color: '#555', textDecoration: 'none' }}>Roadmap</Link>
+            <Link href="/blog" style={{ fontFamily: 'Inter, sans-serif', fontSize: '13px', color: '#555', textDecoration: 'none' }}>Essays</Link>
+            <Link href="/about" style={{ fontFamily: 'Inter, sans-serif', fontSize: '13px', color: '#555', textDecoration: 'none' }}>About</Link>
+            <a
+              href="https://www.ancientwisdomtrust.org/become-a-patron"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                fontFamily: 'Inter, sans-serif',
+                fontSize: '12px',
+                fontWeight: 500,
+                color: '#fff',
+                background: '#9e4a3a',
+                padding: '8px 16px',
+                borderRadius: '4px',
+                textDecoration: 'none',
+              }}
+            >
+              Support This Work
             </a>
-          </nav>
+          </div>
         </div>
-      </header>
+      </nav>
 
-      {/* Hero */}
-      <section className="max-w-4xl mx-auto px-6 py-20 text-center">
-        <p className="text-[#9a7b4f] text-sm uppercase tracking-[0.2em] mb-6">
-          Mapping Hidden Libraries
+      {/* Hero: The Number */}
+      <section style={{
+        minHeight: '100vh',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: '120px 24px 80px',
+        textAlign: 'center',
+      }}>
+        <p style={{
+          fontFamily: 'Inter, sans-serif',
+          fontSize: '13px',
+          letterSpacing: '0.15em',
+          color: '#888',
+          marginBottom: '24px',
+        }}>
+          PRINTED IN EUROPE, 1450–1700
         </p>
-        <h1 className="text-5xl md:text-6xl mb-6 leading-tight" style={{ fontFamily: 'Cormorant Garamond, serif', fontWeight: 600 }}>
-          500,000 Latin Works<br />
-          <span className="text-[#6b5f52]">Remain Untranslated</span>
+        <h1 style={{
+          fontFamily: 'Cormorant Garamond, Georgia, serif',
+          fontSize: 'clamp(72px, 15vw, 180px)',
+          fontWeight: 400,
+          color: '#1a1612',
+          lineHeight: 0.9,
+          marginBottom: '24px',
+        }}>
+          503,486
         </h1>
-        <p className="text-xl text-[#3d352d] max-w-2xl mx-auto mb-10 leading-relaxed">
-          The Universal Short Title Catalogue documents 1.6 million books printed between 1450 and 1700.
-          Nearly a third are in Latin. Less than 2% have English translations.
+        <p style={{
+          fontFamily: 'Cormorant Garamond, Georgia, serif',
+          fontSize: 'clamp(24px, 4vw, 42px)',
+          fontWeight: 400,
+          color: '#333',
+          maxWidth: '800px',
+          lineHeight: 1.3,
+          marginBottom: '48px',
+        }}>
+          Latin books. Theology, philosophy, law, medicine, alchemy, poetry.
         </p>
-        <div className="flex gap-4 justify-center">
-          <Link
-            href="/explore"
-            className="px-6 py-3 bg-[#7c3a2e] text-[#faf7f2] rounded-lg hover:bg-[#a65846] transition-colors text-sm font-medium"
-          >
-            Explore the Data
-          </Link>
-          <Link
-            href="/blog"
-            className="px-6 py-3 border border-[#c9bfb0] text-[#3d352d] rounded-lg hover:border-[#7c3a2e] hover:text-[#7c3a2e] transition-colors text-sm font-medium"
-          >
-            Read Research
-          </Link>
+        <div style={{
+          background: '#f5f0e8',
+          border: '1px solid #e0d8c8',
+          borderRadius: '8px',
+          padding: '24px 48px',
+        }}>
+          <p style={{
+            fontFamily: 'Inter, sans-serif',
+            fontSize: '14px',
+            color: '#666',
+            marginBottom: '8px',
+          }}>
+            Translated into English
+          </p>
+          <p style={{
+            fontFamily: 'Cormorant Garamond, Georgia, serif',
+            fontSize: '48px',
+            fontWeight: 500,
+            color: '#9e4a3a',
+          }}>
+            Less than 2%
+          </p>
+        </div>
+        <p style={{
+          fontFamily: 'Inter, sans-serif',
+          fontSize: '13px',
+          color: '#999',
+          marginTop: '80px',
+        }}>
+          ↓ Scroll to explore the gap
+        </p>
+      </section>
+
+      {/* Section 2: The Language Landscape */}
+      <section style={{
+        padding: '100px 24px',
+        background: '#fff',
+        borderTop: '1px solid #e8e4dc',
+      }}>
+        <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+          <h2 style={{
+            fontFamily: 'Cormorant Garamond, Georgia, serif',
+            fontSize: '36px',
+            fontWeight: 400,
+            color: '#1a1612',
+            marginBottom: '16px',
+          }}>
+            Latin dominated European printing for two centuries
+          </h2>
+          <p style={{
+            fontFamily: 'Newsreader, Georgia, serif',
+            fontSize: '19px',
+            lineHeight: 1.7,
+            color: '#444',
+            marginBottom: '48px',
+            maxWidth: '680px',
+          }}>
+            From Gutenberg to Newton, Latin was the language of international scholarship.
+            Nearly a third of all books printed in early modern Europe were in Latin.
+          </p>
+
+          {/* Language bars */}
+          <figure style={{ marginBottom: '24px' }}>
+            <figcaption style={{
+              fontFamily: 'Inter, sans-serif',
+              fontSize: '12px',
+              letterSpacing: '0.05em',
+              color: '#888',
+              marginBottom: '20px',
+            }}>
+              LANGUAGES OF EUROPEAN PRINTING, 1450–1700
+            </figcaption>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+              {[
+                { lang: 'Latin', pct: 30.9, n: '503,486', highlight: true },
+                { lang: 'German', pct: 20.9, n: '340,521' },
+                { lang: 'French', pct: 14.8, n: '241,749' },
+                { lang: 'English', pct: 10.1, n: '164,280' },
+                { lang: 'Italian', pct: 7.0, n: '113,481' },
+                { lang: 'Dutch', pct: 7.0, n: '114,596' },
+                { lang: 'Spanish', pct: 6.0, n: '97,854' },
+              ].map((d) => (
+                <div key={d.lang} style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+                  <span style={{
+                    width: '70px',
+                    fontFamily: 'Inter, sans-serif',
+                    fontSize: '13px',
+                    color: d.highlight ? '#1a1612' : '#666',
+                    fontWeight: d.highlight ? 500 : 400,
+                  }}>{d.lang}</span>
+                  <div style={{ flex: 1, height: '28px', background: '#f5f5f3', borderRadius: '2px', overflow: 'hidden' }}>
+                    <div style={{
+                      height: '100%',
+                      width: `${d.pct * 3.2}%`,
+                      background: d.highlight ? '#9e4a3a' : '#c5beb2',
+                      borderRadius: '2px',
+                      transition: 'width 1s ease-out',
+                    }} />
+                  </div>
+                  <span style={{
+                    width: '80px',
+                    fontFamily: 'Inter, sans-serif',
+                    fontSize: '12px',
+                    color: '#888',
+                    textAlign: 'right',
+                  }}>{d.n}</span>
+                </div>
+              ))}
+            </div>
+            <p style={{
+              fontFamily: 'Inter, sans-serif',
+              fontSize: '11px',
+              color: '#aaa',
+              marginTop: '16px',
+            }}>
+              Source: Universal Short Title Catalogue, n=1,628,578
+            </p>
+          </figure>
         </div>
       </section>
 
-      {/* Data Visualization Section */}
-      <section className="bg-[#f0ebe3] py-16">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* Chart */}
-            <div className="bg-[#fffdf9] rounded-xl p-8 border border-[#e0d8cc]">
-              <h3 className="text-lg mb-6 text-[#1a1612]" style={{ fontFamily: 'Cormorant Garamond, serif', fontWeight: 600 }}>
-                Language Distribution, 1450–1700
-              </h3>
-              <div className="space-y-4">
-                {languages.map((lang) => (
-                  <div key={lang.name}>
-                    <div className="flex justify-between text-sm mb-1">
-                      <span className="text-[#3d352d]">{lang.name}</span>
-                      <span className="text-[#6b5f52] font-mono text-xs">
-                        {((lang.count / totalEditions) * 100).toFixed(1)}%
-                      </span>
-                    </div>
-                    <div className="h-3 bg-[#f0ebe3] rounded-full overflow-hidden">
-                      <div
-                        className="h-full rounded-full transition-all duration-500"
-                        style={{
-                          width: `${(lang.count / totalEditions) * 100}%`,
-                          backgroundColor: lang.color,
-                        }}
-                      />
-                    </div>
-                  </div>
-                ))}
-              </div>
-              <p className="text-xs text-[#6b5f52] mt-6 pt-4 border-t border-[#e0d8cc]">
-                Source: USTC Database, 1,628,578 editions
-              </p>
-            </div>
+      {/* Section 3: The Comparison */}
+      <section style={{
+        padding: '100px 24px',
+        background: '#fdfcf9',
+      }}>
+        <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+          <h2 style={{
+            fontFamily: 'Cormorant Garamond, Georgia, serif',
+            fontSize: '36px',
+            fontWeight: 400,
+            color: '#1a1612',
+            marginBottom: '16px',
+          }}>
+            Classical Latin is well-served. Renaissance Latin is not.
+          </h2>
+          <p style={{
+            fontFamily: 'Newsreader, Georgia, serif',
+            fontSize: '19px',
+            lineHeight: 1.7,
+            color: '#444',
+            marginBottom: '48px',
+            maxWidth: '680px',
+          }}>
+            The Loeb Classical Library has 500+ volumes of Cicero, Virgil, and Ovid.
+            But the actual bulk of the Latin corpus—Renaissance scholarship—is almost untouched.
+          </p>
 
-            {/* Stats */}
-            <div className="space-y-8">
-              <div>
-                <div className="text-5xl text-[#7c3a2e] mb-2" style={{ fontFamily: 'Cormorant Garamond, serif', fontWeight: 700 }}>
-                  503,486
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+            gap: '24px',
+          }}>
+            {[
+              { era: 'Classical', pct: 75, desc: 'Cicero, Virgil, Ovid, Seneca' },
+              { era: 'Church Fathers', pct: 65, desc: 'Augustine, Jerome, Ambrose' },
+              { era: 'Medieval', pct: 25, desc: 'Aquinas, scholastics' },
+              { era: 'Renaissance & Early Modern', pct: 2, desc: '500,000 works' },
+            ].map((d) => (
+              <div key={d.era} style={{
+                background: '#fff',
+                border: '1px solid #e8e4dc',
+                borderRadius: '8px',
+                padding: '24px',
+              }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '12px' }}>
+                  <span style={{
+                    fontFamily: 'Cormorant Garamond, Georgia, serif',
+                    fontSize: '20px',
+                    color: '#1a1612',
+                  }}>{d.era}</span>
+                  <span style={{
+                    fontFamily: 'Inter, sans-serif',
+                    fontSize: '24px',
+                    fontWeight: 600,
+                    color: d.pct < 10 ? '#9e4a3a' : '#666',
+                  }}>{d.pct}%</span>
                 </div>
-                <div className="text-[#3d352d]">Latin editions in the USTC</div>
-                <p className="text-sm text-[#6b5f52] mt-2">
-                  Theology, philosophy, law, medicine, poetry—the intellectual foundation of the modern world.
-                </p>
-              </div>
-              <div>
-                <div className="text-5xl text-[#9a7b4f] mb-2" style={{ fontFamily: 'Cormorant Garamond, serif', fontWeight: 700 }}>
-                  ~2%
+                <div style={{ height: '8px', background: '#f5f5f3', borderRadius: '4px', overflow: 'hidden', marginBottom: '12px' }}>
+                  <div style={{
+                    height: '100%',
+                    width: `${d.pct}%`,
+                    background: d.pct < 10 ? '#9e4a3a' : d.pct < 50 ? '#c9a86c' : '#8b9a7d',
+                    borderRadius: '4px',
+                  }} />
                 </div>
-                <div className="text-[#3d352d]">Have English translations</div>
-                <p className="text-sm text-[#6b5f52] mt-2">
-                  Most translations cover classical authors. Renaissance and early modern Latin remains inaccessible.
-                </p>
+                <p style={{
+                  fontFamily: 'Inter, sans-serif',
+                  fontSize: '12px',
+                  color: '#888',
+                }}>{d.desc}</p>
               </div>
-              <div>
-                <div className="text-5xl text-[#6b5f52] mb-2" style={{ fontFamily: 'Cormorant Garamond, serif', fontWeight: 700 }}>
-                  1670s
-                </div>
-                <div className="text-[#3d352d]">When German overtook Latin</div>
-                <p className="text-sm text-[#6b5f52] mt-2">
-                  Latin dominated European publishing for two centuries before vernaculars took over.
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Research Tracks */}
-      <section className="max-w-6xl mx-auto px-6 py-20">
-        <h2 className="text-3xl text-center mb-4" style={{ fontFamily: 'Cormorant Garamond, serif', fontWeight: 600 }}>
-          Current Research
-        </h2>
-        <p className="text-center text-[#6b5f52] mb-12 max-w-xl mx-auto">
-          Investigating the hidden libraries of the Renaissance through data analysis and AI translation
-        </p>
+      {/* Section 4: The Map Preview */}
+      <section style={{
+        padding: '100px 24px',
+        background: '#1a1612',
+        color: '#fff',
+      }}>
+        <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+          <h2 style={{
+            fontFamily: 'Cormorant Garamond, Georgia, serif',
+            fontSize: '36px',
+            fontWeight: 400,
+            color: '#fff',
+            marginBottom: '16px',
+          }}>
+            Printing spread across Europe in 250 years
+          </h2>
+          <p style={{
+            fontFamily: 'Newsreader, Georgia, serif',
+            fontSize: '19px',
+            lineHeight: 1.7,
+            color: 'rgba(255,255,255,0.7)',
+            marginBottom: '48px',
+            maxWidth: '680px',
+          }}>
+            From Mainz in 1454 to 700+ cities by 1700. Each dot represents a printing center.
+            Watch the spread of Latin scholarship.
+          </p>
 
-        <div className="grid md:grid-cols-3 gap-6">
-          <Link href="/blog/death-of-latin" className="group">
-            <article className="h-full p-6 bg-[#fffdf9] border border-[#e0d8cc] rounded-xl hover:border-[#7c3a2e] transition-colors">
-              <div className="text-xs text-[#9a7b4f] uppercase tracking-wider mb-3">Data Analysis</div>
-              <h3 className="text-xl mb-3 group-hover:text-[#7c3a2e] transition-colors" style={{ fontFamily: 'Cormorant Garamond, serif', fontWeight: 600 }}>
-                The Death of Latin
-              </h3>
-              <p className="text-[#6b5f52] text-sm leading-relaxed">
-                What 1.6 million books tell us about when Latin lost its dominance as Europe&apos;s lingua franca.
+          <Link href="/map" style={{ textDecoration: 'none' }}>
+            <div style={{
+              background: '#2a2622',
+              borderRadius: '12px',
+              padding: '60px',
+              textAlign: 'center',
+              border: '1px solid #3a3632',
+              cursor: 'pointer',
+              transition: 'border-color 0.2s',
+            }}>
+              <p style={{
+                fontFamily: 'Inter, sans-serif',
+                fontSize: '14px',
+                color: 'rgba(255,255,255,0.5)',
+                marginBottom: '16px',
+              }}>
+                Interactive visualization
               </p>
-            </article>
-          </Link>
-
-          <Link href="/blog/hunting-for-translations" className="group">
-            <article className="h-full p-6 bg-[#fffdf9] border border-[#e0d8cc] rounded-xl hover:border-[#7c3a2e] transition-colors">
-              <div className="text-xs text-[#9a7b4f] uppercase tracking-wider mb-3">Research</div>
-              <h3 className="text-xl mb-3 group-hover:text-[#7c3a2e] transition-colors" style={{ fontFamily: 'Cormorant Garamond, serif', fontWeight: 600 }}>
-                Mapping Translations
-              </h3>
-              <p className="text-[#6b5f52] text-sm leading-relaxed">
-                3,232 translation volumes catalogued across 45+ sources. What&apos;s been translated and what hasn&apos;t.
+              <p style={{
+                fontFamily: 'Cormorant Garamond, Georgia, serif',
+                fontSize: '28px',
+                color: '#c9a86c',
+                marginBottom: '24px',
+              }}>
+                Explore the Animated Map →
               </p>
-            </article>
-          </Link>
-
-          <Link href="/blog/esoteric-timeline" className="group">
-            <article className="h-full p-6 bg-[#fffdf9] border border-[#e0d8cc] rounded-xl hover:border-[#7c3a2e] transition-colors">
-              <div className="text-xs text-[#9a7b4f] uppercase tracking-wider mb-3">Visualization</div>
-              <h3 className="text-xl mb-3 group-hover:text-[#7c3a2e] transition-colors" style={{ fontFamily: 'Cormorant Garamond, serif', fontWeight: 600 }}>
-                Esoteric Timeline
-              </h3>
-              <p className="text-[#6b5f52] text-sm leading-relaxed">
-                280 years of hermetic, alchemical, and occult publishing from Ficino to the Rosicrucians.
-              </p>
-            </article>
-          </Link>
-        </div>
-
-        <div className="text-center mt-10">
-          <Link href="/blog" className="text-[#7c3a2e] hover:underline text-sm">
-            View all research →
+              <div style={{
+                display: 'flex',
+                justifyContent: 'center',
+                gap: '40px',
+              }}>
+                <div>
+                  <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '32px', fontWeight: 600, color: '#fff' }}>702</p>
+                  <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '12px', color: 'rgba(255,255,255,0.5)' }}>Printing centers</p>
+                </div>
+                <div>
+                  <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '32px', fontWeight: 600, color: '#fff' }}>250</p>
+                  <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '12px', color: 'rgba(255,255,255,0.5)' }}>Years of data</p>
+                </div>
+              </div>
+            </div>
           </Link>
         </div>
       </section>
 
-      {/* Translation Gap Visualization */}
-      <section className="bg-[#f0ebe3] py-16">
-        <div className="max-w-4xl mx-auto px-6">
-          <h2 className="text-3xl text-center mb-12" style={{ fontFamily: 'Cormorant Garamond, serif', fontWeight: 600 }}>
-            The Translation Gap by Period
+      {/* Section 5: The Forgotten */}
+      <section style={{
+        padding: '100px 24px',
+        background: '#fff',
+      }}>
+        <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+          <h2 style={{
+            fontFamily: 'Cormorant Garamond, Georgia, serif',
+            fontSize: '36px',
+            fontWeight: 400,
+            color: '#1a1612',
+            marginBottom: '16px',
+          }}>
+            Important thinkers you can&apos;t read
           </h2>
+          <p style={{
+            fontFamily: 'Newsreader, Georgia, serif',
+            fontSize: '19px',
+            lineHeight: 1.7,
+            color: '#444',
+            marginBottom: '48px',
+            maxWidth: '680px',
+          }}>
+            These thinkers shaped science, philosophy, and culture. Their Latin works
+            influenced generations. Yet most remain untranslated into English.
+          </p>
 
-          <div className="space-y-6">
-            {[
-              { period: "Classical (240 BCE – 600 CE)", translated: 75, label: "~75% translated" },
-              { period: "Patristic (100 – 800 CE)", translated: 65, label: "~65% translated" },
-              { period: "Medieval (600 – 1450)", translated: 25, label: "~25% translated" },
-              { period: "Renaissance (1450 – 1700)", translated: 2, label: "<2% translated" },
-              { period: "Scientific (1600 – 1900)", translated: 1, label: "<1% translated" },
-            ].map((item) => (
-              <div key={item.period} className="bg-[#fffdf9] rounded-lg p-5 border border-[#e0d8cc]">
-                <div className="flex justify-between items-center mb-2">
-                  <span className="text-[#1a1612] font-medium">{item.period}</span>
-                  <span className="text-sm text-[#6b5f52]">{item.label}</span>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+            {forgottenAuthors.map((author) => (
+              <div key={author.name} style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                padding: '24px 32px',
+                background: '#fdfcf9',
+                border: '1px solid #e8e4dc',
+                borderRadius: '8px',
+              }}>
+                <div>
+                  <h3 style={{
+                    fontFamily: 'Cormorant Garamond, Georgia, serif',
+                    fontSize: '24px',
+                    fontWeight: 500,
+                    color: '#1a1612',
+                    marginBottom: '4px',
+                  }}>{author.name}</h3>
+                  <p style={{
+                    fontFamily: 'Inter, sans-serif',
+                    fontSize: '13px',
+                    color: '#888',
+                  }}>{author.field}</p>
                 </div>
-                <div className="h-4 bg-[#f0ebe3] rounded-full overflow-hidden">
-                  <div
-                    className="h-full rounded-full"
-                    style={{
-                      width: `${item.translated}%`,
-                      backgroundColor: item.translated > 50 ? '#7c3a2e' : item.translated > 10 ? '#9a7b4f' : '#c9bfb0',
-                    }}
-                  />
+                <div style={{
+                  background: '#9e4a3a',
+                  color: '#fff',
+                  padding: '8px 16px',
+                  borderRadius: '4px',
+                  fontFamily: 'Inter, sans-serif',
+                  fontSize: '12px',
+                  fontWeight: 500,
+                }}>
+                  No full translation
                 </div>
               </div>
             ))}
           </div>
 
-          <p className="text-center text-[#6b5f52] text-sm mt-8">
-            The vast majority of Latin literature is early modern—and largely untranslated.
+          <p style={{ marginTop: '32px' }}>
+            <Link href="/blog/forgotten-authors" style={{
+              fontFamily: 'Inter, sans-serif',
+              fontSize: '14px',
+              color: '#9e4a3a',
+            }}>
+              See more untranslated thinkers →
+            </Link>
           </p>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="max-w-4xl mx-auto px-6 py-20 text-center">
-        <h2 className="text-3xl mb-4" style={{ fontFamily: 'Cormorant Garamond, serif', fontWeight: 600 }}>
-          Help Map the Hidden Libraries
-        </h2>
-        <p className="text-[#6b5f52] mb-8 max-w-xl mx-auto">
-          We&apos;re building tools to identify untranslated works and prioritize them for AI-assisted translation.
-          The data and code are open source.
-        </p>
-        <div className="flex gap-4 justify-center">
-          <Link
-            href="/roadmap"
-            className="px-6 py-3 bg-[#7c3a2e] text-[#faf7f2] rounded-lg hover:bg-[#a65846] transition-colors text-sm font-medium"
-          >
-            View Translation Roadmap
+      {/* Section 6: What's Lost */}
+      <section style={{
+        padding: '100px 24px',
+        background: '#fdfcf9',
+      }}>
+        <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+          <h2 style={{
+            fontFamily: 'Cormorant Garamond, Georgia, serif',
+            fontSize: '36px',
+            fontWeight: 400,
+            color: '#1a1612',
+            marginBottom: '16px',
+          }}>
+            What knowledge is locked away?
+          </h2>
+          <p style={{
+            fontFamily: 'Newsreader, Georgia, serif',
+            fontSize: '19px',
+            lineHeight: 1.7,
+            color: '#444',
+            marginBottom: '48px',
+            maxWidth: '680px',
+          }}>
+            The untranslated corpus spans every field of Renaissance thought.
+            History of science, religious history, legal history, philosophy—all depend on texts
+            most scholars cannot read.
+          </p>
+
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+            gap: '16px',
+          }}>
+            {subjects.map((subject) => (
+              <div key={subject.name} style={{
+                background: '#fff',
+                border: '1px solid #e8e4dc',
+                borderRadius: '8px',
+                padding: '20px 24px',
+              }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '8px' }}>
+                  <span style={{
+                    fontFamily: 'Cormorant Garamond, Georgia, serif',
+                    fontSize: '18px',
+                    color: '#1a1612',
+                  }}>{subject.name}</span>
+                  <span style={{
+                    fontFamily: 'Inter, sans-serif',
+                    fontSize: '12px',
+                    color: '#9e4a3a',
+                    fontWeight: 500,
+                  }}>{subject.translated} translated</span>
+                </div>
+                <p style={{
+                  fontFamily: 'Inter, sans-serif',
+                  fontSize: '13px',
+                  color: '#888',
+                }}>~{subject.count.toLocaleString()} works</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Section 7: The Path Forward */}
+      <section style={{
+        padding: '100px 24px',
+        background: '#fff',
+        borderTop: '1px solid #e8e4dc',
+      }}>
+        <div style={{ maxWidth: '680px', margin: '0 auto', textAlign: 'center' }}>
+          <h2 style={{
+            fontFamily: 'Cormorant Garamond, Georgia, serif',
+            fontSize: '36px',
+            fontWeight: 400,
+            color: '#1a1612',
+            marginBottom: '24px',
+          }}>
+            This is solvable.
+          </h2>
+          <p style={{
+            fontFamily: 'Newsreader, Georgia, serif',
+            fontSize: '19px',
+            lineHeight: 1.7,
+            color: '#444',
+            marginBottom: '24px',
+          }}>
+            Digitization infrastructure exists. AI-assisted translation is advancing rapidly.
+            The scholarly apparatus for identifying what matters is in place.
+          </p>
+          <p style={{
+            fontFamily: 'Newsreader, Georgia, serif',
+            fontSize: '19px',
+            lineHeight: 1.7,
+            color: '#444',
+            marginBottom: '48px',
+          }}>
+            What&apos;s missing is coordinated effort and funding. A systematic program could
+            transform access to Renaissance thought within a decade.
+          </p>
+
+          <Link href="/roadmap" style={{
+            fontFamily: 'Inter, sans-serif',
+            fontSize: '14px',
+            color: '#9e4a3a',
+            textDecoration: 'none',
+          }}>
+            See our translation priorities →
           </Link>
+        </div>
+      </section>
+
+      {/* Section 8: The Ask */}
+      <section style={{
+        padding: '100px 24px',
+        background: '#1a1612',
+        color: '#fff',
+      }}>
+        <div style={{ maxWidth: '680px', margin: '0 auto', textAlign: 'center' }}>
+          <p style={{
+            fontFamily: 'Inter, sans-serif',
+            fontSize: '12px',
+            letterSpacing: '0.15em',
+            color: 'rgba(255,255,255,0.5)',
+            marginBottom: '24px',
+          }}>
+            A PROJECT OF THE EMBASSY OF THE FREE MIND
+          </p>
+          <h2 style={{
+            fontFamily: 'Cormorant Garamond, Georgia, serif',
+            fontSize: '42px',
+            fontWeight: 400,
+            color: '#fff',
+            marginBottom: '24px',
+            lineHeight: 1.2,
+          }}>
+            Create a second Renaissance by translating the first
+          </h2>
+          <p style={{
+            fontFamily: 'Newsreader, Georgia, serif',
+            fontSize: '19px',
+            lineHeight: 1.7,
+            color: 'rgba(255,255,255,0.7)',
+            marginBottom: '24px',
+          }}>
+            The original Renaissance was sparked by rediscovering ancient texts.
+            Half a million more are waiting. The <a href="https://www.ancientwisdomtrust.org/become-a-patron" target="_blank" rel="noopener noreferrer" style={{ color: '#c9a86c' }}>Ancient Wisdom Trust</a> is working to
+            unlock them—through cataloging, digitization, and translation.
+          </p>
+          <p style={{
+            fontFamily: 'Newsreader, Georgia, serif',
+            fontSize: '17px',
+            lineHeight: 1.7,
+            color: 'rgba(255,255,255,0.5)',
+            marginBottom: '48px',
+          }}>
+            Translations are published freely at <a href="https://sourcelibrary.org" target="_blank" rel="noopener noreferrer" style={{ color: 'rgba(255,255,255,0.7)' }}>Source Library</a>.
+          </p>
+
           <a
-            href="https://github.com/JDerekLomas/ancient-wisdom-research-labs"
-            className="px-6 py-3 border border-[#c9bfb0] text-[#3d352d] rounded-lg hover:border-[#7c3a2e] hover:text-[#7c3a2e] transition-colors text-sm font-medium"
+            href="https://www.ancientwisdomtrust.org/become-a-patron"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: 'inline-block',
+              fontFamily: 'Inter, sans-serif',
+              fontSize: '14px',
+              fontWeight: 500,
+              color: '#1a1612',
+              background: '#c9a86c',
+              padding: '16px 48px',
+              borderRadius: '4px',
+              textDecoration: 'none',
+              marginBottom: '48px',
+            }}
           >
-            GitHub Repository
+            Support This Work
           </a>
+
+          <div style={{
+            display: 'flex',
+            justifyContent: 'center',
+            gap: '48px',
+            paddingTop: '48px',
+            borderTop: '1px solid rgba(255,255,255,0.1)',
+          }}>
+            <Link href="/explore" style={{ fontFamily: 'Inter, sans-serif', fontSize: '13px', color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Explore the Data</Link>
+            <Link href="/roadmap" style={{ fontFamily: 'Inter, sans-serif', fontSize: '13px', color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Translation Roadmap</Link>
+            <Link href="/blog" style={{ fontFamily: 'Inter, sans-serif', fontSize: '13px', color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Research Essays</Link>
+            <Link href="/about" style={{ fontFamily: 'Inter, sans-serif', fontSize: '13px', color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>About</Link>
+          </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-[#e0d8cc] py-10">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-            <div className="text-center md:text-left">
-              <div className="text-[#1a1612] font-medium" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
-                Ancient Wisdom Research Labs
-              </div>
-              <div className="text-[#6b5f52] text-sm">
-                Data from Universal Short Title Catalogue, University of St Andrews
-              </div>
-            </div>
-            <div className="flex gap-6 text-sm text-[#6b5f52]">
-              <Link href="/explore" className="hover:text-[#1a1612] transition-colors">Data</Link>
-              <Link href="/blog" className="hover:text-[#1a1612] transition-colors">Research</Link>
-              <Link href="/roadmap" className="hover:text-[#1a1612] transition-colors">Roadmap</Link>
-              <Link href="/blog/methodology" className="hover:text-[#1a1612] transition-colors">Methods</Link>
-            </div>
-          </div>
-        </div>
+      <footer style={{
+        padding: '40px 24px',
+        background: '#151311',
+        textAlign: 'center',
+      }}>
+        <p style={{
+          fontFamily: 'Inter, sans-serif',
+          fontSize: '12px',
+          color: 'rgba(255,255,255,0.4)',
+        }}>
+          Data from the <a href="https://ustc.ac.uk" style={{ color: 'rgba(255,255,255,0.5)' }}>Universal Short Title Catalogue</a>, University of St Andrews
+        </p>
       </footer>
-    </div>
+    </main>
   );
 }

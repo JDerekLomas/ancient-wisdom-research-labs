@@ -573,31 +573,31 @@ const tierLabels: Record<string, string> = {
   tier_11_early_science: "BPH: Early Science"
 };
 
-const tierColors: Record<string, string> = {
-  tier_1_highest_priority: "border-violet-500 bg-violet-500/10",
-  tier_2_lutheran_theology: "border-blue-500 bg-blue-500/10",
-  tier_3_reformed_theology: "border-emerald-500 bg-emerald-500/10",
-  tier_4_legal_political: "border-amber-500 bg-amber-500/10",
-  tier_5_grammar_pedagogy: "border-rose-500 bg-rose-500/10",
-  tier_6_hermetica: "border-yellow-500 bg-yellow-500/10",
-  tier_7_alchemy: "border-orange-500 bg-orange-500/10",
-  tier_8_kabbalah: "border-purple-500 bg-purple-500/10",
-  tier_9_rosicrucian: "border-pink-500 bg-pink-500/10",
-  tier_10_natural_magic: "border-cyan-500 bg-cyan-500/10",
-  tier_11_early_science: "border-teal-500 bg-teal-500/10"
+const tierColors: Record<string, { border: string; bg: string }> = {
+  tier_1_highest_priority: { border: "#9e4a3a", bg: "#9e4a3a15" },
+  tier_2_lutheran_theology: { border: "#546b8a", bg: "#546b8a15" },
+  tier_3_reformed_theology: { border: "#8b9a7d", bg: "#8b9a7d15" },
+  tier_4_legal_political: { border: "#c9a86c", bg: "#c9a86c15" },
+  tier_5_grammar_pedagogy: { border: "#9e4a3a", bg: "#9e4a3a15" },
+  tier_6_hermetica: { border: "#c9a86c", bg: "#c9a86c15" },
+  tier_7_alchemy: { border: "#c9a86c", bg: "#c9a86c15" },
+  tier_8_kabbalah: { border: "#9e4a3a", bg: "#9e4a3a15" },
+  tier_9_rosicrucian: { border: "#9e4a3a", bg: "#9e4a3a15" },
+  tier_10_natural_magic: { border: "#546b8a", bg: "#546b8a15" },
+  tier_11_early_science: { border: "#8b9a7d", bg: "#8b9a7d15" }
 };
 
 const difficultyColors: Record<string, string> = {
-  moderate: "text-green-400",
-  difficult: "text-yellow-400",
-  very_difficult: "text-red-400"
+  moderate: "#8b9a7d",
+  difficult: "#c9a86c",
+  very_difficult: "#9e4a3a"
 };
 
-const statusColors: Record<string, string> = {
-  completely_untranslated: "bg-red-500/20 text-red-300",
-  minimal: "bg-orange-500/20 text-orange-300",
-  excerpts_only: "bg-yellow-500/20 text-yellow-300",
-  partially_translated: "bg-blue-500/20 text-blue-300"
+const statusColors: Record<string, { bg: string; color: string }> = {
+  completely_untranslated: { bg: "#9e4a3a20", color: "#9e4a3a" },
+  minimal: { bg: "#c9a86c20", color: "#c9a86c" },
+  excerpts_only: { bg: "#c9a86c20", color: "#c9a86c" },
+  partially_translated: { bg: "#546b8a20", color: "#546b8a" }
 };
 
 export default function RoadmapPage() {
@@ -658,141 +658,160 @@ export default function RoadmapPage() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-950 text-white">
-      <header className="border-b border-slate-800">
-        <div className="max-w-6xl mx-auto px-8 py-6">
-          <Link href="/" className="text-violet-400 hover:underline text-sm">
-            &larr; Back to visualization
+    <div style={{ minHeight: '100vh', background: '#fdfcf9', color: '#1a1612' }}>
+      <header style={{ borderBottom: '1px solid #e8e4dc' }}>
+        <div style={{ maxWidth: '1152px', margin: '0 auto', padding: '24px 32px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <Link href="/" style={{ color: '#9e4a3a', textDecoration: 'none', fontSize: '12px', letterSpacing: '0.05em', fontFamily: 'Inter, sans-serif', fontWeight: 500 }}>
+            &larr; ANCIENT WISDOM RESEARCH
           </Link>
-          <h1 className="text-4xl font-bold mt-4">Translation Roadmap</h1>
-          <p className="text-slate-400 mt-2">
+          <a
+            href="https://www.ancientwisdomtrust.org/become-a-patron"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              padding: '8px 16px',
+              background: '#9e4a3a',
+              color: '#fff',
+              borderRadius: '4px',
+              textDecoration: 'none',
+              fontSize: '13px',
+              fontFamily: 'Inter, sans-serif',
+              fontWeight: 500
+            }}
+          >
+            Support This Work
+          </a>
+        </div>
+        <div style={{ maxWidth: '1152px', margin: '0 auto', padding: '0 32px 24px 32px' }}>
+          <h1 style={{ fontSize: '42px', fontFamily: 'Cormorant Garamond, serif', fontWeight: 600, marginTop: '16px', marginBottom: '8px' }}>Translation Roadmap</h1>
+          <p style={{ color: '#444', fontFamily: 'Newsreader, serif', marginTop: '8px' }}>
             Prioritized Latin works for SourceLibrary.org
           </p>
-          <p className="text-slate-500 text-sm mt-2">
-            USTC contains <span className="text-violet-400 font-medium">1.65 million editions</span> (all languages, 1450-1700)
-            {" "}| <span className="text-violet-400 font-medium">533,000+ Latin editions</span>
-            {" "}| Est. <span className="text-violet-400 font-medium">~100,000 unique Latin works</span>
+          <p style={{ color: '#888', fontSize: '14px', fontFamily: 'Inter, sans-serif', marginTop: '8px' }}>
+            USTC contains <span style={{ color: '#9e4a3a', fontWeight: 500 }}>1.65 million editions</span> (all languages, 1450-1700)
+            {" "}| <span style={{ color: '#9e4a3a', fontWeight: 500 }}>533,000+ Latin editions</span>
+            {" "}| Est. <span style={{ color: '#9e4a3a', fontWeight: 500 }}>~100,000 unique Latin works</span>
           </p>
         </div>
       </header>
 
-      <main className="max-w-6xl mx-auto px-8 py-12">
+      <main style={{ maxWidth: '1152px', margin: '0 auto', padding: '48px 32px' }}>
         {/* Scoring explanation */}
-        <section className="mb-12 bg-slate-900 border border-slate-700 rounded-lg p-6">
-          <h2 className="text-xl font-semibold mb-4">Scoring Methodology</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+        <section style={{ marginBottom: '48px', background: '#f5f0e8', border: '1px solid #e0d8c8', borderRadius: '8px', padding: '24px' }}>
+          <h2 style={{ fontSize: '24px', fontFamily: 'Cormorant Garamond, serif', fontWeight: 600, marginBottom: '16px' }}>Scoring Methodology</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '16px', fontSize: '14px', fontFamily: 'Inter, sans-serif' }}>
             <div>
-              <span className="text-violet-400 font-medium">Historical Impact</span>
-              <span className="text-slate-500 ml-2">(30%)</span>
-              <p className="text-slate-400 mt-1">USTC edition count as proxy for importance</p>
+              <span style={{ color: '#9e4a3a', fontWeight: 500 }}>Historical Impact</span>
+              <span style={{ color: '#888', marginLeft: '8px' }}>(30%)</span>
+              <p style={{ color: '#444', marginTop: '4px' }}>USTC edition count as proxy for importance</p>
             </div>
             <div>
-              <span className="text-violet-400 font-medium">Translation Gap</span>
-              <span className="text-slate-500 ml-2">(30%)</span>
-              <p className="text-slate-400 mt-1">10 = completely untranslated</p>
+              <span style={{ color: '#9e4a3a', fontWeight: 500 }}>Translation Gap</span>
+              <span style={{ color: '#888', marginLeft: '8px' }}>(30%)</span>
+              <p style={{ color: '#444', marginTop: '4px' }}>10 = completely untranslated</p>
             </div>
             <div>
-              <span className="text-violet-400 font-medium">Feasibility</span>
-              <span className="text-slate-500 ml-2">(20%)</span>
-              <p className="text-slate-400 mt-1">Length and difficulty for translator</p>
+              <span style={{ color: '#9e4a3a', fontWeight: 500 }}>Feasibility</span>
+              <span style={{ color: '#888', marginLeft: '8px' }}>(20%)</span>
+              <p style={{ color: '#444', marginTop: '4px' }}>Length and difficulty for translator</p>
             </div>
             <div>
-              <span className="text-violet-400 font-medium">Audience</span>
-              <span className="text-slate-500 ml-2">(20%)</span>
-              <p className="text-slate-400 mt-1">Modern scholarly and general interest</p>
+              <span style={{ color: '#9e4a3a', fontWeight: 500 }}>Audience</span>
+              <span style={{ color: '#888', marginLeft: '8px' }}>(20%)</span>
+              <p style={{ color: '#444', marginTop: '4px' }}>Modern scholarly and general interest</p>
             </div>
           </div>
         </section>
 
         {/* Recommended sequence */}
-        <section className="mb-12">
-          <h2 className="text-2xl font-semibold mb-4">Recommended Sequence</h2>
+        <section style={{ marginBottom: '48px' }}>
+          <h2 style={{ fontSize: '32px', fontFamily: 'Cormorant Garamond, serif', fontWeight: 600, marginBottom: '16px' }}>Recommended Sequence</h2>
 
           {/* Track A: General */}
-          <div className="mb-8">
-            <h3 className="text-lg font-medium text-slate-300 mb-3">Track A: General Renaissance/Reformation</h3>
-            <div className="grid md:grid-cols-3 gap-4">
-              <div className="bg-slate-900 border border-violet-500/50 rounded-lg p-4">
-                <h4 className="text-violet-400 font-semibold mb-2">Phase 1: Foundation</h4>
-                <ul className="text-sm text-slate-300 space-y-1">
-                  <li>Donatus - Ars Major (quick win)</li>
+          <div style={{ marginBottom: '32px' }}>
+            <h3 style={{ fontSize: '20px', fontFamily: 'Cormorant Garamond, serif', color: '#444', marginBottom: '12px' }}>Track A: General Renaissance/Reformation</h3>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '16px' }}>
+              <div style={{ background: '#fff', border: '1px solid #e8e4dc', borderRadius: '8px', padding: '16px' }}>
+                <h4 style={{ color: '#9e4a3a', fontFamily: 'Cormorant Garamond, serif', fontSize: '18px', fontWeight: 600, marginBottom: '8px' }}>Phase 1: Foundation</h4>
+                <ul style={{ fontSize: '14px', fontFamily: 'Newsreader, serif', color: '#444', listStyle: 'none', padding: 0, margin: 0 }}>
+                  <li style={{ marginBottom: '4px' }}>Donatus - Ars Major (quick win)</li>
                   <li>Mantuanus - Parthenice Mariana</li>
                 </ul>
-                <p className="text-slate-500 text-xs mt-2">Build credibility and audience</p>
+                <p style={{ color: '#888', fontSize: '12px', fontFamily: 'Inter, sans-serif', marginTop: '8px' }}>Build credibility and audience</p>
               </div>
-              <div className="bg-slate-900 border border-blue-500/50 rounded-lg p-4">
-                <h4 className="text-blue-400 font-semibold mb-2">Phase 2: Expansion</h4>
-                <ul className="text-sm text-slate-300 space-y-1">
-                  <li>Villa Dei - Doctrinale</li>
-                  <li>Vives - De Anima et Vita</li>
+              <div style={{ background: '#fff', border: '1px solid #e8e4dc', borderRadius: '8px', padding: '16px' }}>
+                <h4 style={{ color: '#546b8a', fontFamily: 'Cormorant Garamond, serif', fontSize: '18px', fontWeight: 600, marginBottom: '8px' }}>Phase 2: Expansion</h4>
+                <ul style={{ fontSize: '14px', fontFamily: 'Newsreader, serif', color: '#444', listStyle: 'none', padding: 0, margin: 0 }}>
+                  <li style={{ marginBottom: '4px' }}>Villa Dei - Doctrinale</li>
+                  <li style={{ marginBottom: '4px' }}>Vives - De Anima et Vita</li>
                   <li>Hoornbeek - De Ratione Concionandi</li>
                 </ul>
-                <p className="text-slate-500 text-xs mt-2">Mix of genres and audiences</p>
+                <p style={{ color: '#888', fontSize: '12px', fontFamily: 'Inter, sans-serif', marginTop: '8px' }}>Mix of genres and audiences</p>
               </div>
-              <div className="bg-slate-900 border border-emerald-500/50 rounded-lg p-4">
-                <h4 className="text-emerald-400 font-semibold mb-2">Phase 3: Major Projects</h4>
-                <ul className="text-sm text-slate-300 space-y-1">
-                  <li>Conring - De Origine Juris Germanici</li>
-                  <li>Lipsius - Collected Letters</li>
+              <div style={{ background: '#fff', border: '1px solid #e8e4dc', borderRadius: '8px', padding: '16px' }}>
+                <h4 style={{ color: '#8b9a7d', fontFamily: 'Cormorant Garamond, serif', fontSize: '18px', fontWeight: 600, marginBottom: '8px' }}>Phase 3: Major Projects</h4>
+                <ul style={{ fontSize: '14px', fontFamily: 'Newsreader, serif', color: '#444', listStyle: 'none', padding: 0, margin: 0 }}>
+                  <li style={{ marginBottom: '4px' }}>Conring - De Origine Juris Germanici</li>
+                  <li style={{ marginBottom: '4px' }}>Lipsius - Collected Letters</li>
                   <li>Nebrija - Introductiones Latinae</li>
                 </ul>
-                <p className="text-slate-500 text-xs mt-2">Establish as serious resource</p>
+                <p style={{ color: '#888', fontSize: '12px', fontFamily: 'Inter, sans-serif', marginTop: '8px' }}>Establish as serious resource</p>
               </div>
             </div>
           </div>
 
           {/* Track B: BPH/Esoteric */}
           <div>
-            <h3 className="text-lg font-medium text-slate-300 mb-3">Track B: BPH/Esoteric - Hermetic, Alchemical, Kabbalistic</h3>
-            <div className="grid md:grid-cols-4 gap-4">
-              <div className="bg-slate-900 border border-yellow-500/50 rounded-lg p-4">
-                <h4 className="text-yellow-400 font-semibold mb-2">Phase 1: Quick Wins</h4>
-                <ul className="text-sm text-slate-300 space-y-1">
-                  <li>Schweighardt - Speculum (8.2)</li>
+            <h3 style={{ fontSize: '20px', fontFamily: 'Cormorant Garamond, serif', color: '#444', marginBottom: '12px' }}>Track B: BPH/Esoteric - Hermetic, Alchemical, Kabbalistic</h3>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '16px' }}>
+              <div style={{ background: '#fff', border: '1px solid #e8e4dc', borderRadius: '8px', padding: '16px' }}>
+                <h4 style={{ color: '#c9a86c', fontFamily: 'Cormorant Garamond, serif', fontSize: '18px', fontWeight: 600, marginBottom: '8px' }}>Phase 1: Quick Wins</h4>
+                <ul style={{ fontSize: '14px', fontFamily: 'Newsreader, serif', color: '#444', listStyle: 'none', padding: 0, margin: 0 }}>
+                  <li style={{ marginBottom: '4px' }}>Schweighardt - Speculum (8.2)</li>
                   <li>Maier - Atalanta fugiens</li>
                 </ul>
-                <p className="text-slate-500 text-xs mt-2">Short Rosicrucian + emblem book</p>
+                <p style={{ color: '#888', fontSize: '12px', fontFamily: 'Inter, sans-serif', marginTop: '8px' }}>Short Rosicrucian + emblem book</p>
               </div>
-              <div className="bg-slate-900 border border-orange-500/50 rounded-lg p-4">
-                <h4 className="text-orange-400 font-semibold mb-2">Phase 2: Foundational</h4>
-                <ul className="text-sm text-slate-300 space-y-1">
-                  <li>Severinus - Idea medicinae (8.1)</li>
-                  <li>Reuchlin - De verbo mirifico</li>
+              <div style={{ background: '#fff', border: '1px solid #e8e4dc', borderRadius: '8px', padding: '16px' }}>
+                <h4 style={{ color: '#c9a86c', fontFamily: 'Cormorant Garamond, serif', fontSize: '18px', fontWeight: 600, marginBottom: '8px' }}>Phase 2: Foundational</h4>
+                <ul style={{ fontSize: '14px', fontFamily: 'Newsreader, serif', color: '#444', listStyle: 'none', padding: 0, margin: 0 }}>
+                  <li style={{ marginBottom: '4px' }}>Severinus - Idea medicinae (8.1)</li>
+                  <li style={{ marginBottom: '4px' }}>Reuchlin - De verbo mirifico</li>
                   <li>Steuco - De perenni philosophia</li>
                 </ul>
-                <p className="text-slate-500 text-xs mt-2">Core BPH themes</p>
+                <p style={{ color: '#888', fontSize: '12px', fontFamily: 'Inter, sans-serif', marginTop: '8px' }}>Core BPH themes</p>
               </div>
-              <div className="bg-slate-900 border border-purple-500/50 rounded-lg p-4">
-                <h4 className="text-purple-400 font-semibold mb-2">Phase 3: Major Works</h4>
-                <ul className="text-sm text-slate-300 space-y-1">
-                  <li>Patrizi - Nova de universis</li>
-                  <li>Khunrath - Amphitheatrum</li>
+              <div style={{ background: '#fff', border: '1px solid #e8e4dc', borderRadius: '8px', padding: '16px' }}>
+                <h4 style={{ color: '#9e4a3a', fontFamily: 'Cormorant Garamond, serif', fontSize: '18px', fontWeight: 600, marginBottom: '8px' }}>Phase 3: Major Works</h4>
+                <ul style={{ fontSize: '14px', fontFamily: 'Newsreader, serif', color: '#444', listStyle: 'none', padding: 0, margin: 0 }}>
+                  <li style={{ marginBottom: '4px' }}>Patrizi - Nova de universis</li>
+                  <li style={{ marginBottom: '4px' }}>Khunrath - Amphitheatrum</li>
                   <li>Giorgi - De harmonia mundi</li>
                 </ul>
-                <p className="text-slate-500 text-xs mt-2">Landmark translations</p>
+                <p style={{ color: '#888', fontSize: '12px', fontFamily: 'Inter, sans-serif', marginTop: '8px' }}>Landmark translations</p>
               </div>
-              <div className="bg-slate-900 border border-cyan-500/50 rounded-lg p-4">
-                <h4 className="text-cyan-400 font-semibold mb-2">Phase 4: Long-term</h4>
-                <ul className="text-sm text-slate-300 space-y-1">
-                  <li>Theatrum Chemicum (selections)</li>
-                  <li>Fludd - Utriusque Cosmi</li>
+              <div style={{ background: '#fff', border: '1px solid #e8e4dc', borderRadius: '8px', padding: '16px' }}>
+                <h4 style={{ color: '#546b8a', fontFamily: 'Cormorant Garamond, serif', fontSize: '18px', fontWeight: 600, marginBottom: '8px' }}>Phase 4: Long-term</h4>
+                <ul style={{ fontSize: '14px', fontFamily: 'Newsreader, serif', color: '#444', listStyle: 'none', padding: 0, margin: 0 }}>
+                  <li style={{ marginBottom: '4px' }}>Theatrum Chemicum (selections)</li>
+                  <li style={{ marginBottom: '4px' }}>Fludd - Utriusque Cosmi</li>
                   <li>Kircher - Oedipus Aegyptiacus</li>
                 </ul>
-                <p className="text-slate-500 text-xs mt-2">Encyclopedic works</p>
+                <p style={{ color: '#888', fontSize: '12px', fontFamily: 'Inter, sans-serif', marginTop: '8px' }}>Encyclopedic works</p>
               </div>
             </div>
           </div>
         </section>
 
         {/* Filters */}
-        <section className="mb-8">
-          <div className="flex flex-wrap gap-4 items-center">
+        <section style={{ marginBottom: '32px' }}>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px', alignItems: 'center' }}>
             <div>
-              <label className="text-sm text-slate-400 mr-2">Filter by tier:</label>
+              <label style={{ fontSize: '13px', fontFamily: 'Inter, sans-serif', color: '#888', marginRight: '8px' }}>Filter by tier:</label>
               <select
                 value={selectedTier || ""}
                 onChange={(e) => setSelectedTier(e.target.value || null)}
-                className="bg-slate-800 border border-slate-700 rounded px-3 py-1 text-sm"
+                style={{ background: '#fff', border: '1px solid #e8e4dc', borderRadius: '4px', padding: '6px 12px', fontSize: '14px', fontFamily: 'Inter, sans-serif' }}
               >
                 <option value="">All tiers</option>
                 {Object.entries(tierLabels).map(([key, label]) => (
@@ -801,11 +820,11 @@ export default function RoadmapPage() {
               </select>
             </div>
             <div>
-              <label className="text-sm text-slate-400 mr-2">Sort by:</label>
+              <label style={{ fontSize: '13px', fontFamily: 'Inter, sans-serif', color: '#888', marginRight: '8px' }}>Sort by:</label>
               <select
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value as "score" | "editions" | "feasibility")}
-                className="bg-slate-800 border border-slate-700 rounded px-3 py-1 text-sm"
+                style={{ background: '#fff', border: '1px solid #e8e4dc', borderRadius: '4px', padding: '6px 12px', fontSize: '14px', fontFamily: 'Inter, sans-serif' }}
               >
                 <option value="score">Total Score</option>
                 <option value="editions">USTC Editions</option>
@@ -817,116 +836,138 @@ export default function RoadmapPage() {
 
         {/* Works list */}
         <section>
-          <h2 className="text-2xl font-semibold mb-4">
+          <h2 style={{ fontSize: '32px', fontFamily: 'Cormorant Garamond, serif', fontWeight: 600, marginBottom: '16px' }}>
             {selectedTier ? tierLabels[selectedTier] : "All Works"}
-            <span className="text-slate-500 text-lg ml-2">({getWorksToDisplay().length} works)</span>
+            <span style={{ color: '#888', fontSize: '20px', marginLeft: '8px', fontFamily: 'Inter, sans-serif' }}>({getWorksToDisplay().length} works)</span>
           </h2>
-          <div className="space-y-4">
-            {getWorksToDisplay().map((work) => (
-              <div
-                key={work.id}
-                className={`border rounded-lg p-6 ${tierColors[work.tier] || "border-slate-700"}`}
-              >
-                <div className="flex justify-between items-start mb-3">
-                  <div>
-                    <h3 className="text-xl font-semibold text-white">{work.title}</h3>
-                    <p className="text-slate-400">
-                      {work.author}
-                      {work.author_dates && <span className="text-slate-500"> ({work.author_dates})</span>}
-                      {work.original_date && <span className="text-slate-500"> &middot; {work.original_date}</span>}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+            {getWorksToDisplay().map((work) => {
+              const colors = tierColors[work.tier] || { border: '#e8e4dc', bg: '#fff' };
+              return (
+                <div
+                  key={work.id}
+                  style={{
+                    border: `1px solid ${colors.border}`,
+                    background: colors.bg,
+                    borderRadius: '8px',
+                    padding: '24px'
+                  }}
+                >
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'start', marginBottom: '12px' }}>
+                    <div>
+                      <h3 style={{ fontSize: '24px', fontFamily: 'Cormorant Garamond, serif', fontWeight: 600, color: '#1a1612', marginBottom: '4px' }}>{work.title}</h3>
+                      <p style={{ color: '#444', fontFamily: 'Newsreader, serif', fontSize: '16px' }}>
+                        {work.author}
+                        {work.author_dates && <span style={{ color: '#888' }}> ({work.author_dates})</span>}
+                        {work.original_date && <span style={{ color: '#888' }}> · {work.original_date}</span>}
+                      </p>
+                    </div>
+                    <div style={{ textAlign: 'right' }}>
+                      <div style={{ fontSize: '28px', fontWeight: 600, color: '#9e4a3a', fontFamily: 'Inter, sans-serif' }}>
+                        {work.scores?.total_score?.toFixed(1)}
+                      </div>
+                      <div style={{ fontSize: '11px', color: '#888', fontFamily: 'Inter, sans-serif' }}>score</div>
+                    </div>
+                  </div>
+
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginBottom: '16px' }}>
+                    {work.genre && (
+                      <span style={{ padding: '4px 10px', background: '#f5f0e8', borderRadius: '4px', fontSize: '12px', fontFamily: 'Inter, sans-serif', color: '#444' }}>
+                        {work.genre}
+                      </span>
+                    )}
+                    {work.ustc_editions && (
+                      <span style={{ padding: '4px 10px', background: '#f5f0e8', borderRadius: '4px', fontSize: '12px', fontFamily: 'Inter, sans-serif', color: '#444' }}>
+                        {work.ustc_editions.toLocaleString()} USTC editions
+                      </span>
+                    )}
+                    {work.language_difficulty && (
+                      <span style={{
+                        padding: '4px 10px',
+                        background: '#f5f0e8',
+                        borderRadius: '4px',
+                        fontSize: '12px',
+                        fontFamily: 'Inter, sans-serif',
+                        color: difficultyColors[work.language_difficulty] || '#444'
+                      }}>
+                        {work.language_difficulty} Latin
+                      </span>
+                    )}
+                    {work.estimated_length && (
+                      <span style={{ padding: '4px 10px', background: '#f5f0e8', borderRadius: '4px', fontSize: '12px', fontFamily: 'Inter, sans-serif', color: '#444' }}>
+                        {work.estimated_length}
+                      </span>
+                    )}
+                    {work.translation_status && (
+                      <span style={{
+                        padding: '4px 10px',
+                        borderRadius: '4px',
+                        fontSize: '12px',
+                        fontFamily: 'Inter, sans-serif',
+                        background: statusColors[work.translation_status]?.bg || '#f5f0e8',
+                        color: statusColors[work.translation_status]?.color || '#444'
+                      }}>
+                        {work.translation_status.replace(/_/g, " ")}
+                      </span>
+                    )}
+                  </div>
+
+                  {work.significance && (
+                    <p style={{ color: '#444', fontSize: '15px', fontFamily: 'Newsreader, serif', marginBottom: '12px' }}>{work.significance}</p>
+                  )}
+
+                  {work.existing_translations && (
+                    <p style={{ color: '#888', fontSize: '14px', fontFamily: 'Newsreader, serif', marginBottom: '12px' }}>
+                      <span style={{ color: '#444' }}>Existing:</span> {work.existing_translations}
                     </p>
-                  </div>
-                  <div className="text-right">
-                    <div className="text-2xl font-bold text-violet-400">
-                      {work.scores?.total_score?.toFixed(1)}
-                    </div>
-                    <div className="text-xs text-slate-500">score</div>
-                  </div>
-                </div>
-
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {work.genre && (
-                    <span className="px-2 py-1 bg-slate-800 rounded text-xs text-slate-300">
-                      {work.genre}
-                    </span>
                   )}
-                  {work.ustc_editions && (
-                    <span className="px-2 py-1 bg-slate-800 rounded text-xs text-slate-300">
-                      {work.ustc_editions.toLocaleString()} USTC editions
-                    </span>
+
+                  {work.bph_relevance && (
+                    <p style={{ color: '#c9a86c', fontSize: '14px', fontFamily: 'Newsreader, serif', marginBottom: '12px' }}>
+                      <span style={{ fontWeight: 600 }}>BPH Relevance:</span> {work.bph_relevance}
+                    </p>
                   )}
-                  {work.language_difficulty && (
-                    <span className={`px-2 py-1 bg-slate-800 rounded text-xs ${difficultyColors[work.language_difficulty] || "text-slate-300"}`}>
-                      {work.language_difficulty} Latin
-                    </span>
+
+                  {work.notes && (
+                    <p style={{ color: '#888', fontSize: '14px', fontStyle: 'italic', fontFamily: 'Newsreader, serif' }}>{work.notes}</p>
                   )}
-                  {work.estimated_length && (
-                    <span className="px-2 py-1 bg-slate-800 rounded text-xs text-slate-300">
-                      {work.estimated_length}
-                    </span>
-                  )}
-                  {work.translation_status && (
-                    <span className={`px-2 py-1 rounded text-xs ${statusColors[work.translation_status] || "bg-slate-800 text-slate-300"}`}>
-                      {work.translation_status.replace(/_/g, " ")}
-                    </span>
-                  )}
-                </div>
 
-                {work.significance && (
-                  <p className="text-slate-300 text-sm mb-3">{work.significance}</p>
-                )}
-
-                {work.existing_translations && (
-                  <p className="text-slate-500 text-sm mb-3">
-                    <span className="text-slate-400">Existing:</span> {work.existing_translations}
-                  </p>
-                )}
-
-                {work.bph_relevance && (
-                  <p className="text-yellow-500/80 text-sm mb-3">
-                    <span className="text-yellow-400">BPH Relevance:</span> {work.bph_relevance}
-                  </p>
-                )}
-
-                {work.notes && (
-                  <p className="text-slate-400 text-sm italic">{work.notes}</p>
-                )}
-
-                {/* Score breakdown */}
-                {work.scores && (
-                  <div className="mt-4 pt-4 border-t border-slate-700/50">
-                    <div className="grid grid-cols-4 gap-2 text-xs">
-                      <div>
-                        <span className="text-slate-500">Impact:</span>
-                        <span className="ml-1 text-white">{work.scores.historical_impact}/10</span>
-                      </div>
-                      <div>
-                        <span className="text-slate-500">Gap:</span>
-                        <span className="ml-1 text-white">{work.scores.translation_gap}/10</span>
-                      </div>
-                      <div>
-                        <span className="text-slate-500">Feasibility:</span>
-                        <span className="ml-1 text-white">{work.scores.feasibility}/10</span>
-                      </div>
-                      <div>
-                        <span className="text-slate-500">Audience:</span>
-                        <span className="ml-1 text-white">{work.scores.audience}/10</span>
+                  {/* Score breakdown */}
+                  {work.scores && (
+                    <div style={{ marginTop: '16px', paddingTop: '16px', borderTop: '1px solid #e8e4dc' }}>
+                      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '8px', fontSize: '12px', fontFamily: 'Inter, sans-serif' }}>
+                        <div>
+                          <span style={{ color: '#888' }}>Impact:</span>
+                          <span style={{ marginLeft: '4px', color: '#1a1612' }}>{work.scores.historical_impact}/10</span>
+                        </div>
+                        <div>
+                          <span style={{ color: '#888' }}>Gap:</span>
+                          <span style={{ marginLeft: '4px', color: '#1a1612' }}>{work.scores.translation_gap}/10</span>
+                        </div>
+                        <div>
+                          <span style={{ color: '#888' }}>Feasibility:</span>
+                          <span style={{ marginLeft: '4px', color: '#1a1612' }}>{work.scores.feasibility}/10</span>
+                        </div>
+                        <div>
+                          <span style={{ color: '#888' }}>Audience:</span>
+                          <span style={{ marginLeft: '4px', color: '#1a1612' }}>{work.scores.audience}/10</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                )}
-              </div>
-            ))}
+                  )}
+                </div>
+              );
+            })}
           </div>
         </section>
 
         {/* Excluded section */}
-        <section className="mt-12 pt-8 border-t border-slate-800">
-          <h2 className="text-xl font-semibold mb-4 text-slate-400">Excluded from Roadmap</h2>
-          <div className="grid md:grid-cols-3 gap-6 text-sm">
+        <section style={{ marginTop: '48px', paddingTop: '32px', borderTop: '1px solid #e8e4dc' }}>
+          <h2 style={{ fontSize: '24px', fontFamily: 'Cormorant Garamond, serif', fontWeight: 600, marginBottom: '16px', color: '#444' }}>Excluded from Roadmap</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '24px', fontSize: '14px' }}>
             <div>
-              <h3 className="text-slate-300 font-medium mb-2">Already Well-Served</h3>
-              <ul className="text-slate-500 space-y-1">
+              <h3 style={{ color: '#1a1612', fontFamily: 'Cormorant Garamond, serif', fontSize: '18px', fontWeight: 600, marginBottom: '8px' }}>Already Well-Served</h3>
+              <ul style={{ color: '#888', fontFamily: 'Newsreader, serif', paddingLeft: '20px' }}>
                 <li>Cicero (Loeb complete)</li>
                 <li>Ovid, Virgil, Horace (Loeb)</li>
                 <li>Augustine (multiple series)</li>
@@ -935,16 +976,16 @@ export default function RoadmapPage() {
               </ul>
             </div>
             <div>
-              <h3 className="text-slate-300 font-medium mb-2">Ongoing Projects Elsewhere</h3>
-              <ul className="text-slate-500 space-y-1">
+              <h3 style={{ color: '#1a1612', fontFamily: 'Cormorant Garamond, serif', fontSize: '18px', fontWeight: 600, marginBottom: '8px' }}>Ongoing Projects Elsewhere</h3>
+              <ul style={{ color: '#888', fontFamily: 'Newsreader, serif', paddingLeft: '20px' }}>
                 <li>Johann Gerhard - Concordia (17 vols)</li>
                 <li>Melanchthon - Newcomb (2022+)</li>
                 <li>Vives - Brill series</li>
               </ul>
             </div>
             <div>
-              <h3 className="text-slate-300 font-medium mb-2">Impractical for Solo Work</h3>
-              <ul className="text-slate-500 space-y-1">
+              <h3 style={{ color: '#1a1612', fontFamily: 'Cormorant Garamond, serif', fontSize: '18px', fontWeight: 600, marginBottom: '8px' }}>Impractical for Solo Work</h3>
+              <ul style={{ color: '#888', fontFamily: 'Newsreader, serif', paddingLeft: '20px' }}>
                 <li>Bartolus complete commentaries</li>
                 <li>Calov Systema (12 vols)</li>
                 <li>Full systematic theologies</li>
@@ -954,74 +995,84 @@ export default function RoadmapPage() {
         </section>
 
         {/* USTC Browser - Top 1200 Works */}
-        <section className="mt-12 pt-8 border-t border-slate-800">
-          <div className="flex items-center justify-between mb-6">
+        <section style={{ marginTop: '48px', paddingTop: '32px', borderTop: '1px solid #e8e4dc' }}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '24px' }}>
             <div>
-              <h2 className="text-2xl font-semibold">Browse Top 1,200 Latin Works</h2>
-              <p className="text-slate-400 text-sm mt-1">
+              <h2 style={{ fontSize: '32px', fontFamily: 'Cormorant Garamond, serif', fontWeight: 600 }}>Browse Top 1,200 Latin Works</h2>
+              <p style={{ color: '#888', fontSize: '14px', fontFamily: 'Inter, sans-serif', marginTop: '4px' }}>
                 Ranked by edition count in USTC (1450-1700)
               </p>
             </div>
             <button
               onClick={() => setShowUstcBrowser(!showUstcBrowser)}
-              className="px-4 py-2 bg-violet-600 hover:bg-violet-500 rounded-lg text-sm font-medium transition"
+              style={{
+                padding: '8px 16px',
+                background: '#9e4a3a',
+                color: '#fff',
+                border: 'none',
+                borderRadius: '6px',
+                fontSize: '14px',
+                fontFamily: 'Inter, sans-serif',
+                fontWeight: 500,
+                cursor: 'pointer'
+              }}
             >
               {showUstcBrowser ? "Hide Browser" : "Show All Works"}
             </button>
           </div>
 
           {showUstcBrowser && (
-            <div className="space-y-4">
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
               {/* Filters */}
-              <div className="flex flex-wrap gap-4 items-center bg-slate-900 p-4 rounded-lg">
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px', alignItems: 'center', background: '#f5f0e8', padding: '16px', borderRadius: '8px' }}>
                 <input
                   type="text"
                   placeholder="Search author or title..."
                   value={ustcFilter}
                   onChange={(e) => { setUstcFilter(e.target.value); setUstcPage(0); }}
-                  className="px-3 py-2 bg-slate-800 border border-slate-700 rounded text-sm flex-1 min-w-[200px]"
+                  style={{ padding: '8px 12px', background: '#fff', border: '1px solid #e8e4dc', borderRadius: '4px', fontSize: '14px', fontFamily: 'Inter, sans-serif', flex: 1, minWidth: '200px' }}
                 />
                 <select
                   value={ustcGenreFilter || ""}
                   onChange={(e) => { setUstcGenreFilter(e.target.value || null); setUstcPage(0); }}
-                  className="px-3 py-2 bg-slate-800 border border-slate-700 rounded text-sm"
+                  style={{ padding: '8px 12px', background: '#fff', border: '1px solid #e8e4dc', borderRadius: '4px', fontSize: '14px', fontFamily: 'Inter, sans-serif' }}
                 >
                   <option value="">All Genres</option>
                   {ustcGenres.map(g => (
                     <option key={g} value={g}>{g}</option>
                   ))}
                 </select>
-                <span className="text-slate-400 text-sm">
+                <span style={{ color: '#888', fontSize: '14px', fontFamily: 'Inter, sans-serif' }}>
                   {filteredUstcWorks.length.toLocaleString()} works
                 </span>
               </div>
 
               {/* Results table */}
-              <div className="overflow-x-auto">
-                <table className="w-full text-sm">
-                  <thead className="bg-slate-800">
+              <div style={{ overflowX: 'auto' }}>
+                <table style={{ width: '100%', fontSize: '14px', borderCollapse: 'collapse' }}>
+                  <thead style={{ background: '#f5f0e8' }}>
                     <tr>
-                      <th className="text-left p-3 text-slate-300">#</th>
-                      <th className="text-left p-3 text-slate-300">Author</th>
-                      <th className="text-left p-3 text-slate-300">Title</th>
-                      <th className="text-left p-3 text-slate-300">Genre</th>
-                      <th className="text-right p-3 text-slate-300">Editions</th>
+                      <th style={{ textAlign: 'left', padding: '12px', color: '#444', fontFamily: 'Inter, sans-serif', fontWeight: 600 }}>#</th>
+                      <th style={{ textAlign: 'left', padding: '12px', color: '#444', fontFamily: 'Inter, sans-serif', fontWeight: 600 }}>Author</th>
+                      <th style={{ textAlign: 'left', padding: '12px', color: '#444', fontFamily: 'Inter, sans-serif', fontWeight: 600 }}>Title</th>
+                      <th style={{ textAlign: 'left', padding: '12px', color: '#444', fontFamily: 'Inter, sans-serif', fontWeight: 600 }}>Genre</th>
+                      <th style={{ textAlign: 'right', padding: '12px', color: '#444', fontFamily: 'Inter, sans-serif', fontWeight: 600 }}>Editions</th>
                     </tr>
                   </thead>
                   <tbody>
                     {paginatedUstcWorks.map((work, idx) => (
-                      <tr key={`${work.author}-${work.title}-${idx}`} className="border-t border-slate-800 hover:bg-slate-900/50">
-                        <td className="p-3 text-slate-500 font-mono text-xs">
+                      <tr key={`${work.author}-${work.title}-${idx}`} style={{ borderTop: '1px solid #e8e4dc' }}>
+                        <td style={{ padding: '12px', color: '#888', fontFamily: 'monospace', fontSize: '12px' }}>
                           {ustcPage * USTC_PAGE_SIZE + idx + 1}
                         </td>
-                        <td className="p-3 text-white">{work.author}</td>
-                        <td className="p-3 text-slate-300">{work.title}</td>
-                        <td className="p-3">
-                          <span className="px-2 py-1 bg-slate-800 rounded text-xs text-slate-400">
+                        <td style={{ padding: '12px', color: '#1a1612', fontFamily: 'Newsreader, serif' }}>{work.author}</td>
+                        <td style={{ padding: '12px', color: '#444', fontFamily: 'Newsreader, serif' }}>{work.title}</td>
+                        <td style={{ padding: '12px' }}>
+                          <span style={{ padding: '4px 8px', background: '#f5f0e8', borderRadius: '4px', fontSize: '12px', fontFamily: 'Inter, sans-serif', color: '#888' }}>
                             {work.genre}
                           </span>
                         </td>
-                        <td className="p-3 text-right font-mono text-violet-400">
+                        <td style={{ padding: '12px', textAlign: 'right', fontFamily: 'monospace', color: '#9e4a3a' }}>
                           {work.editions.toLocaleString()}
                         </td>
                       </tr>
@@ -1031,21 +1082,39 @@ export default function RoadmapPage() {
               </div>
 
               {/* Pagination */}
-              <div className="flex items-center justify-between">
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                 <button
                   onClick={() => setUstcPage(p => Math.max(0, p - 1))}
                   disabled={ustcPage === 0}
-                  className="px-4 py-2 bg-slate-800 hover:bg-slate-700 disabled:opacity-50 disabled:cursor-not-allowed rounded text-sm"
+                  style={{
+                    padding: '8px 16px',
+                    background: ustcPage === 0 ? '#f5f0e8' : '#fff',
+                    border: '1px solid #e8e4dc',
+                    borderRadius: '4px',
+                    fontSize: '14px',
+                    fontFamily: 'Inter, sans-serif',
+                    cursor: ustcPage === 0 ? 'not-allowed' : 'pointer',
+                    opacity: ustcPage === 0 ? 0.5 : 1
+                  }}
                 >
                   Previous
                 </button>
-                <span className="text-slate-400 text-sm">
+                <span style={{ color: '#888', fontSize: '14px', fontFamily: 'Inter, sans-serif' }}>
                   Page {ustcPage + 1} of {Math.ceil(filteredUstcWorks.length / USTC_PAGE_SIZE)}
                 </span>
                 <button
                   onClick={() => setUstcPage(p => p + 1)}
                   disabled={(ustcPage + 1) * USTC_PAGE_SIZE >= filteredUstcWorks.length}
-                  className="px-4 py-2 bg-slate-800 hover:bg-slate-700 disabled:opacity-50 disabled:cursor-not-allowed rounded text-sm"
+                  style={{
+                    padding: '8px 16px',
+                    background: (ustcPage + 1) * USTC_PAGE_SIZE >= filteredUstcWorks.length ? '#f5f0e8' : '#fff',
+                    border: '1px solid #e8e4dc',
+                    borderRadius: '4px',
+                    fontSize: '14px',
+                    fontFamily: 'Inter, sans-serif',
+                    cursor: (ustcPage + 1) * USTC_PAGE_SIZE >= filteredUstcWorks.length ? 'not-allowed' : 'pointer',
+                    opacity: (ustcPage + 1) * USTC_PAGE_SIZE >= filteredUstcWorks.length ? 0.5 : 1
+                  }}
                 >
                   Next
                 </button>
@@ -1054,25 +1123,25 @@ export default function RoadmapPage() {
           )}
         </section>
 
-        <div className="mt-12 pt-8 border-t border-slate-800">
-          <Link href="/blog/methodology" className="text-violet-400 hover:underline">
+        <div style={{ marginTop: '48px', paddingTop: '32px', borderTop: '1px solid #e8e4dc' }}>
+          <Link href="/blog/methodology" style={{ color: '#9e4a3a', textDecoration: 'none', fontFamily: 'Inter, sans-serif', fontSize: '14px' }}>
             &larr; View full methodology
           </Link>
         </div>
       </main>
 
-      <footer className="border-t border-slate-800 py-8 text-center text-slate-500 text-sm">
+      <footer style={{ borderTop: '1px solid #e8e4dc', padding: '32px 0', textAlign: 'center', color: '#888', fontSize: '14px', fontFamily: 'Inter, sans-serif' }}>
         <p>
           Data from{" "}
-          <a href="https://www.ustc.ac.uk/" className="text-violet-400 hover:underline" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.ustc.ac.uk/" style={{ color: '#9e4a3a', textDecoration: 'none' }} target="_blank" rel="noopener noreferrer">
             USTC
           </a>
           {" "}| Esoteric priorities aligned with{" "}
-          <a href="https://embfreem.org/" className="text-yellow-400 hover:underline" target="_blank" rel="noopener noreferrer">
+          <a href="https://embfreem.org/" style={{ color: '#c9a86c', textDecoration: 'none' }} target="_blank" rel="noopener noreferrer">
             BPH
           </a>
           {" "}| For{" "}
-          <a href="https://sourcelibrary.org" className="text-violet-400 hover:underline" target="_blank" rel="noopener noreferrer">
+          <a href="https://sourcelibrary.org" style={{ color: '#9e4a3a', textDecoration: 'none' }} target="_blank" rel="noopener noreferrer">
             SourceLibrary.org
           </a>
         </p>

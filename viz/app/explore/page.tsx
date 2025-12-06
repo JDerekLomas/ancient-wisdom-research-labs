@@ -63,29 +63,90 @@ export default function Home() {
 
   if (!data) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-slate-950 text-white">
-        <div className="text-xl">Loading Latin Bibliography Data...</div>
+      <div className="min-h-screen flex items-center justify-center bg-[#1a1612] text-white">
+        <div style={{ fontFamily: 'Newsreader, Georgia, serif', fontSize: '20px' }}>Loading visualization data...</div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-slate-950 text-white">
+    <div className="min-h-screen bg-[#1a1612] text-white">
+      {/* Navigation */}
+      <nav style={{
+        borderBottom: '1px solid rgba(255,255,255,0.1)',
+        padding: '16px 24px',
+      }}>
+        <div style={{
+          maxWidth: '1200px',
+          margin: '0 auto',
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+        }}>
+          <a href="/" style={{
+            fontFamily: 'Inter, sans-serif',
+            fontSize: '12px',
+            fontWeight: 500,
+            letterSpacing: '0.1em',
+            color: 'rgba(255,255,255,0.6)',
+            textDecoration: 'none',
+          }}>
+            ← SECOND RENAISSANCE
+          </a>
+          <div style={{ display: 'flex', gap: '24px', alignItems: 'center' }}>
+            <a href="/map" style={{ fontFamily: 'Inter, sans-serif', fontSize: '13px', color: 'rgba(255,255,255,0.6)', textDecoration: 'none' }}>Map</a>
+            <a href="/timelines" style={{ fontFamily: 'Inter, sans-serif', fontSize: '13px', color: 'rgba(255,255,255,0.6)', textDecoration: 'none' }}>Timelines</a>
+            <a href="/roadmap" style={{ fontFamily: 'Inter, sans-serif', fontSize: '13px', color: 'rgba(255,255,255,0.6)', textDecoration: 'none' }}>Roadmap</a>
+            <a
+              href="https://www.ancientwisdomtrust.org/become-a-patron"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                fontFamily: 'Inter, sans-serif',
+                fontSize: '12px',
+                fontWeight: 500,
+                color: '#1a1612',
+                background: '#c9a86c',
+                padding: '8px 16px',
+                borderRadius: '4px',
+                textDecoration: 'none',
+              }}
+            >
+              Support This Work
+            </a>
+          </div>
+        </div>
+      </nav>
+
       {/* Hero Section */}
       <header className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-violet-900/20 to-cyan-900/20" />
         <div className="relative max-w-6xl mx-auto px-8 py-16 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">
-            The Hidden Renaissance
-          </h1>
-          <p className="text-xl md:text-2xl text-slate-300 mb-6">
-            {data.summary.total_latin_works.toLocaleString()} Latin works printed 1450–1700
+          <p style={{
+            fontFamily: 'Inter, sans-serif',
+            fontSize: '12px',
+            letterSpacing: '0.15em',
+            color: 'rgba(255,255,255,0.5)',
+            marginBottom: '16px',
+          }}>
+            DATA EXPLORER
           </p>
-          <div className="inline-block bg-red-500/20 border border-red-500/50 rounded-lg px-6 py-4">
-            <p className="text-lg text-red-300">
-              Only <span className="font-bold text-2xl text-red-400">~2,000</span> have English translations
-            </p>
-          </div>
+          <h1 style={{
+            fontFamily: 'Cormorant Garamond, Georgia, serif',
+            fontSize: '48px',
+            fontWeight: 400,
+            color: '#fff',
+            marginBottom: '16px',
+          }}>
+            Explore the Latin Corpus
+          </h1>
+          <p style={{
+            fontFamily: 'Newsreader, Georgia, serif',
+            fontSize: '20px',
+            color: 'rgba(255,255,255,0.7)',
+            marginBottom: '32px',
+          }}>
+            {data.summary.total_latin_works.toLocaleString()} works from the Universal Short Title Catalogue
+          </p>
         </div>
       </header>
 
@@ -380,52 +441,99 @@ export default function Home() {
         </div>
 
         {/* Call to Action */}
-        <section className="text-center py-12">
-          <div className="bg-gradient-to-r from-violet-900/30 to-cyan-900/30 border border-violet-500/30 rounded-2xl p-8">
-            <h2 className="text-3xl font-bold mb-4">500,000+ Works Waiting to be Discovered</h2>
-            <p className="text-slate-300 text-lg mb-6 max-w-2xl mx-auto">
-              The vast majority of Renaissance intellectual output—theology, medicine, law, philosophy,
-              science, poetry—remains locked in Latin, inaccessible to modern readers.
+        <section style={{ textAlign: 'center', padding: '60px 0' }}>
+          <div style={{
+            background: 'rgba(201, 168, 108, 0.1)',
+            border: '1px solid rgba(201, 168, 108, 0.3)',
+            borderRadius: '12px',
+            padding: '48px',
+          }}>
+            <h2 style={{
+              fontFamily: 'Cormorant Garamond, Georgia, serif',
+              fontSize: '32px',
+              fontWeight: 400,
+              color: '#fff',
+              marginBottom: '16px',
+            }}>
+              Create a second Renaissance by translating the first
+            </h2>
+            <p style={{
+              fontFamily: 'Newsreader, Georgia, serif',
+              fontSize: '18px',
+              color: 'rgba(255,255,255,0.7)',
+              marginBottom: '32px',
+              maxWidth: '600px',
+              margin: '0 auto 32px',
+            }}>
+              The original Renaissance was sparked by rediscovering ancient texts.
+              Half a million more are waiting to be unlocked.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+            <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
               <a
-                href="/blog"
-                className="px-6 py-3 bg-violet-600 hover:bg-violet-500 rounded-lg font-semibold transition-colors"
+                href="https://www.ancientwisdomtrust.org/become-a-patron"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  fontFamily: 'Inter, sans-serif',
+                  fontSize: '14px',
+                  fontWeight: 500,
+                  color: '#1a1612',
+                  background: '#c9a86c',
+                  padding: '14px 32px',
+                  borderRadius: '4px',
+                  textDecoration: 'none',
+                }}
               >
-                Read the Research
-              </a>
-              <a
-                href="/timelines"
-                className="px-6 py-3 bg-cyan-600 hover:bg-cyan-500 rounded-lg font-semibold transition-colors"
-              >
-                Explore Timelines
+                Support This Work
               </a>
               <a
                 href="/map"
-                className="px-6 py-3 bg-emerald-600 hover:bg-emerald-500 rounded-lg font-semibold transition-colors"
+                style={{
+                  fontFamily: 'Inter, sans-serif',
+                  fontSize: '14px',
+                  fontWeight: 500,
+                  color: '#fff',
+                  background: 'rgba(255,255,255,0.1)',
+                  border: '1px solid rgba(255,255,255,0.2)',
+                  padding: '14px 32px',
+                  borderRadius: '4px',
+                  textDecoration: 'none',
+                }}
               >
-                Animated Map
+                Explore the Map
               </a>
               <a
-                href="https://github.com/JDerekLomas/latinclaude"
-                className="px-6 py-3 bg-slate-700 hover:bg-slate-600 rounded-lg font-semibold transition-colors"
+                href="/roadmap"
+                style={{
+                  fontFamily: 'Inter, sans-serif',
+                  fontSize: '14px',
+                  fontWeight: 500,
+                  color: '#fff',
+                  background: 'rgba(255,255,255,0.1)',
+                  border: '1px solid rgba(255,255,255,0.2)',
+                  padding: '14px 32px',
+                  borderRadius: '4px',
+                  textDecoration: 'none',
+                }}
               >
-                View on GitHub
+                Translation Roadmap
               </a>
             </div>
           </div>
         </section>
       </main>
 
-      <footer className="border-t border-slate-800 py-8 text-center text-slate-500 text-sm">
-        <p>
-          Built with USTC data • Visualization by{" "}
-          <a
-            href="https://github.com/JDerekLomas/latinclaude"
-            className="text-violet-400 hover:underline"
-          >
-            latinclaude
-          </a>
+      <footer style={{
+        borderTop: '1px solid rgba(255,255,255,0.1)',
+        padding: '32px 24px',
+        textAlign: 'center',
+      }}>
+        <p style={{
+          fontFamily: 'Inter, sans-serif',
+          fontSize: '12px',
+          color: 'rgba(255,255,255,0.4)',
+        }}>
+          Data from the <a href="https://ustc.ac.uk" style={{ color: 'rgba(255,255,255,0.5)' }}>Universal Short Title Catalogue</a>, University of St Andrews
         </p>
       </footer>
     </div>

@@ -1,176 +1,175 @@
-import Link from "next/link";
+import BlogLayout from "../BlogLayout";
 
 export default function RiversOfEsotericLife() {
   return (
-    <div className="min-h-screen bg-slate-950 text-white">
-      <header className="border-b border-slate-800">
-        <div className="max-w-3xl mx-auto px-8 py-6">
-          <Link href="/blog" className="text-violet-400 hover:underline text-sm">
-            &larr; Back to Research Notes
-          </Link>
-        </div>
-      </header>
+    <BlogLayout
+      title="Rivers of Esoteric Life: Mapping the Hermetic Tradition"
+      tag="Draft"
+      prevPost={{ href: "/blog/famous-humanists", title: "Even Ficino Isn't Fully Translated" }}
+    >
+      <div style={{
+        background: '#f5f0e8',
+        border: '1px solid #e0d8c8',
+        borderRadius: '8px',
+        padding: '24px',
+        marginBottom: '32px',
+      }}>
+        <p style={{ color: '#9e4a3a', fontWeight: 600, marginBottom: '8px' }}>
+          Draft for discussion.
+        </p>
+        <p style={{ color: '#444', margin: 0 }}>
+          This is an early attempt to visualize the flow of esoteric publishing traditions using the Bibliotheca Philosophica Hermetica catalog. Suggestions and corrections welcome.
+        </p>
+      </div>
 
-      <article className="max-w-3xl mx-auto px-8 py-12">
-        <div className="mb-8">
-          <span className="text-xs px-2 py-1 bg-amber-500/20 text-amber-300 rounded">
-            Draft
-          </span>
-          <span className="text-slate-500 text-sm ml-3">December 2024</span>
-        </div>
+      <p style={{
+        fontFamily: 'Newsreader, Georgia, serif',
+        fontSize: '22px',
+        lineHeight: 1.6,
+        color: '#444',
+        marginBottom: '32px',
+      }}>
+        In 1883, Major General J.G.R. Forlong published <em>Rivers of Life</em>, a controversial study of comparative religion accompanied by a remarkable seven-foot chart showing how religious traditions flow through time like rivers—merging, diverging, and influencing one another across millennia.
+      </p>
 
-        <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-          Rivers of Esoteric Life: Mapping the Hermetic Tradition
-        </h1>
+      <p>
+        Forlong traced six &ldquo;streams&rdquo; of worship—Tree, Phallic, Serpent, Fire, Sun, and Ancestor—from prehistory to the modern era, showing how they converged into the major world religions. His approach was deeply controversial (and often wrong), but the <em>method</em>—visualizing intellectual history as flowing streams—remains powerful.
+      </p>
 
-        <div className="bg-amber-900/20 border border-amber-500/30 rounded-lg p-4 mb-8">
-          <p className="text-amber-200 text-sm">
-            <strong>Draft for discussion.</strong> This is an early attempt to visualize the
-            flow of esoteric publishing traditions using the Bibliotheca Philosophica Hermetica
-            catalog. Suggestions and corrections welcome.
-          </p>
-        </div>
+      <figure style={{
+        background: '#f5f0e8',
+        border: '1px solid #e0d8c8',
+        borderRadius: '8px',
+        padding: '24px',
+        margin: '32px 0',
+      }}>
+        <h3 style={{ fontSize: '18px', fontWeight: 600, marginBottom: '16px', color: '#1a1612' }}>
+          Forlong&apos;s Original Chart
+        </h3>
+        <p style={{ marginBottom: '16px', fontSize: '14px', color: '#444' }}>
+          The original &ldquo;Student&apos;s Synchronological Chart of the Religions of the World&rdquo; measures 235 x 67 cm and traces religious traditions from 10,000 BC to 1700 AD. It&apos;s available digitized on{" "}
+          <a
+            href="https://commons.wikimedia.org/wiki/File:Forlong-Rivers-of-Life-big-chart.pdf"
+            style={{ color: '#9e4a3a' }}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Wikimedia Commons
+          </a>{" "}
+          and the{" "}
+          <a
+            href="https://archive.org/details/riversoflifeorso11forl"
+            style={{ color: '#9e4a3a' }}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Internet Archive
+          </a>.
+        </p>
+        <p style={{ fontSize: '13px', fontStyle: 'italic', color: '#666', margin: 0 }}>
+          Forlong&apos;s work was cited by H.P. Blavatsky and Aleister Crowley, who called it &ldquo;an invaluable text-book of old systems of initiation.&rdquo;
+        </p>
+      </figure>
 
-        <div className="prose prose-invert prose-lg max-w-none">
-          <p className="text-xl text-slate-300 mb-8">
-            In 1883, Major General J.G.R. Forlong published <em>Rivers of Life</em>, a
-            controversial study of comparative religion accompanied by a remarkable seven-foot
-            chart showing how religious traditions flow through time like rivers&mdash;merging,
-            diverging, and influencing one another across millennia.
-          </p>
+      <h2>Applying the Method to Esoteric Publishing</h2>
 
-          <p className="text-slate-300 mb-4">
-            Forlong traced six &ldquo;streams&rdquo; of worship&mdash;Tree, Phallic, Serpent, Fire, Sun,
-            and Ancestor&mdash;from prehistory to the modern era, showing how they converged
-            into the major world religions. His approach was deeply controversial (and often
-            wrong), but the <em>method</em>&mdash;visualizing intellectual history as flowing
-            streams&mdash;remains powerful.
-          </p>
+      <p>
+        What if we applied Forlong&apos;s river metaphor to the history of esoteric <em>publishing</em>? Using the catalog of the Bibliotheca Philosophica Hermetica (the Ritman Library in Amsterdam), we can trace how different traditions of esoteric thought flowed through print from 1450 to 1750.
+      </p>
 
-          <div className="bg-slate-900 border border-slate-700 rounded-lg p-6 my-8">
-            <h3 className="text-lg font-semibold mb-3">Forlong&apos;s Original Chart</h3>
-            <p className="text-slate-400 text-sm mb-4">
-              The original &ldquo;Student&apos;s Synchronological Chart of the Religions of the World&rdquo;
-              measures 235 x 67 cm and traces religious traditions from 10,000 BC to 1700 AD.
-              It&apos;s available digitized on{" "}
-              <a
-                href="https://commons.wikimedia.org/wiki/File:Forlong-Rivers-of-Life-big-chart.pdf"
-                className="text-violet-400 hover:underline"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Wikimedia Commons
-              </a>{" "}
-              and the{" "}
-              <a
-                href="https://archive.org/details/riversoflifeorso11forl"
-                className="text-violet-400 hover:underline"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Internet Archive
-              </a>.
-            </p>
-            <p className="text-slate-500 text-xs italic">
-              Forlong&apos;s work was cited by H.P. Blavatsky and Aleister Crowley, who called it
-              &ldquo;an invaluable text-book of old systems of initiation.&rdquo;
-            </p>
-          </div>
+      <p>
+        The BPH holds 28,000+ works focused on Western esotericism—Hermetica, alchemy, Kabbalah, Rosicrucianism, mysticism, and related traditions. By categorizing their catalog by subject and decade, we can see how these streams of thought emerged, peaked, and merged over three centuries.
+      </p>
 
-          <h2 className="text-2xl font-semibold mt-12 mb-4">Applying the Method to Esoteric Publishing</h2>
+      <h2>The Nine Streams</h2>
 
-          <p className="text-slate-300 mb-4">
-            What if we applied Forlong&apos;s river metaphor to the history of esoteric
-            <em>publishing</em>? Using the catalog of the Bibliotheca Philosophica Hermetica
-            (the Ritman Library in Amsterdam), we can trace how different traditions of
-            esoteric thought flowed through print from 1450 to 1750.
-          </p>
+      <p>We identified nine major &ldquo;rivers&rdquo; of esoteric publishing:</p>
 
-          <p className="text-slate-300 mb-4">
-            The BPH holds 28,000+ works focused on Western esotericism&mdash;Hermetica, alchemy,
-            Kabbalah, Rosicrucianism, mysticism, and related traditions. By categorizing their
-            catalog by subject and decade, we can see how these streams of thought emerged,
-            peaked, and merged over three centuries.
-          </p>
-
-          <h2 className="text-2xl font-semibold mt-12 mb-4">The Nine Streams</h2>
-
-          <p className="text-slate-300 mb-4">
-            We identified nine major &ldquo;rivers&rdquo; of esoteric publishing:
-          </p>
-
-          <div className="bg-slate-900 border border-slate-700 rounded-lg p-6 my-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="flex items-center gap-3">
-                <div className="w-4 h-4 rounded" style={{backgroundColor: '#9b59b6'}}></div>
-                <div>
-                  <span className="font-semibold">Hermetica</span>
-                  <p className="text-slate-500 text-xs">Corpus Hermeticum, Egyptian wisdom</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="w-4 h-4 rounded" style={{backgroundColor: '#1abc9c'}}></div>
-                <div>
-                  <span className="font-semibold">Neoplatonism</span>
-                  <p className="text-slate-500 text-xs">Ficino, Plotinus, Proclus</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="w-4 h-4 rounded" style={{backgroundColor: '#2ecc71'}}></div>
-                <div>
-                  <span className="font-semibold">Kabbalah</span>
-                  <p className="text-slate-500 text-xs">Jewish mysticism, Tree of Life</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="w-4 h-4 rounded" style={{backgroundColor: '#8e44ad'}}></div>
-                <div>
-                  <span className="font-semibold">Magic</span>
-                  <p className="text-slate-500 text-xs">Agrippa, ceremonial magic</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="w-4 h-4 rounded" style={{backgroundColor: '#f1c40f'}}></div>
-                <div>
-                  <span className="font-semibold">Alchemy</span>
-                  <p className="text-slate-500 text-xs">Transmutation, laboratory practice</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="w-4 h-4 rounded" style={{backgroundColor: '#e67e22'}}></div>
-                <div>
-                  <span className="font-semibold">Paracelsianism</span>
-                  <p className="text-slate-500 text-xs">Paracelsian medicine &amp; philosophy</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="w-4 h-4 rounded" style={{backgroundColor: '#3498db'}}></div>
-                <div>
-                  <span className="font-semibold">Mysticism</span>
-                  <p className="text-slate-500 text-xs">Christian contemplative tradition</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="w-4 h-4 rounded" style={{backgroundColor: '#e74c3c'}}></div>
-                <div>
-                  <span className="font-semibold">Rosicrucianism</span>
-                  <p className="text-slate-500 text-xs">Fama Fraternitatis movement</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="w-4 h-4 rounded" style={{backgroundColor: '#34495e'}}></div>
-                <div>
-                  <span className="font-semibold">Theosophy</span>
-                  <p className="text-slate-500 text-xs">Jacob Boehme and followers</p>
-                </div>
-              </div>
+      <figure style={{
+        background: '#f5f0e8',
+        border: '1px solid #e0d8c8',
+        borderRadius: '8px',
+        padding: '24px',
+        margin: '32px 0',
+      }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '16px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+            <div style={{ width: '16px', height: '16px', borderRadius: '4px', backgroundColor: '#9b59b6', flexShrink: 0 }}></div>
+            <div>
+              <span style={{ fontWeight: 600, color: '#1a1612' }}>Hermetica</span>
+              <p style={{ fontSize: '13px', color: '#666', margin: 0 }}>Corpus Hermeticum, Egyptian wisdom</p>
             </div>
           </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+            <div style={{ width: '16px', height: '16px', borderRadius: '4px', backgroundColor: '#1abc9c', flexShrink: 0 }}></div>
+            <div>
+              <span style={{ fontWeight: 600, color: '#1a1612' }}>Neoplatonism</span>
+              <p style={{ fontSize: '13px', color: '#666', margin: 0 }}>Ficino, Plotinus, Proclus</p>
+            </div>
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+            <div style={{ width: '16px', height: '16px', borderRadius: '4px', backgroundColor: '#2ecc71', flexShrink: 0 }}></div>
+            <div>
+              <span style={{ fontWeight: 600, color: '#1a1612' }}>Kabbalah</span>
+              <p style={{ fontSize: '13px', color: '#666', margin: 0 }}>Jewish mysticism, Tree of Life</p>
+            </div>
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+            <div style={{ width: '16px', height: '16px', borderRadius: '4px', backgroundColor: '#8e44ad', flexShrink: 0 }}></div>
+            <div>
+              <span style={{ fontWeight: 600, color: '#1a1612' }}>Magic</span>
+              <p style={{ fontSize: '13px', color: '#666', margin: 0 }}>Agrippa, ceremonial magic</p>
+            </div>
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+            <div style={{ width: '16px', height: '16px', borderRadius: '4px', backgroundColor: '#f1c40f', flexShrink: 0 }}></div>
+            <div>
+              <span style={{ fontWeight: 600, color: '#1a1612' }}>Alchemy</span>
+              <p style={{ fontSize: '13px', color: '#666', margin: 0 }}>Transmutation, laboratory practice</p>
+            </div>
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+            <div style={{ width: '16px', height: '16px', borderRadius: '4px', backgroundColor: '#e67e22', flexShrink: 0 }}></div>
+            <div>
+              <span style={{ fontWeight: 600, color: '#1a1612' }}>Paracelsianism</span>
+              <p style={{ fontSize: '13px', color: '#666', margin: 0 }}>Paracelsian medicine & philosophy</p>
+            </div>
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+            <div style={{ width: '16px', height: '16px', borderRadius: '4px', backgroundColor: '#3498db', flexShrink: 0 }}></div>
+            <div>
+              <span style={{ fontWeight: 600, color: '#1a1612' }}>Mysticism</span>
+              <p style={{ fontSize: '13px', color: '#666', margin: 0 }}>Christian contemplative tradition</p>
+            </div>
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+            <div style={{ width: '16px', height: '16px', borderRadius: '4px', backgroundColor: '#e74c3c', flexShrink: 0 }}></div>
+            <div>
+              <span style={{ fontWeight: 600, color: '#1a1612' }}>Rosicrucianism</span>
+              <p style={{ fontSize: '13px', color: '#666', margin: 0 }}>Fama Fraternitatis movement</p>
+            </div>
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+            <div style={{ width: '16px', height: '16px', borderRadius: '4px', backgroundColor: '#34495e', flexShrink: 0 }}></div>
+            <div>
+              <span style={{ fontWeight: 600, color: '#1a1612' }}>Theosophy</span>
+              <p style={{ fontSize: '13px', color: '#666', margin: 0 }}>Jacob Boehme and followers</p>
+            </div>
+          </div>
+        </div>
+      </figure>
 
-          <h2 className="text-2xl font-semibold mt-12 mb-4">The Timeline</h2>
+      <h2>The Timeline</h2>
 
-          <div className="bg-slate-900 border border-slate-700 rounded-lg p-6 my-8 overflow-x-auto">
-            <pre className="text-xs font-mono text-slate-300 whitespace-pre">
+      <figure style={{
+        background: '#f5f0e8',
+        border: '1px solid #e0d8c8',
+        borderRadius: '8px',
+        padding: '24px',
+        margin: '32px 0',
+        overflowX: 'auto',
+      }}>
+        <pre style={{ fontFamily: 'Monaco, Courier, monospace', fontSize: '12px', color: '#444', margin: 0, whiteSpace: 'pre' }}>
 {`Decade   Herm Neop Kabb Magi Alch Para Myst Rosi Theo
 ──────────────────────────────────────────────────────
 1460s      1    1    ·    ·    ·    ·    ·    ·    ·
@@ -198,188 +197,144 @@ export default function RiversOfEsotericLife() {
 1680s     47    ·    1    3  102    5  112    1   42   ← Mysticism peak
 1690s     44    1    ·    1   51    1  109    7   12
 1700s     39    2    ·    2  100    1  157    8   13`}
-            </pre>
-          </div>
+        </pre>
+      </figure>
 
-          <h2 className="text-2xl font-semibold mt-12 mb-4">Key Moments</h2>
+      <h2>Key Moments</h2>
 
-          <div className="space-y-6 my-8">
-            <div className="border-l-4 border-violet-500 pl-4">
-              <h3 className="font-semibold">1463: The Hermetic Dawn</h3>
-              <p className="text-slate-400 text-sm">
-                Cosimo de&apos; Medici gives Ficino the Corpus Hermeticum to translate.
-                Hermetica and Neoplatonism begin flowing into Renaissance thought.
-              </p>
-            </div>
-
-            <div className="border-l-4 border-green-500 pl-4">
-              <h3 className="font-semibold">1486: Pico&apos;s Synthesis</h3>
-              <p className="text-slate-400 text-sm">
-                Pico della Mirandola&apos;s 900 Theses merge Hermetica, Kabbalah, and
-                Neoplatonism. Three streams converge.
-              </p>
-            </div>
-
-            <div className="border-l-4 border-purple-500 pl-4">
-              <h3 className="font-semibold">1533: Magic Codified</h3>
-              <p className="text-slate-400 text-sm">
-                Agrippa&apos;s <em>De Occulta Philosophia</em> published. Magic joins the
-                mainstream as a distinct stream.
-              </p>
-            </div>
-
-            <div className="border-l-4 border-orange-500 pl-4">
-              <h3 className="font-semibold">1541-1570: Paracelsian Wave</h3>
-              <p className="text-slate-400 text-sm">
-                After Paracelsus dies (1541), his works flood into print. Paracelsianism
-                merges with alchemy, creating a new current.
-              </p>
-            </div>
-
-            <div className="border-l-4 border-red-500 pl-4">
-              <h3 className="font-semibold">1614-1620: The Rosicrucian Moment</h3>
-              <p className="text-slate-400 text-sm">
-                The Fama Fraternitatis explodes. In 1616, <strong>eight streams converge</strong>:
-                alchemy, Rosicrucianism, mysticism, Hermetica, theosophy, Paracelsianism,
-                Kabbalah, and Neoplatonism. This is the peak confluence in three centuries
-                of esoteric publishing.
-              </p>
-            </div>
-
-            <div className="border-l-4 border-gray-500 pl-4">
-              <h3 className="font-semibold">1640s-1680s: The Boehme Current</h3>
-              <p className="text-slate-400 text-sm">
-                Jacob Boehme&apos;s theosophy rises as a distinct stream, particularly strong
-                in the Netherlands and England. Mysticism reaches its publishing peak.
-              </p>
-            </div>
-          </div>
-
-          <h2 className="text-2xl font-semibold mt-12 mb-4">What the Rivers Reveal</h2>
-
-          <p className="text-slate-300 mb-4">
-            Several patterns emerge from this visualization:
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '24px', margin: '32px 0' }}>
+        <div style={{ borderLeft: '4px solid #9b59b6', paddingLeft: '16px' }}>
+          <h3 style={{ fontWeight: 600, marginBottom: '8px' }}>1463: The Hermetic Dawn</h3>
+          <p style={{ fontSize: '14px', color: '#666', margin: 0 }}>
+            Cosimo de&apos; Medici gives Ficino the Corpus Hermeticum to translate. Hermetica and Neoplatonism begin flowing into Renaissance thought.
           </p>
-
-          <ul className="text-slate-300 space-y-3 mb-6">
-            <li>
-              <strong className="text-white">Streams merge at key moments.</strong> The
-              1610s-1620s saw an unprecedented convergence of traditions. This wasn&apos;t
-              coincidence&mdash;the Rosicrucian manifestos deliberately synthesized
-              Hermetic, alchemical, Kabbalistic, and Christian mystical ideas.
-            </li>
-            <li>
-              <strong className="text-white">Some streams persist, others fade.</strong> Mysticism
-              and alchemy flow continuously for 300 years. Paracelsianism surges briefly
-              (1560s-1570s) then subsides. Rosicrucianism explodes (1614-1625) then
-              quiets but never disappears.
-            </li>
-            <li>
-              <strong className="text-white">The late 17th century is underrated.</strong> We
-              often focus on the &ldquo;Renaissance&rdquo; (Ficino, Pico, Agrippa). But the 1670s-1680s
-              saw more esoteric publishing than any earlier period&mdash;alchemy and mysticism
-              at their peaks.
-            </li>
-            <li>
-              <strong className="text-white">Translation matters.</strong> The 1650s marks when
-              English translations begin appearing (Vaughan&apos;s Hermetic works). This opened
-              a new channel for traditions that had flowed only in Latin.
-            </li>
-          </ul>
-
-          <h2 className="text-2xl font-semibold mt-12 mb-4">Limitations &amp; Questions</h2>
-
-          <p className="text-slate-300 mb-4">
-            This is a draft analysis with significant limitations:
-          </p>
-
-          <ul className="text-slate-300 space-y-2 mb-6">
-            <li>&bull; The BPH collection has its own biases (strong on Hermetica, weaker on some other areas)</li>
-            <li>&bull; Our keyword matching is crude&mdash;many works belong to multiple streams</li>
-            <li>&bull; Works without clear dates are excluded (~30% of catalog)</li>
-            <li>&bull; The &ldquo;rivers&rdquo; metaphor implies cleaner boundaries than actually existed</li>
-            <li>&bull; We haven&apos;t yet cross-referenced with translation status</li>
-          </ul>
-
-          <p className="text-slate-300 mb-4">
-            Questions for further investigation:
-          </p>
-
-          <ul className="text-slate-300 space-y-2 mb-6">
-            <li>&bull; How do these patterns compare with the USTC data (all printing, not just BPH holdings)?</li>
-            <li>&bull; Which works at confluence points remain untranslated?</li>
-            <li>&bull; Can we map the geographic flow of traditions (Venice → Basel → Frankfurt → Amsterdam)?</li>
-            <li>&bull; What&apos;s the relationship between printing location and tradition?</li>
-          </ul>
-
-          <div className="bg-violet-900/20 border border-violet-500/30 rounded-lg p-6 my-8">
-            <h3 className="text-lg font-semibold mb-3">Feedback Welcome</h3>
-            <p className="text-slate-300 text-sm">
-              This visualization is a work in progress. If you have suggestions for improving
-              the categorization, know of errors in the data, or have ideas for additional
-              analysis, please open an issue on{" "}
-              <a
-                href="https://github.com/JDerekLomas/latinclaude"
-                className="text-violet-400 hover:underline"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GitHub
-              </a>.
-            </p>
-          </div>
-
-          <h2 className="text-2xl font-semibold mt-12 mb-4">Data Sources</h2>
-
-          <ul className="text-slate-300 space-y-2 mb-6">
-            <li>
-              &bull; <strong>Bibliotheca Philosophica Hermetica catalog</strong> (28,000+ records) &mdash;{" "}
-              <a
-                href="https://embassyofthefreemind.com/en/library"
-                className="text-violet-400 hover:underline"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Embassy of the Free Mind
-              </a>
-            </li>
-            <li>
-              &bull; <strong>Forlong&apos;s Rivers of Life chart</strong> (1883) &mdash;{" "}
-              <a
-                href="https://commons.wikimedia.org/wiki/File:Forlong-Rivers-of-Life-big-chart.pdf"
-                className="text-violet-400 hover:underline"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Wikimedia Commons
-              </a>
-            </li>
-          </ul>
         </div>
 
-        <div className="mt-16 pt-8 border-t border-slate-800 flex justify-between">
-          <Link
-            href="/blog/famous-humanists"
-            className="text-violet-400 hover:underline"
-          >
-            &larr; Even Ficino Isn&apos;t Fully Translated
-          </Link>
-          <Link
-            href="/blog"
-            className="text-violet-400 hover:underline"
-          >
-            All Posts &rarr;
-          </Link>
+        <div style={{ borderLeft: '4px solid #2ecc71', paddingLeft: '16px' }}>
+          <h3 style={{ fontWeight: 600, marginBottom: '8px' }}>1486: Pico&apos;s Synthesis</h3>
+          <p style={{ fontSize: '14px', color: '#666', margin: 0 }}>
+            Pico della Mirandola&apos;s 900 Theses merge Hermetica, Kabbalah, and Neoplatonism. Three streams converge.
+          </p>
         </div>
-      </article>
 
-      <footer className="border-t border-slate-800 py-8 text-center text-slate-500 text-sm">
-        <p>
-          <a href="https://github.com/JDerekLomas/latinclaude" className="text-violet-400 hover:underline">
-            View project on GitHub
-          </a>
+        <div style={{ borderLeft: '4px solid #8e44ad', paddingLeft: '16px' }}>
+          <h3 style={{ fontWeight: 600, marginBottom: '8px' }}>1533: Magic Codified</h3>
+          <p style={{ fontSize: '14px', color: '#666', margin: 0 }}>
+            Agrippa&apos;s <em>De Occulta Philosophia</em> published. Magic joins the mainstream as a distinct stream.
+          </p>
+        </div>
+
+        <div style={{ borderLeft: '4px solid #e67e22', paddingLeft: '16px' }}>
+          <h3 style={{ fontWeight: 600, marginBottom: '8px' }}>1541-1570: Paracelsian Wave</h3>
+          <p style={{ fontSize: '14px', color: '#666', margin: 0 }}>
+            After Paracelsus dies (1541), his works flood into print. Paracelsianism merges with alchemy, creating a new current.
+          </p>
+        </div>
+
+        <div style={{ borderLeft: '4px solid #e74c3c', paddingLeft: '16px' }}>
+          <h3 style={{ fontWeight: 600, marginBottom: '8px' }}>1614-1620: The Rosicrucian Moment</h3>
+          <p style={{ fontSize: '14px', color: '#666', margin: 0 }}>
+            The Fama Fraternitatis explodes. In 1616, <strong>eight streams converge</strong>: alchemy, Rosicrucianism, mysticism, Hermetica, theosophy, Paracelsianism, Kabbalah, and Neoplatonism. This is the peak confluence in three centuries of esoteric publishing.
+          </p>
+        </div>
+
+        <div style={{ borderLeft: '4px solid #34495e', paddingLeft: '16px' }}>
+          <h3 style={{ fontWeight: 600, marginBottom: '8px' }}>1640s-1680s: The Boehme Current</h3>
+          <p style={{ fontSize: '14px', color: '#666', margin: 0 }}>
+            Jacob Boehme&apos;s theosophy rises as a distinct stream, particularly strong in the Netherlands and England. Mysticism reaches its publishing peak.
+          </p>
+        </div>
+      </div>
+
+      <h2>What the Rivers Reveal</h2>
+
+      <p>Several patterns emerge from this visualization:</p>
+
+      <ul>
+        <li>
+          <strong style={{ color: '#1a1612' }}>Streams merge at key moments.</strong> The 1610s-1620s saw an unprecedented convergence of traditions. This wasn&apos;t coincidence—the Rosicrucian manifestos deliberately synthesized Hermetic, alchemical, Kabbalistic, and Christian mystical ideas.
+        </li>
+        <li>
+          <strong style={{ color: '#1a1612' }}>Some streams persist, others fade.</strong> Mysticism and alchemy flow continuously for 300 years. Paracelsianism surges briefly (1560s-1570s) then subsides. Rosicrucianism explodes (1614-1625) then quiets but never disappears.
+        </li>
+        <li>
+          <strong style={{ color: '#1a1612' }}>The late 17th century is underrated.</strong> We often focus on the &ldquo;Renaissance&rdquo; (Ficino, Pico, Agrippa). But the 1670s-1680s saw more esoteric publishing than any earlier period—alchemy and mysticism at their peaks.
+        </li>
+        <li>
+          <strong style={{ color: '#1a1612' }}>Translation matters.</strong> The 1650s marks when English translations begin appearing (Vaughan&apos;s Hermetic works). This opened a new channel for traditions that had flowed only in Latin.
+        </li>
+      </ul>
+
+      <h2>Limitations & Questions</h2>
+
+      <p>This is a draft analysis with significant limitations:</p>
+
+      <ul>
+        <li>The BPH collection has its own biases (strong on Hermetica, weaker on some other areas)</li>
+        <li>Our keyword matching is crude—many works belong to multiple streams</li>
+        <li>Works without clear dates are excluded (~30% of catalog)</li>
+        <li>The &ldquo;rivers&rdquo; metaphor implies cleaner boundaries than actually existed</li>
+        <li>We haven&apos;t yet cross-referenced with translation status</li>
+      </ul>
+
+      <p>Questions for further investigation:</p>
+
+      <ul>
+        <li>How do these patterns compare with the USTC data (all printing, not just BPH holdings)?</li>
+        <li>Which works at confluence points remain untranslated?</li>
+        <li>Can we map the geographic flow of traditions (Venice → Basel → Frankfurt → Amsterdam)?</li>
+        <li>What&apos;s the relationship between printing location and tradition?</li>
+      </ul>
+
+      <div style={{
+        background: '#f5f0e8',
+        border: '1px solid #e0d8c8',
+        borderRadius: '8px',
+        padding: '24px',
+        margin: '32px 0',
+      }}>
+        <h3 style={{ fontSize: '18px', fontWeight: 600, marginBottom: '12px', color: '#1a1612' }}>
+          Feedback Welcome
+        </h3>
+        <p style={{ fontSize: '14px', color: '#444', margin: 0 }}>
+          This visualization is a work in progress. If you have suggestions for improving the categorization, know of errors in the data, or have ideas for additional analysis, please open an issue on{" "}
+          <a
+            href="https://github.com/JDerekLomas/latinclaude"
+            style={{ color: '#9e4a3a' }}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>.
         </p>
-      </footer>
-    </div>
+      </div>
+
+      <h2>Data Sources</h2>
+
+      <ul>
+        <li>
+          <strong>Bibliotheca Philosophica Hermetica catalog</strong> (28,000+ records) —{" "}
+          <a
+            href="https://embassyofthefreemind.com/en/library"
+            style={{ color: '#9e4a3a' }}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Embassy of the Free Mind
+          </a>
+        </li>
+        <li>
+          <strong>Forlong&apos;s Rivers of Life chart</strong> (1883) —{" "}
+          <a
+            href="https://commons.wikimedia.org/wiki/File:Forlong-Rivers-of-Life-big-chart.pdf"
+            style={{ color: '#9e4a3a' }}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Wikimedia Commons
+          </a>
+        </li>
+      </ul>
+    </BlogLayout>
   );
 }

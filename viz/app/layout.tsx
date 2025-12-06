@@ -14,8 +14,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Ancient Wisdom Research Labs - Mapping Hidden Libraries",
-  description: "500,000 Latin works from 1450-1700 remain untranslated. We're mapping the hidden libraries of Western esotericism.",
+  title: "Second Renaissance Research",
+  description: "500,000 Latin works from 1450-1700. Less than 2% translated. The first Renaissance was sparked by rediscovering ancient texts—we're working to unlock the half million that came next.",
 };
 
 export default function RootLayout({
