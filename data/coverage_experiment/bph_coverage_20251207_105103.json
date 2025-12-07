@@ -1,0 +1,4977 @@
+{
+  "metadata": {
+    "timestamp": "20251207_105103",
+    "source": "BPH 1400-1500",
+    "sample_size": 74,
+    "seed": 2024
+  },
+  "summary": {
+    "internet_archive": {
+      "found": 0,
+      "pct": 0.0
+    },
+    "google_books": {
+      "found": 66,
+      "pct": 89.1891891891892
+    },
+    "any_digital": {
+      "found": 66,
+      "pct": 89.1891891891892
+    },
+    "istc": {
+      "found": 47,
+      "pct": 63.513513513513516
+    },
+    "ustc": {
+      "found": 27,
+      "pct": 36.486486486486484
+    },
+    "any_catalog": {
+      "found": 48,
+      "pct": 64.86486486486487
+    }
+  },
+  "results": [
+    {
+      "bph_id": "e57fc99b-6179-984b-32d7-467032a66115",
+      "ubn": "10962",
+      "author": "Marcellus",
+      "title": "Passio Petri et Pauli apostolorum",
+      "year": 1499,
+      "place": "[Keulen]||",
+      "keywords": "mysticism",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Passio Petri et Pauli apostolorum ac disputatio eorundem contra Symonem ... magnum. - \"A la fin\"",
+            "authors": [
+              "Pseudo- Marcellus"
+            ],
+            "link": "http://books.google.nl/books?id=kcj7XwAACAAJ&dq=intitle:Passio+Petri+et+Pauli+apostolorum%2Binauthor:Marcellus&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Passio petri et pauli apostolorum ac disputatio eorundem contra Symonem quenda magum coram Nerone impatore, etc. (End. Ego Marcellus discipulus domini mei Petri apostoli, que vidi scripsi.) G.L.",
+            "authors": [
+              "of Rome MARCELLUS (Saint and Martyr)"
+            ],
+            "link": "http://books.google.nl/books?id=xD8tMwEACAAJ&dq=intitle:Passio+Petri+et+Pauli+apostolorum%2Binauthor:Marcellus&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Passio Petri et Pauli apostolorum",
+            "authors": [],
+            "link": "http://books.google.nl/books?id=qWmbDAEACAAJ&dq=intitle:Passio+Petri+et+Pauli+apostolorum%2Binauthor:Marcellus&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": true,
+        "num_results": 1,
+        "results": [
+          {
+            "id": "im00230000",
+            "author": "Marcellus",
+            "title": "Passio Petri et Pauli apostolorum",
+            "date_single": 1499,
+            "place": "[Cologne"
+          }
+        ]
+      },
+      "ustc": {
+        "found": false,
+        "error": "{'message': 'canceling statement due to statement timeout', 'code': '57014', 'hint': None, 'details': None}"
+      }
+    },
+    {
+      "bph_id": "6524b9f4-28c7-b167-e10f-74ac44df7a05",
+      "ubn": "147",
+      "author": "Albertus Magnus",
+      "title": "De adhaerendo Deo. Johannes Gerson. De remediis contra pusillanimitatem. Bonaventura. Epistola de modo proficiendi. [Etc.]",
+      "year": 1473,
+      "place": "[Ulm]",
+      "keywords": "mysticism",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 4,
+        "results": [
+          {
+            "title": "De adhaerendo Deo. Add: Johannes Gerson: De remediis contra pusillanimitatem. Bonaventura: Epistola de modo proficiendi; Doctrina iuvenum; De instructione novitiorum",
+            "authors": [
+              "Saint Albertus (Magnus)",
+              "Johannes (de Castello.)",
+              "Johannes Zainer"
+            ],
+            "link": "http://books.google.nl/books?id=t7gPOQAACAAJ&dq=intitle:De+adhaerendo+Deo.+Johannes+Gerson.+De+remediis+contra+pusillanimitatem.+Bonaven%2Binauthor:Albertus+Magnus&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "De adhaerendo Deo. Add: Johannes Gerson: De remediis contra pusillanimitatem. Bonaventura: Epistola de modo proficiendi; Doctrina iuvenum; De instructione novitiorum",
+            "authors": [],
+            "link": "http://books.google.nl/books?id=q8vvDAEACAAJ&dq=intitle:De+adhaerendo+Deo.+Johannes+Gerson.+De+remediis+contra+pusillanimitatem.+Bonaven%2Binauthor:Albertus+Magnus&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "De adhaerendo Deo. Joannes Gerson: De remediis contra pusillanimitatem ; S. Bonaventura: Epistola de modo proficiendi ; Doctrina iuvenum ; De instructione novitiorum",
+            "authors": [
+              "Saint Albertus (Magnus)"
+            ],
+            "link": "http://books.google.nl/books?id=MxLfzQEACAAJ&dq=intitle:De+adhaerendo+Deo.+Johannes+Gerson.+De+remediis+contra+pusillanimitatem.+Bonaven%2Binauthor:Albertus+Magnus&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "ustc": {
+        "found": false,
+        "error": "{'message': 'canceling statement due to statement timeout', 'code': '57014', 'hint': None, 'details': None}"
+      }
+    },
+    {
+      "bph_id": "9dd2bccf-f906-07cc-2314-72093bd415f7",
+      "ubn": "17330",
+      "author": "[Thomas a Kempis]|Gerson, Johannes",
+      "title": "De imitatione Christi. Tractatus de meditatione cordis",
+      "year": 1488,
+      "place": "Augsburg",
+      "keywords": "mysticism",
+      "internet_archive": {
+        "found": false,
+        "error": "HTTPSConnectionPool(host='archive.org', port=443): Read timed out. (read timeout=30)"
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Thomas de Kempis De imitatione christi ... Item Iohannes Gerson de meditatione cordis",
+            "authors": [
+              "Thomas (von Kempen)"
+            ],
+            "link": "http://books.google.nl/books?id=QCEi0AEACAAJ&dq=intitle:De+imitatione+Christi.+Tractatus+de+meditatione+cordis%2Binauthor:%5BThomas+a+Kempis%5D%7CGerson,+Johannes&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Thomas de Kempis de imitatione Christi & de contemptu omnium vanitatum mundi. De interna cuersatione, de interna locutione christi ad animam fideiem eum quanta reverentia Christus sit suscipiendus . Itam Johannes Gerson de meditatione cordis",
+            "authors": [
+              "Thomas a Kempis",
+              "Jean Gerson"
+            ],
+            "link": "http://books.google.nl/books?id=81EA0AEACAAJ&dq=intitle:De+imitatione+Christi.+Tractatus+de+meditatione+cordis%2Binauthor:%5BThomas+a+Kempis%5D%7CGerson,+Johannes&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Thomas de Kempis De imitatio christi",
+            "authors": [
+              "Thomas (a Kempis.)",
+              "Pr\u00fcss (Offizin, Strasbourg)"
+            ],
+            "link": "http://books.google.nl/books?id=_RLCoQEACAAJ&dq=intitle:De+imitatione+Christi.+Tractatus+de+meditatione+cordis%2Binauthor:%5BThomas+a+Kempis%5D%7CGerson,+Johannes&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "ustc": {
+        "found": false,
+        "error": "{'message': 'canceling statement due to statement timeout', 'code': '57014', 'hint': None, 'details': None}"
+      }
+    },
+    {
+      "bph_id": "663f208f-cf65-d20d-5bfa-4adfbed6c51a",
+      "ubn": "13148",
+      "author": "Caterina da Bologna",
+      "title": "Le sette armi spirituali",
+      "year": 1475,
+      "place": "[Bologna]||",
+      "keywords": "mysticism",
+      "internet_archive": {
+        "found": false,
+        "error": "HTTPSConnectionPool(host='archive.org', port=443): Max retries exceeded with url: /advancedsearch.php?q=title%3A%22Le+sette+armi+spirituali%22+AND+creator%3A%22Caterina+da+Bologna%22&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&fl%5B%5D=mediatype&rows=5&output=json (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1032d3750>, 'Connection to archive.org timed out. (connect timeout=30)'))"
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Le sette armi spirituali",
+            "authors": [
+              "Caterina da Bologna (santa.)"
+            ],
+            "link": "http://books.google.nl/books?id=5lWuzgEACAAJ&dq=intitle:Le+sette+armi+spirituali%2Binauthor:Caterina+da+Bologna&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Le sette armi necessarie alla battaglia spirituale ... da S. Caterina di Bologna per le sue novizie e per chiunque desidera far progresso nella via dello spirito",
+            "authors": [
+              "Caterina da Bologna (santa.)"
+            ],
+            "link": "http://books.google.nl/books?id=iI02MwEACAAJ&dq=intitle:Le+sette+armi+spirituali%2Binauthor:Caterina+da+Bologna&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Sette armi spirituali di santa Caterina da Bologna, o sia, Il vero modo di resistere alle tentazioni",
+            "authors": [
+              "Caterina da Bologna (santa.)"
+            ],
+            "link": "http://books.google.nl/books?id=8Qc9MwEACAAJ&dq=intitle:Le+sette+armi+spirituali%2Binauthor:Caterina+da+Bologna&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": true,
+        "num_results": 2,
+        "results": [
+          {
+            "id": "ic00279000",
+            "author": "Catharina Bononiensis, S",
+            "title": "Le sette armi spirituali",
+            "date_single": 1475,
+            "place": "[Bologna"
+          },
+          {
+            "id": "ic00279500",
+            "author": "Catharina Bononiensis, S",
+            "title": "Le sette armi spirituali",
+            "date_single": 1500,
+            "place": "Bologna"
+          }
+        ]
+      },
+      "ustc": {
+        "found": false,
+        "error": "{'message': 'canceling statement due to statement timeout', 'code': '57014', 'hint': None, 'details': None}"
+      }
+    },
+    {
+      "bph_id": "d6b3ca16-c071-5bc9-88c5-86d119849bdb",
+      "ubn": "9415",
+      "author": "Pico della Mirandola, Gianfrancesco",
+      "title": "De morte Christi",
+      "year": 1497,
+      "place": "Bologna",
+      "keywords": "hermetica",
+      "internet_archive": {
+        "found": false,
+        "error": "HTTPSConnectionPool(host='archive.org', port=443): Read timed out. (read timeout=30)"
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "De imaginatione",
+            "authors": [
+              "Giovanni Francesco Pico della Mirandola"
+            ],
+            "link": "http://books.google.nl/books?id=G3UeAAAAMAAJ&dq=intitle:De+morte+Christi%2Binauthor:Pico+della+Mirandola,+Gianfrancesco&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "De imaginatione, latin",
+            "authors": [
+              "Giovanni Francesco Pico della Mirandola"
+            ],
+            "link": "http://books.google.nl/books?id=Bp9iAAAAMAAJ&dq=intitle:De+morte+Christi%2Binauthor:Pico+della+Mirandola,+Gianfrancesco&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "De morte Christi et propria cogitanda",
+            "authors": [
+              "Giovanni Francesco Pico della Mirandola"
+            ],
+            "link": "http://books.google.nl/books?id=_UmewgEACAAJ&dq=intitle:De+morte+Christi%2Binauthor:Pico+della+Mirandola,+Gianfrancesco&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": true,
+        "num_results": 2,
+        "results": [
+          {
+            "id": "ip00645000",
+            "author": "Picus de Mirandula, Johannes Franciscus",
+            "title": "De Morte Christi. Add: De studio divinae et humanae philosophiae; De sententia excommunicationis iniusta pro Hieronymi Savonarolae innocentia; Defensio Hieronymi Savonarolae adversus Samuelem Cassinensem",
+            "date_single": 1503,
+            "place": "[Venice"
+          },
+          {
+            "id": "ip00644000",
+            "author": "Picus de Mirandula, Johannes Franciscus",
+            "title": "De morte Christi. Add: De studio divinae et humanae philosophiae",
+            "date_single": 1497,
+            "place": "Bologna"
+          }
+        ]
+      },
+      "ustc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": 1314475,
+            "author_1": "Niklaus, Johannes",
+            "title": "Dissertatio theologica de morte Christi filii Dei quam sub praesidio Iohannis Nicolai public\u00e8 ventilandam proponit Iacobus Risoldus, Helveti\u00f4-Bernas s.s.l.l. stud. auth. & resp. ad diem 23. Iulii",
+            "year": 1674,
+            "place": "Bern"
+          },
+          {
+            "id": 1372578,
+            "author_1": "Apollonius, Guilielmus",
+            "title": "Disputatio theologica de morte Christi. [04.09]",
+            "year": 1656,
+            "place": "Middelburg"
+          },
+          {
+            "id": 1383682,
+            "author_1": "Bynaeus, Antonius",
+            "title": "De morte Christi commentarii liber secundus",
+            "year": 1696,
+            "place": "Amsterdam"
+          }
+        ]
+      }
+    },
+    {
+      "bph_id": "8c132630-dc2d-7e20-4821-7acd13a5ad55",
+      "ubn": "13365",
+      "author": "Macrobius, Ambrosius Theodosius",
+      "title": "In Somnium Scipionis expositio. Saturnalia",
+      "year": 1485,
+      "place": "Brescia",
+      "keywords": "hermetica",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "In Somnium Scipionis Ciceronis expositio",
+            "authors": [
+              "Ambrosius Theodosius Macrobius"
+            ],
+            "link": "http://books.google.nl/books?id=xw8snQEACAAJ&dq=intitle:In+Somnium+Scipionis+expositio.+Saturnalia%2Binauthor:Macrobius,+Ambrosius+Theodosius&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "In Somnium Scipionis Ciceronis expositio",
+            "authors": [
+              "Ambrosius Theodosius Macrobius"
+            ],
+            "link": "https://play.google.com/store/books/details?id=6GRMbjB-0rIC&source=gbs_api"
+          },
+          {
+            "title": "In Somnium Scipionis expositio",
+            "authors": [
+              "Ambrosius Theodosius Macrobius"
+            ],
+            "link": "http://books.google.nl/books?id=CeVF0AEACAAJ&dq=intitle:In+Somnium+Scipionis+expositio.+Saturnalia%2Binauthor:Macrobius,+Ambrosius+Theodosius&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": "im00008000",
+            "author": "Macrobius, Aurelius Theodosius",
+            "title": "In Somnium Scipionis expositio. Saturnalia",
+            "date_single": 1472,
+            "place": "Venice"
+          },
+          {
+            "id": "im00009000",
+            "author": "Macrobius, Aurelius Theodosius",
+            "title": "In Somnium Scipionis expositio. Saturnalia",
+            "date_single": 1483,
+            "place": "Brescia"
+          },
+          {
+            "id": "im00010000",
+            "author": "Macrobius, Aurelius Theodosius",
+            "title": "In Somnium Scipionis expositio. Saturnalia",
+            "date_single": 1485,
+            "place": "Brescia"
+          }
+        ]
+      },
+      "ustc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": 196554,
+            "author_1": "Macrobius, Ambrosius Aurelius Theodosius",
+            "title": "In Somnium Scipionis expositio. Saturnalia",
+            "year": 1500,
+            "place": "Venezia"
+          },
+          {
+            "id": 262717,
+            "author_1": "Macrobius, Ambrosius Aurelius Theodosius",
+            "title": "In Somnium Scipionis expositio. Saturnalia",
+            "year": 1483,
+            "place": "Brescia"
+          },
+          {
+            "id": 282268,
+            "author_1": "Macrobius, Ambrosius Aurelius Theodosius",
+            "title": "In Somnium Scipionis expositio. Saturnalia",
+            "year": 1472,
+            "place": "Venezia"
+          }
+        ]
+      }
+    },
+    {
+      "bph_id": "8a6b0965-c543-a9b3-5302-d7c34b721244",
+      "ubn": "3805",
+      "author": "Alanus de Insulis",
+      "title": "Doctrinale altum",
+      "year": 1498,
+      "place": "[Augsburg]",
+      "keywords": "mysticism",
+      "internet_archive": {
+        "found": false,
+        "error": "HTTPSConnectionPool(host='archive.org', port=443): Read timed out. (read timeout=30)"
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Doctrinale altum",
+            "authors": [
+              "Alanus (ab Insulis)"
+            ],
+            "link": "https://play.google.com/store/books/details?id=aH5SAAAAcAAJ&source=gbs_api"
+          },
+          {
+            "title": "Parabole seu Doctrinale altum (etc.)",
+            "authors": [
+              "Alanus (ab Insulis)"
+            ],
+            "link": "https://play.google.com/store/books/details?id=S0ZcAAAAcAAJ&source=gbs_api"
+          },
+          {
+            "title": "Doctrinale altum seu liber parabolarum Alani metrice descriptus",
+            "authors": [
+              "Alanus (ab Insulis)"
+            ],
+            "link": "https://play.google.com/store/books/details?id=EgbZ4f9RqYEC&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": "ia00174500",
+            "author": "Alanus de Insulis",
+            "title": "Doctrinale altum seu liber parabolarum (cum commento)",
+            "date_single": 1497,
+            "place": "Paris"
+          },
+          {
+            "id": "ia00170000",
+            "author": "Alanus de Insulis",
+            "title": "Doctrinale altum seu liber parabolarum. Without commentary",
+            "date_single": null,
+            "place": "[Paris"
+          },
+          {
+            "id": "ia00171000",
+            "author": "Alanus de Insulis",
+            "title": "Doctrinale altum seu liber parabolarum. Without commentary",
+            "date_single": null,
+            "place": "[Paris]"
+          }
+        ]
+      },
+      "ustc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": 613772,
+            "author_1": "Bernardus Claravallensis",
+            "title": "Auctores octo cum glossa. Disticha. Ecloga. Facetus. De contemptu mundi. Tobias. Doctrinale altum parabolarum. Fabulae. Floretus",
+            "year": 1492,
+            "place": "Lyon"
+          },
+          {
+            "id": 623325,
+            "author_1": "Alanus ab Insulis",
+            "title": "Doctrinale altum seu liber parabolarum. Without commentary ",
+            "year": 1490,
+            "place": "Paris"
+          },
+          {
+            "id": 645920,
+            "author_1": "Alanus (ab Insulis)",
+            "title": "Parabolis, alias doctrinale altum, cum luculenta.glossarum expositione.",
+            "year": 1507,
+            "place": "K\u00f6ln"
+          }
+        ]
+      }
+    },
+    {
+      "bph_id": "ed7498ed-5ca8-eff8-1324-5f3aa155dee4",
+      "ubn": "13810",
+      "author": "Thomas van Aquino",
+      "title": "Summa contra gentiles, sive de veritate catholicae fidei",
+      "year": 1474,
+      "place": "[Straatsburg]",
+      "keywords": "esotericism",
+      "internet_archive": {
+        "found": false,
+        "error": "HTTPSConnectionPool(host='archive.org', port=443): Read timed out. (read timeout=30)"
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Summa contra gentiles seu de veritate catholicae fidei",
+            "authors": [
+              "Thomas (de Aquino.)"
+            ],
+            "link": "https://play.google.com/store/books/details?id=ORACClXI0W4C&source=gbs_api"
+          },
+          {
+            "title": "De veritate catholicae fidei contra gentiles seu Summa Philosophica",
+            "authors": [
+              "Thomas (de Aquino.)"
+            ],
+            "link": "https://play.google.com/store/books/details?id=1YBRAAAAcAAJ&source=gbs_api"
+          },
+          {
+            "title": "Sancti Thomae Aquinatis doctoris angelici ordinis Praedicatorum De veritate catholicae fidei contra gentiles, seu Summa philosophica accedunt praecipua ejusdem doctoris philosophica opuscula",
+            "authors": [
+              "Thomas (de Aquino.)"
+            ],
+            "link": "https://play.google.com/store/books/details?id=HgX1WQcxgagC&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": true,
+        "num_results": 4,
+        "results": [
+          {
+            "id": "it00190000",
+            "author": "Thomas Aquinas",
+            "title": "Summa contra gentiles, sive De veritate Catholicae fidei",
+            "date_single": 1474,
+            "place": "[Strassburg"
+          },
+          {
+            "id": "it00191000",
+            "author": "Thomas Aquinas",
+            "title": "Summa contra gentiles, sive De veritate Catholicae fidei",
+            "date_single": 1475,
+            "place": "Rome"
+          },
+          {
+            "id": "it00192000",
+            "author": "Thomas Aquinas",
+            "title": "Summa contra gentiles, sive De veritate Catholicae fidei",
+            "date_single": 1476,
+            "place": "Venice"
+          }
+        ]
+      },
+      "ustc": {
+        "found": false,
+        "error": "{'message': 'canceling statement due to statement timeout', 'code': '57014', 'hint': None, 'details': None}"
+      }
+    },
+    {
+      "bph_id": "b61d4ed8-6555-5b79-fcd5-c86df02257a7",
+      "ubn": "29118",
+      "author": "Hermes Trismegistus",
+      "title": "De potestate ac sapiencia dei",
+      "year": 1494,
+      "place": "Paris",
+      "keywords": "hermetica",
+      "internet_archive": {
+        "found": false,
+        "error": "HTTPSConnectionPool(host='archive.org', port=443): Read timed out. (read timeout=30)"
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Pimander de potestate et sapientia dei",
+            "authors": [
+              "Hermes (Trismegistus)"
+            ],
+            "link": "https://play.google.com/store/books/details?id=xGKxLDHf6W4C&source=gbs_api"
+          },
+          {
+            "title": "Pymander, de potestate et sapientia Dei, Ejudsem Asclepius, de voluntate Dei",
+            "authors": [
+              "Hermes (Trismegistus)",
+              "Hermes Trismegistos"
+            ],
+            "link": "https://play.google.com/store/books/details?id=k79QAAAAcAAJ&source=gbs_api"
+          },
+          {
+            "title": "Mercurii Trismegisti Pymander, de potestate et sapientia dei",
+            "authors": [
+              "Hermes (Trismegistus)"
+            ],
+            "link": "https://play.google.com/store/books/details?id=TDNpAAAAcAAJ&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "ustc": {
+        "found": false,
+        "error": "{'message': 'canceling statement due to statement timeout', 'code': '57014', 'hint': None, 'details': None}"
+      }
+    },
+    {
+      "bph_id": "d6b97cda-c7bf-22db-fb9e-f8b71e61fa5a",
+      "ubn": "3149",
+      "author": "Boethius, Anicius Manlius Torquatus Severinus",
+      "title": "De consolatione philosophiae",
+      "year": 1478,
+      "place": "[Westminster]||",
+      "keywords": "mysticism",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "De Consolatione Philosophiae [mittelengl.]",
+            "authors": [
+              "Anicius Manlius Severinus Boethius"
+            ],
+            "link": "http://books.google.nl/books?id=88l70QEACAAJ&dq=intitle:De+consolatione+philosophiae%2Binauthor:Boethius,+Anicius+Manlius+Torquatus+Seve&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "De consolatione philosophiae libri V.",
+            "authors": [
+              "Anicius Manlius Torquatus Severinus Boethius"
+            ],
+            "link": "https://play.google.com/store/books/details?id=eEemFOBRDkgC&source=gbs_api"
+          },
+          {
+            "title": "Anicii Manlii Torquati Severini Boethii de Consolatione Philosophiae",
+            "authors": [
+              "Anicius Manlius Severinus Boethius"
+            ],
+            "link": "https://play.google.com/store/books/details?id=BRY9AAAAcAAJ&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": "ib00769000",
+            "author": "Boethius",
+            "title": "De consolatione philosophiae",
+            "date_single": 1473,
+            "place": "[Basel"
+          },
+          {
+            "id": "ib00769200",
+            "author": "Boethius",
+            "title": "De consolatione philosophiae",
+            "date_single": 1474,
+            "place": "[Savigliano]"
+          },
+          {
+            "id": "ib00769400",
+            "author": "Boethius",
+            "title": "De consolatione philosophiae",
+            "date_single": 1474,
+            "place": "Savona"
+          }
+        ]
+      },
+      "ustc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": 343428,
+            "author_1": "Boethius, Anicius Manlius Severinus",
+            "title": "De consolatione philosophiae",
+            "year": 1479,
+            "place": "Pinerolo"
+          },
+          {
+            "id": 345487,
+            "author_1": "Boethius, Anicius Manlius Severinus",
+            "title": "De consolatione philosophiae ",
+            "year": 1483,
+            "place": "Lyon"
+          },
+          {
+            "id": 358633,
+            "author_1": "Boethius, Anicius Manlius Severinus",
+            "title": "De consolatione philosophiae (with commentary ascribed in the text to Thomas Aquinas). Add: Pseudo- Boethius: De disciplina scholarium (Comm: pseudo- Thomas Aquinas)",
+            "year": 1490,
+            "place": "Lyon"
+          }
+        ]
+      }
+    },
+    {
+      "bph_id": "74b963ec-9c4a-4882-310c-0e3043dbaaa8",
+      "ubn": "8173",
+      "author": "Basilius Magnus",
+      "title": "De legendis antiquorum libris",
+      "year": 1496,
+      "place": "Salamanca",
+      "keywords": "hermetica",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "De legendis antiquorum libris opusculum divinum - BSB Clm 30206",
+            "authors": [
+              "Caesariensis Basilius"
+            ],
+            "link": "https://play.google.com/store/books/details?id=TRcPF7yX-vMC&source=gbs_api"
+          },
+          {
+            "title": "De legendis gentilium libris oratio cum interpretatione gemina Hugonsi Grotii et Leonardi Aretini ... D. Hieronymi ad magnum oratorem Romanum ... adiecit",
+            "authors": [
+              "Caesariensis Basilius"
+            ],
+            "link": "https://play.google.com/store/books/details?id=Nj9OAAAAcAAJ&source=gbs_api"
+          },
+          {
+            "title": "De ingenuis moribus. Basilius Magnus: De legendis libris antiquorum postarum, Leonardo Aretino interprete. Xenophon: De tyrannide Leonardo Aretino interprete",
+            "authors": [
+              "Petrus Paulus Vergerius",
+              "Basilius Magnus",
+              "Xenophon"
+            ],
+            "link": "http://books.google.nl/books?id=FMgVcgAACAAJ&dq=intitle:De+legendis+antiquorum+libris%2Binauthor:Basilius+Magnus&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": "ib00271000",
+            "author": "Basilius Magnus",
+            "title": "De legendis antiquorum libris, sive De liberalibus studiis (Tr: Leonardus Brunus Aretinus)",
+            "date_single": null,
+            "place": "[Verona"
+          },
+          {
+            "id": "ib00271500",
+            "author": "Basilius Magnus",
+            "title": "De legendis antiquorum libris, sive De liberalibus studiis. Add: Xenophon: Apologia Socratis (Tr: Leonardus Brunus Aretinus)",
+            "date_single": 1473,
+            "place": "Buda"
+          },
+          {
+            "id": "ib00271700",
+            "author": "Basilius Magnus",
+            "title": "De legendis antiquorum libris, sive De liberalibus studiis (Tr: Leonardus Brunus Aretinus)",
+            "date_single": 1474,
+            "place": "[Milan"
+          }
+        ]
+      },
+      "ustc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": 426628,
+            "author_1": "Basilius Magnus",
+            "title": "De legendis antiquorum libris sive De liberalibus studiis",
+            "year": 1496,
+            "place": "Leipzig"
+          },
+          {
+            "id": 435201,
+            "author_1": "Basilius Magnus",
+            "title": "De legendis antiquorum libris, sive De liberalibus studiis. Add: Xenophon: Apologia Socratis (Tr: Leonardus Brunus Aretinus)",
+            "year": 1473,
+            "place": "Budapest"
+          },
+          {
+            "id": 435765,
+            "author_1": "Plutarchus",
+            "title": "De liberis educandis. De legendis antiquorum libris",
+            "year": 1471,
+            "place": "Passau"
+          }
+        ]
+      }
+    },
+    {
+      "bph_id": "5aac48d1-c78b-50b4-dc05-cff55609ae9d",
+      "ubn": "21561",
+      "author": "[Thomas a Kempis]",
+      "title": "De imitatione Christi",
+      "year": 1485,
+      "place": "Brescia",
+      "keywords": "mysticism",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "The Imitation of Christ",
+            "authors": [
+              "a Kempis Thomas",
+              "William Benham"
+            ],
+            "link": "http://books.google.nl/books?id=TznCoQEACAAJ&dq=intitle:De+imitatione+Christi%2Binauthor:%5BThomas+a+Kempis%5D&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "The Imitation of Christ",
+            "authors": [
+              "Thomas a Kempis"
+            ],
+            "link": "http://books.google.nl/books?id=MRYxuQEACAAJ&dq=intitle:De+imitatione+Christi%2Binauthor:%5BThomas+a+Kempis%5D&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Like Unto Christ. De Imitatione Christi. (Ascribed to Thomas \u00c0 Kempis.) A New Translation",
+            "authors": [
+              "Thomas (\u00e0 Kempis)"
+            ],
+            "link": "http://books.google.nl/books?id=AYymtgAACAAJ&dq=intitle:De+imitatione+Christi%2Binauthor:%5BThomas+a+Kempis%5D&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": true,
+        "num_results": 1,
+        "results": [
+          {
+            "id": "ii00038200",
+            "author": null,
+            "title": "Imitatio Christi [French] Le livre de Imitatione Christi",
+            "date_single": 1498,
+            "place": "Rouen"
+          }
+        ]
+      },
+      "ustc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": 505072,
+            "author_1": "Costantino da Gaeta (abbate)",
+            "title": "Pro Ioanne Gersen abbate Vercellensi, librorum de imitatione Christi auctore. Concertatio priori editione auctior. Accessit Apologetica eiusdem responsio pro hoc ipso librorum auctore: aduersus Heribertum Rosvueydum",
+            "year": 1618,
+            "place": "Roma"
+          },
+          {
+            "id": 509045,
+            "author_1": "Kempis, Thomas \u00e0",
+            "title": "De imitatione Christi libri quatuor",
+            "year": 1634,
+            "place": "Antwerpen"
+          },
+          {
+            "id": 512729,
+            "author_1": "Aquinas, Thomas",
+            "title": "De Imitatione Christi Latinograecus , Interprete Georgio Mayr e Societate Jesu",
+            "year": 1615,
+            "place": "Augsburg"
+          }
+        ]
+      }
+    },
+    {
+      "bph_id": "9369e708-6d5b-7084-10a1-f3fe7043aabd",
+      "ubn": "1787",
+      "author": "Hartlieb, Johann",
+      "title": "Die Kunst Chiromantie",
+      "year": 1480,
+      "place": "Augsburg||",
+      "keywords": "hermetica",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Die Kunst Chiromantia des Johann Hartlieb",
+            "authors": [],
+            "link": "http://books.google.nl/books?id=7WLNjgEACAAJ&dq=intitle:Die+Kunst+Chiromantie%2Binauthor:Hartlieb,+Johann&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Die Kunst der Chiromantie",
+            "authors": [
+              "Johann Hartlieb"
+            ],
+            "link": "http://books.google.nl/books?id=IRg4uAAACAAJ&dq=intitle:Die+Kunst+Chiromantie%2Binauthor:Hartlieb,+Johann&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Die Kunst chiromantia des Dr. Hartlieb",
+            "authors": [
+              "Johann Hartlieb"
+            ],
+            "link": "http://books.google.nl/books?id=btl6ngEACAAJ&dq=intitle:Die+Kunst+Chiromantie%2Binauthor:Hartlieb,+Johann&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "ustc": {
+        "found": false,
+        "error": "{'message': 'canceling statement due to statement timeout', 'code': '57014', 'hint': None, 'details': None}"
+      }
+    },
+    {
+      "bph_id": "f0395bc3-4b1b-544f-dedf-6133973e3c35",
+      "ubn": "9291",
+      "author": "Poliziano, Angelo",
+      "title": "Miscellaneorum centuria prima",
+      "year": 1489,
+      "place": "Florence",
+      "keywords": "hermetica",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Angeli Politiani Miscellaneorum centuria prima",
+            "authors": [
+              "Angelo Poliziano"
+            ],
+            "link": "http://books.google.nl/books?id=SYhPoAEACAAJ&dq=intitle:Miscellaneorum+centuria+prima%2Binauthor:Poliziano,+Angelo&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Miscellaneorum centuria prima",
+            "authors": [
+              "Angelo Poliziano"
+            ],
+            "link": "http://books.google.nl/books?id=m8_jnQEACAAJ&dq=intitle:Miscellaneorum+centuria+prima%2Binauthor:Poliziano,+Angelo&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Omnium Angeli Politiani operum (quae quidem extare novimus) tomus prior, in quo sunt: epistolarum libri 12. ... Charmides Platonis a Politiano latinitate donatus, opus imperfectum ... Miscellaneorum centuria prima ...",
+            "authors": [
+              "Angelo Poliziano"
+            ],
+            "link": "https://play.google.com/store/books/details?id=pvBBZ8MItHIC&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": true,
+        "num_results": 2,
+        "results": [
+          {
+            "id": "ip00890000",
+            "author": "Politianus, Angelus",
+            "title": "Miscellaneorum centuria prima",
+            "date_single": 1489,
+            "place": "Florence"
+          },
+          {
+            "id": "is00006000",
+            "author": "Sabellicus, Marcus Antonius",
+            "title": "Emendationes, seu Annotationes in Plinium. Add: Philippus Beroaldus: Annotationes centum; Annotationes in commentarios Servii Vergilianos; Emendationes in Plinium. Angelus Politianus: Miscellaneorum centuria prima. Domitius Calderinus: Observationes",
+            "date_single": 1501,
+            "place": "[Venice"
+          }
+        ]
+      },
+      "ustc": {
+        "found": false,
+        "error": "{'message': 'canceling statement due to statement timeout', 'code': '57014', 'hint': None, 'details': None}"
+      }
+    },
+    {
+      "bph_id": "5ed59a50-9868-7508-1b1d-c1aa73c3a886",
+      "ubn": "13112",
+      "author": "Bossus, Matthaeus",
+      "title": "Sermo in Jesu Christi passionem",
+      "year": 1495,
+      "place": "Bologna",
+      "keywords": "mysticism",
+      "internet_archive": {
+        "found": false,
+        "error": "HTTPSConnectionPool(host='archive.org', port=443): Read timed out. (read timeout=30)"
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1,
+        "results": [
+          {
+            "title": "Sermo in Jesu Christi passionem",
+            "authors": [],
+            "link": "http://books.google.nl/books?id=GHf0jwEACAAJ&dq=intitle:Sermo+in+Jesu+Christi+passionem%2Binauthor:Bossus,+Matthaeus&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": true,
+        "num_results": 2,
+        "results": [
+          {
+            "id": "ib01047000",
+            "author": "Bossus, Matthaeus",
+            "title": "Sermo in Jesu Christi passionem",
+            "date_single": 1495,
+            "place": "Bologna"
+          },
+          {
+            "id": "ib01048000",
+            "author": "Bossus, Matthaeus",
+            "title": "Sermo in Jesu Christi passionem",
+            "date_single": 1495,
+            "place": "Bologna"
+          }
+        ]
+      },
+      "ustc": {
+        "found": false,
+        "error": "{'message': 'canceling statement due to statement timeout', 'code': '57014', 'hint': None, 'details': None}"
+      }
+    },
+    {
+      "bph_id": "f9bc9659-3f56-1152-6c3f-acbd2357b167",
+      "ubn": "14290",
+      "author": "Gafurius, Franchinus",
+      "title": "Theorica musicae",
+      "year": 1492,
+      "place": "Milaan",
+      "keywords": "music",
+      "internet_archive": {
+        "found": false,
+        "error": "('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))"
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1,
+        "results": [
+          {
+            "title": "Theorica musicae",
+            "authors": [
+              "Franchinus Gafurius"
+            ],
+            "link": "http://books.google.nl/books?id=ZvCnzgEACAAJ&dq=intitle:Theorica+musicae%2Binauthor:Gafurius,+Franchinus&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": true,
+        "num_results": 2,
+        "results": [
+          {
+            "id": "ig00005000",
+            "author": "Gafurius, Franchinus",
+            "title": "Theorica musicae",
+            "date_single": 1480,
+            "place": "Naples"
+          },
+          {
+            "id": "ig00006000",
+            "author": "Gafurius, Franchinus",
+            "title": "Theorica musicae",
+            "date_single": 1492,
+            "place": "Milan"
+          }
+        ]
+      },
+      "ustc": {
+        "found": false,
+        "error": "{'message': 'canceling statement due to statement timeout', 'code': '57014', 'hint': None, 'details': None}"
+      }
+    },
+    {
+      "bph_id": "12cf9eec-77bf-8ea8-b4f9-6cbf34b98274",
+      "ubn": "3317",
+      "author": "Tritheim, Johann",
+      "title": "De cura pastorali",
+      "year": 1498,
+      "place": "Mainz",
+      "keywords": "mysticism",
+      "internet_archive": {
+        "found": false,
+        "error": "HTTPSConnectionPool(host='archive.org', port=443): Max retries exceeded with url: /advancedsearch.php?q=title%3A%22De+cura+pastorali%22+AND+creator%3A%22Tritheim%2C+Johann%22&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&fl%5B%5D=mediatype&rows=5&output=json (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1032d1f90>, 'Connection to archive.org timed out. (connect timeout=30)'))"
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1,
+        "results": [
+          {
+            "title": "De cura pastorali. Oratio joannis tritemij Abbatis spanhemensis habita in selgenstat in prouinciali capitulo. Anno. M.cccc.xcvj. G.L.",
+            "authors": [
+              "Johann TRITHEIM"
+            ],
+            "link": "http://books.google.nl/books?id=rfNJwAEACAAJ&dq=intitle:De+cura+pastorali%2Binauthor:Tritheim,+Johann&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": true,
+        "num_results": 2,
+        "results": [
+          {
+            "id": "it00436000",
+            "author": "Tritheim, Johann",
+            "title": "De cura pastorali",
+            "date_single": 1496,
+            "place": "Mainz"
+          },
+          {
+            "id": "it00451700",
+            "author": "Tritheim, Johann",
+            "title": "De proprietate monachorum. Add: De cura pastorali",
+            "date_single": null,
+            "place": "Paris"
+          }
+        ]
+      },
+      "ustc": {
+        "found": false,
+        "error": "{'message': 'canceling statement due to statement timeout', 'code': '57014', 'hint': None, 'details': None}"
+      }
+    },
+    {
+      "bph_id": "b89625f2-f3a6-ae5a-18e2-9cde1ea8e4b1",
+      "ubn": "2959",
+      "author": "Dante Alighieri",
+      "title": "La Commedia. Il credo",
+      "year": 1497,
+      "place": "Venetie",
+      "keywords": "hermetica",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "La Divina Commedia di Dante Alighieri ; Credo, il Pater nostro e l'Ave Maria",
+            "authors": [
+              "Dante Alighieri"
+            ],
+            "link": "http://books.google.nl/books?id=mBVBSQAACAAJ&dq=intitle:La+Commedia.+Il+credo%2Binauthor:Dante+Alighieri&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Commedia",
+            "authors": [
+              "Dante Alighieri"
+            ],
+            "link": "http://books.google.nl/books?id=KycFMwEACAAJ&dq=intitle:La+Commedia.+Il+credo%2Binauthor:Dante+Alighieri&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Dante alighieri. La Divina Commedia di Dante Alighieri con varie annotazioni [di P. Venturi e G. A. Volpi] e copiosi rami [Dei Giampiccoli, Rizzi, Crivellari, Zalioni, Leonardis d'apr\u00e8s Fontebasso, Magnini, Zompini, Schiavonio, Marcaggi, Ticiani, Scaggari, Novelli, Guarana] adornata, dedicata alla... Elisabetta Petrowna ... dal conte Cristoforo Zapata de Cisneros...",
+            "authors": [
+              "Dante Alighieri"
+            ],
+            "link": "https://play.google.com/store/books/details?id=ETWYCpdLpWcC&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "ustc": {
+        "found": false,
+        "error": "{'message': 'canceling statement due to statement timeout', 'code': '57014', 'hint': None, 'details': None}"
+      }
+    },
+    {
+      "bph_id": "c20ad596-1ffb-a0e0-132f-61ea9c3d16a1",
+      "ubn": "30744",
+      "author": "Alanus de Insulis",
+      "title": "De maximis theologiae",
+      "year": 1492,
+      "place": "[Basel]",
+      "keywords": "mysticism",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "De maximis theologiae$j[Alanus ab Insulis].",
+            "authors": [
+              "Alanus (ab Insulis)"
+            ],
+            "link": "http://books.google.nl/books?id=Z-R6zwEACAAJ&dq=intitle:De+maximis+theologiae%2Binauthor:Alanus+de+Insulis&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "ALANI MAGNI DE INSVLIS, SACRAE THEOLOGIAE DOCTORIS COGNOMENTO VNIVERSALIS EX GLORIOSO SCHOLAE ECCLESIASTICAE PARISIENSIS MODERATORE HVMILIS CISTERCIENSIS CONVERSI OPERA MORALIA, PARAENETICA, ET POLEMICA, QVAE REPERIRI POTVERVNT",
+            "authors": [
+              "Alanus de Insulis"
+            ],
+            "link": "https://play.google.com/store/books/details?id=vsZiAAAAcAAJ&source=gbs_api"
+          },
+          {
+            "title": "Alain de Lille: textes in\u00e9dits",
+            "authors": [
+              "Alanus (de Insulis)"
+            ],
+            "link": "https://play.google.com/store/books/details?id=63pijrqmSNcC&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": true,
+        "num_results": 2,
+        "results": [
+          {
+            "id": "ia00181000",
+            "author": "Alanus de Insulis",
+            "title": "De maximis theologiae",
+            "date_single": 1492,
+            "place": "[Basel"
+          },
+          {
+            "id": "ia00182000",
+            "author": "Alanus de Insulis",
+            "title": "De maximis theologiae",
+            "date_single": 1497,
+            "place": "[Strassburg"
+          }
+        ]
+      },
+      "ustc": {
+        "found": false,
+        "error": "{'message': 'canceling statement due to statement timeout', 'code': '57014', 'hint': None, 'details': None}"
+      }
+    },
+    {
+      "bph_id": "462ecfea-fed7-2d24-929c-5c77495e21f9",
+      "ubn": "16449",
+      "author": "Nicodemus",
+      "title": "Evangelium",
+      "year": 1499,
+      "place": "[Leipzig]",
+      "keywords": "mysticism",
+      "internet_archive": {
+        "found": false,
+        "error": "HTTPSConnectionPool(host='archive.org', port=443): Read timed out. (read timeout=30)"
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Evangelium Nicodemi, oder Historischer Bericht von dem Leben Jesu Christi ...",
+            "authors": [
+              "Nicodemus"
+            ],
+            "link": "https://play.google.com/store/books/details?id=jw90icpGaU8C&source=gbs_api"
+          },
+          {
+            "title": "'t Wonderlyck evangelium van Nicodemus",
+            "authors": [
+              "Nicodemus (Phariseus.)"
+            ],
+            "link": "http://books.google.nl/books?id=0TxHzgEACAAJ&dq=intitle:Evangelium%2Binauthor:Nicodemus&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Wonderlyck evangelium van Nicodemus ... wederom in 't licht gebracht door ... Aquila Oreinus",
+            "authors": [
+              "Nicodemus Pharisaeus"
+            ],
+            "link": "http://books.google.nl/books?id=LcQCwgEACAAJ&dq=intitle:Evangelium%2Binauthor:Nicodemus&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": "ia00244000",
+            "author": "Albertus Magnus",
+            "title": "Enarrationes in evangelium Johannis",
+            "date_single": 1477,
+            "place": "[Cologne"
+          },
+          {
+            "id": "ia00458337",
+            "author": "Alexis, Guilielmus",
+            "title": "Evangelium \"Missus est angelus Gabriel\" [French verse]. Oraison de Notre Dame de Recourance",
+            "date_single": 1520,
+            "place": "[Paris"
+          },
+          {
+            "id": "ia00554000",
+            "author": "Ambrosius, S",
+            "title": "Expositio in evangelium S. Lucae",
+            "date_single": 1476,
+            "place": "Augsburg"
+          }
+        ]
+      },
+      "ustc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": 826779,
+            "author_1": null,
+            "title": "[Evangeliumok e\u0301s epistola\u0301k]",
+            "year": 1597,
+            "place": "Bardejov"
+          },
+          {
+            "id": 826952,
+            "author_1": "Zvonarics, Miha\u0301ly",
+            "title": "Magyar postilla, az az az Szentha\u0301romsa\u0301g vasarnaptul fogva koevetkoezendoe vasa\u0301rnapi evangeliumoknac ma\u0301sodic re\u0301szben foglaltatot vila\u0301gos e\u0301s e\u0301rtelmes magyara\u0301zattya, mellyet az fo\u0308 tudo\u0301s e\u0301s nevezetes Szent i\u0301ra\u0301s magyara\u0301zo\u0301 doctoroknac e\u0301s professoroknac ira\u0301sokbul irt e\u0301s szerzet e\u0301lte\u0301ben az Istenben elnyugot e\u0301s idvo\u0308zu\u0308lt Zvonarits Miha\u0301ly sa\u0301rva\u0301ri praedica-tor es Duna\u0301n innen valo\u0301 keresztye\u0301n ecclesia\u0301knac superintendense, e\u0301s holta uta\u0301n marade\u0301ki kinyomtattattanac",
+            "year": 1628,
+            "place": "Csepreg"
+          },
+          {
+            "id": 827208,
+            "author_1": null,
+            "title": "Evangeliumok es epistolak az evange\u0301liumokbo\u0301l szo\u0308ro\u0308sztetet ahitatos ima\u0301dsa\u0301gokkal egyetemben. A reghi keresztye\u0301nekto\u030bl ege\u0301sz esztendo\u030b a\u0301ltal levo\u030b minden vasa\u0301rnapokra inte\u0301sztetet e\u0301s rendeltete",
+            "year": 1634,
+            "place": "Levo\u010da"
+          }
+        ]
+      }
+    },
+    {
+      "bph_id": "b5b06b97-d57a-0cbd-dc72-42332be09da1",
+      "ubn": "15492",
+      "author": "Ludolf von Sachsen",
+      "title": "Vita Christi",
+      "year": 1498,
+      "place": "Venetie",
+      "keywords": "mysticism",
+      "internet_archive": {
+        "found": false,
+        "error": "HTTPSConnectionPool(host='archive.org', port=443): Read timed out. (read timeout=30)"
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Vita Christi [Nederlands] Tboeck vanden leven Jhesu Christi",
+            "authors": [
+              "Ludolf (von Sachsen)"
+            ],
+            "link": "https://play.google.com/store/books/details?id=D_6JKO13hTEC&source=gbs_api"
+          },
+          {
+            "title": "Vita Christi [Nederlands] Tboeck vanden leven Jhesu Christi",
+            "authors": [
+              "Ludolf (von Sachsen)"
+            ],
+            "link": "https://play.google.com/store/books/details?id=UOn5mDqikaUC&source=gbs_api"
+          },
+          {
+            "title": "Vita Christi",
+            "authors": [
+              "Ludolf (von Sachsen)"
+            ],
+            "link": "http://books.google.nl/books?id=KwvIzQEACAAJ&dq=intitle:Vita+Christi%2Binauthor:Ludolf+von+Sachsen&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": "ia01224000",
+            "author": "Augustinus, Aurelius",
+            "title": "De anima et spiritu. Add: De ebrietate. De vanitate saeculi. De vita christiana. De sobrietate. De quattuor virtutibus caritatis. De contritione cordis",
+            "date_single": 1472,
+            "place": "[Lauingen"
+          },
+          {
+            "id": "ia01348000",
+            "author": "Augustinus, Aurelius",
+            "title": "De vanitate saeculi. Add: De vita christiana",
+            "date_single": null,
+            "place": "[Esslingen"
+          },
+          {
+            "id": "ia01354000",
+            "author": "Augustinus, Aurelius",
+            "title": "De vita christiana",
+            "date_single": null,
+            "place": "[Mainz]"
+          }
+        ]
+      },
+      "ustc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": 845754,
+            "author_1": "Terecjusz, Grzegorz",
+            "title": "Confessio & Instrvctio Idiot\u00e6 Sive Modus Excipiendi Confessiones Sacramentales Rusticorum, Puerorum, in peccatis inueteratorum ac ignorantium profectum in vita Christiana",
+            "year": 1655,
+            "place": "Krak\u00f3w"
+          },
+          {
+            "id": 867300,
+            "author_1": "Povoas, Manuel das",
+            "title": "Vita Christi, de Manoel das Povoas",
+            "year": 1694,
+            "place": "Lisboa"
+          },
+          {
+            "id": 950979,
+            "author_1": null,
+            "title": "Dies Belli In Cruce victoriose terminatus. sive Passio Christi: in qua Vita Christi patientis cum Morte, & aliis Tenebrarum Potestatibus decertat, ac tandem sub Cruce morientis gloriose palmam obtinet, Ipso Palmarum die pro theatro exhibita, & devotioni Ornatissimorum Dominorum Sodalium sub labaro B.V. ab Archangelo salutatae militantium dicata; Speciatim autem honori & observantiae D. Francisci Xaverii Weinzerle, Protonotarii Apostolici, Sacrosanctae Theologiae Doctoris Consecrata Ab Iuventute Humanitatis, in Caesareo Regioque Societatis Jesu Collegio Wratislaviae, Anno 1677.",
+            "year": 1677,
+            "place": "Wroc\u0142aw"
+          }
+        ]
+      }
+    },
+    {
+      "bph_id": "c1622002-587d-2f99-76a9-30030f8e266f",
+      "ubn": "6863",
+      "author": "Bertholdus",
+      "title": "Horologium devotionis",
+      "year": 1484,
+      "place": "[Parijs]|",
+      "keywords": "mysticism",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Horologium devotionis",
+            "authors": [
+              "Bertholdus Ratisbonensis (OP.)"
+            ],
+            "link": "http://books.google.nl/books?id=k5bW0AEACAAJ&dq=intitle:Horologium+devotionis%2Binauthor:Bertholdus&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Horologium devotionis",
+            "authors": [
+              "Bertholdus"
+            ],
+            "link": "http://books.google.nl/books?id=lL0xzgEACAAJ&dq=intitle:Horologium+devotionis%2Binauthor:Bertholdus&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Horologium devotionis circa vitam Christi",
+            "authors": [
+              "Bertholdus"
+            ],
+            "link": "http://books.google.nl/books?id=avnYMgEACAAJ&dq=intitle:Horologium+devotionis%2Binauthor:Bertholdus&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": "ib00504000",
+            "author": "Bertholdus",
+            "title": "Horologium devotionis. Add: Birgitta: Orationes. Aegidius Columna: Hymnus in S. Veronicam",
+            "date_single": 1489,
+            "place": "Augsburg"
+          },
+          {
+            "id": "ib00505000",
+            "author": "Bertholdus",
+            "title": "Horologium devotionis. Add: Aurelius Augustinus, S: Oratio de tota passione domini",
+            "date_single": 1489,
+            "place": "Nuremberg"
+          },
+          {
+            "id": "ib00502800",
+            "author": "Bertholdus",
+            "title": "Horologium devotionis",
+            "date_single": 1484,
+            "place": "[Paris"
+          }
+        ]
+      },
+      "ustc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": 40834,
+            "author_1": "Bertholdus (von Freiburg)",
+            "title": "Horologium devotionis",
+            "year": 1503,
+            "place": "K\u00f6ln"
+          },
+          {
+            "id": 53272,
+            "author_1": "Bertholdus",
+            "title": "Horologium devotionis circa vitam Christi",
+            "year": 1510,
+            "place": "Paris"
+          },
+          {
+            "id": 55363,
+            "author_1": "Bertholdus",
+            "title": "Horologium devotionis circa vitam Christi",
+            "year": 1506,
+            "place": "Paris"
+          }
+        ]
+      }
+    },
+    {
+      "bph_id": "dac31728-bf20-8ac6-c1a8-32398949f357",
+      "ubn": "19236",
+      "author": "Tertullianus",
+      "title": "[Apologeticus contra gentiles]",
+      "year": 1493,
+      "place": "Milaan",
+      "keywords": "hermetica",
+      "internet_archive": {
+        "found": false,
+        "error": "('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))"
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Apologeticus contra gentes",
+            "authors": [
+              "Quintus Septimius Florens Tertullianus"
+            ],
+            "link": "https://play.google.com/store/books/details?id=9fmpmyKKmAsC&source=gbs_api"
+          },
+          {
+            "title": "Q. Septimii Florentis Tertulliani ... Apologeticus",
+            "authors": [
+              "Tertullianus"
+            ],
+            "link": "https://play.google.com/store/books/details?id=TXzjR50taBcC&source=gbs_api"
+          },
+          {
+            "title": "Apologeticus ... recognitus, castigatus, emendatus ut et perpetuo commentario ... Studio Sigeberti Havercampi",
+            "authors": [
+              "Quintus Septimius Florens Tertullianus"
+            ],
+            "link": "https://play.google.com/store/books/details?id=wcxJAAAAcAAJ&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "ustc": {
+        "found": false,
+        "error": "{'message': 'canceling statement due to statement timeout', 'code': '57014', 'hint': None, 'details': None}"
+      }
+    },
+    {
+      "bph_id": "85206be9-800b-61fe-d968-092e7d338c43",
+      "ubn": "13565",
+      "author": "Gerard Zerbolt of Zutphen",
+      "title": "De spiritualibus ascensionibus",
+      "year": 1495,
+      "place": "[Parijs]|",
+      "keywords": "mysticism",
+      "internet_archive": {
+        "found": false,
+        "error": "HTTPSConnectionPool(host='archive.org', port=443): Read timed out. (read timeout=30)"
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "De spiritualibus ascensionibus",
+            "authors": [
+              "Gerard Zerbolt van Zutphen"
+            ],
+            "link": "http://books.google.nl/books?id=V1DLswEACAAJ&dq=intitle:De+spiritualibus+ascensionibus%2Binauthor:Gerard+Zerbolt+of+Zutphen&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Geschiedenis van de vroomheid in de Nederlanden",
+            "authors": [
+              "Stephanus Gerard Axters"
+            ],
+            "link": "http://books.google.nl/books?id=36zUAAAAMAAJ&dq=intitle:De+spiritualibus+ascensionibus%2Binauthor:Gerard+Zerbolt+of+Zutphen&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "De spiritualibus ascensionibus",
+            "authors": [
+              "Gerard Zerbolt",
+              "Nikolaus Staubach",
+              "Francis Joseph Legrand"
+            ],
+            "link": "http://books.google.nl/books?id=FmUlAQAAIAAJ&dq=intitle:De+spiritualibus+ascensionibus%2Binauthor:Gerard+Zerbolt+of+Zutphen&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": "ig00174000",
+            "author": "Gerardus de Zutphania",
+            "title": "De spiritualibus ascensionibus. Add: David de Augusta: De exterioris et interioris hominis compositione Lib. II, 1 (De quatuor in quibus incipientes deo servire debent esse cauti)",
+            "date_single": null,
+            "place": "[Deventer"
+          },
+          {
+            "id": "ig00175000",
+            "author": "Gerardus de Zutphania (1367-1398)",
+            "title": "De spiritualibus ascensionibus. Add: David de Augusta: De exterioris et interioris hominis compositione Lib. II, 1 (De quatuor in quibus incipientes deo servire debent esse cauti)",
+            "date_single": 1488,
+            "place": "Cologne"
+          },
+          {
+            "id": "ig00176000",
+            "author": "Gerardus de Zutphania (1367-1398)",
+            "title": "De spiritualibus ascensionibus. Add: David de Augusta: De exterioris et interioris hominis compositione Lib. II, 1 (De quatuor in quibus incipientes deo servire debent esse cauti). Thomas a Kempis: Meditationes de vita Christi. Bertholdus: Horologium devotionis circa vitam Christi",
+            "date_single": null,
+            "place": "[Strassburg"
+          }
+        ]
+      },
+      "ustc": {
+        "found": false,
+        "error": "{'message': 'canceling statement due to statement timeout', 'code': '57014', 'hint': None, 'details': None}"
+      }
+    },
+    {
+      "bph_id": "ff1741d4-1644-bd28-08cd-9f58afe26d28",
+      "ubn": "15432",
+      "author": "Otto von Passau",
+      "title": "Die vierundzwanzig Alten, oder Der goldne Thron",
+      "year": 1480,
+      "place": "Augsburg",
+      "keywords": "mysticism",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Die vierundzwanzig Alten, oder Der goldne Thron",
+            "authors": [
+              "Otto von Passau"
+            ],
+            "link": "http://books.google.nl/books?id=rvK_QAAACAAJ&dq=intitle:Die+vierundzwanzig+Alten,+oder+Der+goldne+Thron%2Binauthor:Otto+von+Passau&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Die 24 Alten oder der goldne Thron",
+            "authors": [
+              "Otho (von Passau)",
+              "Otto (von Passau)"
+            ],
+            "link": "https://play.google.com/store/books/details?id=pzg8AAAAcAAJ&source=gbs_api"
+          },
+          {
+            "title": "Die vierundzwanzig Alten, oder Der goldne Thron [Dutch]. Dat boeck des gulden throens",
+            "authors": [
+              "Otto von Passau (O.F.M.)"
+            ],
+            "link": "http://books.google.nl/books?id=2Bky0AEACAAJ&dq=intitle:Die+vierundzwanzig+Alten,+oder+Der+goldne+Thron%2Binauthor:Otto+von+Passau&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": "io00119000",
+            "author": "Otto von Passau",
+            "title": "Die vierundzwanzig Alten, oder Der goldne Thron",
+            "date_single": 1480,
+            "place": "Augsburg"
+          },
+          {
+            "id": "io00120000",
+            "author": "Otto von Passau",
+            "title": "Die vierundzwanzig Alten, oder Der goldne Thron",
+            "date_single": 1483,
+            "place": "Augsburg"
+          },
+          {
+            "id": "io00121000",
+            "author": "Otto von Passau",
+            "title": "Die vierundzwanzig Alten, oder Der goldne Thron",
+            "date_single": 1483,
+            "place": "[Strassburg]"
+          }
+        ]
+      },
+      "ustc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": 76687,
+            "author_1": "Otho von Passau",
+            "title": "Die vierundzwanzig Alten, oder Der goldne Thron",
+            "year": 1500,
+            "place": "Strasbourg"
+          },
+          {
+            "id": 106402,
+            "author_1": "Otho von Passau",
+            "title": "Die vierundzwanzig Alten, oder Der goldne Thron",
+            "year": 1483,
+            "place": "Strasbourg"
+          },
+          {
+            "id": 330380,
+            "author_1": "Otho von Passau",
+            "title": "Die vierundzwanzig Alten, oder Der goldne Thron",
+            "year": 1480,
+            "place": "Augsburg"
+          }
+        ]
+      }
+    },
+    {
+      "bph_id": "a8fe1734-7539-da6a-49ff-1bab611d6065",
+      "ubn": "27210",
+      "author": "Hermes Trismegistus",
+      "title": "De potestate ac sapiencia dei",
+      "year": 1481,
+      "place": "Venice",
+      "keywords": "hermetica",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Pimander de potestate et sapientia dei",
+            "authors": [
+              "Hermes (Trismegistus)"
+            ],
+            "link": "https://play.google.com/store/books/details?id=xGKxLDHf6W4C&source=gbs_api"
+          },
+          {
+            "title": "Pymander, de potestate et sapientia Dei, Ejudsem Asclepius, de voluntate Dei",
+            "authors": [
+              "Hermes (Trismegistus)",
+              "Hermes Trismegistos"
+            ],
+            "link": "https://play.google.com/store/books/details?id=k79QAAAAcAAJ&source=gbs_api"
+          },
+          {
+            "title": "Mercurii Trismegisti Pymander, de potestate et sapientia dei",
+            "authors": [
+              "Hermes (Trismegistus)"
+            ],
+            "link": "https://play.google.com/store/books/details?id=TDNpAAAAcAAJ&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "ustc": {
+        "found": false,
+        "error": "{'message': 'canceling statement due to statement timeout', 'code': '57014', 'hint': None, 'details': None}"
+      }
+    },
+    {
+      "bph_id": "26621d93-dd42-146c-8e29-5330687a920d",
+      "ubn": "11444",
+      "author": null,
+      "title": "[Poenitentionarius]. Poenitas cito",
+      "year": 1490,
+      "place": "[Reutlingen]",
+      "keywords": "mysticism",
+      "internet_archive": {
+        "found": false,
+        "error": "HTTPSConnectionPool(host='archive.org', port=443): Read timed out. (read timeout=30)"
+      },
+      "google_books": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "istc": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "ustc": {
+        "found": false,
+        "error": "The read operation timed out"
+      }
+    },
+    {
+      "bph_id": "e73b6f98-d14d-c07d-6c5a-b75bb9f0ae4d",
+      "ubn": "13569",
+      "author": "Gerard Zerbolt of Zutphen",
+      "title": "De spiritualibus ascensionibus",
+      "year": 1500,
+      "place": "[Keulen]|",
+      "keywords": "mysticism",
+      "internet_archive": {
+        "found": false,
+        "error": "HTTPSConnectionPool(host='archive.org', port=443): Read timed out. (read timeout=30)"
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Geschiedenis van de vroomheid in de Nederlanden",
+            "authors": [
+              "Stephanus Gerard Axters"
+            ],
+            "link": "http://books.google.nl/books?id=36zUAAAAMAAJ&dq=intitle:De+spiritualibus+ascensionibus%2Binauthor:Gerard+Zerbolt+of+Zutphen&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "De spiritualibus ascensionibus",
+            "authors": [
+              "Gerard Zerbolt van Zutphen"
+            ],
+            "link": "http://books.google.nl/books?id=V1DLswEACAAJ&dq=intitle:De+spiritualibus+ascensionibus%2Binauthor:Gerard+Zerbolt+of+Zutphen&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "De spiritualibus ascensionibus",
+            "authors": [
+              "Gerard Zerbolt",
+              "Nikolaus Staubach",
+              "Francis Joseph Legrand"
+            ],
+            "link": "http://books.google.nl/books?id=FmUlAQAAIAAJ&dq=intitle:De+spiritualibus+ascensionibus%2Binauthor:Gerard+Zerbolt+of+Zutphen&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": "ig00174000",
+            "author": "Gerardus de Zutphania",
+            "title": "De spiritualibus ascensionibus. Add: David de Augusta: De exterioris et interioris hominis compositione Lib. II, 1 (De quatuor in quibus incipientes deo servire debent esse cauti)",
+            "date_single": null,
+            "place": "[Deventer"
+          },
+          {
+            "id": "ig00175000",
+            "author": "Gerardus de Zutphania (1367-1398)",
+            "title": "De spiritualibus ascensionibus. Add: David de Augusta: De exterioris et interioris hominis compositione Lib. II, 1 (De quatuor in quibus incipientes deo servire debent esse cauti)",
+            "date_single": 1488,
+            "place": "Cologne"
+          },
+          {
+            "id": "ig00176000",
+            "author": "Gerardus de Zutphania (1367-1398)",
+            "title": "De spiritualibus ascensionibus. Add: David de Augusta: De exterioris et interioris hominis compositione Lib. II, 1 (De quatuor in quibus incipientes deo servire debent esse cauti). Thomas a Kempis: Meditationes de vita Christi. Bertholdus: Horologium devotionis circa vitam Christi",
+            "date_single": null,
+            "place": "[Strassburg"
+          }
+        ]
+      },
+      "ustc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": 124858,
+            "author_1": "Zerbolt van Zutphen, Gerard",
+            "title": "Tractatus de spiritualibus ascensionibus",
+            "year": 1503,
+            "place": "Paris"
+          },
+          {
+            "id": 126391,
+            "author_1": "Zerbolt van Zutphen, Gerard",
+            "title": "De spiritualibus ascensionibus. David de Augusta: De exterioris et interioris hominis compositione Lib. II, 1 (De quatuor in quibus incipientes deo servire debent esse cauti)",
+            "year": 1488,
+            "place": "K\u00f6ln"
+          },
+          {
+            "id": 195893,
+            "author_1": "Zerbolt van Zutphen, Gerard",
+            "title": "De spiritualibus ascensionibus. De exterioris et interioris hominis compositione libri II, 1 (De quatuor in quibus incipientes Deo servire debent esse cauti)",
+            "year": 1483,
+            "place": "Deventer"
+          }
+        ]
+      }
+    },
+    {
+      "bph_id": "d7141d49-8085-6b40-6395-e82e42d8d65f",
+      "ubn": "7172",
+      "author": "Bossus, Matthaeus",
+      "title": "De instituendo sapientia animo",
+      "year": 1495,
+      "place": "Bologna",
+      "keywords": "mysticism",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "De Instituendo Sapientia Animo. [fol. 2 Recto:] Matthaeus Bossus Veronensis Canonicus Regularis Suo in Domino Patri Et Concanonico Merito Percolendo Seuerino Calcho Salutem. [fol. 4 Verso:] Matthaei Bossi Veronensis Canonici Regularis de Instituendo Sapientia Animo Disputationes Per Dies .VIII. in Pratis .D. Leonardi Iuxta Veronam Religiosissime Habitas Lector Agnoscito, Etc",
+            "authors": [
+              "Matthaeus BOSSUS"
+            ],
+            "link": "http://books.google.nl/books?id=fRIBMwEACAAJ&dq=intitle:De+instituendo+sapientia+animo%2Binauthor:Bossus,+Matthaeus&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Utdrag af Juridiska Fakultetens vid Kejserliga Alexanders Universitetet i Finland protokoll f\u00f6r \u00e5r 1901",
+            "authors": [],
+            "link": "http://books.google.nl/books?id=1HzRjwEACAAJ&dq=intitle:De+instituendo+sapientia+animo%2Binauthor:Bossus,+Matthaeus&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "De instituendo sapientia animo",
+            "authors": [
+              "Matthaeus Bossus"
+            ],
+            "link": "http://books.google.nl/books?id=Dt3VoAEACAAJ&dq=intitle:De+instituendo+sapientia+animo%2Binauthor:Bossus,+Matthaeus&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": true,
+        "num_results": 1,
+        "results": [
+          {
+            "id": "ib01043000",
+            "author": "Bossus, Matthaeus",
+            "title": "De instituendo sapientia animo. With additions by Marcus Antonius Aldegatus",
+            "date_single": 1495,
+            "place": "Bologna"
+          }
+        ]
+      },
+      "ustc": {
+        "found": false,
+        "error": "{'message': 'canceling statement due to statement timeout', 'code': '57014', 'hint': None, 'details': None}"
+      }
+    },
+    {
+      "bph_id": "6b0c9c22-0f28-1793-e690-0632313c7833",
+      "ubn": "8351",
+      "author": "Albertus Magnus",
+      "title": "Liber secretorum de virtutibus herbarum et animalium",
+      "year": 1500,
+      "place": "[Lyon?]|",
+      "keywords": null,
+      "internet_archive": {
+        "found": false,
+        "error": "HTTPSConnectionPool(host='archive.org', port=443): Read timed out. (read timeout=30)"
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Liber aggregationis, seu Liber secretorum de virtutibus herbarum, lapidum et animalium quorundam",
+            "authors": [
+              "Albertus (Magnus)"
+            ],
+            "link": "https://play.google.com/store/books/details?id=1rnbECIbPgUC&source=gbs_api"
+          },
+          {
+            "title": "Liber aggregationis seu secretorum de virtutibus herbarum, lapidum et animalium; De mirabilibus mundi",
+            "authors": [
+              "Albertus (Magnus, Heiliger)"
+            ],
+            "link": "https://play.google.com/store/books/details?id=D5mYpY-QmRUC&source=gbs_api"
+          },
+          {
+            "title": "Liber secretorum Alberti magni de uirtutibus herbarum:&animalium quorundam. Eiusdem\uf01c liber de mirabilibus mundi, etc. [With a woodcut.]",
+            "authors": [
+              "Saint Albertus (Magnus)"
+            ],
+            "link": "https://play.google.com/store/books/details?id=W2tnAAAAcAAJ&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": "ia00248500",
+            "author": "Albertus Magnus",
+            "title": "Liber aggregationis, seu Liber secretorum de virtutibus herbarum, lapidum et animalium quorundam. De mirabilibus mundi",
+            "date_single": 1477,
+            "place": "[Ferrara"
+          },
+          {
+            "id": "ia00249000",
+            "author": "Albertus Magnus",
+            "title": "Liber aggregationis, seu Liber secretorum de virtutibus herbarum, lapidum et animalium quorundam. Add: De mirabilibus mundi",
+            "date_single": 1478,
+            "place": "[Bologna]"
+          },
+          {
+            "id": "ia00249500",
+            "author": "Albertus Magnus",
+            "title": "Liber aggregationis, seu Liber secretorum de virtutibus herbarum, lapidum et animalium quorundam. De mirabilibus mundi",
+            "date_single": null,
+            "place": "[Strassburg"
+          }
+        ]
+      },
+      "ustc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": 28036,
+            "author_1": "Pseudo-Albertus Magnus",
+            "title": "Liber aggregationis, seu liber secretorum de virtutibus herbarum, lapidum et animalium quorundam. De mirabilibus mundi",
+            "year": 1500,
+            "place": "Paris"
+          },
+          {
+            "id": 38046,
+            "author_1": "Pseudo-Albertus Magnus",
+            "title": "Liber aggregationis, seu Liber secretorum de virtutibus herbarum, lapidum et animalium quorundam",
+            "year": 1499,
+            "place": "K\u00f6ln"
+          },
+          {
+            "id": 53879,
+            "author_1": "Albertus Magnus",
+            "title": "Liber aggregationis, seu Liber secretorum de virtutibus herbarum, lapidum et animalium quorundam. De mirabilibus mundi",
+            "year": 1513,
+            "place": "Rouen"
+          }
+        ]
+      }
+    },
+    {
+      "bph_id": "109a90d4-3771-723b-5156-017d141a3c56",
+      "ubn": "26106",
+      "author": "Jamblichus|Proclus|Porphyrius|Synesius|Psellus|Priscianus|Alcinous|Speusippus|Pythagoras|Xenocrates|Hermes Trismegistus|Ficino, Marsilio",
+      "title": "De mysteriis Aegyptiorum, Chaldaeorum, Assyriorum. In Platonicum Alcibiadem de anima, atque demone. De sacrificio & magia. De divinis atque daemonibus. De somniis. De daemonibus. Expositio in Theophrastum de sensu, phantasia, & intellectu. De doctrina Platonis. De platonis definitionibus. Aura verba. Symbola  De morte. Pimander. Asclepius. De triplici vita. De voluptate. De sole & lumine. Apologia de lumine. De magis. Quod necessaria sit securitas",
+      "year": 1497,
+      "place": "Venice",
+      "keywords": "hermetica",
+      "internet_archive": {
+        "found": false,
+        "error": "HTTPSConnectionPool(host='archive.org', port=443): Read timed out. (read timeout=30)"
+      },
+      "google_books": {
+        "found": false,
+        "error": "HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /books/v1/volumes?q=intitle%3ADe+mysteriis+Aegyptiorum%2C+Chaldaeorum%2C+Assyriorum.+In+Platonicum+Alcibiadem+de+a%2Binauthor%3AJamblichus%7CProclus%7CPorphyrius%7CSynesius%7CP&maxResults=5&printType=books (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1032d3ed0>: Failed to resolve 'www.googleapis.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      "istc": {
+        "found": true,
+        "num_results": 1,
+        "results": [
+          {
+            "id": "ij00216000",
+            "author": "Jamblichus",
+            "title": "De mysteriis Aegyptiorum, Chaldaeorum, Assyriorum. Tr: Marsilius Ficinus. Add: Proclus: In Platonicum Alcibiadem; De sacrificio et magia; Porphyrius: De divinis et daemonibus; Synesius: De Somniis; Psellus: De daemonibus; Priscianus et Marsilius Ficinus: In Theophrastum De sensu ... ; Alcinous: De doctrina Platonis; Speusippus: De Platonis definitionibus; Pythagoras: Aurea verba et symbola; Xenocrates: De morte; Marsilius Ficinus: De Voluptate",
+            "date_single": 1497,
+            "place": "Venice"
+          }
+        ]
+      },
+      "ustc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": 299749,
+            "author_1": "Jamblichus",
+            "title": "De mysteriis Aegyptiorum, Chaldaeorum, Assyriorum proclus in Platonicum Alcibiadem de anima atque daemone. De sacrificio et magia. Porphyrius de divinis atque daemonibus. Psellus de daemonibus. Mercurii Trismegisti Pimander",
+            "year": 1570,
+            "place": "Lyon"
+          },
+          {
+            "id": 364500,
+            "author_1": "Jamblichus",
+            "title": "Index eorum, quae hoc in libro habentur. Iamblichus de mysteriis Aegyptiorum, Chaldaeorum, Assyriorum. Proclus in Platonicum Alcibiadem de anima, atque daemone. Proclus de sacrificio, & magia. Porphyrius de divinis, atque daemonibus. Synesius Platonicus de somniis. Psellus de daemonibus. Expositio Prisciani, & Marsilii in Theophrastum de sensu, phantasia, & intellectu. Alcinoi Platonici philosophi, liber de doctrina Platonis. Speusippi Platonis discipuli, liber de Platonis definitionibus. Pythagor\u00e6 philosophi aurea verba. Symbola Pithagor\u00e6 philosophi. Xenocratis philosophi Platonici, liber de morte. Mercurii Trismegisti Pimander. Eiusdem Asclepius. Marsilii Ficini de triplici vita libri II. Eiusdem liber de uoluptate. Eiusdem de sole & lumine",
+            "year": 1516,
+            "place": "Venezia"
+          },
+          {
+            "id": 371893,
+            "author_1": "Jamblichus",
+            "title": "De mysteriis Aegyptiorum, Chaldaeorum, Assyriorum, Proclus in Platonicum Alcibiadem de anima atque daemone. De sacrificio et magia",
+            "year": 1552,
+            "place": "Lyon"
+          }
+        ]
+      }
+    },
+    {
+      "bph_id": "5fc95d00-6940-65f2-920b-2ff332244d4a",
+      "ubn": "2449",
+      "author": "Corvo, Andreas",
+      "title": "Chiromantia",
+      "year": 1500,
+      "place": "[Lyon ?]|",
+      "keywords": "hermetica",
+      "internet_archive": {
+        "found": false,
+        "error": "HTTPSConnectionPool(host='archive.org', port=443): Read timed out. (read timeout=30)"
+      },
+      "google_books": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "istc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": "ia00468800",
+            "author": "Allegri, Francesco degli",
+            "title": "Chiromantia",
+            "date_single": 1495,
+            "place": "[Bologna"
+          },
+          {
+            "id": "ia00980000",
+            "author": "Aristoteles",
+            "title": "Chiromantia",
+            "date_single": 1490,
+            "place": "Ulm"
+          },
+          {
+            "id": "ic00463000",
+            "author": null,
+            "title": "Chiromantia",
+            "date_single": null,
+            "place": "Venice"
+          }
+        ]
+      },
+      "ustc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": 625877,
+            "author_1": "Johannes de Indagine",
+            "title": "Chiromantia. 1. Physiognomia, ex aspectu membrorum hominis. 2. Periaxiomata de faciebus signorum. 3. Canones astrologici de judiciis aegritudinum. 4. Astrologia naturalis. 5. Complexionum noticia, juxta dominium planetarum",
+            "year": 1546,
+            "place": "Paris"
+          },
+          {
+            "id": 632648,
+            "author_1": "Johannes de Indagine",
+            "title": "Introductiones apotelesmaticae elegantes, in chiromantiam, physionomiam, astrologiam naturalem, complexiones hominum, naturas planetarum",
+            "year": 1582,
+            "place": "Lyon"
+          },
+          {
+            "id": 633934,
+            "author_1": "Goclenius, Rudolph",
+            "title": "Trattato di chiromantia",
+            "year": 1641,
+            "place": "Amsterdam"
+          }
+        ]
+      }
+    },
+    {
+      "bph_id": "a096b322-b78e-ba84-4374-7bdbc0b45c96",
+      "ubn": "23316",
+      "author": "Tritheim, Johann",
+      "title": "De laudibus sanctissime matris Anne",
+      "year": 1500,
+      "place": "Leipzig",
+      "keywords": "mysticism",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "google_books": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "istc": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "ustc": {
+        "found": false,
+        "error": "{'message': 'canceling statement due to statement timeout', 'code': '57014', 'hint': None, 'details': None}"
+      }
+    },
+    {
+      "bph_id": "efe5b76c-d7d4-236b-5879-e19d528d5964",
+      "ubn": "18193",
+      "author": "Alanus de Insulis",
+      "title": "Doctrinale altum",
+      "year": 1497,
+      "place": "Keulen",
+      "keywords": "mysticism",
+      "internet_archive": {
+        "found": false,
+        "error": "HTTPSConnectionPool(host='archive.org', port=443): Read timed out. (read timeout=30)"
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Doctrinale altum",
+            "authors": [
+              "Alanus (ab Insulis)"
+            ],
+            "link": "https://play.google.com/store/books/details?id=aH5SAAAAcAAJ&source=gbs_api"
+          },
+          {
+            "title": "Parabole seu Doctrinale altum (etc.)",
+            "authors": [
+              "Alanus (ab Insulis)"
+            ],
+            "link": "https://play.google.com/store/books/details?id=S0ZcAAAAcAAJ&source=gbs_api"
+          },
+          {
+            "title": "Doctrinale altum seu liber parabolarum Alani metrice descriptus",
+            "authors": [
+              "Alanus (ab Insulis)"
+            ],
+            "link": "https://play.google.com/store/books/details?id=EgbZ4f9RqYEC&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": "ia00174500",
+            "author": "Alanus de Insulis",
+            "title": "Doctrinale altum seu liber parabolarum (cum commento)",
+            "date_single": 1497,
+            "place": "Paris"
+          },
+          {
+            "id": "ia00170000",
+            "author": "Alanus de Insulis",
+            "title": "Doctrinale altum seu liber parabolarum. Without commentary",
+            "date_single": null,
+            "place": "[Paris"
+          },
+          {
+            "id": "ia00171000",
+            "author": "Alanus de Insulis",
+            "title": "Doctrinale altum seu liber parabolarum. Without commentary",
+            "date_single": null,
+            "place": "[Paris]"
+          }
+        ]
+      },
+      "ustc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": 4397,
+            "author_1": "Alanus ab Insulis",
+            "title": "Doctrinale altum seu liber parabolarum",
+            "year": 1485,
+            "place": "Paris"
+          },
+          {
+            "id": 34889,
+            "author_1": "Aesopus",
+            "title": "Auctores octo cum glossa. Disticha. Ecloga. Facetus. De contemptu mundi. Tobias. Doctrinale altum parabolarum. Fabulae. Floretus",
+            "year": 1500,
+            "place": "Lyon"
+          },
+          {
+            "id": 38103,
+            "author_1": "Aesopus",
+            "title": "Auctores octo. Disticha. Ecloga. Facetus. De contemptu mundi. Tobias. Doctrinale altum parabolarum. Fabulae. Floretus",
+            "year": 1491,
+            "place": "Lyon"
+          }
+        ]
+      }
+    },
+    {
+      "bph_id": "c6732b55-7c5c-5860-b8d8-5799cf365cf2",
+      "ubn": "8334",
+      "author": "Ficino, Marsilio",
+      "title": "Liber de sole et lumine",
+      "year": 1493,
+      "place": "Florence",
+      "keywords": "hermetica",
+      "internet_archive": {
+        "found": false,
+        "error": "HTTPSConnectionPool(host='archive.org', port=443): Read timed out. (read timeout=30)"
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Lettere: Epistolarum familiarium liber I",
+            "authors": [
+              "Marsilio Ficino"
+            ],
+            "link": "http://books.google.nl/books?id=r9zWAAAAMAAJ&dq=intitle:Liber+de+sole+et+lumine%2Binauthor:Ficino,+Marsilio&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Lettere: Epistolarum familiarium liber II",
+            "authors": [
+              "Marsilio Ficino"
+            ],
+            "link": "http://books.google.nl/books?id=IilGAQAAIAAJ&dq=intitle:Liber+de+sole+et+lumine%2Binauthor:Ficino,+Marsilio&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Liber de sole et lumine",
+            "authors": [
+              "Marsilio Ficino"
+            ],
+            "link": "http://books.google.nl/books?id=ZQcJ0QEACAAJ&dq=intitle:Liber+de+sole+et+lumine%2Binauthor:Ficino,+Marsilio&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": true,
+        "num_results": 1,
+        "results": [
+          {
+            "id": "if00156000",
+            "author": "Ficinus, Marsilius",
+            "title": "Liber de sole et lumine",
+            "date_single": 1493,
+            "place": "Florence"
+          }
+        ]
+      },
+      "ustc": {
+        "found": false,
+        "error": "{'message': 'canceling statement due to statement timeout', 'code': '57014', 'hint': None, 'details': None}"
+      }
+    },
+    {
+      "bph_id": "22fa2fb5-857a-b13c-cd5e-c78e5364066c",
+      "ubn": "3562",
+      "author": "Gregorius I (Magnus)",
+      "title": "[Dialogorum libri quattuor]. Das Buech der zwayer red mit ainander",
+      "year": 1476,
+      "place": "[Augsburg]",
+      "keywords": "mysticism",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "google_books": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "istc": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "ustc": {
+        "found": false,
+        "error": "{'message': 'canceling statement due to statement timeout', 'code': '57014', 'hint': None, 'details': None}"
+      }
+    },
+    {
+      "bph_id": "255baa1c-ba6b-b448-d082-2431680542be",
+      "ubn": "3141",
+      "author": "Boethius, Anicius Manlius Torquatus Severinus",
+      "title": "De consolatione philosophiae",
+      "year": 1474,
+      "place": "[Basel]|",
+      "keywords": "hermetica",
+      "internet_archive": {
+        "found": false,
+        "error": "HTTPSConnectionPool(host='archive.org', port=443): Read timed out. (read timeout=30)"
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "De Consolatione Philosophiae [mittelengl.]",
+            "authors": [
+              "Anicius Manlius Severinus Boethius"
+            ],
+            "link": "http://books.google.nl/books?id=88l70QEACAAJ&dq=intitle:De+consolatione+philosophiae%2Binauthor:Boethius,+Anicius+Manlius+Torquatus+Seve&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "De consolatione philosophiae libri V.",
+            "authors": [
+              "Anicius Manlius Torquatus Severinus Boethius"
+            ],
+            "link": "https://play.google.com/store/books/details?id=eEemFOBRDkgC&source=gbs_api"
+          },
+          {
+            "title": "Anicii Manlii Torquati Severini Boethii de Consolatione Philosophiae",
+            "authors": [
+              "Anicius Manlius Severinus Boethius"
+            ],
+            "link": "https://play.google.com/store/books/details?id=BRY9AAAAcAAJ&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": "ib00769000",
+            "author": "Boethius",
+            "title": "De consolatione philosophiae",
+            "date_single": 1473,
+            "place": "[Basel"
+          },
+          {
+            "id": "ib00769200",
+            "author": "Boethius",
+            "title": "De consolatione philosophiae",
+            "date_single": 1474,
+            "place": "[Savigliano]"
+          },
+          {
+            "id": "ib00769400",
+            "author": "Boethius",
+            "title": "De consolatione philosophiae",
+            "date_single": 1474,
+            "place": "Savona"
+          }
+        ]
+      },
+      "ustc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": 1537991,
+            "author_1": "Boethius, Anicius Manlius Severinus",
+            "title": "De consolatione Philosophiae, libri 5",
+            "year": 1682,
+            "place": "L\u00fcbeck"
+          },
+          {
+            "id": 1610231,
+            "author_1": "Boethius, Anicius Manlius Severinus",
+            "title": "De consolatione philosophiae libri quinque",
+            "year": 1604,
+            "place": "Antwerpen"
+          },
+          {
+            "id": 1626930,
+            "author_1": "Boece, Hector",
+            "title": "Anicii Manlii Torquati Severini Boethii de Consolatione philosophiae, liber V : Cum castigationibus Theodori Pulmanni",
+            "year": 1648,
+            "place": "Rouen"
+          }
+        ]
+      }
+    },
+    {
+      "bph_id": "5bd8dded-be71-eb14-2939-ec9c255164ff",
+      "ubn": "12039",
+      "author": "Bossus, Matthaeus",
+      "title": "Recuperationes Faesulanae",
+      "year": 1493,
+      "place": "Bologna",
+      "keywords": "hermetica",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 3,
+        "results": [
+          {
+            "title": "Recuperationes Faesulanae (with additions by Philippus Beroaldus)",
+            "authors": [
+              "Matthaeus Bossus"
+            ],
+            "link": "http://books.google.nl/books?id=hpBr0AEACAAJ&dq=intitle:Recuperationes+Faesulanae%2Binauthor:Bossus,+Matthaeus&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Recuperationes Faesulanae",
+            "authors": [
+              "Matthaeus Bossus"
+            ],
+            "link": "http://books.google.nl/books?id=WRbCQwAACAAJ&dq=intitle:Recuperationes+Faesulanae%2Binauthor:Bossus,+Matthaeus&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Recuperationes Faesulanae",
+            "authors": [
+              "Matthaeus Bossus"
+            ],
+            "link": "http://books.google.nl/books?id=_tiWPgAACAAJ&dq=intitle:Recuperationes+Faesulanae%2Binauthor:Bossus,+Matthaeus&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": true,
+        "num_results": 3,
+        "results": [
+          {
+            "id": "ib01044000",
+            "author": "Bossus, Matthaeus",
+            "title": "Recuperationes Faesulanae",
+            "date_single": 1492,
+            "place": "[Florence"
+          },
+          {
+            "id": "ib01045000",
+            "author": "Bossus, Matthaeus",
+            "title": "Recuperationes Faesulanae (with additions by Philippus Beroaldus)",
+            "date_single": 1493,
+            "place": "Bologna"
+          },
+          {
+            "id": "ib01046000",
+            "author": "Bossus, Matthaeus",
+            "title": "Recuperationes Faesulanae",
+            "date_single": 1493,
+            "place": "Bologna"
+          }
+        ]
+      },
+      "ustc": {
+        "found": false,
+        "error": "{'message': 'canceling statement due to statement timeout', 'code': '57014', 'hint': None, 'details': None}"
+      }
+    },
+    {
+      "bph_id": "65848ee2-aa37-47d2-fe95-0f155730f0f0",
+      "ubn": "2511",
+      "author": "Ficino, Marsilio",
+      "title": "[De christiana religione]. Della christiana religione",
+      "year": 1475,
+      "place": "[Florence]||",
+      "keywords": "hermetica",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "De Christiana religione. Ediz. critica",
+            "authors": [
+              "Marsilio Ficino"
+            ],
+            "link": "http://books.google.nl/books?id=GZapwwEACAAJ&dq=intitle:%5BDe+christiana+religione%5D.+Della+christiana+religione%2Binauthor:Ficino,+Marsilio&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "De Christiana religione [in italiano] Della cristiana religione",
+            "authors": [
+              "Marsilio Ficino"
+            ],
+            "link": "http://books.google.nl/books?id=suG3zQEACAAJ&dq=intitle:%5BDe+christiana+religione%5D.+Della+christiana+religione%2Binauthor:Ficino,+Marsilio&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Libro di Marsilio Ficino della Christiana religione",
+            "authors": [
+              "Marsilio Ficino"
+            ],
+            "link": "http://books.google.nl/books?id=K2woMQAACAAJ&dq=intitle:%5BDe+christiana+religione%5D.+Della+christiana+religione%2Binauthor:Ficino,+Marsilio&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "ustc": {
+        "found": false,
+        "error": "{'message': 'canceling statement due to statement timeout', 'code': '57014', 'hint': None, 'details': None}"
+      }
+    },
+    {
+      "bph_id": "e3542433-a463-336f-d922-f1a61afc0782",
+      "ubn": "1001",
+      "author": "Lull, Ram\u00f3n",
+      "title": "Ars generalis ultima",
+      "year": 1480,
+      "place": "Venetie",
+      "keywords": "hermetica",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Ars generalis ultima",
+            "authors": [
+              "Ram\u00f3n Lull"
+            ],
+            "link": "http://books.google.nl/books?id=N4oX0QEACAAJ&dq=intitle:Ars+generalis+ultima%2Binauthor:Lull,+Ram%C3%B3n&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Illuminati sacre pagine pfessoris ... R. Lull. ars magna, generalis et ultima: quar\u0169cun\uf01c artium \uf010 scientiarum ipsius Lull. assecutrix et clavigera ... \uf010 per magistrum B. la Vinheta ... elimata. Una cum figuris ... Incertis preterea ... titulis et annotationibus, etc. G.L.",
+            "authors": [
+              "Ram\u00f3n LULL"
+            ],
+            "link": "https://play.google.com/store/books/details?id=aZNmAAAAcAAJ&source=gbs_api"
+          },
+          {
+            "title": "128: Ars generalis ultima, Lugduni anno MCCCV incepta, Pisis anno MCCCVIII ad finem perducta",
+            "authors": [
+              "Ram\u00f3n Lull"
+            ],
+            "link": "http://books.google.nl/books?id=J7aYzwEACAAJ&dq=intitle:Ars+generalis+ultima%2Binauthor:Lull,+Ram%C3%B3n&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": true,
+        "num_results": 1,
+        "results": [
+          {
+            "id": "il00388000",
+            "author": "Lullus, Raymundus",
+            "title": "Ars generalis ultima. Logica brevis. Ed: Johannes Cordubensis",
+            "date_single": 1480,
+            "place": "Venice"
+          }
+        ]
+      },
+      "ustc": {
+        "found": false,
+        "error": "{'message': 'canceling statement due to statement timeout', 'code': '57014', 'hint': None, 'details': None}"
+      }
+    },
+    {
+      "bph_id": "ae07e3b2-1800-ef88-86bb-a313a1352685",
+      "ubn": "9354",
+      "author": "Andreas de Escobar",
+      "title": "Modus confitendi",
+      "year": 1480,
+      "place": "[Urach]||",
+      "keywords": "mysticism",
+      "internet_archive": {
+        "found": false,
+        "error": "HTTPSConnectionPool(host='archive.org', port=443): Read timed out. (read timeout=30)"
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Andreas de Escobar: Modus Confitendi",
+            "authors": [
+              "Andreas (de Escobar)"
+            ],
+            "link": "http://books.google.nl/books?id=sPX2uQEACAAJ&dq=intitle:Modus+confitendi%2Binauthor:Andreas+de+Escobar&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Contenta in hoc libello Modus co[n]fitendi compositus p[er] Re[verendum] ep[iscopu]m Andrea[m] hispanu[m] S[ancte] Ro[mane] ecclesie Pe[nitentiarium]. Jnterrogatio[n]es et doctrine. quibus ... sacerdos debet interrogare suum confitentem. Canones penitentiales per ep[iscopu]m Ciuitatens[e]m Compositi. Casus Papales et Episcopales",
+            "authors": [
+              "Andreas (de Escobar)"
+            ],
+            "link": "https://play.google.com/store/books/details?id=bH1SAAAAcAAJ&source=gbs_api"
+          },
+          {
+            "title": "Liber meditationum ac orationum devotarum qui anthidotarius anime dicitur",
+            "authors": [
+              "Nicholaus Salicetus",
+              "Andreas (de Escobar)",
+              "Snellaert, Christiaen (Delft 1487/1488-1496/1497)"
+            ],
+            "link": "http://books.google.nl/books?id=pZDhoAEACAAJ&dq=intitle:Modus+confitendi%2Binauthor:Andreas+de+Escobar&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": "ia00659200",
+            "author": "Andreas de Escobar",
+            "title": "Modus confitendi",
+            "date_single": null,
+            "place": "[Rome"
+          },
+          {
+            "id": "ia00659300",
+            "author": "Andreas de Escobar",
+            "title": "Modus confitendi",
+            "date_single": null,
+            "place": "[Segovia"
+          },
+          {
+            "id": "ia00659350",
+            "author": "Andreas de Escobar",
+            "title": "Modus confitendi",
+            "date_single": 1473,
+            "place": "[Rome"
+          }
+        ]
+      },
+      "ustc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": 559555,
+            "author_1": "Escobar, Andr\u00e9s de",
+            "title": "Modus confitendi",
+            "year": 1488,
+            "place": "Deventer"
+          },
+          {
+            "id": 575225,
+            "author_1": "Erasmus, Desiderius",
+            "title": "Exomologesis sive modus confitendi",
+            "year": 1524,
+            "place": "Deventer"
+          },
+          {
+            "id": 575560,
+            "author_1": "Erasmus, Desiderius",
+            "title": "Exomologesis sive modus confitendi",
+            "year": 1524,
+            "place": "Antwerpen"
+          }
+        ]
+      }
+    },
+    {
+      "bph_id": "40203b9c-f8f0-1bcb-6fbb-e03bd064e5ca",
+      "ubn": "822",
+      "author": "Tertullianus",
+      "title": "Apologeticus contra gentes",
+      "year": 1494,
+      "place": "Venetie",
+      "keywords": "hermetica",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Apologeticus contra gentes",
+            "authors": [
+              "Quintus Septimius Florens Tertullianus"
+            ],
+            "link": "https://play.google.com/store/books/details?id=9fmpmyKKmAsC&source=gbs_api"
+          },
+          {
+            "title": "Quinti Septimii Florentis Tertulliani Carthaginiensis Presbyteri Apologeticus",
+            "authors": [
+              "Quintus Septimius Florens Tertullianus"
+            ],
+            "link": "https://play.google.com/store/books/details?id=zoZ4z82c4XcC&source=gbs_api"
+          },
+          {
+            "title": "Apologeticus",
+            "authors": [
+              "Quintus Septimius Florens Tertullianus"
+            ],
+            "link": "https://play.google.com/store/books/details?id=fx9IVB0Ava8C&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": true,
+        "num_results": 2,
+        "results": [
+          {
+            "id": "it00116900",
+            "author": "Tertullianus, Quintus Septimus Florentius",
+            "title": "Apologeticus contra gentes",
+            "date_single": 1493,
+            "place": "Milan"
+          },
+          {
+            "id": "it00117000",
+            "author": "Tertullianus, Quintus Septimus Florentius",
+            "title": "Apologeticus contra gentes",
+            "date_single": 1494,
+            "place": "Venice"
+          }
+        ]
+      },
+      "ustc": {
+        "found": false,
+        "error": "{'message': 'canceling statement due to statement timeout', 'code': '57014', 'hint': None, 'details': None}"
+      }
+    },
+    {
+      "bph_id": "99fe4560-d214-e3ab-6fd1-4f2dc7b79c58",
+      "ubn": "8981",
+      "author": "Thomas a Kempis",
+      "title": "Meditationes de vita et beneficiis Jesu Christi cum gratiarum actione",
+      "year": 1498,
+      "place": "[Parijs]||",
+      "keywords": "mysticism",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Meditationes piissim\u00e6 Fr. Thom\u00e6 \u00e0 Kempis ... de vita et passione Domini nostri Jesu Christi",
+            "authors": [
+              "Thomas (\u00e0 Kempis)"
+            ],
+            "link": "https://play.google.com/store/books/details?id=fuRsKkbmn24C&source=gbs_api"
+          },
+          {
+            "title": "De vita et beneficiis salvator Jhesu Cristi devotissime meditationes cum gratiarum actione",
+            "authors": [
+              "Thomas \u00e0 Kempis"
+            ],
+            "link": "http://books.google.nl/books?id=l1b-rQEACAAJ&dq=intitle:Meditationes+de+vita+et+beneficiis+Jesu+Christi+cum+gratiarum+actione%2Binauthor:Thomas+a+Kempis&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Meditationes de vita Jesu Christi",
+            "authors": [
+              "Thomas (a Kempis)"
+            ],
+            "link": "http://books.google.nl/books?id=i3FYywAACAAJ&dq=intitle:Meditationes+de+vita+et+beneficiis+Jesu+Christi+cum+gratiarum+actione%2Binauthor:Thomas+a+Kempis&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": "im00431000",
+            "author": null,
+            "title": "Meditationes de vita et beneficiis Jesu Christi, sive Gratiarum actiones",
+            "date_single": 1488,
+            "place": "[Cologne"
+          },
+          {
+            "id": "im00432000",
+            "author": null,
+            "title": "Meditationes de vita et beneficiis Jesu Christi, sive Gratiarum actiones",
+            "date_single": 1489,
+            "place": "[Basel"
+          },
+          {
+            "id": "im00433000",
+            "author": null,
+            "title": "Meditationes de vita et beneficiis Jesu Christi, sive Gratiarum actiones. Add: Gerardus de Zutphania: De spiritualibus ascensionibus",
+            "date_single": 1489,
+            "place": "[Augsburg"
+          }
+        ]
+      },
+      "ustc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": 72645,
+            "author_1": null,
+            "title": "Meditationes de vita et beneficiis Jesu Christi, sive Gratiarum actiones",
+            "year": 1489,
+            "place": "Basel"
+          },
+          {
+            "id": 106189,
+            "author_1": null,
+            "title": "Meditationes de vita et beneficiis Jesu Christi, sive Gratiarum actiones",
+            "year": 1498,
+            "place": "Paris"
+          },
+          {
+            "id": 163896,
+            "author_1": null,
+            "title": "Meditationes de vita et beneficiis Jesu Christi, sive Gratiarum actiones",
+            "year": 1500,
+            "place": "K\u00f6ln"
+          }
+        ]
+      }
+    },
+    {
+      "bph_id": "d7cccfd6-cddc-7755-cfaa-48425c2ee445",
+      "ubn": "12349",
+      "author": "[Lorris, Guillaume de]|[Meung, Jean de]",
+      "title": "Roman de la Rose",
+      "year": 1485,
+      "place": "[Lyon]",
+      "keywords": "alchemy",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "(Roman de la Rose. English) the Romance of the Rose by Guillaume de Lorris and Jean de Meun Translated by Charles Dahlberg",
+            "authors": [
+              "Guillaume De Lorris"
+            ],
+            "link": "http://books.google.nl/books?id=3S7b0AEACAAJ&dq=intitle:Roman+de+la+Rose%2Binauthor:%5BLorris,+Guillaume+de%5D%7C%5BMeung,+Jean+de%5D&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Le roman de la rose",
+            "authors": [
+              "Guillaume de Lorris",
+              "Jean de Meung"
+            ],
+            "link": "http://books.google.nl/books?id=qbqvQwAACAAJ&dq=intitle:Roman+de+la+Rose%2Binauthor:%5BLorris,+Guillaume+de%5D%7C%5BMeung,+Jean+de%5D&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Le roman de la Rose",
+            "authors": [
+              "Guillaume de Lorris"
+            ],
+            "link": "http://books.google.nl/books?id=BY84tAEACAAJ&dq=intitle:Roman+de+la+Rose%2Binauthor:%5BLorris,+Guillaume+de%5D%7C%5BMeung,+Jean+de%5D&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": "ir00307000",
+            "author": null,
+            "title": "Roman de la Rose",
+            "date_single": 1481,
+            "place": "[Geneva"
+          },
+          {
+            "id": "ir00308000",
+            "author": null,
+            "title": "Roman de la Rose",
+            "date_single": 1485,
+            "place": "[Lyons"
+          },
+          {
+            "id": "ir00309000",
+            "author": null,
+            "title": "Roman de la Rose",
+            "date_single": 1487,
+            "place": "[Lyons"
+          }
+        ]
+      },
+      "ustc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": 400367,
+            "author_1": null,
+            "title": "Roman de la Rose",
+            "year": 1481,
+            "place": "Gen\u00e8ve"
+          },
+          {
+            "id": 443864,
+            "author_1": null,
+            "title": "Roman de la Rose",
+            "year": 1493,
+            "place": "Paris"
+          },
+          {
+            "id": 578949,
+            "author_1": null,
+            "title": "Roman de la Rose",
+            "year": 1505,
+            "place": "Paris"
+          }
+        ]
+      }
+    },
+    {
+      "bph_id": "889f33a6-7ee6-7b53-5d47-fff5ded36173",
+      "ubn": "21514",
+      "author": "Franciscus of Assisi",
+      "title": "Hier beghint een seer devoet boecxken ghenoempt Sinte Franciscus Soutere",
+      "year": 1500,
+      "place": "Antwerp",
+      "keywords": "mysticism",
+      "internet_archive": {
+        "found": false,
+        "error": "HTTPSConnectionPool(host='archive.org', port=443): Read timed out. (read timeout=30)"
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 3,
+        "results": [
+          {
+            "title": "Hier beghint een seer devoet boecxken ghenoempt Synte Franciscus souter",
+            "authors": [
+              "Franciscus van Assisi"
+            ],
+            "link": "https://play.google.com/store/books/details?id=T2I8AAAAcAAJ&source=gbs_api"
+          },
+          {
+            "title": "Hier beghint een seer devoet boecxken ghenoempt Synte Franciscus souter",
+            "authors": [
+              "Franciscus van Assisi"
+            ],
+            "link": "https://play.google.com/store/books/details?id=T2I8AAAAcAAJ&source=gbs_api"
+          },
+          {
+            "title": "Lijst van historische lectuur over Sint Franciscus van Assisi en zijn werk",
+            "authors": [
+              "Fidentius van den Borne (kloosternaam van Franciscus van den Borne.)"
+            ],
+            "link": "http://books.google.nl/books?id=X5ISHAAACAAJ&dq=intitle:Hier+beghint+een+seer+devoet+boecxken+ghenoempt+Sinte+Franciscus+Soutere%2Binauthor:Franciscus+of+Assisi&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "ustc": {
+        "found": false,
+        "error": "{'message': 'canceling statement due to statement timeout', 'code': '57014', 'hint': None, 'details': None}"
+      }
+    },
+    {
+      "bph_id": "3663991a-36b1-159a-ef27-c5de88b7c3e6",
+      "ubn": "30453",
+      "author": "Cassianus, Johannes",
+      "title": "De institutis coenobiorum; Collationes patrum XXIV",
+      "year": 1497,
+      "place": "Basel",
+      "keywords": "mysticism",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Ioannis Cassiani eremitae De institutis renuntiantium libri 12. Collationes Sanctorum Patrum 24. Ab innumeris pene mendis auxilio vetustissimorum codicum expurgatae, & ad suam integritatem restitutae. Adiectae sunt quarundam obscurarum dictionum interpretationes ... . Praeterea indices duo testimoniorum sacrae scripturae ... Accessit Raegula S. Pachomij, quae \u00b0|! a S. Hieronymo in Latinum sermones conuersa est, multo emendatior qu\u00e0m antea",
+            "authors": [
+              "Johannes Cassianus"
+            ],
+            "link": "https://play.google.com/store/books/details?id=owqcqVcM9pYC&source=gbs_api"
+          },
+          {
+            "title": "De institutis coenobiorum. Add: Collationes patrum XXIV.",
+            "authors": [
+              "Johannes Cassianus"
+            ],
+            "link": "http://books.google.nl/books?id=REYynwEACAAJ&dq=intitle:De+institutis+coenobiorum%3B+Collationes+patrum+XXIV%2Binauthor:Cassianus,+Johannes&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Io. Cassiani eremitae De Institutis renunciantium Libri 12. Collationes Sanctorum Patrum 24. De Verbi incarnatione Libri 7. Adiecti sunt quatuor indices locupletissimi, ... Accesserunt Regula S. Pachomii a S. Hieronymo in latinum conuersa. ...",
+            "authors": [
+              "Johannes Cassianus"
+            ],
+            "link": "https://play.google.com/store/books/details?id=DubhhpktaVUC&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "ustc": {
+        "found": false,
+        "error": "{'message': 'canceling statement due to statement timeout', 'code': '57014', 'hint': None, 'details': None}"
+      }
+    },
+    {
+      "bph_id": "529bab5a-5408-81a3-963f-a4c2833a183c",
+      "ubn": "26044",
+      "author": "[Thomas a Kempis]|Gerson, Johannes",
+      "title": "De ymitatione Christi. Tractatus de meditatione cordis",
+      "year": 1487,
+      "place": "Ulm",
+      "keywords": "mysticism",
+      "internet_archive": {
+        "found": false,
+        "error": "HTTPSConnectionPool(host='archive.org', port=443): Read timed out. (read timeout=30)"
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 4,
+        "results": [
+          {
+            "title": "Tractatus de ymitatione Cristi cum tractatulo de meditatione cordis",
+            "authors": [
+              "Thomas a Kempis",
+              "Johannes Gerson"
+            ],
+            "link": "http://books.google.nl/books?id=mW87zQEACAAJ&dq=intitle:De+ymitatione+Christi.+Tractatus+de+meditatione+cordis%2Binauthor:%5BThomas+a+Kempis%5D%7CGerson,+Johannes&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "De navolging Christi van Thomas \u00e0 Kempis",
+            "authors": [
+              "Thomas (\u00e0 Kempis)"
+            ],
+            "link": "http://books.google.nl/books?id=zbYS0QEACAAJ&dq=intitle:De+ymitatione+Christi.+Tractatus+de+meditatione+cordis%2Binauthor:%5BThomas+a+Kempis%5D%7CGerson,+Johannes&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "De navolging Christi van Thomas \u00e0 Kempis",
+            "authors": [
+              "Thomas (\u00e0 Kempis)"
+            ],
+            "link": "http://books.google.nl/books?id=JR_WtAEACAAJ&dq=intitle:De+ymitatione+Christi.+Tractatus+de+meditatione+cordis%2Binauthor:%5BThomas+a+Kempis%5D%7CGerson,+Johannes&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "ustc": {
+        "found": false,
+        "error": "{'message': 'canceling statement due to statement timeout', 'code': '57014', 'hint': None, 'details': None}"
+      }
+    },
+    {
+      "bph_id": "1ab22301-8f00-e50d-e9ce-b4e9dd4c16d2",
+      "ubn": "14777",
+      "author": "Ficino, Marsilio",
+      "title": "De triplici vita",
+      "year": 1498,
+      "place": "Venetie",
+      "keywords": "hermetica",
+      "internet_archive": {
+        "found": false,
+        "error": "HTTPSConnectionPool(host='archive.org', port=443): Read timed out. (read timeout=30)"
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "De triplici vita",
+            "authors": [
+              "Marsilio Ficino"
+            ],
+            "link": "https://play.google.com/store/books/details?id=EgXCM039AhAC&source=gbs_api"
+          },
+          {
+            "title": "Marsilius Ficinus Florentinus de Triplici Vita.",
+            "authors": [
+              "Marsilio Ficino"
+            ],
+            "link": "http://books.google.nl/books?id=JRjHmgEACAAJ&dq=intitle:De+triplici+vita%2Binauthor:Ficino,+Marsilio&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "De vita",
+            "authors": [
+              "Marsilio Ficino",
+              "Albano Biondi",
+              "Giuliano Pisani"
+            ],
+            "link": "http://books.google.nl/books?id=-ysNAAAAIAAJ&dq=intitle:De+triplici+vita%2Binauthor:Ficino,+Marsilio&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": "if00158000",
+            "author": "Ficinus, Marsilius",
+            "title": "De vita libri tres (De triplici vita); Apologia; Quod necessaria sit ad vitam securitas. Add: Poem by Amerigus Corsinus",
+            "date_single": 1489,
+            "place": "Florence"
+          },
+          {
+            "id": "if00158200",
+            "author": "Ficinus, Marsilius",
+            "title": "De vita libri tres (De triplici vita); Apologia; Quod necessaria sit ad vitam securitas; Annotatio",
+            "date_single": 1506,
+            "place": "[Basel"
+          },
+          {
+            "id": "if00158300",
+            "author": "Ficinus, Marsilius",
+            "title": "De vita libri tres (De triplici vita); Apologia; Quod necessaria sit ad vitam securitas; Annotatio",
+            "date_single": 1490,
+            "place": "Bologna"
+          }
+        ]
+      },
+      "ustc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": 14791,
+            "author_1": "Brunschwig, Hieronymus",
+            "title": "Das ne\u00fcwe distilier buoch. Auch das buch des Marsilii Ficini das lang leben betreffend unnd zu merer besserung di\u00df buchs so ist u\u00df Galieno unnd der alt beruembten artzten u\u00dferlesen die besten stuck de triplici vita",
+            "year": 1531,
+            "place": "Strasbourg"
+          },
+          {
+            "id": 77607,
+            "author_1": "Ficino, Marsilio",
+            "title": "De vita libri tres (De triplici vita); Apologia; Quod necessaria sit ad vitam securitas; Annotatio",
+            "year": 1498,
+            "place": "Basel"
+          },
+          {
+            "id": 82118,
+            "author_1": "Ficino, Marsilio",
+            "title": "De triplici vita. Cum textu Salerni ad unguem castigato",
+            "year": 1515,
+            "place": "Paris"
+          }
+        ]
+      }
+    },
+    {
+      "bph_id": "9ece3586-a35d-59b3-92e4-a49497461268",
+      "ubn": "12368",
+      "author": "[Lorris, Guillaume de]|[Meung, Jean de]",
+      "title": "Cest le romant de la rose",
+      "year": 1500,
+      "place": "Paris",
+      "keywords": "alchemy",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Le roman de la rose",
+            "authors": [
+              "Guillaume de Lorris",
+              "Jean de Meung"
+            ],
+            "link": "http://books.google.nl/books?id=qbqvQwAACAAJ&dq=intitle:Cest+le+romant+de+la+rose%2Binauthor:%5BLorris,+Guillaume+de%5D%7C%5BMeung,+Jean+de%5D&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Le Roman de la Rose",
+            "authors": [],
+            "link": "http://books.google.nl/books?id=GFoWDAEACAAJ&dq=intitle:Cest+le+romant+de+la+rose%2Binauthor:%5BLorris,+Guillaume+de%5D%7C%5BMeung,+Jean+de%5D&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Guillaume de Lorris et Jean de Meun. Le Roman de la Rose, mis en fran\u00e7ais moderne",
+            "authors": [
+              "Guillaume de Lorris",
+              "Jean de Meung"
+            ],
+            "link": "http://books.google.nl/books?id=wKlcNAAACAAJ&dq=intitle:Cest+le+romant+de+la+rose%2Binauthor:%5BLorris,+Guillaume+de%5D%7C%5BMeung,+Jean+de%5D&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "ustc": {
+        "found": false,
+        "error": "{'message': 'canceling statement due to statement timeout', 'code': '57014', 'hint': None, 'details': None}"
+      }
+    },
+    {
+      "bph_id": "fd4d25a4-4fff-4e41-f154-503c25926ad5",
+      "ubn": "6015",
+      "author": "Ludolf von Sachsen",
+      "title": "Le grant vita Christi",
+      "year": 1500,
+      "place": "Parijs",
+      "keywords": "mysticism",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Le grant vita Christi",
+            "authors": [
+              "Ludolf (von Sachsen)"
+            ],
+            "link": "http://books.google.nl/books?id=siH0zwEACAAJ&dq=intitle:Le+grant+vita+Christi%2Binauthor:Ludolf+von+Sachsen&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Le Grant Vita Christi",
+            "authors": [
+              "Ludolphus (de Saxonia)"
+            ],
+            "link": "http://books.google.nl/books?id=a7TyAQAACAAJ&dq=intitle:Le+grant+vita+Christi%2Binauthor:Ludolf+von+Sachsen&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Le grant \"Vita Christi\", de Ludolphe le chartreux, translat\u00a9\u266d en fran\u00a9\u02b9oys, par Guillaume Le Menand",
+            "authors": [
+              "Ludolf (von Sachsen)"
+            ],
+            "link": "http://books.google.nl/books?id=muEmzgEACAAJ&dq=intitle:Le+grant+vita+Christi%2Binauthor:Ludolf+von+Sachsen&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": true,
+        "num_results": 3,
+        "results": [
+          {
+            "id": "il00357600",
+            "author": "Ludolphus de Saxonia",
+            "title": "Vita Christi [French] Le Grant Vita Christi. Tr: Guillaume Lemenand",
+            "date_single": 1487,
+            "place": "Lyons"
+          },
+          {
+            "id": "il00358000",
+            "author": "Ludolphus de Saxonia",
+            "title": "Vita Christi [French] Le Grant Vita Christi. Tr: Guillaume Lemenand",
+            "date_single": 1494,
+            "place": "Lyons"
+          },
+          {
+            "id": "il00359000",
+            "author": "Ludolphus de Saxonia",
+            "title": "Vita Christi [French] Le Grant Vita Christi",
+            "date_single": null,
+            "place": "Paris"
+          }
+        ]
+      },
+      "ustc": {
+        "found": false,
+        "error": "{'message': 'canceling statement due to statement timeout', 'code': '57014', 'hint': None, 'details': None}"
+      }
+    },
+    {
+      "bph_id": "fb4b10b6-71cb-7af9-efc4-6053ec4cd630",
+      "ubn": "2956",
+      "author": "Dante Alighieri",
+      "title": "La Commedia",
+      "year": 1472,
+      "place": "Foligno",
+      "keywords": "hermetica",
+      "internet_archive": {
+        "found": false,
+        "error": "HTTPSConnectionPool(host='archive.org', port=443): Read timed out. (read timeout=30)"
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "La Commedia Di Dante Alighieri",
+            "authors": [
+              "Paget Toynbee"
+            ],
+            "link": "http://books.google.nl/books?id=9R4QjwEACAAJ&dq=intitle:La+Commedia%2Binauthor:Dante+Alighieri&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "La Divina Commedia",
+            "authors": [
+              "Dante Alighieri"
+            ],
+            "link": "http://books.google.nl/books?id=Iyh90AEACAAJ&dq=intitle:La+Commedia%2Binauthor:Dante+Alighieri&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "La Commedia Di Dante Alighieri. [Edited by Arthur J. Butler.].",
+            "authors": [
+              "Dante Alighieri",
+              "Arthur John BUTLER"
+            ],
+            "link": "http://books.google.nl/books?id=d977MgEACAAJ&dq=intitle:La+Commedia%2Binauthor:Dante+Alighieri&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": "id00022000",
+            "author": "Dante Alighieri",
+            "title": "La Commedia",
+            "date_single": 1472,
+            "place": "Foligno"
+          },
+          {
+            "id": "id00023000",
+            "author": "Dante Alighieri",
+            "title": "La Commedia",
+            "date_single": 1472,
+            "place": "Mantua"
+          },
+          {
+            "id": "id00024000",
+            "author": "Dante Alighieri",
+            "title": "La Commedia",
+            "date_single": 1472,
+            "place": "[Venice?]"
+          }
+        ]
+      },
+      "ustc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": 1616887,
+            "author_1": "Grazzini, Antonfrancesco",
+            "title": "Descrizione degl'intermedii rappresentati colla commedia nelle nozze dell'illustrissimo, ed eccellentissimo signor principe di Firenze, e di Siena",
+            "year": 1566,
+            "place": "Firenze"
+          },
+          {
+            "id": 1616945,
+            "author_1": null,
+            "title": "Descrizione degl' Intermedii rappresentati con la Commedia\u2026",
+            "year": 1592,
+            "place": "Firenze"
+          },
+          {
+            "id": 1616968,
+            "author_1": "Grazzini, Antonfrancesco",
+            "title": "Descrizione de gl'intermedii rappresentati con la commedia nelle nozze dell... principe di Firenze e di Siena",
+            "year": 1593,
+            "place": "Firenze"
+          }
+        ]
+      }
+    },
+    {
+      "bph_id": "073db938-e7e5-0222-89cf-85662d1a1bb3",
+      "ubn": "31059",
+      "author": "Hierocles",
+      "title": "In aureos versus Pythagorae opusculum",
+      "year": 1474,
+      "place": "Padua",
+      "keywords": "hermetica",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "In aureos versus Pythagorae opusculum",
+            "authors": [
+              "Hierocles (of Alexandria)"
+            ],
+            "link": "https://play.google.com/store/books/details?id=1YVY5mRxJvIC&source=gbs_api"
+          },
+          {
+            "title": "In aureos versus Pythagorae opusculum",
+            "authors": [
+              "Hierocles (of Alexandria)"
+            ],
+            "link": "https://play.google.com/store/books/details?id=1YVY5mRxJvIC&source=gbs_api"
+          },
+          {
+            "title": "In aureos versus Pythagorae opusculum",
+            "authors": [
+              "Alexandrinus Hierocles (ca. 5. Jh)"
+            ],
+            "link": "https://play.google.com/store/books/details?id=ryBeO4QBlawC&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": true,
+        "num_results": 3,
+        "results": [
+          {
+            "id": "ih00151000",
+            "author": "Hierocles",
+            "title": "In aureos versus Pythagorae opusculum (Tr: Joannes Aurispa)",
+            "date_single": 1474,
+            "place": "Padua"
+          },
+          {
+            "id": "ih00152000",
+            "author": "Hierocles",
+            "title": "In aureos versus Pythagorae opusculum (Tr: Joannes Aurispa)",
+            "date_single": 1475,
+            "place": "Rome"
+          },
+          {
+            "id": "ih00153000",
+            "author": "Hierocles",
+            "title": "In aureos versus Pythagorae opusculum (Tr: Joannes Aurispa)",
+            "date_single": 1493,
+            "place": "Rome"
+          }
+        ]
+      },
+      "ustc": {
+        "found": false,
+        "error": "{'message': 'canceling statement due to statement timeout', 'code': '57014', 'hint': None, 'details': None}"
+      }
+    },
+    {
+      "bph_id": "9627e613-8b53-7564-d49d-ca3449ed073b",
+      "ubn": "8983",
+      "author": "Thomas a Kempis",
+      "title": "Meditationes de vita et beneficiis Jesu Christi, sive Gratiarum actiones",
+      "year": 1498,
+      "place": "[Keulen]|",
+      "keywords": "mysticism",
+      "internet_archive": {
+        "found": false,
+        "error": "HTTPSConnectionPool(host='archive.org', port=443): Max retries exceeded with url: /advancedsearch.php?q=title%3A%22Meditationes+de+vita+et+beneficiis+Jesu+Christi%2C+sive+Gratiarum+actiones%22+AND+creator%3A%22Thomas+a+Kempis%22&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&fl%5B%5D=mediatype&rows=5&output=json (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1032d2fd0>, 'Connection to archive.org timed out. (connect timeout=30)'))"
+      },
+      "google_books": {
+        "found": false,
+        "error": "HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /books/v1/volumes?q=intitle%3AMeditationes+de+vita+et+beneficiis+Jesu+Christi%2C+sive+Gratiarum+actiones%2Binauthor%3AThomas+a+Kempis&maxResults=5&printType=books (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1032d1810>: Failed to resolve 'www.googleapis.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      "istc": {
+        "found": false,
+        "error": "[Errno 8] nodename nor servname provided, or not known"
+      },
+      "ustc": {
+        "found": false,
+        "error": "[Errno 8] nodename nor servname provided, or not known"
+      }
+    },
+    {
+      "bph_id": "02e00537-a747-64d4-eb84-eb0a83769e14",
+      "ubn": "11544",
+      "author": "Nicolaus de Lyra",
+      "title": "Praeceptorium divinae legis. Compendium de vita Antichristi",
+      "year": 1491,
+      "place": "[Parijs]|",
+      "keywords": "mysticism",
+      "internet_archive": {
+        "found": false,
+        "error": "HTTPSConnectionPool(host='archive.org', port=443): Max retries exceeded with url: /advancedsearch.php?q=title%3A%22Praeceptorium+divinae+legis.+Compendium+de+vita+Antichristi%22+AND+creator%3A%22Nicolaus+de+Lyra%22&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&fl%5B%5D=mediatype&rows=5&output=json (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1032d1810>, 'Connection to archive.org timed out. (connect timeout=30)'))"
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 4,
+        "results": [
+          {
+            "title": "Praeceptorium divinae legis et alii tractatus. Add",
+            "authors": [
+              "Lyra; Nicolaus de"
+            ],
+            "link": "http://books.google.nl/books?id=4ENj0AEACAAJ&dq=intitle:Praeceptorium+divinae+legis.+Compendium+de+vita+Antichristi%2Binauthor:Nicolaus+de+Lyra&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Praeceptorium divinae legis. Add",
+            "authors": [
+              "Lyra; Nicolaus de"
+            ],
+            "link": "http://books.google.nl/books?id=7Lpl0AEACAAJ&dq=intitle:Praeceptorium+divinae+legis.+Compendium+de+vita+Antichristi%2Binauthor:Nicolaus+de+Lyra&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Praeceptorium divinae legis",
+            "authors": [
+              "Nicolaus (de Lyra)",
+              "Henricus (de Frimaria)"
+            ],
+            "link": "http://books.google.nl/books?id=PoiRzgEACAAJ&dq=intitle:Praeceptorium+divinae+legis.+Compendium+de+vita+Antichristi%2Binauthor:Nicolaus+de+Lyra&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "ustc": {
+        "found": false,
+        "error": "{'message': 'canceling statement due to statement timeout', 'code': '57014', 'hint': None, 'details': None}"
+      }
+    },
+    {
+      "bph_id": "9bb2d935-e9fe-ba93-bcee-5516f8d84822",
+      "ubn": "18313",
+      "author": "Ficino, Marsilio",
+      "title": "De christiana religione",
+      "year": 1500,
+      "place": "Venice",
+      "keywords": "hermetica",
+      "internet_archive": {
+        "found": false,
+        "error": "HTTPSConnectionPool(host='archive.org', port=443): Read timed out. (read timeout=30)"
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Libro di Marsilio Ficino della Christiana religione",
+            "authors": [
+              "Marsilio Ficino"
+            ],
+            "link": "http://books.google.nl/books?id=K2woMQAACAAJ&dq=intitle:De+christiana+religione%2Binauthor:Ficino,+Marsilio&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Tomo secondo de le lettere di Marsilio Ficino",
+            "authors": [
+              "Marsilio Ficino"
+            ],
+            "link": "https://play.google.com/store/books/details?id=vw2w_cfwTRAC&source=gbs_api"
+          },
+          {
+            "title": "De Christiana Religione",
+            "authors": [
+              "Marsilio Ficino"
+            ],
+            "link": "http://books.google.nl/books?id=_3xRtwAACAAJ&dq=intitle:De+christiana+religione%2Binauthor:Ficino,+Marsilio&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": "ib00346000",
+            "author": "Bernardinus Senensis",
+            "title": "Quadragesimale de christiana religione",
+            "date_single": 1489,
+            "place": "[Basel"
+          },
+          {
+            "id": "ib00347000",
+            "author": "Bernardinus Senensis",
+            "title": "Quadragesimale de christiana religione. Add: Guido de Marchia: Disputatio inter mundum et religionem",
+            "date_single": 1490,
+            "place": "[Lyons"
+          },
+          {
+            "id": "ib01038000",
+            "author": "Borromaeus, Antonius",
+            "title": "De christiana religione contra Hebraeos",
+            "date_single": 1510,
+            "place": "[Venice"
+          }
+        ]
+      },
+      "ustc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": 2273,
+            "author_1": "Andre\u00e4, Johann Valentin",
+            "title": "Theophilus, Sive de Christiana Religione sanctius colenda, Vita temperantius instituenda, Et Literatura rationabilius docenda Consilium: Cum Paraenesi Ad Ecclesiae Ministros, Et nonnullis aliis ad restituendas res lapsas pertinentibus, Johan: Valentini An",
+            "year": 1649,
+            "place": "Stuttgart"
+          },
+          {
+            "id": 34084,
+            "author_1": "Ficino, Marsilio",
+            "title": "Opuscula. Marsilii Ficini Florentini De sole, & lumine libri duo. Apologia eiusdem in librum suum de sole, & lumine. Catalogus librorum Marsilii Ficini Florentini. Marsilius Ficinus Florentinus de Christiana religione. Marsilii Ficini Florentini libri tres De vita sana, De vita longa, De vita caelitus comparanda. Apologia Marsilii Ficini in librum de magia",
+            "year": 1503,
+            "place": "Venezia"
+          },
+          {
+            "id": 182763,
+            "author_1": "Bernardino da Siena",
+            "title": "Quadragesimale de christiana religione. Add: Guido de Marchia: Disputatio inter mundum et religionem",
+            "year": 1490,
+            "place": "Lyon"
+          }
+        ]
+      }
+    },
+    {
+      "bph_id": "4cd599f6-4e6a-25c9-814d-30e49135a0da",
+      "ubn": "32051",
+      "author": "Lactantius",
+      "title": "Divinarum institutionum libri septem",
+      "year": 1490,
+      "place": "Venice",
+      "keywords": "hermetica",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Divinarum institutionum libri septem: Libri I et II",
+            "authors": [
+              "Lactantius"
+            ],
+            "link": "http://books.google.nl/books?id=0G_WIuQydlQC&dq=intitle:Divinarum+institutionum+libri+septem%2Binauthor:Lactantius&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "L. Coelii Lactantii Firmiani Divinarum Institutionum Libri Septem",
+            "authors": [
+              "Lucius Caecilius Firmianus Lactantius"
+            ],
+            "link": "https://play.google.com/store/books/details?id=G6tHW0z5XIQC&source=gbs_api"
+          },
+          {
+            "title": "Lactantius, Lucius Caelius Firmianus; Heck, Eberhard; Wlosok, Antonie: Divinarum institutionum libri septem/Liber VII",
+            "authors": [
+              "Lucius Caecilius Firmianus Lactantius"
+            ],
+            "link": "http://books.google.nl/books?id=DNBZwgEACAAJ&dq=intitle:Divinarum+institutionum+libri+septem%2Binauthor:Lactantius&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "ustc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": 363588,
+            "author_1": "Lactantius, Lucius Caelius Firmianus",
+            "title": "Divinarum institutionum libri VII. De ira Dei liber I. De opificio Dei liber I. Epitome in libros suos, liber acephalos. Carmen de Phenice. Resurrectione dominica. Passione domini",
+            "year": 1561,
+            "place": "Paris"
+          },
+          {
+            "id": 386255,
+            "author_1": "Lactantius, Lucius Caecilius Firmianus",
+            "title": "Divinarum institutionum libri VII",
+            "year": 1613,
+            "place": "Gen\u00e8ve"
+          },
+          {
+            "id": 413425,
+            "author_1": "Lactantius, Lucius Caelius Firmianus",
+            "title": "Divinarum institutionum libri VII. De ira Dei liber I. De opificio Dei liber I",
+            "year": 1539,
+            "place": "Antwerpen"
+          }
+        ]
+      }
+    },
+    {
+      "bph_id": "80b24bf2-83b4-48a7-84eb-dd53fbcdf1d5",
+      "ubn": "8362",
+      "author": "Hilarius Litomericensis",
+      "title": "Libertas ecclesiastica. Tractatus de libertate ecclesiastica adversus Bohemorum errores",
+      "year": 1495,
+      "place": "[Straatsburg]|",
+      "keywords": "mysticism",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "google_books": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "istc": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "ustc": {
+        "found": false,
+        "error": "{'message': 'canceling statement due to statement timeout', 'code': '57014', 'hint': None, 'details': None}"
+      }
+    },
+    {
+      "bph_id": "fc5eeebe-aa68-0ef4-73ff-b47b51dcf279",
+      "ubn": "15493",
+      "author": "Ludolf von Sachsen",
+      "title": "Vita Christi",
+      "year": 1482,
+      "place": "[Keulen]",
+      "keywords": "mysticism",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Vita Christi [Nederlands] Tboeck vanden leven Jhesu Christi",
+            "authors": [
+              "Ludolf (von Sachsen)"
+            ],
+            "link": "https://play.google.com/store/books/details?id=D_6JKO13hTEC&source=gbs_api"
+          },
+          {
+            "title": "Vita Christi [Nederlands] Tboeck vanden leven Jhesu Christi",
+            "authors": [
+              "Ludolf (von Sachsen)"
+            ],
+            "link": "https://play.google.com/store/books/details?id=UOn5mDqikaUC&source=gbs_api"
+          },
+          {
+            "title": "Vita Christi",
+            "authors": [
+              "Ludolf (von Sachsen)"
+            ],
+            "link": "http://books.google.nl/books?id=KwvIzQEACAAJ&dq=intitle:Vita+Christi%2Binauthor:Ludolf+von+Sachsen&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": "ia01224000",
+            "author": "Augustinus, Aurelius",
+            "title": "De anima et spiritu. Add: De ebrietate. De vanitate saeculi. De vita christiana. De sobrietate. De quattuor virtutibus caritatis. De contritione cordis",
+            "date_single": 1472,
+            "place": "[Lauingen"
+          },
+          {
+            "id": "ia01348000",
+            "author": "Augustinus, Aurelius",
+            "title": "De vanitate saeculi. Add: De vita christiana",
+            "date_single": null,
+            "place": "[Esslingen"
+          },
+          {
+            "id": "ia01354000",
+            "author": "Augustinus, Aurelius",
+            "title": "De vita christiana",
+            "date_single": null,
+            "place": "[Mainz]"
+          }
+        ]
+      },
+      "ustc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": 1125667,
+            "author_1": "Scheifler, Johann Eberhard",
+            "title": "Vita Christi Concionatoria Tribus Libris Comprehensa: Primus Liber Agit De Incarnatione Filii Dei, Amore Verbi, donis, & titulis Christi: de Nativitate, Circumcisione, & Nomine Jesu; de Epiphania, Fuga, ac Virtutibus occultae Vitae, Ieiunio, & Tentatione Christi. Secundus Liber tractat de Vita publica Christi, Praedicatione, vocatione Apostolorum, Zelo Christi, ac doctrinis Evangelicis: copiose de tota Passione, Stationibus, & septem Verbis, de Crucifixione, ac morte Salvatoris meditanda ac imitanda. Tertius Liber agit de vera, & mystica Cruce, de quinque Vulneribus Christi, & de Matre dolorosa, Resurrectione Domini, ac Ascensione, de Spiritu Sancto, ac SS. Trinitate, ac de extremo adventu Christi per nova quatuor humana ; Opus Continens Conciones Ducentas Septuaginta sex, subdivisas veritates morales, & practicas alti\u00dfimae Sapientiae, Patientiae, & amoris Christi ..., Quod Ex Sacris Evangeliis, Verbo Dei, SS. Patrum Ascetarum Theologia & Historiis Sacris, ad Usum Concionatorum, cum quintuplici Indice, Librorum, Concionatorio locupletissimo, Historico, Ascetico, & Alphabetico; ad conciones in Dominicis, ac Festis totius anni, ac ad funebres formandas, aliasque varias asceticas exhortationes faciendas pro gloria Christi elucubravit Joannes Eberhardus Scheifler, Dinckelspilanus, SS. Theologiae, Et SS. Canonum Doctor, Decanus Fiessensis, Ac Parochus Seeggensis",
+            "year": 1697,
+            "place": "Augsburg"
+          },
+          {
+            "id": 1134307,
+            "author_1": "Walasser, Adam",
+            "title": "Vita Christi, durch Adam Walasser ernewert Das Leben unsers Erl\u00f6sers und Seligmachers Jesu Christi, auch seiner gebenedeyten Mutter Marie: von beyder Kindheit an, bi\u00df zu ihren herrlichen Himmelfahrten: Mit einem Summarischen au\u00dfzugh au\u00df den 4. Evangelisten vermehrt",
+            "year": 1657,
+            "place": "K\u00f6ln"
+          },
+          {
+            "id": 1139085,
+            "author_1": "Walasser, Adam",
+            "title": "Vita Christi: Das Leben unsers Erl\u00f6sers und Seligmachers Jesu Christi, auch seiner gebenedeyten Mutter Mariae, von beyder Kindheit an, bi\u00df zu ihren herrlichen Himmelfahrten, Vor zeiten durch einen and\u00e4chtigen Lehrer zusammen gezogen, und durch Adam Walasser ernewert und gemehrt",
+            "year": 1661,
+            "place": "M\u00fcnchen"
+          }
+        ]
+      }
+    },
+    {
+      "bph_id": "ae75d4d7-0e42-5261-fa5c-92eaaa98254c",
+      "ubn": "26029",
+      "author": "Richard de Sancto Victore",
+      "title": "De duodecim patriarchis. De arca mystica",
+      "year": 1494,
+      "place": "[Basel]",
+      "keywords": "mysticism",
+      "internet_archive": {
+        "found": false,
+        "error": "HTTPSConnectionPool(host='archive.org', port=443): Read timed out. (read timeout=30)"
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 3,
+        "results": [
+          {
+            "title": "Richardi de Sancto Victore de Arca mystica et de duodecim patriarchis",
+            "authors": [
+              "Richard de Saint-Victor"
+            ],
+            "link": "http://books.google.nl/books?id=K9aiQwAACAAJ&dq=intitle:De+duodecim+patriarchis.+De+arca+mystica%2Binauthor:Richard+de+Sancto+Victore&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Richardus de Arca mystica",
+            "authors": [
+              "Richard (of St. Victor)"
+            ],
+            "link": "http://books.google.nl/books?id=3uquswEACAAJ&dq=intitle:De+duodecim+patriarchis.+De+arca+mystica%2Binauthor:Richard+de+Sancto+Victore&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "De duodecim patriarchis et de arca mystica",
+            "authors": [
+              "Richard ze Svat\u00e9ho Viktora"
+            ],
+            "link": "http://books.google.nl/books?id=nZ7rtgAACAAJ&dq=intitle:De+duodecim+patriarchis.+De+arca+mystica%2Binauthor:Richard+de+Sancto+Victore&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "ustc": {
+        "found": false,
+        "error": "{'message': 'canceling statement due to statement timeout', 'code': '57014', 'hint': None, 'details': None}"
+      }
+    },
+    {
+      "bph_id": "1a14c20f-cd09-8072-dc20-ff1b8c67b51c",
+      "ubn": "15433",
+      "author": "Otto von Passau",
+      "title": "Die vierundzwanzig Alten, oder Der goldne Thron",
+      "year": 1500,
+      "place": "Straatsburg",
+      "keywords": "mysticism",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Die 24 Alten oder der goldne Thron",
+            "authors": [
+              "Otho (von Passau)",
+              "Otto (von Passau)"
+            ],
+            "link": "https://play.google.com/store/books/details?id=pzg8AAAAcAAJ&source=gbs_api"
+          },
+          {
+            "title": "Die vierundzwanzig Alten, oder Der goldne Thron",
+            "authors": [
+              "Otto von Passau"
+            ],
+            "link": "http://books.google.nl/books?id=rvK_QAAACAAJ&dq=intitle:Die+vierundzwanzig+Alten,+oder+Der+goldne+Thron%2Binauthor:Otto+von+Passau&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Die vierundzwanzig Alten, oder Der goldne Thron [Dutch]. Dat boeck des gulden throens",
+            "authors": [
+              "Otto von Passau (O.F.M.)"
+            ],
+            "link": "http://books.google.nl/books?id=2Bky0AEACAAJ&dq=intitle:Die+vierundzwanzig+Alten,+oder+Der+goldne+Thron%2Binauthor:Otto+von+Passau&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": "io00119000",
+            "author": "Otto von Passau",
+            "title": "Die vierundzwanzig Alten, oder Der goldne Thron",
+            "date_single": 1480,
+            "place": "Augsburg"
+          },
+          {
+            "id": "io00120000",
+            "author": "Otto von Passau",
+            "title": "Die vierundzwanzig Alten, oder Der goldne Thron",
+            "date_single": 1483,
+            "place": "Augsburg"
+          },
+          {
+            "id": "io00121000",
+            "author": "Otto von Passau",
+            "title": "Die vierundzwanzig Alten, oder Der goldne Thron",
+            "date_single": 1483,
+            "place": "[Strassburg]"
+          }
+        ]
+      },
+      "ustc": {
+        "found": false,
+        "error": "{'message': 'canceling statement due to statement timeout', 'code': '57014', 'hint': None, 'details': None}"
+      }
+    },
+    {
+      "bph_id": "f07ac2f2-4059-52c3-8aa4-0c348d771588",
+      "ubn": "32055",
+      "author": "Ficino, Marsilio",
+      "title": "De christiana religione (Italian)",
+      "year": 1484,
+      "place": "Pisa",
+      "keywords": "hermetica",
+      "internet_archive": {
+        "found": false,
+        "error": "HTTPSConnectionPool(host='archive.org', port=443): Max retries exceeded with url: /advancedsearch.php?q=title%3A%22De+christiana+religione+%28Italian%29%22+AND+creator%3A%22Ficino%2C+Marsilio%22&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&fl%5B%5D=mediatype&rows=5&output=json (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1032d1810>, 'Connection to archive.org timed out. (connect timeout=30)'))"
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Libro di Marsilio Ficino della Christiana religione",
+            "authors": [
+              "Marsilio Ficino"
+            ],
+            "link": "http://books.google.nl/books?id=K2woMQAACAAJ&dq=intitle:De+christiana+religione+(Italian)%2Binauthor:Ficino,+Marsilio&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "De Christiana Religione",
+            "authors": [
+              "Marsilio Ficino"
+            ],
+            "link": "http://books.google.nl/books?id=_3xRtwAACAAJ&dq=intitle:De+christiana+religione+(Italian)%2Binauthor:Ficino,+Marsilio&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Marsilio Ficino Della religione Christiana",
+            "authors": [
+              "Marsilio Ficino",
+              "Stamperia di Giunti (Florence)"
+            ],
+            "link": "http://books.google.nl/books?id=RxsKtwAACAAJ&dq=intitle:De+christiana+religione+(Italian)%2Binauthor:Ficino,+Marsilio&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "ustc": {
+        "found": false,
+        "error": "{'message': 'canceling statement due to statement timeout', 'code': '57014', 'hint': None, 'details': None}"
+      }
+    },
+    {
+      "bph_id": "506466c4-aa20-8d2c-9643-6392cfb24f10",
+      "ubn": "3592",
+      "author": null,
+      "title": "Dicts and sayings of the philosophers",
+      "year": 1477,
+      "place": "Westminster",
+      "keywords": "hermetica",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "The Dicts and Sayings of the Philosophers",
+            "authors": [
+              "John William Sutton"
+            ],
+            "link": "https://play.google.com/store/books/details?id=B1WoDwAAQBAJ&source=gbs_api"
+          },
+          {
+            "title": "The Dicts and Sayings of the Philosophers",
+            "authors": [
+              "Ab\u016b al-Waf\u0101\u02bc Mubashshir ibn F\u0101tik"
+            ],
+            "link": "https://play.google.com/store/books/details?id=ANY6AQAAMAAJ&source=gbs_api"
+          },
+          {
+            "title": "The Dicts and Sayings of the Philosophers",
+            "authors": [
+              "Ab\u016b al-Waf\u0101\u02bc Mubashshir ibn F\u0101tik"
+            ],
+            "link": "http://books.google.nl/books?id=x3ZkAQAACAAJ&dq=intitle:Dicts+and+sayings+of+the+philosophers&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "ustc": {
+        "found": false,
+        "error": "{'message': 'canceling statement due to statement timeout', 'code': '57014', 'hint': None, 'details': None}"
+      }
+    },
+    {
+      "bph_id": "bea040b1-5937-cee9-95ca-51e07bb18296",
+      "ubn": "15239",
+      "author": "Bossus, Matthaeus",
+      "title": "De veris ac salutaribus animi gaudiis dialogus",
+      "year": 1491,
+      "place": "Florence",
+      "keywords": "mysticism",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 2,
+        "results": [
+          {
+            "title": "Dialogus de veris et salutaribus animi gaudiis",
+            "authors": [
+              "Francesco Bonaccorsi"
+            ],
+            "link": "http://books.google.nl/books?id=1osSjwEACAAJ&dq=intitle:De+veris+ac+salutaribus+animi+gaudiis+dialogus%2Binauthor:Bossus,+Matthaeus&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Dialogus de veris et salutaribus animi gaudiis. With additions by Angelus Politianus and Timotheus Veronensis",
+            "authors": [
+              "Matthaeus Bossus"
+            ],
+            "link": "http://books.google.nl/books?id=fLYiSQAACAAJ&dq=intitle:De+veris+ac+salutaribus+animi+gaudiis+dialogus%2Binauthor:Bossus,+Matthaeus&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "ustc": {
+        "found": false,
+        "error": "{'message': 'canceling statement due to statement timeout', 'code': '57014', 'hint': None, 'details': None}"
+      }
+    },
+    {
+      "bph_id": "4b3bc144-378f-0c38-e5ef-39f27c1c0784",
+      "ubn": "23435",
+      "author": "[Thomas a Kempis]|",
+      "title": "Imitatio Christi [German:] Die wahre Nachfolgung Christi",
+      "year": 1493,
+      "place": "Augsburg",
+      "keywords": "mysticism",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "The Imitation of Christ",
+            "authors": [
+              "Thomas \u00e0 Kempis"
+            ],
+            "link": "https://play.google.com/store/books/details?id=iHS5AiZMJ-IC&source=gbs_api"
+          },
+          {
+            "title": "The Imitation of Christ",
+            "authors": [
+              "a Kempis Thomas"
+            ],
+            "link": "http://books.google.nl/books?id=qcqZnAEACAAJ&dq=intitle:Imitatio+Christi+%5BGerman:%5D+Die+wahre+Nachfolgung+Christi%2Binauthor:%5BThomas+a+Kempis%5D%7C&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "The Imitation of Christ",
+            "authors": [
+              "Thomas A Kempis"
+            ],
+            "link": "http://books.google.nl/books?id=gP9UAwAAQBAJ&dq=intitle:Imitatio+Christi+%5BGerman:%5D+Die+wahre+Nachfolgung+Christi%2Binauthor:%5BThomas+a+Kempis%5D%7C&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "ustc": {
+        "found": false,
+        "error": "{'message': 'canceling statement due to statement timeout', 'code': '57014', 'hint': None, 'details': None}"
+      }
+    },
+    {
+      "bph_id": "8beb2b74-6c7b-514d-ffe6-bc60a6c42883",
+      "ubn": "26845",
+      "author": "Catharine of Siena",
+      "title": "Epistole",
+      "year": 1500,
+      "place": "Venice",
+      "keywords": "mysticism",
+      "internet_archive": {
+        "found": false,
+        "error": "HTTPSConnectionPool(host='archive.org', port=443): Read timed out. (read timeout=30)"
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "The Letters of Saint Catherine of Siena",
+            "authors": [
+              "Benincasa Catharine"
+            ],
+            "link": "http://books.google.nl/books?id=6q4yzgEACAAJ&dq=intitle:Epistole%2Binauthor:Catharine+of+Siena&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Saint Catherine of Siena as Seen in Her Letters. Translated & Edited with Introduction by Vida D. Scudder",
+            "authors": [
+              "Vida Dutton SCUDDER"
+            ],
+            "link": "http://books.google.nl/books?id=0vjwMgEACAAJ&dq=intitle:Epistole%2Binauthor:Catharine+of+Siena&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Saint Catharine of Siena. [A Selection of Prayers from the \"Dialogue\" of St. Catharine.].",
+            "authors": [
+              "Saint CATHARINE Benincasa (of Sienna)"
+            ],
+            "link": "http://books.google.nl/books?id=LyATMwEACAAJ&dq=intitle:Epistole%2Binauthor:Catharine+of+Siena&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": "ic00280000",
+            "author": "Catharina Senensis, S",
+            "title": "Epistole (XXXI)",
+            "date_single": 1492,
+            "place": "Bologna"
+          },
+          {
+            "id": "ic00281000",
+            "author": "Catharina Senensis, S",
+            "title": "[Epistole (CCCLXVIII). Italian :] Orazioni scelte. Ed: Bartolomeo da Alzano",
+            "date_single": 1500,
+            "place": "Venice"
+          },
+          {
+            "id": "ie00088450",
+            "author": null,
+            "title": "Epistolae et Evangelia (Plenarium) [Low German] Prophecien epistolen unde ewangelia",
+            "date_single": 1484,
+            "place": "Magdeburg"
+          }
+        ]
+      },
+      "ustc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": 715683,
+            "author_1": "Miniatore, Bartolommeo",
+            "title": "Formulario di epistole missive e responsive",
+            "year": 1498,
+            "place": "Venezia"
+          },
+          {
+            "id": 716164,
+            "author_1": "Miniatore, Bartolommeo",
+            "title": "Formulario da ditare littere a ogni persona: & arispondere a tutti con ornato parlare: & con tutte le mansione, correcti: e conzi: & con alcune belle epistole azonte. Con gratia & privilegio de le cose azonte et correcte",
+            "year": 1502,
+            "place": "Venezia"
+          },
+          {
+            "id": 716698,
+            "author_1": "Epistulae (antologia), in italiano",
+            "title": "Locutioni scielte dell'epistole",
+            "year": 1616,
+            "place": "Venezia"
+          }
+        ]
+      }
+    },
+    {
+      "bph_id": "cb1696f9-0f4b-1ec8-c1bd-25c2db9f535d",
+      "ubn": "45546",
+      "author": "Seuse, Heinrich",
+      "title": "Horologium eterne sapientie",
+      "year": 1486,
+      "place": "Alost",
+      "keywords": "mysticism",
+      "internet_archive": {
+        "found": false,
+        "error": "HTTPSConnectionPool(host='archive.org', port=443): Read timed out. (read timeout=30)"
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Heinrich Seuses Horologium sapientiae",
+            "authors": [
+              "Heinrich Seuse",
+              "Pius K\u00fcnzle"
+            ],
+            "link": "http://books.google.nl/books?id=T5if3b2zV-gC&dq=intitle:Horologium+eterne+sapientie%2Binauthor:Seuse,+Heinrich&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Horologium aeternae sapientiae",
+            "authors": [
+              "Heinrich Seuse"
+            ],
+            "link": "https://play.google.com/store/books/details?id=fIhUAAAAcAAJ&source=gbs_api"
+          },
+          {
+            "title": "Horologium eterne sapientie",
+            "authors": [
+              "Heinrich Suso"
+            ],
+            "link": "http://books.google.nl/books?id=-zspnQEACAAJ&dq=intitle:Horologium+eterne+sapientie%2Binauthor:Seuse,+Heinrich&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "ustc": {
+        "found": false,
+        "error": "{'message': 'canceling statement due to statement timeout', 'code': '57014', 'hint': None, 'details': None}"
+      }
+    },
+    {
+      "bph_id": "46a91c1f-8be5-f8e4-4e66-2e50a4a375f2",
+      "ubn": "10562",
+      "author": "Plato",
+      "title": "Opera",
+      "year": 1484,
+      "place": "Florence|",
+      "keywords": "hermetica",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Opera",
+            "authors": [
+              "Plato"
+            ],
+            "link": "https://play.google.com/store/books/details?id=qohbAAAAQAAJ&source=gbs_api"
+          },
+          {
+            "title": "Platonis opera",
+            "authors": [
+              "Plato"
+            ],
+            "link": "http://books.google.nl/books?id=HDVs0QEACAAJ&dq=intitle:Opera%2Binauthor:Plato&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Platonis [Opera] ...",
+            "authors": [
+              "Plato"
+            ],
+            "link": "http://books.google.nl/books?id=yMUsAQAAMAAJ&dq=intitle:Opera%2Binauthor:Plato&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": "ia00040500",
+            "author": "Acron, Helenius",
+            "title": "Commentaria in Horatii opera",
+            "date_single": 1474,
+            "place": "Milan"
+          },
+          {
+            "id": "ia00082000",
+            "author": "Aegidius (Columna) Romanus",
+            "title": "De partibus philosophiae. De differentia rhetoricae, politicae et ethicae. De gradibus formarum accidentalium. Quaestio de gradibus formarum in ordine ad Christi opera",
+            "date_single": null,
+            "place": "[Leipzig"
+          },
+          {
+            "id": "ia00211000",
+            "author": "Alberti, Leo Baptista",
+            "title": "Opera. Ed: Girolamo Massaini",
+            "date_single": 1499,
+            "place": "[Florence"
+          }
+        ]
+      },
+      "ustc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": 1344140,
+            "author_1": "Willis, Thomas",
+            "title": "Pharmaceutice rationalis sive Diatriba de medicamentorum operationibus in humano corpore. Pars secunda",
+            "year": 1677,
+            "place": "Den Haag"
+          },
+          {
+            "id": 1343402,
+            "author_1": "Vergilius Maro, Publius",
+            "title": "Opera]",
+            "year": 1676,
+            "place": "Amsterdam"
+          },
+          {
+            "id": 1343603,
+            "author_1": "Vergilius Maro, Publius",
+            "title": "Opera",
+            "year": 1676,
+            "place": "Amsterdam"
+          }
+        ]
+      }
+    },
+    {
+      "bph_id": "e1867193-8cf8-263f-051f-408ab63c46ac",
+      "ubn": "23121",
+      "author": "Bessarion, Johannes",
+      "title": "Adversus calumniatorem Platonis",
+      "year": 1469,
+      "place": "Rome",
+      "keywords": "hermetica",
+      "internet_archive": {
+        "found": false,
+        "error": "HTTPSConnectionPool(host='archive.org', port=443): Read timed out. (read timeout=30)"
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Adversus calumniatorem Platonis",
+            "authors": [
+              "Johannes Bessarion"
+            ],
+            "link": "http://books.google.nl/books?id=QW6VQwAACAAJ&dq=intitle:Adversus+calumniatorem+Platonis%2Binauthor:Bessarion,+Johannes&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Adversus calumniatorem Platonis. Correctio librorum Platonis de legibus Georgio Trapezuntio interprete. De natura et arte",
+            "authors": [
+              "Johannes Bessarion",
+              "Conradus Sweynheym",
+              "Arnoldus Pannartz"
+            ],
+            "link": "http://books.google.nl/books?id=njo3cgAACAAJ&dq=intitle:Adversus+calumniatorem+Platonis%2Binauthor:Bessarion,+Johannes&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Adversus calumniatorem Platonis",
+            "authors": [
+              "Basilius Bessarion",
+              "Domein-archief te Utrecht (Utrecht)",
+              "Kapittel van Ste Marie (Utrecht)"
+            ],
+            "link": "http://books.google.nl/books?id=5MsCrgEACAAJ&dq=intitle:Adversus+calumniatorem+Platonis%2Binauthor:Bessarion,+Johannes&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": true,
+        "num_results": 1,
+        "results": [
+          {
+            "id": "ib00518000",
+            "author": "Bessarion, Cardinal",
+            "title": "Adversus calumniatorem Platonis. Add: Correctio librorum Platonis de legibus Georgio Trapezuntio interprete. De natura et arte",
+            "date_single": 1469,
+            "place": "Rome"
+          }
+        ]
+      },
+      "ustc": {
+        "found": false,
+        "error": "{'message': 'canceling statement due to statement timeout', 'code': '57014', 'hint': None, 'details': None}"
+      }
+    },
+    {
+      "bph_id": "fe3e3cc4-c461-9c6d-b873-064ac5abf0e2",
+      "ubn": "14748",
+      "author": "Boethius, Anicius Manlius Torquatus Severinus",
+      "title": "De trinitate",
+      "year": 1489,
+      "place": "[Venetie]||",
+      "keywords": "hermetica",
+      "internet_archive": {
+        "found": false,
+        "error": "HTTPSConnectionPool(host='archive.org', port=443): Read timed out. (read timeout=30)"
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Anitii Manlii Seuerini Boethi, ... Opera omnia, quorum alia ant\u00e8 impressa, nunc denu\u00f2 per doctos uiros recognita: alia, quae hactenus latuerunt, nunc prim\u00f9m emendatiss. in lucem prodeunt. ... Praeterea iam accesserunt, Ioannis Murmelij in 5. lib. De consolatione philosophiae commentaria. Et in eosdem Rodolphi Agricolae enarrationes. Item, Gilberti Porretae, episcopi Pictauiensis in 4. lib. De trinitate commentarij, ant\u00e8 nunquam aediti. Praeter reliquos doctiss. uiros, Henricus Loritus Glareanus, arithmeticam & musicam demonstrationibus & figuris auctiorem redditam, suo pristino nitori restituit: ... Et Martianus Rota, opus De tota disserendi ratione, hoc est, organum, ... illustrauit. Et huius autoris uitam, ... descripsit. ..",
+            "authors": [
+              "Anicius Manlius Torquatus Severinus Boethius"
+            ],
+            "link": "https://play.google.com/store/books/details?id=zczfGCC-_ioC&source=gbs_api"
+          },
+          {
+            "title": "Anitii Manlii Seuerini Boethi, ... Opera omnia, quorum alia ante' impressa, nunc denuo' per doctos uiros recognita: alia, quae hactenus latuerunt, nunc primu'm emendatiss. in lucem prodeunt. ... Praeterea iam accesserunt, Ioannis Murmelij in 5. lib. De consolatione philosophiae commentaria. Et in e",
+            "authors": [
+              "Anicius Manlius Torquatus Severinus Boethius"
+            ],
+            "link": "http://books.google.nl/books?id=1OAzg7hEYjEC&dq=intitle:De+trinitate%2Binauthor:Boethius,+Anicius+Manlius+Torquatus+Seve&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "De Consolatione Philosophiae [mittelengl.]",
+            "authors": [
+              "Anicius Manlius Severinus Boethius"
+            ],
+            "link": "http://books.google.nl/books?id=88l70QEACAAJ&dq=intitle:De+trinitate%2Binauthor:Boethius,+Anicius+Manlius+Torquatus+Seve&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": "ia01342000",
+            "author": "Augustinus, Aurelius",
+            "title": "De trinitate",
+            "date_single": 1474,
+            "place": "[Strassburg"
+          },
+          {
+            "id": "ia01343000",
+            "author": "Augustinus, Aurelius",
+            "title": "De trinitate",
+            "date_single": 1489,
+            "place": "[Basel]"
+          },
+          {
+            "id": "ia01344000",
+            "author": "Augustinus, Aurelius",
+            "title": "De trinitate",
+            "date_single": 1489,
+            "place": "Venice"
+          }
+        ]
+      },
+      "ustc": {
+        "found": true,
+        "num_results": 5,
+        "results": [
+          {
+            "id": 531508,
+            "author_1": "Richardus (de Sancto Victore)",
+            "title": "Venerabilis et eximii doctoris richardi de sancto victore ordinis canonicorum regularium S. Augustinide trinitate libri sex.",
+            "year": 1518,
+            "place": "N\u00fcrnberg"
+          },
+          {
+            "id": 531560,
+            "author_1": "Junius, Franciscus",
+            "title": "Disputationum theologicarum repetitarum decima, de trinitate personarum in unica Dei essentia. 10.06",
+            "year": 1598,
+            "place": "Leiden"
+          },
+          {
+            "id": 533212,
+            "author_1": "Stancaro, Francesco",
+            "title": "Francisci Stancari Mantvani De Trinitate Et Vnitate Dei : Deqve Incarnatione Et Mediatione Domini Nostri Iesv Christi aduersus Trideitas, Arianos, Eutychianos, Macarianos, Cerinthianos, Ebionitas & Photinianos Libri Qvatvor.",
+            "year": 1567,
+            "place": "Krak\u00f3w"
+          }
+        ]
+      }
+    },
+    {
+      "bph_id": "10607b00-681d-26dd-645a-5712b7fc6eef",
+      "ubn": "17664",
+      "author": "Johannes Mauburnus",
+      "title": "Rosetum exercitiorum spiritualium et sacrarum meditationum",
+      "year": 1494,
+      "place": "Zwolle|",
+      "keywords": "mysticism",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Rosetum exercitiorum spiritualium et sacrarum meditationum materia praedicabili admixtum ...",
+            "authors": [
+              "Johannes Mauburnus"
+            ],
+            "link": "https://play.google.com/store/books/details?id=tMFhAAAAcAAJ&source=gbs_api"
+          },
+          {
+            "title": "Rosetum exercitiorum spiritualium, et sacrarum meditationum, matera praedicabili admixtum ... Nunc recens castigatum ... opera vero Basilij Serenij Mediolanensis",
+            "authors": [
+              "Johannes Mauburnus"
+            ],
+            "link": "https://play.google.com/store/books/details?id=Lz1RAAAAcAAJ&source=gbs_api"
+          },
+          {
+            "title": "Rosetum Exercitiorum spiritualium",
+            "authors": [
+              "Johannes Mauburnus"
+            ],
+            "link": "https://play.google.com/store/books/details?id=hoFKAAAAcAAJ&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": true,
+        "num_results": 2,
+        "results": [
+          {
+            "id": "im00376000",
+            "author": "Mauburnus, Johannes",
+            "title": "Rosetum exercitiorum spiritualium et sacrarum meditationum",
+            "date_single": 1494,
+            "place": "[Zwolle"
+          },
+          {
+            "id": "im00377000",
+            "author": "Mauburnus, Johannes",
+            "title": "Rosetum exercitiorum spiritualium et sacrarum meditationum. Rev: Johannes Speyser",
+            "date_single": 1504,
+            "place": "Basel"
+          }
+        ]
+      },
+      "ustc": {
+        "found": false,
+        "error": "{'message': 'canceling statement due to statement timeout', 'code': '57014', 'hint': None, 'details': None}"
+      }
+    },
+    {
+      "bph_id": "3bb1fa7a-bfb6-230d-7aa2-27b40e4c233c",
+      "ubn": "13119",
+      "author": "Tauler, Johannes",
+      "title": "Sermonen und Historia",
+      "year": 1498,
+      "place": "Leipzig",
+      "keywords": "mysticism",
+      "internet_archive": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Sermonen und Historia [dt.].",
+            "authors": [
+              "Johannes Tauler"
+            ],
+            "link": "http://books.google.nl/books?id=oiDYtwEACAAJ&dq=intitle:Sermonen+und+Historia%2Binauthor:Tauler,+Johannes&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Johannes Tauler",
+            "authors": [
+              "Johannes Tauler"
+            ],
+            "link": "http://books.google.nl/books?id=vPnsHAAACAAJ&dq=intitle:Sermonen+und+Historia%2Binauthor:Tauler,+Johannes&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Sermonen und Historia [in German].",
+            "authors": [
+              "Johannes Tauler"
+            ],
+            "link": "http://books.google.nl/books?id=M9wKnwEACAAJ&dq=intitle:Sermonen+und+Historia%2Binauthor:Tauler,+Johannes&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": true,
+        "num_results": 1,
+        "results": [
+          {
+            "id": "it00048000",
+            "author": "Tauler, Johannes",
+            "title": "Sermonen und Historia [German]",
+            "date_single": 1498,
+            "place": "Leipzig"
+          }
+        ]
+      },
+      "ustc": {
+        "found": false,
+        "error": "{'message': 'canceling statement due to statement timeout', 'code': '57014', 'hint': None, 'details': None}"
+      }
+    },
+    {
+      "bph_id": "e177c22e-5911-2cab-2ddf-9af7065f591c",
+      "ubn": "26107",
+      "author": "Pico della Mirandula, Giovanni",
+      "title": "Heptaplus de septi formi sex dierum Geneseos enarratione",
+      "year": 1490,
+      "place": "[Florence]",
+      "keywords": null,
+      "internet_archive": {
+        "found": false,
+        "error": "('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))"
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Heptaplus de septiformi sex dierum Geneseos enarratione",
+            "authors": [
+              "Giovanni Pico della Mirandola"
+            ],
+            "link": "http://books.google.nl/books?id=xYpuAQAACAAJ&dq=intitle:Heptaplus+de+septi+formi+sex+dierum+Geneseos+enarratione%2Binauthor:Pico+della+Mirandula,+Giovanni&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Opera",
+            "authors": [
+              "Giovanni Pico della Mirandola"
+            ],
+            "link": "http://books.google.nl/books?id=WNC_oAEACAAJ&dq=intitle:Heptaplus+de+septi+formi+sex+dierum+Geneseos+enarratione%2Binauthor:Pico+della+Mirandula,+Giovanni&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Heptaplus Iohannis Pici Mirandule de septiformi sex dierum geneseos enarratione ad Laurentium Medicem",
+            "authors": [
+              "Giovanni Pico della Mirandola"
+            ],
+            "link": "http://books.google.nl/books?id=5qy4zQEACAAJ&dq=intitle:Heptaplus+de+septi+formi+sex+dierum+Geneseos+enarratione%2Binauthor:Pico+della+Mirandula,+Giovanni&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "ustc": {
+        "found": false,
+        "error": "{'message': 'canceling statement due to statement timeout', 'code': '57014', 'hint': None, 'details': None}"
+      }
+    },
+    {
+      "bph_id": "f12ae4ee-d9a4-d02e-9d6c-44ab175f7c4c",
+      "ubn": "10465",
+      "author": "Birgitta of Sweden|[Tortsch, Johann?]",
+      "title": "Onus mundi. Festa S. Birgittae. Revelationes aliquae libri quarti. Sermo ... revelationum S. Birgittae. Oratio in laudem S. Birgittae",
+      "year": 1485,
+      "place": "Rome",
+      "keywords": "mysticism",
+      "internet_archive": {
+        "found": false,
+        "error": "HTTPSConnectionPool(host='archive.org', port=443): Max retries exceeded with url: /advancedsearch.php?q=title%3A%22Onus+mundi.+Festa+S.+Birgittae.+Revelationes+aliquae+libri+quarti.+Sermo+...+revelationum+S.+Birgitt%22+AND+creator%3A%22Birgitta+of+Sweden%7C%5BTortsch%2C+Johann%3F%5D%22&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=date&fl%5B%5D=mediatype&rows=5&output=json (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1032d3250>, 'Connection to archive.org timed out. (connect timeout=30)'))"
+      },
+      "google_books": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "istc": {
+        "found": false,
+        "num_results": 0,
+        "results": []
+      },
+      "ustc": {
+        "found": false,
+        "error": "{'message': 'canceling statement due to statement timeout', 'code': '57014', 'hint': None, 'details': None}"
+      }
+    },
+    {
+      "bph_id": "ec0fb6cd-b83c-41f1-ff4d-0344f2d9fce1",
+      "ubn": "8384",
+      "author": "Catharine of Siena",
+      "title": "Libro della divina dottrina",
+      "year": 1494,
+      "place": "Venetie",
+      "keywords": "mysticism",
+      "internet_archive": {
+        "found": false,
+        "error": "HTTPSConnectionPool(host='archive.org', port=443): Read timed out. (read timeout=30)"
+      },
+      "google_books": {
+        "found": true,
+        "num_results": 1000000,
+        "results": [
+          {
+            "title": "Libro dell divina dottrina, volgarmente detto Dialogo della divina provvidenza. Nuova edizione secondo un inedito codice senese. A cura di Matilde Fiorilli",
+            "authors": [
+              "Matilde FIORILLI"
+            ],
+            "link": "http://books.google.nl/books?id=srkRMwEACAAJ&dq=intitle:Libro+della+divina+dottrina%2Binauthor:Catharine+of+Siena&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "L'opere della Serafica Santa Caterina da Siena",
+            "authors": [
+              "Benincasa Catharine",
+              "Raffaelle Maria Filamondo",
+              "Raimundus de Vineis",
+              "Bernardino Pecci",
+              "Federigo Burlamacchi",
+              "Girolamo Gigli",
+              "Raimondo"
+            ],
+            "link": "http://books.google.nl/books?id=KwsYYAAACAAJ&dq=intitle:Libro+della+divina+dottrina%2Binauthor:Catharine+of+Siena&hl=&as_pt=BOOKS&source=gbs_api"
+          },
+          {
+            "title": "Epistolario di Santa Caterina da Siena",
+            "authors": [
+              "Caterina (da Siena, sainte.)",
+              "Istituto storico italiano per il Medio Evo",
+              "Saint Benincasa Catharine (of Sienna.)"
+            ],
+            "link": "http://books.google.nl/books?id=DeEN0AEACAAJ&dq=intitle:Libro+della+divina+dottrina%2Binauthor:Catharine+of+Siena&hl=&as_pt=BOOKS&source=gbs_api"
+          }
+        ]
+      },
+      "istc": {
+        "found": true,
+        "num_results": 4,
+        "results": [
+          {
+            "id": "ic00282000",
+            "author": "Catharina Senensis, S",
+            "title": "Libro della divina dottrina. Add: Barduccio Canigiani: Epistola della morte di S. Caterina",
+            "date_single": 1475,
+            "place": "[Bologna"
+          },
+          {
+            "id": "ic00283000",
+            "author": "Catharina Senensis, S",
+            "title": "Libro della divina dottrina",
+            "date_single": 1478,
+            "place": "[Naples]"
+          },
+          {
+            "id": "ic00284000",
+            "author": "Catharina Senensis, S",
+            "title": "Libro della divina dottrina",
+            "date_single": 1494,
+            "place": "Venice"
+          }
+        ]
+      },
+      "ustc": {
+        "found": false,
+        "error": "{'message': 'canceling statement due to statement timeout', 'code': '57014', 'hint': None, 'details': None}"
+      }
+    }
+  ]
+}

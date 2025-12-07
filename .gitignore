@@ -28,3 +28,4 @@ data/comprehensive_*.csv
 # Node (for viz app)
 node_modules/
 .next/
+data/ustc/ustc_editions.csv

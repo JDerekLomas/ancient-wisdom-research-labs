@@ -28,6 +28,13 @@ const pinnedPosts = [
 // All posts in reverse chronological order (newest first)
 const posts = [
   {
+    slug: "hidden-hermetic-library",
+    title: "The Hidden Hermetic Library: What the Embassy of the Free Mind Reveals About Cataloging Gaps",
+    date: "December 2025",
+    excerpt: "We cross-referenced Amsterdam's esoteric collection with standard bibliographies. 35% of their 15th-century holdings don't appear in ISTC or USTC. These aren't marginal texts—they include Ficino, Pico, and Hermes Trismegistus.",
+    tag: "Research",
+  },
+  {
     slug: "lost-books",
     title: "The Dark Matter of Book History: How Many Latin Works Are Lost Forever?",
     date: "December 2025",
