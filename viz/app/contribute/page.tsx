@@ -16,7 +16,7 @@ interface Work {
   author?: string;
   year?: number;
   publisher?: string;
-  city?: string;
+  place?: string;
   ubn?: string;
   detected_language?: string;
 }
@@ -83,7 +83,7 @@ export default function ContributePage() {
       const randomOffset = Math.floor(Math.random() * count);
       const { data, error: fetchError } = await supabase
         .from('bph_works')
-        .select('id, title, author, year, publisher, city, ubn, detected_language')
+        .select('id, title, author, year, publisher, place, ubn, detected_language')
         .gte('year', 1400)
         .lte('year', 1700)
         .order('id')
@@ -579,8 +579,8 @@ export default function ContributePage() {
                   {currentWork.publisher && (
                     <span><strong>Publisher:</strong> {currentWork.publisher}</span>
                   )}
-                  {currentWork.city && (
-                    <span><strong>City:</strong> {currentWork.city}</span>
+                  {currentWork.place && (
+                    <span><strong>Place:</strong> {currentWork.place}</span>
                   )}
                 </div>
 
@@ -1124,7 +1124,7 @@ export default function ContributePage() {
           color: '#aaa',
           marginTop: '12px',
         }}>
-          v1.0.4
+          v1.0.5
         </p>
       </footer>
     </main>
