@@ -5,6 +5,7 @@ export default function MappingTranslations() {
     <BlogLayout
       title="Mapping the Translation Landscape: A Research Diary"
       tag="Methods"
+      slug="mapping-translations"
     >
       <p style={{
         fontFamily: 'Newsreader, Georgia, serif',

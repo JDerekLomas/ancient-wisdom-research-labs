@@ -54,6 +54,7 @@ export default function Home() {
             <Link href="/data" style={{ fontFamily: 'Inter, sans-serif', fontSize: '13px', color: '#555', textDecoration: 'none' }}>Data</Link>
             <Link href="/blog" style={{ fontFamily: 'Inter, sans-serif', fontSize: '13px', color: '#555', textDecoration: 'none' }}>Essays</Link>
             <Link href="/about" style={{ fontFamily: 'Inter, sans-serif', fontSize: '13px', color: '#555', textDecoration: 'none' }}>About</Link>
+            <Link href="/contribute" style={{ fontFamily: 'Inter, sans-serif', fontSize: '13px', color: '#9e4a3a', fontWeight: 500, textDecoration: 'none' }}>Contribute</Link>
             <a
               href="https://www.ancientwisdomtrust.org/become-a-patron"
               target="_blank"
@@ -651,25 +652,48 @@ export default function Home() {
             Translations are published freely at <a href="https://sourcelibrary.org" target="_blank" rel="noopener noreferrer" style={{ color: 'rgba(255,255,255,0.7)' }}>Source Library</a>.
           </p>
 
-          <a
-            href="https://www.ancientwisdomtrust.org/become-a-patron"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{
-              display: 'inline-block',
-              fontFamily: 'Inter, sans-serif',
-              fontSize: '14px',
-              fontWeight: 500,
-              color: '#1a1612',
-              background: '#c9a86c',
-              padding: '16px 48px',
-              borderRadius: '4px',
-              textDecoration: 'none',
-              marginBottom: '48px',
-            }}
-          >
-            Support This Work
-          </a>
+          <div style={{
+            display: 'flex',
+            gap: '16px',
+            justifyContent: 'center',
+            marginBottom: '48px',
+          }}>
+            <a
+              href="https://www.ancientwisdomtrust.org/become-a-patron"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: 'inline-block',
+                fontFamily: 'Inter, sans-serif',
+                fontSize: '14px',
+                fontWeight: 500,
+                color: '#1a1612',
+                background: '#c9a86c',
+                padding: '16px 32px',
+                borderRadius: '4px',
+                textDecoration: 'none',
+              }}
+            >
+              Support This Work
+            </a>
+            <Link
+              href="/contribute"
+              style={{
+                display: 'inline-block',
+                fontFamily: 'Inter, sans-serif',
+                fontSize: '14px',
+                fontWeight: 500,
+                color: '#c9a86c',
+                background: 'transparent',
+                padding: '16px 32px',
+                borderRadius: '4px',
+                textDecoration: 'none',
+                border: '1px solid #c9a86c',
+              }}
+            >
+              Help Verify Data
+            </Link>
+          </div>
 
           <div style={{
             display: 'flex',
@@ -681,6 +705,7 @@ export default function Home() {
             <Link href="/explore" style={{ fontFamily: 'Inter, sans-serif', fontSize: '13px', color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Explore the Data</Link>
             <Link href="/blog/roadmap" style={{ fontFamily: 'Inter, sans-serif', fontSize: '13px', color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Translation Roadmap</Link>
             <Link href="/blog" style={{ fontFamily: 'Inter, sans-serif', fontSize: '13px', color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Research Essays</Link>
+            <Link href="/contribute" style={{ fontFamily: 'Inter, sans-serif', fontSize: '13px', color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Contribute</Link>
             <Link href="/about" style={{ fontFamily: 'Inter, sans-serif', fontSize: '13px', color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>About</Link>
           </div>
         </div>

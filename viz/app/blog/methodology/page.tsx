@@ -5,6 +5,7 @@ export default function Methodology() {
     <BlogLayout
       title="Methodology"
       tag="Methods"
+      slug="methodology"
     >
       <p style={{
         fontFamily: 'Newsreader, Georgia, serif',

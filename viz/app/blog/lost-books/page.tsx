@@ -5,6 +5,7 @@ export default function LostBooks() {
     <BlogLayout
       title="The Dark Matter of Book History: How Many Latin Works Are Lost Forever?"
       tag="Research"
+      slug="lost-books"
       prevPost={{ href: "/blog/theology-problem", title: "The Theology Problem" }}
       nextPost={{ href: "/blog/methodology", title: "Methodology" }}
     >

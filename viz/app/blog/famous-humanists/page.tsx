@@ -5,6 +5,7 @@ export default function FamousHumanists() {
     <BlogLayout
       title="Even Ficino Isn't Fully Translated"
       tag="Research"
+      slug="famous-humanists"
       prevPost={{ href: "/blog/translation-gap", title: "The Translation Gap" }}
     >
       <p style={{

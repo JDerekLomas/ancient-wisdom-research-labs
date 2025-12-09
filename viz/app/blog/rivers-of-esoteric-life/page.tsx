@@ -5,6 +5,7 @@ export default function RiversOfEsotericLife() {
     <BlogLayout
       title="Rivers of Esoteric Life: Mapping the Hermetic Tradition"
       tag="Draft"
+      slug="rivers-of-esoteric-life"
       prevPost={{ href: "/blog/famous-humanists", title: "Even Ficino Isn't Fully Translated" }}
     >
       <div style={{

@@ -28,6 +28,20 @@ const pinnedPosts = [
 // All posts in reverse chronological order (newest first)
 const posts = [
   {
+    slug: "bph-ia-matching",
+    title: "From 2% to 26%: The Journey to Match Historical Catalogs",
+    date: "December 2025",
+    excerpt: "How we evolved from prefix matching (2%) to fuzzy strings (18.6%) to semantic embeddings (65%) to multi-signal matching (26%). The story of matching the BPH catalog against the Internet Archive.",
+    tag: "Methods",
+  },
+  {
+    slug: "esoteric-digitization",
+    title: "How Much Esoteric Latin Is Really Missing from the Internet Archive?",
+    date: "December 2025",
+    excerpt: "We matched 10,683 Latin works from Amsterdam's Hermetic library against the Internet Archive. Fuzzy matching found 18.6%—with dramatic variation by century (65% for 15th c., 11% for 20th c.).",
+    tag: "Research",
+  },
+  {
     slug: "hidden-hermetic-library",
     title: "The Hidden Hermetic Library: What the Embassy of the Free Mind Reveals About Cataloging Gaps",
     date: "December 2025",

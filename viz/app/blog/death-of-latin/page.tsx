@@ -6,6 +6,7 @@ export default function DeathOfLatin() {
     <BlogLayout
       title="The Death of Latin? What 1.6 Million Books Tell Us"
       tag="Data"
+      slug="death-of-latin"
       prevPost={{ href: "/blog/mapping-translations", title: "Mapping Translations" }}
     >
       <p style={{

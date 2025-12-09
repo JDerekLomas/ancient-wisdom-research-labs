@@ -5,6 +5,7 @@ export default function Forgotten1400s() {
     <BlogLayout
       title="The Forgotten Quattrocento: Thinkers of the 1400s You Can't Read"
       tag="Research"
+      slug="forgotten-1400s"
       prevPost={{ href: "/blog/forgotten-authors", title: "The Forgotten Giants" }}
       nextPost={{ href: "/blog/forgotten-1500s", title: "Forgotten Authors of the 1500s" }}
     >

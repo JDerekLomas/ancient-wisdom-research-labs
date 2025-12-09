@@ -5,6 +5,7 @@ export default function WhyLatinMatters() {
     <BlogLayout
       title="Why Latin Matters: 500,000 Unread Books"
       tag="Mission"
+      slug="why-latin-matters"
       nextPost={{ href: "/blog/forgotten-authors", title: "The Forgotten Giants" }}
     >
       <p style={{

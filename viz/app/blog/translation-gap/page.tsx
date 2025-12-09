@@ -5,6 +5,7 @@ export default function TranslationGap() {
     <BlogLayout
       title="The Translation Gap: 95% of Latin Literature is Locked Away"
       tag="Data"
+      slug="translation-gap"
       prevPost={{ href: "/blog/renaissance-bestsellers", title: "Renaissance Bestsellers" }}
     >
       <p style={{

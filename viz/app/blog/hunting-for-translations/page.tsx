@@ -5,6 +5,7 @@ export default function HuntingForTranslations() {
     <BlogLayout
       title="Hunting for Translations: A Day Mapping the Latin-English Landscape"
       tag="Research Report"
+      slug="hunting-for-translations"
       prevPost={{ href: "/blog/esoteric-timeline", title: "Esoteric Timeline" }}
     >
       <p style={{

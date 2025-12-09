@@ -66,6 +66,7 @@ export default function EsotericTimelinePage() {
     <BlogLayout
       title="Rivers of Esoteric Life: Interactive Timeline"
       tag="Data Visualization"
+      slug="esoteric-timeline"
       nextPost={{ href: "/blog/hunting-for-translations", title: "Hunting for Translations" }}
     >
       <p style={{

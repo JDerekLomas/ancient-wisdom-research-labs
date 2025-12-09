@@ -1,9 +1,11 @@
 import Link from "next/link";
+import Comments from "@/components/Comments";
 
 interface BlogLayoutProps {
   children: React.ReactNode;
   title: string;
   tag: string;
+  slug: string;
   date?: string;
   nextPost?: { href: string; title: string };
   prevPost?: { href: string; title: string };
@@ -20,7 +22,7 @@ const tagColors: Record<string, { bg: string; text: string }> = {
   Draft: { bg: '#f5f5f5', text: '#888' },
 };
 
-export default function BlogLayout({ children, title, tag, date = "December 2025", nextPost, prevPost }: BlogLayoutProps) {
+export default function BlogLayout({ children, title, tag, slug, date = "December 2025", nextPost, prevPost }: BlogLayoutProps) {
   const colors = tagColors[tag] || tagColors.Research;
 
   return (
@@ -110,6 +112,9 @@ export default function BlogLayout({ children, title, tag, date = "December 2025
         <div className="prose">
           {children}
         </div>
+
+        {/* Comments */}
+        <Comments postSlug={slug} />
 
         {/* Navigation */}
         {(prevPost || nextPost) && (

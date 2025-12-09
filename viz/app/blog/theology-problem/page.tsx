@@ -45,6 +45,7 @@ export default function TheologyProblem() {
     <BlogLayout
       title="The Elephant in the Room: 114,000 Latin Theological Works"
       tag="Research"
+      slug="theology-problem"
       prevPost={{ href: "/blog/forgotten-1600s", title: "Forgotten Authors of the 1600s" }}
       nextPost={{ href: "/blog/methodology", title: "Methodology" }}
     >

@@ -5,6 +5,7 @@ export default function RenaissanceBestsellers() {
     <BlogLayout
       title="Renaissance Bestsellers Nobody Reads"
       tag="Research"
+      slug="renaissance-bestsellers"
       prevPost={{ href: "/blog/forgotten-authors", title: "Forgotten Authors" }}
       nextPost={{ href: "/blog/translation-gap", title: "The Translation Gap" }}
     >

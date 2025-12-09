@@ -1,6 +1,6 @@
-# Ancient Wisdom Research Labs
+# Second Renaissance
 
-**Live site: [ancientwisdomresearch.vercel.app](https://ancientwisdomresearch.vercel.app)**
+**Live site: [secondrenaissance.vercel.app](https://secondrenaissance.vercel.app)**
 
 Mapping the hidden libraries of Western esotericism. Part of the Source Library Project.
 
@@ -43,6 +43,25 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000)
+
+## Deployment
+
+The site is deployed to Vercel. The Vercel project is named `ancientwisdomresearch` but the public URL is `secondrenaissance.vercel.app` (configured as an alias).
+
+### Deploy to Production
+
+```bash
+# Step 1: Deploy to Vercel
+vercel --prod
+
+# Step 2: Update the alias to point to the new deployment
+# Get the deployment URL from step 1 (e.g., ancientwisdomresearch-xxxxx-dereklomas-projects.vercel.app)
+vercel alias set <deployment-url> secondrenaissance.vercel.app
+```
+
+### Why Two Steps?
+
+The `secondrenaissance.vercel.app` domain is an alias pointing to a specific deployment. When you run `vercel --prod`, it updates the main project URL (`ancientwisdomresearch.vercel.app`) but doesn't automatically update aliases. You must manually update the alias to point to the new deployment.
 
 ## License
 
