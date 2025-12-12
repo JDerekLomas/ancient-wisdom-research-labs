@@ -28,6 +28,13 @@ const pinnedPosts = [
 // All posts in reverse chronological order (newest first)
 const posts = [
   {
+    slug: "sourcelibrary-vision",
+    title: "SourceLibrary: A Vision for AI-Assisted Translation",
+    date: "December 2025",
+    excerpt: "Half a million Renaissance Latin texts await translation. We're building tools to make that possible—not by replacing scholars, but by empowering them with expert-driven, AI-assisted workflows.",
+    tag: "Vision",
+  },
+  {
     slug: "bph-ia-matching",
     title: "From 2% to 26%: The Journey to Match Historical Catalogs",
     date: "December 2025",
@@ -147,6 +154,7 @@ const tagColors: Record<string, { bg: string; text: string }> = {
   Methods: { bg: '#f0f5e8', text: '#6b7c5a' },
   Visualization: { bg: '#f5e8f0', text: '#8a5475' },
   Mission: { bg: '#f5f0e8', text: '#9e4a3a' },
+  Vision: { bg: '#e8f0f5', text: '#4a6b8a' },
   Draft: { bg: '#f5f5f5', text: '#888' },
 };
 
