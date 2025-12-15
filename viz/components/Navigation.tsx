@@ -278,10 +278,12 @@ export default function Navigation() {
             top: '64px',
             left: 0,
             right: 0,
-            bottom: 0,
+            height: 'calc(100vh - 64px)',
             background: '#fdfcf9',
-            overflowY: 'auto',
-            padding: '16px 24px 100px',
+            overflowY: 'scroll',
+            WebkitOverflowScrolling: 'touch',
+            padding: '16px 24px',
+            paddingBottom: '120px',
           }}
         >
           {/* Mobile Navigation Sections */}
@@ -336,7 +338,7 @@ export default function Navigation() {
           ))}
 
           {/* Mobile Support Button */}
-          <div style={{ marginTop: '32px', padding: '0 4px' }}>
+          <div style={{ marginTop: '32px', marginBottom: '60px', padding: '0 4px' }}>
             <a
               href="https://www.ancientwisdomtrust.org/become-a-patron"
               target="_blank"
