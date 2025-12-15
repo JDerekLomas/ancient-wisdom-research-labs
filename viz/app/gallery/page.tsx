@@ -10,6 +10,7 @@ interface GalleryImage {
   year: number;
   source: string;
   wikimedia_url: string;
+  thumb_url: string;
   image_url: string;
   license: string;
   categories: string[];
@@ -32,11 +33,14 @@ interface GalleryData {
   categories: Category[];
 }
 
+const IMAGES_PER_PAGE = 8;
+
 export default function GalleryPage() {
   const [data, setData] = useState<GalleryData | null>(null);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
   const [loadedImages, setLoadedImages] = useState<Set<string>>(new Set());
+  const [visibleCount, setVisibleCount] = useState(IMAGES_PER_PAGE);
 
   useEffect(() => {
     fetch("/gallery_images.json")
@@ -45,11 +49,26 @@ export default function GalleryPage() {
       .catch(console.error);
   }, []);
 
+  // Reset visible count when category changes
+  useEffect(() => {
+    setVisibleCount(IMAGES_PER_PAGE);
+  }, [selectedCategory]);
+
   const filteredImages = useMemo(() => {
     if (!data) return [];
     if (!selectedCategory) return data.images;
     return data.images.filter((img) => img.categories.includes(selectedCategory));
   }, [data, selectedCategory]);
+
+  const visibleImages = useMemo(() => {
+    return filteredImages.slice(0, visibleCount);
+  }, [filteredImages, visibleCount]);
+
+  const hasMore = visibleCount < filteredImages.length;
+
+  const loadMore = () => {
+    setVisibleCount((prev) => Math.min(prev + IMAGES_PER_PAGE, filteredImages.length));
+  };
 
   const getCategoryColor = (categoryId: string): string => {
     const cat = data?.categories.find((c) => c.id === categoryId);
@@ -129,55 +148,54 @@ export default function GalleryPage() {
         </div>
       </header>
 
-      {/* Gallery Grid */}
+      {/* Gallery Grid - Pinterest Masonry Style */}
       <main style={{ maxWidth: "1400px", margin: "0 auto", padding: "32px 24px" }}>
         <div
+          className="masonry-grid"
           style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))",
-            gap: "24px",
+            columnCount: 4,
+            columnGap: "20px",
           }}
         >
-          {filteredImages.map((image) => (
+          {visibleImages.map((image, index) => (
             <div
               key={image.id}
               onClick={() => setSelectedImage(image)}
               style={{
                 background: "#fff",
-                borderRadius: "8px",
+                borderRadius: "12px",
                 overflow: "hidden",
                 boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
                 cursor: "pointer",
                 transition: "transform 0.2s, box-shadow 0.2s",
+                marginBottom: "20px",
+                breakInside: "avoid",
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.transform = "translateY(-4px)";
-                e.currentTarget.style.boxShadow = "0 8px 24px rgba(0,0,0,0.12)";
+                e.currentTarget.style.transform = "scale(1.02)";
+                e.currentTarget.style.boxShadow = "0 12px 32px rgba(0,0,0,0.15)";
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.transform = "translateY(0)";
+                e.currentTarget.style.transform = "scale(1)";
                 e.currentTarget.style.boxShadow = "0 2px 8px rgba(0,0,0,0.08)";
               }}
             >
-              {/* Image */}
-              <div style={{ position: "relative", paddingTop: "75%", background: "#f5f0e8" }}>
+              {/* Image - natural aspect ratio for masonry */}
+              <div style={{ position: "relative", background: "#f5f0e8", minHeight: "120px" }}>
                 {!loadedImages.has(image.id) && (
-                  <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center" }}>
+                  <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", minHeight: "200px" }}>
                     <div style={{ color: "#999", fontSize: "12px" }}>Loading...</div>
                   </div>
                 )}
                 <img
-                  src={image.image_url}
+                  src={image.thumb_url}
                   alt={image.title}
-                  loading="lazy"
+                  loading={index < IMAGES_PER_PAGE ? "eager" : "lazy"}
+                  fetchPriority={index < 4 ? "high" : "auto"}
                   onLoad={() => setLoadedImages((prev) => new Set(prev).add(image.id))}
                   style={{
-                    position: "absolute",
-                    top: 0,
-                    left: 0,
                     width: "100%",
-                    height: "100%",
-                    objectFit: "cover",
+                    display: "block",
                     opacity: loadedImages.has(image.id) ? 1 : 0,
                     transition: "opacity 0.3s",
                   }}
@@ -185,11 +203,11 @@ export default function GalleryPage() {
               </div>
 
               {/* Info */}
-              <div style={{ padding: "16px" }}>
-                <h3 style={{ fontFamily: "Cormorant Garamond, serif", fontSize: "18px", fontWeight: 500, color: "#1a1612", marginBottom: "4px" }}>
+              <div style={{ padding: "14px" }}>
+                <h3 style={{ fontFamily: "Cormorant Garamond, serif", fontSize: "17px", fontWeight: 500, color: "#1a1612", marginBottom: "4px", lineHeight: 1.3 }}>
                   {image.title}
                 </h3>
-                <p style={{ fontFamily: "Inter, sans-serif", fontSize: "12px", color: "#666", marginBottom: "8px" }}>
+                <p style={{ fontFamily: "Inter, sans-serif", fontSize: "11px", color: "#888", marginBottom: "8px" }}>
                   {image.artist}, {image.year}
                 </p>
                 <div style={{ display: "flex", flexWrap: "wrap", gap: "4px" }}>
@@ -198,12 +216,11 @@ export default function GalleryPage() {
                       key={catId}
                       style={{
                         fontFamily: "Inter, sans-serif",
-                        fontSize: "10px",
-                        padding: "2px 8px",
-                        borderRadius: "10px",
-                        background: getCategoryColor(catId) + "20",
+                        fontSize: "9px",
+                        padding: "2px 6px",
+                        borderRadius: "8px",
+                        background: getCategoryColor(catId) + "15",
                         color: getCategoryColor(catId),
-                        border: `1px solid ${getCategoryColor(catId)}40`,
                       }}
                     >
                       {getCategoryLabel(catId)}
@@ -213,6 +230,66 @@ export default function GalleryPage() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Responsive Masonry Styles */}
+        <style jsx>{`
+          .masonry-grid {
+            column-count: 4;
+          }
+          @media (max-width: 1200px) {
+            .masonry-grid {
+              column-count: 3;
+            }
+          }
+          @media (max-width: 800px) {
+            .masonry-grid {
+              column-count: 2;
+            }
+          }
+          @media (max-width: 500px) {
+            .masonry-grid {
+              column-count: 1;
+            }
+          }
+        `}</style>
+
+        {/* Load More Button */}
+        {hasMore && (
+          <div style={{ textAlign: "center", marginTop: "48px" }}>
+            <button
+              onClick={loadMore}
+              style={{
+                fontFamily: "Inter, sans-serif",
+                fontSize: "14px",
+                fontWeight: 500,
+                color: "#9e4a3a",
+                background: "#fff",
+                border: "2px solid #9e4a3a",
+                padding: "14px 32px",
+                borderRadius: "8px",
+                cursor: "pointer",
+                transition: "all 0.15s",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background = "#9e4a3a";
+                e.currentTarget.style.color = "#fff";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background = "#fff";
+                e.currentTarget.style.color = "#9e4a3a";
+              }}
+            >
+              Load More ({filteredImages.length - visibleCount} remaining)
+            </button>
+          </div>
+        )}
+
+        {/* Showing count */}
+        <div style={{ textAlign: "center", marginTop: "24px" }}>
+          <p style={{ fontFamily: "Inter, sans-serif", fontSize: "13px", color: "#888" }}>
+            Showing {visibleImages.length} of {filteredImages.length} images
+          </p>
         </div>
       </main>
 
@@ -244,7 +321,7 @@ export default function GalleryPage() {
             }}
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Large Image */}
+            {/* Large Image - use full resolution */}
             <div style={{ position: "relative", background: "#1a1612" }}>
               <img
                 src={selectedImage.image_url}
@@ -349,7 +426,7 @@ export default function GalleryPage() {
                     gap: "6px",
                   }}
                 >
-                  View on Wikimedia Commons →
+                  View on Wikimedia Commons
                 </a>
                 <a
                   href={selectedImage.image_url}
@@ -369,7 +446,7 @@ export default function GalleryPage() {
                     gap: "6px",
                   }}
                 >
-                  Download Full Resolution
+                  Download Image
                 </a>
               </div>
             </div>
