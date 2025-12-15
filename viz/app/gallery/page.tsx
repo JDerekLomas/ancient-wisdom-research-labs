@@ -148,21 +148,17 @@ export default function GalleryPage() {
         </div>
       </header>
 
-      {/* Gallery Grid - Row-based Flexbox (loads at bottom) */}
+      {/* Gallery Grid - Pinterest Masonry Style */}
       <main style={{ maxWidth: "1600px", margin: "0 auto", padding: "24px 16px" }}>
         <div
-          className="gallery-grid"
+          className="masonry-grid"
           style={{
-            display: "flex",
-            flexWrap: "wrap",
-            gap: "12px",
-            alignItems: "flex-start",
+            columnGap: "12px",
           }}
         >
           {visibleImages.map((image, index) => (
             <div
               key={image.id}
-              className="gallery-item"
               onClick={() => setSelectedImage(image)}
               style={{
                 background: "#fff",
@@ -171,7 +167,8 @@ export default function GalleryPage() {
                 boxShadow: "0 1px 4px rgba(0,0,0,0.08)",
                 cursor: "pointer",
                 transition: "transform 0.2s, box-shadow 0.2s",
-                flex: "0 0 auto",
+                marginBottom: "12px",
+                breakInside: "avoid",
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.transform = "scale(1.02)";
@@ -217,29 +214,29 @@ export default function GalleryPage() {
           ))}
         </div>
 
-        {/* Responsive Grid Styles */}
+        {/* Responsive Masonry Styles */}
         <style jsx global>{`
-          .gallery-item {
-            width: calc((100% - 60px) / 6);
+          .masonry-grid {
+            column-count: 6;
           }
           @media (max-width: 1200px) {
-            .gallery-item {
-              width: calc((100% - 48px) / 5);
+            .masonry-grid {
+              column-count: 5;
             }
           }
           @media (max-width: 1000px) {
-            .gallery-item {
-              width: calc((100% - 36px) / 4);
+            .masonry-grid {
+              column-count: 4;
             }
           }
           @media (max-width: 768px) {
-            .gallery-item {
-              width: calc((100% - 24px) / 3);
+            .masonry-grid {
+              column-count: 3;
             }
           }
           @media (max-width: 480px) {
-            .gallery-item {
-              width: calc((100% - 12px) / 2);
+            .masonry-grid {
+              column-count: 2;
             }
           }
         `}</style>

@@ -314,7 +314,7 @@ export default function PrintingMap() {
       )}
 
       {/* Map container */}
-      <div className="relative" style={{ height: "calc(100vh - 180px)" }}>
+      <div className="relative" style={{ height: "calc(100vh - 80px)" }}>
         <DeckGL
           initialViewState={INITIAL_VIEW_STATE}
           controller={true}
@@ -388,7 +388,7 @@ export default function PrintingMap() {
         </div>
 
         {/* Legend */}
-        <div className="absolute bottom-24 right-4 bg-slate-900/90 rounded-xl p-4 backdrop-blur">
+        <div className="absolute bottom-20 right-4 bg-slate-900/90 rounded-xl p-3 backdrop-blur">
           <div className="text-sm font-semibold text-slate-400 mb-2">
             How to Read
           </div>
@@ -411,12 +411,10 @@ export default function PrintingMap() {
             </div>
           </div>
         </div>
-      </div>
 
-      {/* Controls */}
-      <div className="border-t border-slate-800 bg-slate-900 px-8 py-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="flex flex-wrap items-center gap-6">
+        {/* Controls - overlaid on map */}
+        <div className="absolute bottom-4 left-4 right-4 bg-slate-900/95 rounded-xl px-6 py-4 backdrop-blur">
+          <div className="flex flex-wrap items-center gap-4">
             {/* Play/Pause */}
             <button
               onClick={() => setIsPlaying(!isPlaying)}
@@ -426,7 +424,7 @@ export default function PrintingMap() {
             </button>
 
             {/* Year slider */}
-            <div className="flex-1 min-w-[300px]">
+            <div className="flex-1 min-w-[200px]">
               <input
                 type="range"
                 min={1450}
@@ -437,9 +435,7 @@ export default function PrintingMap() {
               />
               <div className="flex justify-between text-xs text-slate-500 mt-1">
                 <span>1450</span>
-                <span>1500</span>
                 <span>1550</span>
-                <span>1600</span>
                 <span>1650</span>
                 <span>1700</span>
               </div>
