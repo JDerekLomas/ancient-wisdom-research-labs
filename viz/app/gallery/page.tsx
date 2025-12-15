@@ -33,7 +33,7 @@ interface GalleryData {
   categories: Category[];
 }
 
-const IMAGES_PER_PAGE = 8;
+const IMAGES_PER_PAGE = 12;
 
 export default function GalleryPage() {
   const [data, setData] = useState<GalleryData | null>(null);
@@ -149,12 +149,12 @@ export default function GalleryPage() {
       </header>
 
       {/* Gallery Grid - Pinterest Masonry Style */}
-      <main style={{ maxWidth: "1400px", margin: "0 auto", padding: "32px 24px" }}>
+      <main style={{ maxWidth: "1600px", margin: "0 auto", padding: "24px 16px" }}>
         <div
           className="masonry-grid"
           style={{
-            columnCount: 4,
-            columnGap: "20px",
+            columnCount: 6,
+            columnGap: "12px",
           }}
         >
           {visibleImages.map((image, index) => (
@@ -163,12 +163,12 @@ export default function GalleryPage() {
               onClick={() => setSelectedImage(image)}
               style={{
                 background: "#fff",
-                borderRadius: "12px",
+                borderRadius: "8px",
                 overflow: "hidden",
-                boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
+                boxShadow: "0 1px 4px rgba(0,0,0,0.08)",
                 cursor: "pointer",
                 transition: "transform 0.2s, box-shadow 0.2s",
-                marginBottom: "20px",
+                marginBottom: "12px",
                 breakInside: "avoid",
               }}
               onMouseEnter={(e) => {
@@ -202,31 +202,14 @@ export default function GalleryPage() {
                 />
               </div>
 
-              {/* Info */}
-              <div style={{ padding: "14px" }}>
-                <h3 style={{ fontFamily: "Cormorant Garamond, serif", fontSize: "17px", fontWeight: 500, color: "#1a1612", marginBottom: "4px", lineHeight: 1.3 }}>
+              {/* Info - compact */}
+              <div style={{ padding: "10px" }}>
+                <h3 style={{ fontFamily: "Cormorant Garamond, serif", fontSize: "14px", fontWeight: 500, color: "#1a1612", marginBottom: "2px", lineHeight: 1.2 }}>
                   {image.title}
                 </h3>
-                <p style={{ fontFamily: "Inter, sans-serif", fontSize: "11px", color: "#888", marginBottom: "8px" }}>
-                  {image.artist}, {image.year}
+                <p style={{ fontFamily: "Inter, sans-serif", fontSize: "10px", color: "#999", marginBottom: "0" }}>
+                  {image.year}
                 </p>
-                <div style={{ display: "flex", flexWrap: "wrap", gap: "4px" }}>
-                  {image.categories.slice(0, 2).map((catId) => (
-                    <span
-                      key={catId}
-                      style={{
-                        fontFamily: "Inter, sans-serif",
-                        fontSize: "9px",
-                        padding: "2px 6px",
-                        borderRadius: "8px",
-                        background: getCategoryColor(catId) + "15",
-                        color: getCategoryColor(catId),
-                      }}
-                    >
-                      {getCategoryLabel(catId)}
-                    </span>
-                  ))}
-                </div>
               </div>
             </div>
           ))}
@@ -235,21 +218,26 @@ export default function GalleryPage() {
         {/* Responsive Masonry Styles */}
         <style jsx>{`
           .masonry-grid {
-            column-count: 4;
+            column-count: 6;
           }
-          @media (max-width: 1200px) {
+          @media (max-width: 1400px) {
             .masonry-grid {
-              column-count: 3;
+              column-count: 5;
+            }
+          }
+          @media (max-width: 1100px) {
+            .masonry-grid {
+              column-count: 4;
             }
           }
           @media (max-width: 800px) {
             .masonry-grid {
-              column-count: 2;
+              column-count: 3;
             }
           }
           @media (max-width: 500px) {
             .masonry-grid {
-              column-count: 1;
+              column-count: 2;
             }
           }
         `}</style>
