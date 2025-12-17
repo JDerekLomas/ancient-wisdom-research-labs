@@ -777,9 +777,9 @@ export default function Home() {
                   alignItems: 'center',
                   justifyContent: 'center',
                 }}>
-                  <div style={{
-                    width: '64px',
-                    height: '64px',
+                  <div className="map-preview-play" style={{
+                    width: '56px',
+                    height: '56px',
                     borderRadius: '50%',
                     background: 'rgba(139, 92, 246, 0.9)',
                     display: 'flex',
@@ -787,54 +787,54 @@ export default function Home() {
                     justifyContent: 'center',
                     boxShadow: '0 4px 20px rgba(139, 92, 246, 0.5)',
                   }}>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="white">
                       <path d="M8 5v14l11-7z"/>
                     </svg>
                   </div>
                 </div>
 
                 {/* Stats bar at bottom of preview */}
-                <div style={{
+                <div className="map-preview-stats" style={{
                   position: 'absolute',
                   bottom: 0,
                   left: 0,
                   right: 0,
                   background: 'linear-gradient(transparent, rgba(15, 23, 42, 0.95))',
-                  padding: '24px 16px 12px',
+                  padding: '24px 12px 12px',
                   display: 'flex',
                   justifyContent: 'center',
-                  gap: '32px',
+                  gap: '16px',
                 }}>
                   <div style={{ textAlign: 'center' }}>
-                    <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '20px', fontWeight: 600, color: '#fff', margin: 0 }}>702</p>
-                    <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '10px', color: 'rgba(255,255,255,0.5)', margin: 0 }}>Printing centers</p>
+                    <p className="map-preview-stat-number" style={{ fontFamily: 'Inter, sans-serif', fontSize: '18px', fontWeight: 600, color: '#fff', margin: 0 }}>702</p>
+                    <p className="map-preview-stat-label" style={{ fontFamily: 'Inter, sans-serif', fontSize: '9px', color: 'rgba(255,255,255,0.5)', margin: 0 }}>Printing centers</p>
                   </div>
                   <div style={{ textAlign: 'center' }}>
-                    <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '20px', fontWeight: 600, color: '#fff', margin: 0 }}>250</p>
-                    <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '10px', color: 'rgba(255,255,255,0.5)', margin: 0 }}>Years of data</p>
+                    <p className="map-preview-stat-number" style={{ fontFamily: 'Inter, sans-serif', fontSize: '18px', fontWeight: 600, color: '#fff', margin: 0 }}>250</p>
+                    <p className="map-preview-stat-label" style={{ fontFamily: 'Inter, sans-serif', fontSize: '9px', color: 'rgba(255,255,255,0.5)', margin: 0 }}>Years of data</p>
                   </div>
                   <div style={{ textAlign: 'center' }}>
-                    <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '20px', fontWeight: 600, color: '#fff', margin: 0 }}>533K</p>
-                    <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '10px', color: 'rgba(255,255,255,0.5)', margin: 0 }}>Latin editions</p>
+                    <p className="map-preview-stat-number" style={{ fontFamily: 'Inter, sans-serif', fontSize: '18px', fontWeight: 600, color: '#fff', margin: 0 }}>533K</p>
+                    <p className="map-preview-stat-label" style={{ fontFamily: 'Inter, sans-serif', fontSize: '9px', color: 'rgba(255,255,255,0.5)', margin: 0 }}>Latin editions</p>
                   </div>
                 </div>
               </div>
 
               {/* CTA text below preview */}
-              <div style={{ padding: '20px 24px', textAlign: 'center' }}>
-                <p style={{
+              <div style={{ padding: '16px 20px', textAlign: 'center' }}>
+                <p className="map-preview-cta" style={{
                   fontFamily: 'Cormorant Garamond, Georgia, serif',
-                  fontSize: '24px',
+                  fontSize: '22px',
                   color: '#c9a86c',
                   margin: 0,
                 }}>
                   Explore the Animated Map →
                 </p>
-                <p style={{
+                <p className="map-preview-subtitle" style={{
                   fontFamily: 'Inter, sans-serif',
-                  fontSize: '13px',
+                  fontSize: '12px',
                   color: 'rgba(255,255,255,0.5)',
-                  marginTop: '8px',
+                  marginTop: '6px',
                 }}>
                   Watch Latin printing spread across Europe from 1450 to 1700
                 </p>
@@ -842,11 +842,18 @@ export default function Home() {
             </div>
           </Link>
 
-          {/* CSS animation for pulsing dots */}
+          {/* CSS animation for pulsing dots + mobile styles */}
           <style>{`
             @keyframes pulse {
               0%, 100% { opacity: 0.7; transform: translate(-50%, -50%) scale(1); }
               50% { opacity: 1; transform: translate(-50%, -50%) scale(1.15); }
+            }
+            @media (min-width: 480px) {
+              .map-preview-stats { gap: 24px !important; }
+              .map-preview-stat-number { font-size: 20px !important; }
+              .map-preview-stat-label { font-size: 10px !important; }
+              .map-preview-cta { font-size: 24px !important; }
+              .map-preview-play { width: 64px !important; height: 64px !important; }
             }
           `}</style>
         </div>

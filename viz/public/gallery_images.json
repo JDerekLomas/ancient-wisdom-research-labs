@@ -1594,6 +1594,86 @@
         "astronomy"
       ],
       "description": "Emblem satirizing astrologers - warning against false divination"
+    },
+    {
+      "id": "guazzo-sabbath-banquet",
+      "title": "Witches' Sabbath Banquet",
+      "artist": "Francesco Maria Guazzo",
+      "year": 1608,
+      "source": "Compendium Maleficarum",
+      "wikimedia_url": "https://commons.wikimedia.org/wiki/File:Banchetto_sabba_compendium_maleficarum.jpg",
+      "thumb_url": "/gallery/thumbs/guazzo-sabbath-banquet.jpg",
+      "image_url": "/gallery/full/guazzo-sabbath-banquet.jpg",
+      "license": "Public Domain",
+      "categories": [
+        "witchcraft",
+        "magic"
+      ],
+      "description": "Witches and sorcerers feasting at the Sabbath - from the most illustrated witchcraft treatise"
+    },
+    {
+      "id": "guazzo-devil-pact",
+      "title": "Pact with the Devil",
+      "artist": "Francesco Maria Guazzo",
+      "year": 1608,
+      "source": "Compendium Maleficarum",
+      "wikimedia_url": "https://commons.wikimedia.org/wiki/File:Compendium_Maleficarum_022.jpg",
+      "thumb_url": "/gallery/thumbs/guazzo-devil-pact.jpg",
+      "image_url": "/gallery/full/guazzo-devil-pact.jpg",
+      "license": "Public Domain",
+      "categories": [
+        "witchcraft",
+        "magic"
+      ],
+      "description": "A witch making a pact with the Devil - signing away the soul"
+    },
+    {
+      "id": "guazzo-title-page",
+      "title": "Compendium Maleficarum Title Page",
+      "artist": "Francesco Maria Guazzo",
+      "year": 1626,
+      "source": "Compendium Maleficarum",
+      "wikimedia_url": "https://commons.wikimedia.org/wiki/File:Compendium_Maleficarum-1626-title.png",
+      "thumb_url": "/gallery/thumbs/guazzo-title-page.png",
+      "image_url": "/gallery/full/guazzo-title-page.png",
+      "license": "Public Domain",
+      "categories": [
+        "witchcraft",
+        "printing"
+      ],
+      "description": "Title page of the Compendium of Witches - the most illustrated demonology text"
+    },
+    {
+      "id": "holbein-death-preacher",
+      "title": "The Preacher",
+      "artist": "Hans Holbein the Younger",
+      "year": 1538,
+      "source": "Dance of Death",
+      "wikimedia_url": "https://commons.wikimedia.org/wiki/File:Hans_Holbein_-_Dance_of_Death-_The_Preacher_-_1929.157_-_Cleveland_Museum_of_Art.jpg",
+      "thumb_url": "/gallery/thumbs/holbein-death-preacher.jpg",
+      "image_url": "/gallery/full/holbein-death-preacher.jpg",
+      "license": "Public Domain",
+      "categories": [
+        "death",
+        "printing"
+      ],
+      "description": "Death lurks behind the preacher at the pulpit - even the clergy cannot escape"
+    },
+    {
+      "id": "holbein-danse-macabre-8",
+      "title": "The Empress",
+      "artist": "Hans Holbein the Younger",
+      "year": 1538,
+      "source": "Dance of Death",
+      "wikimedia_url": "https://commons.wikimedia.org/wiki/File:Holbein_Danse_Macabre_8.jpg",
+      "thumb_url": "/gallery/thumbs/holbein-danse-macabre-8.jpg",
+      "image_url": "/gallery/full/holbein-danse-macabre-8.jpg",
+      "license": "Public Domain",
+      "categories": [
+        "death",
+        "printing"
+      ],
+      "description": "Death claims the Empress - no crown protects against mortality"
     }
   ],
   "categories": [
