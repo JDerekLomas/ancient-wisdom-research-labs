@@ -68,9 +68,10 @@ export default function GalleryPage() {
       .catch(console.error);
   }, []);
 
-  // Reset visible count when category changes
+  // Reset visible count and loaded images when category changes
   useEffect(() => {
     setVisibleCount(IMAGES_PER_PAGE);
+    setLoadedImages(new Set());
   }, [selectedCategory]);
 
   // Shuffle array using Fisher-Yates algorithm
@@ -94,6 +95,18 @@ export default function GalleryPage() {
   const visibleImages = useMemo(() => {
     return filteredImages.slice(0, visibleCount);
   }, [filteredImages, visibleCount]);
+
+  // Fallback: make all visible images "loaded" after 3 seconds in case onLoad doesn't fire
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoadedImages(prev => {
+        const newSet = new Set(prev);
+        visibleImages.forEach(img => newSet.add(img.id));
+        return newSet;
+      });
+    }, 3000);
+    return () => clearTimeout(timer);
+  }, [visibleImages]);
 
   const hasMore = visibleCount < filteredImages.length;
 
