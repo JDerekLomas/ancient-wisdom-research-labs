@@ -97,8 +97,9 @@ export default function RenaissanceBestsellers() {
         <em>The</em> Latin grammar textbook. For over a thousand years, from late antiquity
         through the Renaissance, this was how you learned Latin. The word &ldquo;donat&rdquo; or
         &ldquo;donet&rdquo; became synonymous with &ldquo;grammar book&rdquo; in several European languages.
-        364 editions in our period alone—and yet there&apos;s no modern English translation
-        readily available. The foundational text of Latin education is itself inaccessible.
+        364 editions in our period alone. While scholarly translations exist in academic contexts,
+        no accessible modern edition with commentary is in print—the foundational text of Latin education
+        remains largely inaccessible to general readers.<sup>1</sup>
       </p>
 
       <h3 style={{ color: '#9e4a3a' }}>Alexander de Villa Dei, Doctrinale (139 editions)</h3>
@@ -130,8 +131,9 @@ export default function RenaissanceBestsellers() {
       <p>
         A massive church history written to counter the Protestant <em>Magdeburg Centuries</em>.
         Baronio&apos;s 12-volume work became the authoritative Catholic account of church history
-        and remained influential for centuries. It&apos;s constantly cited in scholarship—and
-        there&apos;s no English translation.
+        and remained influential for centuries. It&apos;s constantly cited in scholarship—yet
+        no complete English translation exists; scholars must work from the Latin or consult
+        partial translations and summaries.<sup>2</sup>
       </p>
 
       <h2>Bestsellers by Subject</h2>
@@ -194,6 +196,28 @@ export default function RenaissanceBestsellers() {
         missing is the layer that makes them accessible—transcription, translation, and
         context. That&apos;s a solvable problem.
       </p>
+
+      <hr style={{ border: 'none', borderTop: '1px solid #e0d8c8', margin: '48px 0 24px' }} />
+
+      <h3 style={{ fontSize: '14px', fontFamily: 'Inter, sans-serif', color: '#888', marginBottom: '16px' }}>Notes & Sources</h3>
+
+      <ol style={{ fontSize: '14px', color: '#666', paddingLeft: '20px', lineHeight: 1.8 }}>
+        <li>
+          Edition counts from <a href="https://ustc.ac.uk" target="_blank" rel="noopener noreferrer" style={{ color: '#9e4a3a' }}>Universal Short Title Catalogue</a> title searches.
+          &ldquo;Untranslated&rdquo; means no complete, accessible modern English translation in print.
+          Scholarly articles may include excerpts; dissertations may contain partial translations;
+          these are not counted as &ldquo;translated&rdquo; for accessibility purposes.
+        </li>
+        <li>
+          Baronio&apos;s <em>Annales</em> has never been fully translated into English.
+          An abridged English edition appeared in the 17th century; modern scholars cite the Latin.
+          See Cyriac K. Pullapilly, <em>Caesar Baronius: Counter-Reformation Historian</em> (Notre Dame, 1975).
+        </li>
+        <li>
+          Category percentages (&ldquo;196 bestsellers, 186 untranslated&rdquo;) derived from our analysis
+          of USTC records with 20+ editions. See <a href="/blog/methodology" style={{ color: '#9e4a3a' }}>methodology</a> for full details.
+        </li>
+      </ol>
     </BlogLayout>
   );
 }

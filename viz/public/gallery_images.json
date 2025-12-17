@@ -1326,6 +1326,274 @@
         "natural philosophy"
       ],
       "description": "Della Porta's camera obscura - natural magic becomes optical science"
+    },
+    {
+      "id": "fludd-temple-music",
+      "title": "Temple of Music",
+      "artist": "Robert Fludd",
+      "year": 1624,
+      "source": "Utriusque Cosmi Historia",
+      "wikimedia_url": "https://commons.wikimedia.org/wiki/File:R._Fludd,%22Utriusque_cosmi_historia...%22,_1624;_temple_of_music_Wellcome_L0025674.jpg",
+      "thumb_url": "/gallery/thumbs/fludd-temple-music.jpg",
+      "image_url": "/gallery/full/fludd-temple-music.jpg",
+      "license": "Public Domain",
+      "categories": [
+        "music",
+        "hermetica",
+        "architecture"
+      ],
+      "description": "Fludd's fantastical Temple of Music - an architectural mnemonic encoding seven books of musical instruction"
+    },
+    {
+      "id": "fludd-musical-consonance",
+      "title": "Musical Consonance",
+      "artist": "Robert Fludd",
+      "year": 1618,
+      "source": "De Naturae Simia",
+      "wikimedia_url": "https://commons.wikimedia.org/wiki/File:Musical_consonance,_%22De_naturae...historia%22_Fludd,_1618_Wellcome_L0013223.jpg",
+      "thumb_url": "/gallery/thumbs/fludd-musical-consonance.jpg",
+      "image_url": "/gallery/full/fludd-musical-consonance.jpg",
+      "license": "Public Domain",
+      "categories": [
+        "music",
+        "hermetica"
+      ],
+      "description": "Diagram of musical consonance showing how intervals relate to cosmic principles"
+    },
+    {
+      "id": "gaffurius-pythagoras",
+      "title": "Pythagoras Discovering Harmony",
+      "artist": "Franchino Gaffurio",
+      "year": 1492,
+      "source": "Theorica Musicae",
+      "wikimedia_url": "https://commons.wikimedia.org/wiki/File:Gaffurio_Pythagoras.png",
+      "thumb_url": "/gallery/thumbs/gaffurius-pythagoras.png",
+      "image_url": "/gallery/full/gaffurius-pythagoras.png",
+      "license": "Public Domain",
+      "categories": [
+        "music"
+      ],
+      "description": "Pythagoras discovering musical harmonies through bells, glasses, monochord, and flutes"
+    },
+    {
+      "id": "gaffurius-spheres",
+      "title": "The Music of the Spheres",
+      "artist": "Franchino Gaffurio",
+      "year": 1496,
+      "source": "Practica Musicae",
+      "wikimedia_url": "https://commons.wikimedia.org/wiki/File:The_music_of_the_spheres.jpg",
+      "thumb_url": "/gallery/thumbs/gaffurius-spheres.jpg",
+      "image_url": "/gallery/full/gaffurius-spheres.jpg",
+      "license": "Public Domain",
+      "categories": [
+        "music",
+        "cosmology"
+      ],
+      "description": "Apollo with the nine Muses corresponding to planetary spheres - the cosmic harmony of musica universalis"
+    },
+    {
+      "id": "gaffurius-harmonia",
+      "title": "Harmonia",
+      "artist": "Franchino Gaffurio",
+      "year": 1518,
+      "source": "De Harmonia Musicorum Instrumentorum",
+      "wikimedia_url": "https://commons.wikimedia.org/wiki/File:Harmonia.Gaffurius.png",
+      "thumb_url": "/gallery/thumbs/gaffurius-harmonia.png",
+      "image_url": "/gallery/full/gaffurius-harmonia.png",
+      "license": "Public Domain",
+      "categories": [
+        "music"
+      ],
+      "description": "Theoretical diagram of musical harmony and proportion from Gaffurio's treatise"
+    },
+    {
+      "id": "kircher-birdsong",
+      "title": "Bird Song Notation",
+      "artist": "Athanasius Kircher",
+      "year": 1650,
+      "source": "Musurgia Universalis",
+      "wikimedia_url": "https://commons.wikimedia.org/wiki/File:Kircher-musurgia-bird-song.jpg",
+      "thumb_url": "/gallery/thumbs/kircher-birdsong.jpg",
+      "image_url": "/gallery/full/kircher-birdsong.jpg",
+      "license": "Public Domain",
+      "categories": [
+        "music",
+        "natural philosophy"
+      ],
+      "description": "First scientific notation of birdsong - nightingale, cock, hen, cuckoo, quail, and a parrot saying 'hello'"
+    },
+    {
+      "id": "kircher-pneumatica",
+      "title": "Pneumatic Instruments",
+      "artist": "Athanasius Kircher",
+      "year": 1650,
+      "source": "Musurgia Universalis",
+      "wikimedia_url": "https://commons.wikimedia.org/wiki/File:Instrumenta_pneumatica.gif",
+      "thumb_url": "/gallery/thumbs/kircher-pneumatica.gif",
+      "image_url": "/gallery/full/kircher-pneumatica.gif",
+      "license": "Public Domain",
+      "categories": [
+        "music"
+      ],
+      "description": "Comprehensive diagram of wind-powered musical instruments and automatic organs"
+    },
+    {
+      "id": "kircher-polychorda",
+      "title": "Stringed Instruments",
+      "artist": "Athanasius Kircher",
+      "year": 1650,
+      "source": "Musurgia Universalis",
+      "wikimedia_url": "https://commons.wikimedia.org/wiki/File:Instrumenta_polychorda.gif",
+      "thumb_url": "/gallery/thumbs/kircher-polychorda.gif",
+      "image_url": "/gallery/full/kircher-polychorda.gif",
+      "license": "Public Domain",
+      "categories": [
+        "music"
+      ],
+      "description": "Diagram of polychord instruments including the Orpharion and various historical strings"
+    },
+    {
+      "id": "maier-atalanta-21",
+      "title": "Atalanta Fugiens Emblem XXI",
+      "artist": "Michael Maier / Matthias Merian",
+      "year": 1618,
+      "source": "Atalanta Fugiens",
+      "wikimedia_url": "https://commons.wikimedia.org/wiki/File:Michael_Maier_Atalanta_Fugiens_Emblem_21.jpeg",
+      "thumb_url": "/gallery/thumbs/maier-atalanta-21.jpeg",
+      "image_url": "/gallery/full/maier-atalanta-21.jpeg",
+      "license": "Public Domain",
+      "categories": [
+        "music",
+        "alchemy"
+      ],
+      "description": "Make a circle of man and woman - geometric alchemy with musical accompaniment"
+    },
+    {
+      "id": "maier-atalanta-42",
+      "title": "Atalanta Fugiens Emblem XLII",
+      "artist": "Michael Maier / Matthias Merian",
+      "year": 1618,
+      "source": "Atalanta Fugiens",
+      "wikimedia_url": "https://commons.wikimedia.org/wiki/File:M.Maier._Atalanta_Fugiens._1618._Emblem_XLII.JPG",
+      "thumb_url": "/gallery/thumbs/maier-atalanta-42.jpg",
+      "image_url": "/gallery/full/maier-atalanta-42.jpg",
+      "license": "Public Domain",
+      "categories": [
+        "music",
+        "alchemy"
+      ],
+      "description": "Alchemical emblem from the first multimedia publication - art, text, poetry, and music combined"
+    },
+    {
+      "id": "veranzio-parachute",
+      "title": "Homo Volans - The Flying Man",
+      "artist": "Fausto Veranzio",
+      "year": 1615,
+      "source": "Machinae Novae",
+      "wikimedia_url": "https://commons.wikimedia.org/wiki/File:Homo_Volans.jpg",
+      "thumb_url": "/gallery/thumbs/veranzio-parachute.jpg",
+      "image_url": "/gallery/full/veranzio-parachute.jpg",
+      "license": "Public Domain",
+      "categories": [
+        "machines",
+        "natural philosophy"
+      ],
+      "description": "The earliest known parachute design - a man descending from a tower with a rectangular canopy"
+    },
+    {
+      "id": "lycosthenes-monster",
+      "title": "Sea Monster",
+      "artist": "Conrad Lycosthenes",
+      "year": 1557,
+      "source": "Prodigiorum ac Ostentorum Chronicon",
+      "wikimedia_url": "https://commons.wikimedia.org/wiki/File:C._Lycosthenes%27_Prodigiorum_ac_ostentorum_Chronicon_Wellcome_L0005355.jpg",
+      "thumb_url": "/gallery/thumbs/lycosthenes-monster.jpg",
+      "image_url": "/gallery/full/lycosthenes-monster.jpg",
+      "license": "Public Domain",
+      "categories": [
+        "monsters",
+        "natural philosophy"
+      ],
+      "description": "Woodcut from the chronicle of prodigies featuring monstrous creatures and portents"
+    },
+    {
+      "id": "kircher-magic-lantern",
+      "title": "The Magic Lantern",
+      "artist": "Athanasius Kircher",
+      "year": 1671,
+      "source": "Ars Magna Lucis et Umbrae",
+      "wikimedia_url": "https://commons.wikimedia.org/wiki/File:1671_kircheri_-_ars_magna_lucis_et_umbrae_-_769.jpg",
+      "thumb_url": "/gallery/thumbs/kircher-magic-lantern.jpg",
+      "image_url": "/gallery/full/kircher-magic-lantern.jpg",
+      "license": "Public Domain",
+      "categories": [
+        "optics",
+        "natural philosophy"
+      ],
+      "description": "First published illustration of a magic lantern - projecting images with light and lenses"
+    },
+    {
+      "id": "holbein-death-adam",
+      "title": "Adam Tilling the Earth",
+      "artist": "Hans Holbein the Younger",
+      "year": 1538,
+      "source": "Dance of Death",
+      "wikimedia_url": "https://commons.wikimedia.org/wiki/File:Hans_Holbein_-_The_Dance_of_Death-_Adam_Tilling_the_Earth_-_1924.978_-_Cleveland_Museum_of_Art.jpg",
+      "thumb_url": "/gallery/thumbs/holbein-death-adam.jpg",
+      "image_url": "/gallery/full/holbein-death-adam.jpg",
+      "license": "Public Domain",
+      "categories": [
+        "death",
+        "printing"
+      ],
+      "description": "Adam laboring after the Fall - the origin of human mortality"
+    },
+    {
+      "id": "alciato-emblem-title",
+      "title": "Emblematum Liber Title Page",
+      "artist": "Andrea Alciato",
+      "year": 1531,
+      "source": "Emblematum Liber",
+      "wikimedia_url": "https://commons.wikimedia.org/wiki/File:Alciato_1531_Augsburg_Titel.jpg",
+      "thumb_url": "/gallery/thumbs/alciato-emblem-title.jpg",
+      "image_url": "/gallery/full/alciato-emblem-title.jpg",
+      "license": "Public Domain",
+      "categories": [
+        "emblems",
+        "printing"
+      ],
+      "description": "The first emblem book ever printed - inaugurating a new Renaissance art form"
+    },
+    {
+      "id": "alciato-emblem-1",
+      "title": "Emblem I",
+      "artist": "Andrea Alciato",
+      "year": 1531,
+      "source": "Emblematum Liber",
+      "wikimedia_url": "https://commons.wikimedia.org/wiki/File:Alciato_1531_Augsburg_1.jpg",
+      "thumb_url": "/gallery/thumbs/alciato-emblem-1.jpg",
+      "image_url": "/gallery/full/alciato-emblem-1.jpg",
+      "license": "Public Domain",
+      "categories": [
+        "emblems"
+      ],
+      "description": "First emblem from Alciato - image and motto combining visual and verbal wisdom"
+    },
+    {
+      "id": "alciato-astrologos",
+      "title": "Astrologos (The Astrologers)",
+      "artist": "Andrea Alciato",
+      "year": 1531,
+      "source": "Emblematum Liber",
+      "wikimedia_url": "https://commons.wikimedia.org/wiki/File:Astrologos.1531a.gif",
+      "thumb_url": "/gallery/thumbs/alciato-astrologos.gif",
+      "image_url": "/gallery/full/alciato-astrologos.gif",
+      "license": "Public Domain",
+      "categories": [
+        "emblems",
+        "astronomy"
+      ],
+      "description": "Emblem satirizing astrologers - warning against false divination"
     }
   ],
   "categories": [
@@ -1413,6 +1681,41 @@
       "id": "botany",
       "label": "Botany & Natural History",
       "color": "#27ae60"
+    },
+    {
+      "id": "machines",
+      "label": "Machines & Inventions",
+      "color": "#7f8c8d"
+    },
+    {
+      "id": "monsters",
+      "label": "Monsters & Prodigies",
+      "color": "#e74c3c"
+    },
+    {
+      "id": "optics",
+      "label": "Optics & Light",
+      "color": "#f39c12"
+    },
+    {
+      "id": "witchcraft",
+      "label": "Witchcraft & Demonology",
+      "color": "#2c3e50"
+    },
+    {
+      "id": "hieroglyphics",
+      "label": "Hieroglyphics & Symbols",
+      "color": "#d4a017"
+    },
+    {
+      "id": "death",
+      "label": "Death & Mortality",
+      "color": "#1a1a1a"
+    },
+    {
+      "id": "emblems",
+      "label": "Emblems & Devices",
+      "color": "#9b59b6"
     }
   ]
 }

@@ -44,6 +44,240 @@ interface Tier {
 
 const roadmapData = {
   tiers: {
+    tier_0_famous_figures: {
+      description: "Major untranslated works by famous Renaissance thinkers - high name recognition, strong fundraising potential",
+      works: [
+        {
+          id: "ficino_plato_commentaries",
+          author: "Marsilio Ficino",
+          author_dates: "1433-1499",
+          title: "Commentaries on Plato's Dialogues",
+          original_date: "1469-1496",
+          ustc_editions: 45,
+          genre: "Neoplatonist Philosophy",
+          language_difficulty: "difficult",
+          estimated_length: "very_large",
+          translation_status: "partially_translated",
+          existing_translations: "Only Symposium commentary translated (Jayne). Phaedrus, Republic, Timaeus, Parmenides commentaries unavailable.",
+          significance: "Where Ficino does his real philosophical work. Without these, we have Plato but not Ficino's Plato.",
+          bph_relevance: "Foundational for Renaissance Neoplatonism and prisca theologia tradition.",
+          scores: { historical_impact: 10, translation_gap: 8, feasibility: 3, audience: 9, total_score: 7.6 },
+          notes: "Could start with Timaeus or Parmenides commentary as standalone projects."
+        },
+        {
+          id: "ficino_plotinus_commentary",
+          author: "Marsilio Ficino",
+          author_dates: "1433-1499",
+          title: "Commentary on Plotinus's Enneads",
+          original_date: "1492",
+          ustc_editions: 8,
+          genre: "Neoplatonist Philosophy",
+          language_difficulty: "very_difficult",
+          estimated_length: "very_large",
+          translation_status: "completely_untranslated",
+          significance: "Ficino's interpretation of Plotinus shaped how Europe understood Neoplatonism for centuries.",
+          bph_relevance: "Essential for understanding how Hermeticism merged with Neoplatonism.",
+          scores: { historical_impact: 9, translation_gap: 10, feasibility: 2, audience: 8, total_score: 7.2 },
+          notes: "Massive undertaking. Selections by Ennead more practical."
+        },
+        {
+          id: "pico_disputationes_astrologia",
+          author: "Giovanni Pico della Mirandola",
+          author_dates: "1463-1494",
+          title: "Disputationes adversus astrologiam divinatricem",
+          original_date: "1496 (posthumous)",
+          ustc_editions: 6,
+          genre: "Philosophy/Science",
+          language_difficulty: "difficult",
+          estimated_length: "large (12 books)",
+          translation_status: "completely_untranslated",
+          significance: "Pico's most systematic work. Influenced Kepler's critique of astrology. Foundational for scientific revolution.",
+          bph_relevance: "Key text for understanding Renaissance debates on astrology vs astronomy.",
+          scores: { historical_impact: 9, translation_gap: 10, feasibility: 4, audience: 8, total_score: 7.9 },
+          notes: "PRIORITY. His longest work, unfinished at death. Major gap."
+        },
+        {
+          id: "pico_900_conclusions",
+          author: "Giovanni Pico della Mirandola",
+          author_dates: "1463-1494",
+          title: "Conclusiones DCCCC (900 Theses)",
+          original_date: "1486",
+          ustc_editions: 3,
+          genre: "Philosophy/Kabbalah",
+          language_difficulty: "very_difficult",
+          estimated_length: "medium",
+          translation_status: "partially_translated",
+          existing_translations: "Farmer (1998) has text and translation but expensive/academic. Copenhaver selections (2019).",
+          significance: "The theses the Oration was meant to introduce. 13 condemned as heretical.",
+          bph_relevance: "Source for Pico's Kabbalistic theses and syncretic philosophy.",
+          scores: { historical_impact: 9, translation_gap: 6, feasibility: 5, audience: 9, total_score: 7.4 },
+          notes: "Need accessible open-access edition with full commentary."
+        },
+        {
+          id: "bruno_de_immenso",
+          author: "Giordano Bruno",
+          author_dates: "1548-1600",
+          title: "De innumerabilibus, immenso et infigurabili",
+          original_date: "1591",
+          ustc_editions: 1,
+          genre: "Cosmology/Philosophy",
+          language_difficulty: "very_difficult",
+          estimated_length: "very_large (655+ pages)",
+          translation_status: "completely_untranslated",
+          significance: "Bruno's cosmological masterwork. 8 books on infinite universe. Written before his execution.",
+          bph_relevance: "Essential for understanding Bruno's mature cosmological vision.",
+          scores: { historical_impact: 9, translation_gap: 10, feasibility: 2, audience: 9, total_score: 7.5 },
+          notes: "Extremely difficult Latin. Long-term project."
+        },
+        {
+          id: "bruno_de_monade",
+          author: "Giordano Bruno",
+          author_dates: "1548-1600",
+          title: "De monade, numero et figura",
+          original_date: "1591",
+          ustc_editions: 1,
+          genre: "Number Mysticism/Magic",
+          language_difficulty: "very_difficult",
+          estimated_length: "medium (~150 pages)",
+          translation_status: "completely_untranslated",
+          significance: "Bruno's Pythagorean number mysticism. Companion to De immenso.",
+          bph_relevance: "Number symbolism central to esoteric tradition.",
+          scores: { historical_impact: 7, translation_gap: 10, feasibility: 5, audience: 8, total_score: 7.6 },
+          notes: "More feasible than De immenso. Good Bruno starting point."
+        },
+        {
+          id: "bruno_memory_works",
+          author: "Giordano Bruno",
+          author_dates: "1548-1600",
+          title: "Latin Memory Treatises (collected)",
+          original_date: "1582-1591",
+          ustc_editions: 5,
+          genre: "Memory Arts/Magic",
+          language_difficulty: "very_difficult",
+          estimated_length: "large",
+          translation_status: "partially_translated",
+          existing_translations: "De umbris idearum partial. Ars memoriae, De lampade combinatoria unavailable.",
+          significance: "Bruno's technical theory of memory as magical practice.",
+          bph_relevance: "Memory arts central to Renaissance magic.",
+          scores: { historical_impact: 8, translation_gap: 7, feasibility: 4, audience: 9, total_score: 7.2 },
+          notes: "Collected accessible edition would be valuable."
+        },
+        {
+          id: "agrippa_de_incertitudine",
+          author: "Heinrich Cornelius Agrippa",
+          author_dates: "1486-1535",
+          title: "De incertitudine et vanitate scientiarum",
+          original_date: "1526",
+          ustc_editions: 45,
+          genre: "Skeptical Philosophy",
+          language_difficulty: "moderate",
+          estimated_length: "large",
+          translation_status: "outdated",
+          existing_translations: "James Sanford (1569) archaic. No modern critical edition.",
+          significance: "His skeptical attack on all learning. MORE influential in his lifetime than Occult Philosophy.",
+          bph_relevance: "Paradoxically undermines the occult philosophy he also championed.",
+          scores: { historical_impact: 8, translation_gap: 8, feasibility: 6, audience: 8, total_score: 7.6 },
+          notes: "Moderate Latin. Modern annotated edition needed."
+        },
+        {
+          id: "agrippa_de_nobilitate",
+          author: "Heinrich Cornelius Agrippa",
+          author_dates: "1486-1535",
+          title: "De nobilitate et praecellentia foeminei sexus",
+          original_date: "1529",
+          ustc_editions: 15,
+          genre: "Gender Philosophy",
+          language_difficulty: "moderate",
+          estimated_length: "short",
+          translation_status: "outdated",
+          existing_translations: "Old translations exist but dated. Rabil (1996) selections.",
+          significance: "Proto-feminist treatise on superiority of women. Important for gender history.",
+          scores: { historical_impact: 6, translation_gap: 6, feasibility: 8, audience: 8, total_score: 7.0 },
+          notes: "Short, accessible. Good quick win for gender studies audience."
+        },
+        {
+          id: "fludd_utriusque_selections",
+          author: "Robert Fludd",
+          author_dates: "1574-1637",
+          title: "Utriusque Cosmi Historia (selections)",
+          original_date: "1617-1626",
+          ustc_editions: 4,
+          genre: "Rosicrucian Cosmology",
+          language_difficulty: "difficult",
+          estimated_length: "very_large (2000+ pages total)",
+          translation_status: "minimal",
+          existing_translations: "Godwin selections (1979) out of print.",
+          significance: "Massive illustrated encyclopedia of microcosm/macrocosm. Famous De Bry engravings.",
+          bph_relevance: "Essential Rosicrucian text. Images reproduced constantly without their text.",
+          scores: { historical_impact: 9, translation_gap: 8, feasibility: 3, audience: 9, total_score: 7.4 },
+          notes: "Strategic selections: music treatise, memory theater, weather discourse."
+        },
+        {
+          id: "fludd_philosophia_moysaica",
+          author: "Robert Fludd",
+          author_dates: "1574-1637",
+          title: "Philosophia Moysaica",
+          original_date: "1638",
+          ustc_editions: 2,
+          genre: "Biblical Philosophy",
+          language_difficulty: "difficult",
+          estimated_length: "medium",
+          translation_status: "completely_untranslated",
+          significance: "Fludd's Mosaic philosophy - synthesis of science and scripture.",
+          bph_relevance: "Late work synthesizing his cosmological system.",
+          scores: { historical_impact: 7, translation_gap: 10, feasibility: 5, audience: 7, total_score: 7.2 },
+          notes: "More feasible than Utriusque Cosmi as standalone."
+        },
+        {
+          id: "fludd_tractatus_apologeticus",
+          author: "Robert Fludd",
+          author_dates: "1574-1637",
+          title: "Tractatus Apologeticus",
+          original_date: "1617",
+          ustc_editions: 1,
+          genre: "Rosicrucian Apologetics",
+          language_difficulty: "moderate",
+          estimated_length: "short (196 pages)",
+          translation_status: "completely_untranslated",
+          significance: "Fludd's defense of the Rosicrucian manifestos. Key primary source.",
+          bph_relevance: "Core Rosicrucian text.",
+          scores: { historical_impact: 7, translation_gap: 10, feasibility: 7, audience: 8, total_score: 8.0 },
+          notes: "SHORT. Good Fludd starting point. High priority."
+        },
+        {
+          id: "kircher_arithmologia",
+          author: "Athanasius Kircher",
+          author_dates: "1602-1680",
+          title: "Arithmologia",
+          original_date: "1665",
+          ustc_editions: 1,
+          genre: "Number Mysticism",
+          language_difficulty: "moderate",
+          estimated_length: "medium (301 pages)",
+          translation_status: "completely_untranslated",
+          significance: "Kircher's treatise on mystical properties of numbers. More accessible than his encyclopedias.",
+          bph_relevance: "Pythagorean/Kabbalistic number symbolism.",
+          scores: { historical_impact: 6, translation_gap: 10, feasibility: 6, audience: 8, total_score: 7.6 },
+          notes: "FEASIBLE Kircher. 301 pages vs 2000+ for Oedipus. Start here."
+        },
+        {
+          id: "kircher_iter_exstaticum",
+          author: "Athanasius Kircher",
+          author_dates: "1602-1680",
+          title: "Iter Exstaticum Coeleste",
+          original_date: "1656",
+          ustc_editions: 2,
+          genre: "Cosmic Journey/Astronomy",
+          language_difficulty: "moderate",
+          estimated_length: "large (~500 pages)",
+          translation_status: "completely_untranslated",
+          significance: "Kircher's cosmic voyage through the heavens. Dialogue format. Influenced sci-fi genre.",
+          bph_relevance: "Bridges science and mysticism.",
+          scores: { historical_impact: 7, translation_gap: 10, feasibility: 5, audience: 8, total_score: 7.6 },
+          notes: "Narrative format more accessible. Good crossover appeal."
+        }
+      ]
+    },
     tier_1_highest_priority: {
       description: "Major gaps with significant historical impact - ideal starting projects",
       works: [
@@ -556,10 +790,16 @@ const roadmapData = {
     phase_1: ["donatus_ars_major", "mantuanus_parthenice"],
     phase_2: ["villa_dei_doctrinale", "vives_de_anima", "hoornbeek_homiletics"],
     phase_3: ["conring_origine_juris", "lipsius_collected", "nebrija_introductiones"]
+  },
+  famous_figures_sequence: {
+    quick_wins: ["fludd_tractatus_apologeticus", "agrippa_de_nobilitate", "kircher_arithmologia"],
+    medium_projects: ["bruno_de_monade", "agrippa_de_incertitudine", "pico_disputationes_astrologia"],
+    long_term: ["ficino_plato_commentaries", "bruno_de_immenso", "fludd_utriusque_selections"]
   }
 };
 
 const tierLabels: Record<string, string> = {
+  tier_0_famous_figures: "Famous Figures: Gaps of the Greats",
   tier_1_highest_priority: "Tier 1: Highest Priority",
   tier_2_lutheran_theology: "Tier 2: Lutheran Theology",
   tier_3_reformed_theology: "Tier 3: Reformed Theology",
@@ -574,6 +814,7 @@ const tierLabels: Record<string, string> = {
 };
 
 const tierColors: Record<string, { border: string; bg: string }> = {
+  tier_0_famous_figures: { border: "#8b5a2b", bg: "#8b5a2b15" },
   tier_1_highest_priority: { border: "#9e4a3a", bg: "#9e4a3a15" },
   tier_2_lutheran_theology: { border: "#546b8a", bg: "#546b8a15" },
   tier_3_reformed_theology: { border: "#8b9a7d", bg: "#8b9a7d15" },
@@ -760,9 +1001,43 @@ export default function RoadmapPage() {
             </div>
           </div>
 
-          {/* Track B: BPH/Esoteric */}
+          {/* Track B: Famous Figures */}
+          <div style={{ marginBottom: '32px' }}>
+            <h3 style={{ fontSize: '20px', fontFamily: 'Cormorant Garamond, serif', color: '#444', marginBottom: '12px' }}>Track B: Famous Figures - Gaps of the Greats</h3>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '16px' }}>
+              <div style={{ background: '#fff', border: '2px solid #8b5a2b', borderRadius: '8px', padding: '16px' }}>
+                <h4 style={{ color: '#8b5a2b', fontFamily: 'Cormorant Garamond, serif', fontSize: '18px', fontWeight: 600, marginBottom: '8px' }}>Quick Wins</h4>
+                <ul style={{ fontSize: '14px', fontFamily: 'Newsreader, serif', color: '#444', listStyle: 'none', padding: 0, margin: 0 }}>
+                  <li style={{ marginBottom: '4px' }}>Fludd - Tractatus Apologeticus (196p)</li>
+                  <li style={{ marginBottom: '4px' }}>Agrippa - De nobilitate (short)</li>
+                  <li>Kircher - Arithmologia (301p)</li>
+                </ul>
+                <p style={{ color: '#888', fontSize: '12px', fontFamily: 'Inter, sans-serif', marginTop: '8px' }}>High name recognition, manageable length</p>
+              </div>
+              <div style={{ background: '#fff', border: '1px solid #e8e4dc', borderRadius: '8px', padding: '16px' }}>
+                <h4 style={{ color: '#8b5a2b', fontFamily: 'Cormorant Garamond, serif', fontSize: '18px', fontWeight: 600, marginBottom: '8px' }}>Medium Projects</h4>
+                <ul style={{ fontSize: '14px', fontFamily: 'Newsreader, serif', color: '#444', listStyle: 'none', padding: 0, margin: 0 }}>
+                  <li style={{ marginBottom: '4px' }}>Bruno - De monade (~150p)</li>
+                  <li style={{ marginBottom: '4px' }}>Agrippa - De incertitudine</li>
+                  <li>Pico - Disputationes adversus astrologiam</li>
+                </ul>
+                <p style={{ color: '#888', fontSize: '12px', fontFamily: 'Inter, sans-serif', marginTop: '8px' }}>Significant works, 1-2 year projects</p>
+              </div>
+              <div style={{ background: '#fff', border: '1px solid #e8e4dc', borderRadius: '8px', padding: '16px' }}>
+                <h4 style={{ color: '#8b5a2b', fontFamily: 'Cormorant Garamond, serif', fontSize: '18px', fontWeight: 600, marginBottom: '8px' }}>Long-term Goals</h4>
+                <ul style={{ fontSize: '14px', fontFamily: 'Newsreader, serif', color: '#444', listStyle: 'none', padding: 0, margin: 0 }}>
+                  <li style={{ marginBottom: '4px' }}>Ficino - Plato Commentaries</li>
+                  <li style={{ marginBottom: '4px' }}>Bruno - De immenso (655p)</li>
+                  <li>Fludd - Utriusque Cosmi (selections)</li>
+                </ul>
+                <p style={{ color: '#888', fontSize: '12px', fontFamily: 'Inter, sans-serif', marginTop: '8px' }}>Multi-year, collaborative projects</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Track C: BPH/Esoteric */}
           <div>
-            <h3 style={{ fontSize: '20px', fontFamily: 'Cormorant Garamond, serif', color: '#444', marginBottom: '12px' }}>Track B: BPH/Esoteric - Hermetic, Alchemical, Kabbalistic</h3>
+            <h3 style={{ fontSize: '20px', fontFamily: 'Cormorant Garamond, serif', color: '#444', marginBottom: '12px' }}>Track C: BPH/Esoteric - Hermetic, Alchemical, Kabbalistic</h3>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '16px' }}>
               <div style={{ background: '#fff', border: '1px solid #e8e4dc', borderRadius: '8px', padding: '16px' }}>
                 <h4 style={{ color: '#c9a86c', fontFamily: 'Cormorant Garamond, serif', fontSize: '18px', fontWeight: 600, marginBottom: '8px' }}>Phase 1: Quick Wins</h4>

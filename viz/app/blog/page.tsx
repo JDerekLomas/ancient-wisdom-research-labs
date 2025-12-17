@@ -68,6 +68,14 @@ const posts = [
     category: "History",
   },
   {
+    slug: "gaps-of-the-greats",
+    title: "Gaps of the Greats: Major Works by Famous Figures That Remain Untranslated",
+    date: "Dec 6, 2025",
+    excerpt: "Even Ficino, Pico, Bruno, Agrippa, and Fludd have major works locked in Latin. We catalog what's translated and what's not for Renaissance thought's most famous figures.",
+    tag: "Analysis",
+    category: "Authors",
+  },
+  {
     slug: "lost-books",
     title: "The Dark Matter of Book History: How Many Latin Works Are Lost Forever?",
     date: "Dec 5, 2025",

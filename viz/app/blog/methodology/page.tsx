@@ -6,6 +6,7 @@ export default function Methodology() {
       title="Methodology"
       tag="Methods"
       slug="methodology"
+      prevPost={{ href: "/blog/gaps-of-the-greats", title: "Gaps of the Greats" }}
     >
       <p style={{
         fontFamily: 'Newsreader, Georgia, serif',
@@ -478,6 +479,190 @@ export default function Methodology() {
         </p>
       </figure>
 
+      <h2>Translation Coverage by Period</h2>
+
+      <p>
+        Estimating translation coverage requires defining both the corpus size (denominator) and the number of available translations (numerator) for each historical period. This is complicated by the lack of any systematic scholarly survey. The estimates below synthesize available data from standard reference catalogues and translation series counts.
+      </p>
+
+      <h3 style={{ color: '#9e4a3a', fontSize: '20px', marginTop: '24px' }}>Classical Latin (~80% of major literary works)</h3>
+
+      <figure style={{
+        background: '#f5f0e8',
+        border: '1px solid #e0d8c8',
+        borderRadius: '8px',
+        padding: '24px',
+        margin: '32px 0',
+      }}>
+        <h4 style={{ fontWeight: 600, marginBottom: '12px', color: '#1a1612' }}>Corpus Size</h4>
+        <p style={{ color: '#444', fontSize: '14px', marginBottom: '16px' }}>
+          The{" "}
+          <a href="https://latin.packhum.org/" target="_blank" rel="noopener noreferrer" style={{ color: '#9e4a3a' }}>
+            Packard Humanities Institute (PHI) Latin Texts
+          </a>
+          {" "}database contains <strong>362 authors</strong> and claims to include "essentially all Latin literary texts written before A.D. 200"—approximately 7.5 million words. This represents the "canon" of Classical Latin literature.
+        </p>
+        <h4 style={{ fontWeight: 600, marginBottom: '12px', color: '#1a1612' }}>Translation Coverage</h4>
+        <p style={{ color: '#444', fontSize: '14px', marginBottom: '16px' }}>
+          For this canonical subset, translation coverage is genuinely high. The Loeb Classical Library provides <strong>200–250 Latin volumes</strong>, Aris &amp; Phillips has published <strong>160+ volumes</strong>, and major authors (Cicero, Virgil, Ovid, Livy) exist in multiple competing translations.
+        </p>
+        <h4 style={{ fontWeight: 600, marginBottom: '12px', color: '#1a1612' }}>Important Caveat</h4>
+        <p style={{ color: '#666', fontSize: '14px' }}>
+          The ~80% figure applies only to <em>major literary works</em>. The full Classical Latin corpus is far larger: the{" "}
+          <a href="https://cil.bbaw.de/" target="_blank" rel="noopener noreferrer" style={{ color: '#9e4a3a' }}>
+            Corpus Inscriptionum Latinarum
+          </a>
+          {" "}catalogs <strong>180,000+ inscriptions</strong>, with fewer than 500 translated online (&lt;1%). Including inscriptions, fragments, technical literature, and documentary papyri, coverage of the <em>complete</em> Classical Latin corpus is perhaps 15–25%.
+        </p>
+      </figure>
+
+      <h3 style={{ color: '#9e4a3a', fontSize: '20px', marginTop: '24px' }}>Patristic Latin / Church Fathers (~35%)</h3>
+
+      <figure style={{
+        background: '#f5f0e8',
+        border: '1px solid #e0d8c8',
+        borderRadius: '8px',
+        padding: '24px',
+        margin: '32px 0',
+      }}>
+        <h4 style={{ fontWeight: 600, marginBottom: '12px', color: '#1a1612' }}>Corpus Size</h4>
+        <p style={{ color: '#444', fontSize: '14px', marginBottom: '16px' }}>
+          The{" "}
+          <a href="https://about.brepolis.net/clavis-patrum-latinorum/" target="_blank" rel="noopener noreferrer" style={{ color: '#9e4a3a' }}>
+            Clavis Patrum Latinorum (CPL)
+          </a>
+          {" "}lists <strong>2,348 entries</strong> for Latin Christian texts from Tertullian to Bede, with each entry often subdividing into dozens of individual sermons, letters, or treatises. The Patrologia Latina comprises <strong>221 volumes</strong> totaling over 177,000 pages.
+        </p>
+        <h4 style={{ fontWeight: 600, marginBottom: '12px', color: '#1a1612' }}>Translation Coverage</h4>
+        <p style={{ color: '#444', fontSize: '14px', marginBottom: '16px' }}>
+          Major English translation series have produced approximately <strong>350–400 volumes combined</strong>: Fathers of the Church (147), Ancient Christian Writers (~72), Ante-Nicene/Nicene-Post-Nicene Fathers (38), Popular Patristics Series (63), and Corpus Christianorum in Translation (49).
+        </p>
+        <h4 style={{ fontWeight: 600, marginBottom: '12px', color: '#1a1612' }}>Scholarly Estimate</h4>
+        <p style={{ color: '#666', fontSize: '14px' }}>
+          One scholarly assessment states: "I would venture to guess—but a studied guess—that <strong>60–70% of the extant patristic literature has never been translated into English</strong>." Even Augustine—with 132 works totaling 5 million surviving words—achieved his first complete English translation only through the ongoing New City Press project (44–45 of 49 planned volumes as of 2024).
+        </p>
+      </figure>
+
+      <h3 style={{ color: '#9e4a3a', fontSize: '20px', marginTop: '24px' }}>Medieval Latin (~10%)</h3>
+
+      <figure style={{
+        background: '#f5f0e8',
+        border: '1px solid #e0d8c8',
+        borderRadius: '8px',
+        padding: '24px',
+        margin: '32px 0',
+      }}>
+        <h4 style={{ fontWeight: 600, marginBottom: '12px', color: '#1a1612' }}>Corpus Size</h4>
+        <p style={{ color: '#444', fontSize: '14px', marginBottom: '16px' }}>
+          The scale of Medieval Latin defies easy quantification.{" "}
+          <a href="https://global.oup.com/academic/product/a-handlist-of-the-latin-writers-of-great-britain-and-ireland-before-1540-9780888441065" target="_blank" rel="noopener noreferrer" style={{ color: '#9e4a3a' }}>
+            Sharpe's <em>Handlist of Latin Writers of Great Britain and Ireland</em>
+          </a>
+          {" "}alone identifies <strong>5,200+ Latin works</strong>—and covers only the British Isles. A 2009 study by Buringh and van Zanden estimated that <strong>2.9 million medieval manuscripts</strong> survive globally.
+        </p>
+        <h4 style={{ fontWeight: 600, marginBottom: '12px', color: '#1a1612' }}>Translation Coverage</h4>
+        <p style={{ color: '#444', fontSize: '14px', marginBottom: '16px' }}>
+          Major translation series have produced perhaps <strong>250–350 Medieval Latin volumes</strong> over six decades: Oxford Medieval Texts (100+), Dumbarton Oaks Medieval Library (~41 Latin volumes), Toronto Medieval Latin Texts (37).
+        </p>
+        <h4 style={{ fontWeight: 600, marginBottom: '12px', color: '#1a1612' }}>Scholarly Estimate</h4>
+        <p style={{ color: '#666', fontSize: '14px' }}>
+          A 2023 scholarly assessment from{" "}
+          <a href="https://foundinantiquity.com/" target="_blank" rel="noopener noreferrer" style={{ color: '#9e4a3a' }}>
+            Found in Antiquity
+          </a>
+          {" "}states: "I have heard it estimated that over <strong>90–95% of our surviving Latin texts remain untranslated</strong>... The percentage of literary texts from Antiquity and even more so from the Middle Ages that have never been translated into any modern language is overwhelming." Even Thomas Aquinas—arguably the best-translated medieval author—has "a substantial amount" of writings still untranslated per the <em>Oxford Handbook of Aquinas</em>.
+        </p>
+      </figure>
+
+      <h3 style={{ color: '#9e4a3a', fontSize: '20px', marginTop: '24px' }}>Renaissance &amp; Early Modern Latin (~2%)</h3>
+
+      <figure style={{
+        background: '#f5f0e8',
+        border: '1px solid #e0d8c8',
+        borderRadius: '8px',
+        padding: '24px',
+        margin: '32px 0',
+      }}>
+        <h4 style={{ fontWeight: 600, marginBottom: '12px', color: '#1a1612' }}>Corpus Size</h4>
+        <p style={{ color: '#444', fontSize: '14px', marginBottom: '16px' }}>
+          The{" "}
+          <a href="https://www.ustc.ac.uk/" target="_blank" rel="noopener noreferrer" style={{ color: '#9e4a3a' }}>
+            Universal Short Title Catalogue
+          </a>
+          {" "}now contains <strong>1.65 million editions</strong> for 1450–1700. Our analysis identifies ~533,000 Latin editions, representing approximately <strong>80,000–120,000 unique works</strong> after deduplication. The{" "}
+          <a href="https://global.oup.com/academic/product/the-oxford-handbook-of-neo-latin-9780190857820" target="_blank" rel="noopener noreferrer" style={{ color: '#9e4a3a' }}>
+            Oxford Handbook of Neo-Latin
+          </a>
+          {" "}notes that the Neo-Latin corpus "is currently simply unquantifiable" but "dwarfs that of Latin in all other periods combined"—approximately <strong>95% of all extant Latin texts</strong> date from the Renaissance onward.
+        </p>
+        <h4 style={{ fontWeight: 600, marginBottom: '12px', color: '#1a1612' }}>Translation Coverage</h4>
+        <p style={{ color: '#444', fontSize: '14px', marginBottom: '16px' }}>
+          Translation resources remain modest: the{" "}
+          <a href="https://www.hup.harvard.edu/series/the-i-tatti-renaissance-library" target="_blank" rel="noopener noreferrer" style={{ color: '#9e4a3a' }}>
+            I Tatti Renaissance Library
+          </a>
+          {" "}reached its <strong>100th volume</strong> in March 2025; the Collected Works of Erasmus has published 66 of 89 planned volumes for <em>one author's output alone</em>. A realistic count of English translations yields <strong>1,500–3,000 works</strong>.
+        </p>
+        <h4 style={{ fontWeight: 600, marginBottom: '12px', color: '#1a1612' }}>Calculation</h4>
+        <p style={{ color: '#666', fontSize: '14px' }}>
+          Applying our methodology: 2,000 translations ÷ 100,000 unique works = <strong>~2%</strong>. If using the full USTC scale (650,000+ Latin editions), the figure drops to <strong>~0.3%</strong>. The 2% estimate is conservative.
+        </p>
+      </figure>
+
+      <figure style={{
+        background: '#fff9f0',
+        border: '1px solid #c9a86c',
+        borderRadius: '8px',
+        padding: '24px',
+        margin: '32px 0',
+      }}>
+        <h4 style={{ color: '#c9a86c', fontWeight: 600, marginBottom: '12px' }}>The Translation Decay Curve</h4>
+        <p style={{ color: '#444', fontSize: '14px', marginBottom: '16px' }}>
+          As the volume of Latin texts increases exponentially through history, the percentage of available translations drops precipitously:
+        </p>
+        <div style={{
+          background: '#f5f0e8',
+          borderRadius: '6px',
+          padding: '16px',
+          margin: '16px 0',
+        }}>
+          <table style={{ width: '100%', fontSize: '14px' }}>
+            <thead>
+              <tr style={{ textAlign: 'left', color: '#666', borderBottom: '1px solid #e0d8c8' }}>
+                <th style={{ paddingBottom: '8px' }}>Period</th>
+                <th style={{ paddingBottom: '8px' }}>Estimated Coverage</th>
+                <th style={{ paddingBottom: '8px' }}>Corpus Source</th>
+              </tr>
+            </thead>
+            <tbody style={{ color: '#444' }}>
+              <tr style={{ borderBottom: '1px solid #f0ebe0' }}>
+                <td style={{ padding: '8px 0' }}>Classical</td>
+                <td style={{ padding: '8px 0' }}>~80% (literary canon)</td>
+                <td style={{ padding: '8px 0', color: '#666' }}>PHI Latin Texts</td>
+              </tr>
+              <tr style={{ borderBottom: '1px solid #f0ebe0' }}>
+                <td style={{ padding: '8px 0' }}>Patristic</td>
+                <td style={{ padding: '8px 0' }}>~35%</td>
+                <td style={{ padding: '8px 0', color: '#666' }}>Clavis Patrum Latinorum</td>
+              </tr>
+              <tr style={{ borderBottom: '1px solid #f0ebe0' }}>
+                <td style={{ padding: '8px 0' }}>Medieval</td>
+                <td style={{ padding: '8px 0' }}>~10%</td>
+                <td style={{ padding: '8px 0', color: '#666' }}>Sharpe's Handlist + ms. surveys</td>
+              </tr>
+              <tr>
+                <td style={{ padding: '8px 0' }}>Renaissance</td>
+                <td style={{ padding: '8px 0' }}>~2%</td>
+                <td style={{ padding: '8px 0', color: '#666' }}>USTC</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p style={{ color: '#666', fontSize: '12px', marginTop: '12px' }}>
+          All figures are order-of-magnitude estimates with substantial uncertainty (±50%). No systematic scholarly survey of translation coverage exists for any period.
+        </p>
+      </figure>
+
       <h2>OCR and Searchability</h2>
 
       <p>
@@ -555,6 +740,65 @@ export default function Methodology() {
         </p>
       </figure>
 
+      <h2>Confidence Levels</h2>
+
+      <p>
+        Not all claims on this site carry equal certainty. We assign explicit confidence levels to help readers assess our estimates:
+      </p>
+
+      <figure style={{
+        background: '#fff9f0',
+        border: '1px solid #c9a86c',
+        borderRadius: '8px',
+        padding: '24px',
+        margin: '32px 0',
+      }}>
+        <table style={{ width: '100%', fontSize: '14px', borderCollapse: 'collapse' }}>
+          <thead>
+            <tr style={{ borderBottom: '2px solid #e0d8c8' }}>
+              <th style={{ textAlign: 'left', padding: '12px 8px', color: '#1a1612', fontWeight: 600 }}>Claim</th>
+              <th style={{ textAlign: 'center', padding: '12px 8px', color: '#1a1612', fontWeight: 600 }}>Confidence</th>
+              <th style={{ textAlign: 'left', padding: '12px 8px', color: '#1a1612', fontWeight: 600 }}>Basis</th>
+            </tr>
+          </thead>
+          <tbody style={{ color: '#444' }}>
+            <tr style={{ borderBottom: '1px solid #f0ebe0' }}>
+              <td style={{ padding: '12px 8px' }}>533,307 Latin editions in USTC</td>
+              <td style={{ padding: '12px 8px', textAlign: 'center' }}><span style={{ background: '#2ecc71', color: '#fff', padding: '2px 8px', borderRadius: '4px', fontSize: '11px', fontWeight: 600 }}>HIGH</span></td>
+              <td style={{ padding: '12px 8px', color: '#666' }}>Direct USTC database query</td>
+            </tr>
+            <tr style={{ borderBottom: '1px solid #f0ebe0' }}>
+              <td style={{ padding: '12px 8px' }}>80,000–120,000 unique works</td>
+              <td style={{ padding: '12px 8px', textAlign: 'center' }}><span style={{ background: '#f39c12', color: '#fff', padding: '2px 8px', borderRadius: '4px', fontSize: '11px', fontWeight: 600 }}>MEDIUM</span></td>
+              <td style={{ padding: '12px 8px', color: '#666' }}>Author+title deduplication estimate</td>
+            </tr>
+            <tr style={{ borderBottom: '1px solid #f0ebe0' }}>
+              <td style={{ padding: '12px 8px' }}>1,500–2,000 English translations exist</td>
+              <td style={{ padding: '12px 8px', textAlign: 'center' }}><span style={{ background: '#f39c12', color: '#fff', padding: '2px 8px', borderRadius: '4px', fontSize: '11px', fontWeight: 600 }}>MEDIUM</span></td>
+              <td style={{ padding: '12px 8px', color: '#666' }}>Aggregated series counts</td>
+            </tr>
+            <tr style={{ borderBottom: '1px solid #f0ebe0' }}>
+              <td style={{ padding: '12px 8px' }}>~2% overall translation rate</td>
+              <td style={{ padding: '12px 8px', textAlign: 'center' }}><span style={{ background: '#f39c12', color: '#fff', padding: '2px 8px', borderRadius: '4px', fontSize: '11px', fontWeight: 600 }}>MEDIUM</span></td>
+              <td style={{ padding: '12px 8px', color: '#666' }}>Derived from above estimates</td>
+            </tr>
+            <tr style={{ borderBottom: '1px solid #f0ebe0' }}>
+              <td style={{ padding: '12px 8px' }}>Field-by-field translation rates</td>
+              <td style={{ padding: '12px 8px', textAlign: 'center' }}><span style={{ background: '#e67e22', color: '#fff', padding: '2px 8px', borderRadius: '4px', fontSize: '11px', fontWeight: 600 }}>LOW-MED</span></td>
+              <td style={{ padding: '12px 8px', color: '#666' }}>Extrapolated from series focus areas</td>
+            </tr>
+            <tr>
+              <td style={{ padding: '12px 8px' }}>Specific work counts by field</td>
+              <td style={{ padding: '12px 8px', textAlign: 'center' }}><span style={{ background: '#e74c3c', color: '#fff', padding: '2px 8px', borderRadius: '4px', fontSize: '11px', fontWeight: 600 }}>LOW</span></td>
+              <td style={{ padding: '12px 8px', color: '#666' }}>No systematic catalog exists</td>
+            </tr>
+          </tbody>
+        </table>
+        <p style={{ color: '#666', fontSize: '12px', marginTop: '16px' }}>
+          We report translation rates rather than work counts on the homepage because the numerator (translated works) is more tractable than the denominator (total works by field).
+        </p>
+      </figure>
+
       <h2>Summary of Key Findings</h2>
 
       <figure style={{
@@ -577,27 +821,27 @@ export default function Methodology() {
             <tr style={{ borderBottom: '1px solid #e0d8c8' }}>
               <td style={{ padding: '12px' }}>Total USTC editions (all languages)</td>
               <td style={{ padding: '12px', fontFamily: 'monospace' }}>1.65 million</td>
-              <td style={{ padding: '12px', color: '#666' }}>USTC website</td>
+              <td style={{ padding: '12px', color: '#666' }}>USTC website (2025)</td>
             </tr>
             <tr style={{ background: '#faf8f4', borderBottom: '1px solid #e0d8c8' }}>
               <td style={{ padding: '12px' }}>Latin editions (USTC)</td>
               <td style={{ padding: '12px', fontFamily: 'monospace' }}>533,307</td>
-              <td style={{ padding: '12px', color: '#666' }}>USTC query</td>
+              <td style={{ padding: '12px', color: '#666' }}>USTC query (Dec 2025)</td>
             </tr>
             <tr style={{ borderBottom: '1px solid #e0d8c8' }}>
               <td style={{ padding: '12px' }}>Unique author+title pairs (Latin)</td>
               <td style={{ padding: '12px', fontFamily: 'monospace' }}>~150,000</td>
-              <td style={{ padding: '12px', color: '#666' }}>Our analysis</td>
+              <td style={{ padding: '12px', color: '#666' }}>Our deduplication analysis</td>
             </tr>
             <tr style={{ background: '#faf8f4', borderBottom: '1px solid #e0d8c8' }}>
               <td style={{ padding: '12px' }}>Estimated unique Latin works</td>
-              <td style={{ padding: '12px', fontFamily: 'monospace' }}>~80,000–120,000</td>
-              <td style={{ padding: '12px', color: '#666' }}>Estimated (dedup)</td>
+              <td style={{ padding: '12px', fontFamily: 'monospace' }}>80,000–120,000</td>
+              <td style={{ padding: '12px', color: '#666' }}>Conservative estimate after variant titles</td>
             </tr>
             <tr style={{ borderBottom: '1px solid #e0d8c8' }}>
               <td style={{ padding: '12px' }}>Editions with digital scans (all languages)</td>
               <td style={{ padding: '12px', fontFamily: 'monospace' }}>~450,000 (27%)</td>
-              <td style={{ padding: '12px', color: '#666' }}>USTC website</td>
+              <td style={{ padding: '12px', color: '#666' }}>USTC digital links</td>
             </tr>
             <tr style={{ background: '#faf8f4', borderBottom: '1px solid #e0d8c8' }}>
               <td style={{ padding: '12px' }}>High-quality transcriptions (English texts only)</td>
@@ -606,13 +850,13 @@ export default function Methodology() {
             </tr>
             <tr style={{ borderBottom: '1px solid #e0d8c8' }}>
               <td style={{ padding: '12px' }}>Latin works with English translations</td>
-              <td style={{ padding: '12px', fontFamily: 'monospace' }}>~1,500–2,000</td>
-              <td style={{ padding: '12px', color: '#666' }}>Series counts</td>
+              <td style={{ padding: '12px', fontFamily: 'monospace' }}>1,500–2,000</td>
+              <td style={{ padding: '12px', color: '#666' }}>Aggregated series counts</td>
             </tr>
             <tr style={{ background: '#faf8f4' }}>
               <td style={{ padding: '12px' }}>Translation coverage (of unique works)</td>
               <td style={{ padding: '12px', fontFamily: 'monospace' }}>~1.5–2%</td>
-              <td style={{ padding: '12px', color: '#666' }}>Calculated</td>
+              <td style={{ padding: '12px', color: '#666' }}>Derived (translations ÷ unique works)</td>
             </tr>
           </tbody>
         </table>
@@ -697,6 +941,70 @@ export default function Methodology() {
             University of Birmingham
           </a>
           . ~200 British neo-Latin texts with translations.
+        </li>
+      </ul>
+
+      <h3 style={{ color: '#9e4a3a', fontSize: '18px', marginTop: '32px' }}>Corpus Catalogues</h3>
+      <ul style={{ color: '#666', fontSize: '14px', lineHeight: 2 }}>
+        <li>
+          Packard Humanities Institute.{" "}
+          <a href="https://latin.packhum.org/" target="_blank" rel="noopener noreferrer" style={{ color: '#9e4a3a' }}>
+            PHI Latin Texts
+          </a>
+          . 362 authors, ~7.5 million words of Classical Latin.
+        </li>
+        <li>
+          Dekkers, E. &amp; Gaar, A. (eds.).{" "}
+          <a href="https://about.brepolis.net/clavis-patrum-latinorum/" target="_blank" rel="noopener noreferrer" style={{ color: '#9e4a3a' }}>
+            Clavis Patrum Latinorum
+          </a>
+          . Brepols. 2,348 entries for Latin Christian texts (Tertullian to Bede).
+        </li>
+        <li>
+          <a href="https://cil.bbaw.de/" target="_blank" rel="noopener noreferrer" style={{ color: '#9e4a3a' }}>
+            Corpus Inscriptionum Latinarum
+          </a>
+          . Berlin-Brandenburgische Akademie der Wissenschaften. 180,000+ Latin inscriptions.
+        </li>
+        <li>
+          Sharpe, R. (1997).{" "}
+          <a href="https://global.oup.com/academic/product/a-handlist-of-the-latin-writers-of-great-britain-and-ireland-before-1540-9780888441065" target="_blank" rel="noopener noreferrer" style={{ color: '#9e4a3a' }}>
+            <em>A Handlist of the Latin Writers of Great Britain and Ireland before 1540</em>
+          </a>
+          . Pontifical Institute of Mediaeval Studies. 5,200+ works (British Isles only).
+        </li>
+        <li>
+          Ford, P., Bloemendal, J. &amp; Fantazzi, C. (eds.). (2014).{" "}
+          <a href="https://global.oup.com/academic/product/the-oxford-handbook-of-neo-latin-9780190857820" target="_blank" rel="noopener noreferrer" style={{ color: '#9e4a3a' }}>
+            <em>The Oxford Handbook of Neo-Latin</em>
+          </a>
+          . Oxford University Press.
+        </li>
+        <li>
+          Buringh, E. &amp; van Zanden, J.L. (2009). "Charting the 'Rise of the West': Manuscripts and Printed Books in Europe, A Long-Term Perspective."{" "}
+          <em>Journal of Economic History</em> 69(2), 409–445. (2.9 million surviving medieval manuscripts estimated)
+        </li>
+      </ul>
+
+      <h3 style={{ color: '#9e4a3a', fontSize: '18px', marginTop: '32px' }}>Scholarly Estimates on Translation Coverage</h3>
+      <ul style={{ color: '#666', fontSize: '14px', lineHeight: 2 }}>
+        <li>
+          Found in Antiquity. (2023).{" "}
+          <a href="https://foundinantiquity.com/" target="_blank" rel="noopener noreferrer" style={{ color: '#9e4a3a' }}>
+            "On Translation Coverage of Latin Texts"
+          </a>
+          . (Estimate: 90–95% of surviving Latin texts remain untranslated)
+        </li>
+        <li>
+          Patristics scholars estimate 60–70% of extant patristic literature has never been translated into English. (Scholarly consensus cited in multiple sources)
+        </li>
+        <li>
+          Stump, E. &amp; Kretzmann, N. (eds.). (2005).{" "}
+          <em>The Cambridge Companion to Augustine</em>. Cambridge University Press. (Notes on Augustine's 132 works, 5 million words)
+        </li>
+        <li>
+          Davies, B. &amp; Stump, E. (eds.). (2012).{" "}
+          <em>The Oxford Handbook of Aquinas</em>. Oxford University Press. (Notes on untranslated Aquinas writings)
         </li>
       </ul>
     </BlogLayout>

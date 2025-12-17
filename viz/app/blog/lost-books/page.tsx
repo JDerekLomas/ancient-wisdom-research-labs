@@ -7,7 +7,7 @@ export default function LostBooks() {
       tag="Research"
       slug="lost-books"
       prevPost={{ href: "/blog/theology-problem", title: "The Theology Problem" }}
-      nextPost={{ href: "/blog/methodology", title: "Methodology" }}
+      nextPost={{ href: "/blog/gaps-of-the-greats", title: "Gaps of the Greats" }}
     >
       <p style={{
         fontFamily: 'Newsreader, Georgia, serif',
@@ -81,7 +81,8 @@ export default function LostBooks() {
           color: '#888',
           marginTop: '16px',
         }}>
-          Based on research from the USTC project and bibliographic studies. Loss rates vary by format, subject, and region.
+          Source: Green & McIntyre, &ldquo;Lost incunable editions,&rdquo; in <em>Lost Books</em> (Brill, 2016), pp. 55–72.
+          Loss rates vary by format, subject, and region; these are aggregate estimates for European printing.
         </p>
       </figure>
 
@@ -249,15 +250,31 @@ export default function LostBooks() {
         works that perished.
       </p>
 
-      <h2>A Note on Sources</h2>
+      <h2>Sources & Further Reading</h2>
 
       <p>
-        The research cited here comes from the pioneering work of the USTC team at St Andrews,
-        particularly Andrew Pettegree&apos;s <em>Lost Books: Reconstructing the Print World of
-        Pre-Industrial Europe</em> (Brill, 2016) and subsequent studies. For medieval manuscript
-        losses, see Kestemont et al., &ldquo;Forgotten books: The application of unseen species
-        models to the survival of culture&rdquo; (<em>Science</em>, 2022).
+        The research cited here comes from the pioneering work of the USTC team at St Andrews.
+        Key sources:
       </p>
+
+      <ul style={{ fontSize: '16px', lineHeight: 1.8 }}>
+        <li>
+          Pettegree, Andrew & Flavia Bruni, eds. <em>Lost Books: Reconstructing the Print World of
+          Pre-Industrial Europe</em>. Brill, 2016. — The foundational study of print loss rates.
+        </li>
+        <li>
+          Green, Jonathan & Frank McIntyre. &ldquo;Lost incunable editions: closing in on an estimate.&rdquo;
+          In <em>Lost Books</em>, pp. 55–72. — Source for format-specific loss percentages.
+        </li>
+        <li>
+          Der Weduwen, Arthur. &ldquo;Towards a Complete Survey of Seventeenth-Century Dutch Print Output.&rdquo;
+          <em>Quaerendo</em> 48 (2018). — Demonstrates 5× gap between surviving and actual editions.
+        </li>
+        <li>
+          Kestemont, Mike et al. &ldquo;Forgotten books: The application of unseen species models to the
+          survival of culture.&rdquo; <em>Science</em> 375 (2022): 765–769. — Medieval manuscript loss estimates.
+        </li>
+      </ul>
 
       <p>
         Understanding what we&apos;ve lost helps us appreciate what survives—and motivates the

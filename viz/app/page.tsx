@@ -1,20 +1,23 @@
 import Link from "next/link";
 
-// Important untranslated figures
+// Important untranslated figures - USTC edition counts, verified no complete English translations
+// See /blog/forgotten-authors for full methodology and sources
 const forgottenAuthors = [
-  { name: "Cornelis Drebbel", editions: 12, field: "Inventor of the submarine, perpetual motion", translated: 0 },
-  { name: "Isaac Casaubon", editions: 89, field: "Classical philology, exposed Hermetica dating", translated: 0 },
-  { name: "Giambattista della Porta", editions: 156, field: "Natural magic, optics, cryptography", translated: 0 },
+  { name: "Samuel Stryk", editions: 642, field: "Jurist who defined German legal tradition", translated: 0 },
+  { name: "Hermann Conring", editions: 510, field: "Founded German legal history; Leibniz called him 'most learned'", translated: 0 },
+  { name: "Georg Wolfgang Wedel", editions: 476, field: "Medical professor, pharmacology, chemistry", translated: 0 },
 ];
 
-// Subject breakdown - ordered by interest/accessibility, not size
+// Subject breakdown - translation rates from series counts; work counts omitted (no reliable source)
+// Ordered by scale of untranslated material
 const subjects = [
-  { name: "Philosophy", count: 42000, pct: 8.3, translated: "~3%" },
-  { name: "Natural Philosophy", count: 31000, pct: 6.2, translated: "~2%" },
-  { name: "Medicine", count: 38000, pct: 7.5, translated: "< 1%" },
-  { name: "Poetry & Literature", count: 28000, pct: 5.6, translated: "~5%" },
-  { name: "Law", count: 68000, pct: 13.5, translated: "< 1%" },
-  { name: "History", count: 24000, pct: 4.8, translated: "~4%" },
+  { name: "Theology", translated: "< 0.5%", note: "Largest category (~32% of Latin printing)" },
+  { name: "Law", translated: "< 0.1%", note: "Almost entirely untranslated" },
+  { name: "Medicine", translated: "< 1%", note: "Beyond Galen/Hippocrates commentaries" },
+  { name: "Philosophy", translated: "~3%", note: "Commentaries largely untouched" },
+  { name: "Natural Philosophy", translated: "~2%", note: "Pre-Scientific Revolution texts" },
+  { name: "Poetry & Literature", translated: "~4%", note: "I Tatti warming up" },
+  { name: "History", translated: "~3%", note: "Chronicles, local histories" },
 ];
 
 export default function Home() {
@@ -70,7 +73,7 @@ export default function Home() {
               color: '#1a1612',
               lineHeight: 1,
             }}>
-              503,486
+              533,307
             </p>
             <p style={{
               fontFamily: 'Inter, sans-serif',
@@ -78,7 +81,7 @@ export default function Home() {
               color: '#888',
               marginTop: '8px',
             }}>
-              Latin works, 1450–1700
+              Latin editions, 1450–1700
             </p>
           </div>
           <div style={{ textAlign: 'center' }}>
@@ -520,13 +523,13 @@ export default function Home() {
             </figcaption>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
               {[
-                { lang: 'Latin', pct: 30.9, n: '503,486', highlight: true },
-                { lang: 'German', pct: 20.9, n: '340,521' },
-                { lang: 'French', pct: 14.8, n: '241,749' },
-                { lang: 'English', pct: 10.1, n: '164,280' },
-                { lang: 'Italian', pct: 7.0, n: '113,481' },
-                { lang: 'Dutch', pct: 7.0, n: '114,596' },
-                { lang: 'Spanish', pct: 6.0, n: '97,854' },
+                { lang: 'Latin', pct: 32.3, n: '533,307', highlight: true },
+                { lang: 'German', pct: 20.6, n: '340,521' },
+                { lang: 'French', pct: 14.6, n: '241,749' },
+                { lang: 'English', pct: 10.0, n: '164,280' },
+                { lang: 'Italian', pct: 6.9, n: '113,481' },
+                { lang: 'Dutch', pct: 6.9, n: '114,596' },
+                { lang: 'Spanish', pct: 5.9, n: '97,854' },
               ].map((d) => (
                 <div key={d.lang} style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
                   <span style={{
@@ -561,7 +564,7 @@ export default function Home() {
               color: '#aaa',
               marginTop: '16px',
             }}>
-              Source: Universal Short Title Catalogue, n=1,628,578
+              Source: <a href="https://ustc.ac.uk" target="_blank" rel="noopener noreferrer" style={{ color: '#888' }}>Universal Short Title Catalogue</a>, n=1.65 million editions (2025)
             </p>
           </figure>
         </div>
@@ -590,7 +593,7 @@ export default function Home() {
             marginBottom: '48px',
             maxWidth: '680px',
           }}>
-            The Loeb Classical Library has 500+ volumes of Cicero, Virgil, and Ovid.
+            The Loeb Classical Library has 520 volumes covering Cicero, Virgil, and Ovid.
             But the actual bulk of the Latin corpus—Renaissance scholarship—is almost untouched.
           </p>
 
@@ -600,10 +603,10 @@ export default function Home() {
             gap: '24px',
           }}>
             {[
-              { era: 'Classical', pct: 75, desc: 'Cicero, Virgil, Ovid, Seneca' },
-              { era: 'Church Fathers', pct: 65, desc: 'Augustine, Jerome, Ambrose' },
-              { era: 'Medieval', pct: 25, desc: 'Aquinas, scholastics' },
-              { era: 'Renaissance & Early Modern', pct: 2, desc: '500,000 works' },
+              { era: 'Classical', pct: 80, desc: 'Major literary works' },
+              { era: 'Church Fathers', pct: 35, desc: 'Augustine, Jerome, Ambrose' },
+              { era: 'Medieval', pct: 10, desc: 'Chronicles, scholastics' },
+              { era: 'Renaissance & Early Modern', pct: 2, desc: '100,000+ unique works' },
             ].map((d) => (
               <div key={d.era} style={{
                 background: '#fff',
@@ -640,6 +643,14 @@ export default function Home() {
               </div>
             ))}
           </div>
+          <p style={{
+            fontFamily: 'Inter, sans-serif',
+            fontSize: '11px',
+            color: '#aaa',
+            marginTop: '16px',
+          }}>
+            Estimates based on translation series catalogues. <Link href="/blog/methodology" style={{ color: '#9e4a3a' }}>See methodology →</Link>
+          </p>
         </div>
       </section>
 
@@ -675,44 +686,169 @@ export default function Home() {
             <div style={{
               background: '#2a2622',
               borderRadius: '12px',
-              padding: '60px',
-              textAlign: 'center',
+              overflow: 'hidden',
               border: '1px solid #3a3632',
               cursor: 'pointer',
-              transition: 'border-color 0.2s',
+              transition: 'border-color 0.2s, transform 0.2s',
             }}>
-              <p style={{
-                fontFamily: 'Inter, sans-serif',
-                fontSize: '14px',
-                color: 'rgba(255,255,255,0.5)',
-                marginBottom: '16px',
-              }}>
-                Interactive visualization
-              </p>
-              <p style={{
-                fontFamily: 'Cormorant Garamond, Georgia, serif',
-                fontSize: '28px',
-                color: '#c9a86c',
-                marginBottom: '24px',
-              }}>
-                Explore the Animated Map →
-              </p>
+              {/* Map Preview Visual */}
               <div style={{
-                display: 'flex',
-                justifyContent: 'center',
-                gap: '40px',
+                position: 'relative',
+                height: '320px',
+                background: 'linear-gradient(180deg, #0f172a 0%, #1e293b 100%)',
+                overflow: 'hidden',
               }}>
-                <div>
-                  <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '32px', fontWeight: 600, color: '#fff' }}>702</p>
-                  <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '12px', color: 'rgba(255,255,255,0.5)' }}>Printing centers</p>
+                {/* Simplified Europe outline using positioned dots */}
+                <svg
+                  viewBox="0 0 400 240"
+                  style={{
+                    position: 'absolute',
+                    inset: 0,
+                    width: '100%',
+                    height: '100%',
+                    opacity: 0.15,
+                  }}
+                >
+                  <path
+                    d="M80,180 Q100,160 120,150 L140,140 Q160,130 180,125 L200,120 Q220,115 240,110 L260,105 Q280,100 300,95 L320,90 Q340,85 350,80 L360,75 Q370,70 375,65 L380,60 Q385,55 390,50 L395,45 M120,150 Q130,140 140,130 L150,120 Q160,110 170,100 L180,90 Q190,80 200,75 L210,70 Q220,65 230,60 L240,55 M180,125 L175,115 Q170,105 165,100 L160,95 M240,110 Q245,100 250,95 L255,90 M200,120 Q205,110 210,105 L215,100 Q220,95 225,90"
+                    fill="none"
+                    stroke="#4b5563"
+                    strokeWidth="1"
+                  />
+                </svg>
+
+                {/* Glowing printing center dots - positioned roughly over Europe */}
+                {[
+                  { x: 45, y: 55, size: 28, label: 'Paris', delay: 0 },
+                  { x: 62, y: 65, size: 22, label: 'Venice', delay: 0.5 },
+                  { x: 52, y: 45, size: 18, label: 'Cologne', delay: 1 },
+                  { x: 58, y: 40, size: 20, label: 'Leipzig', delay: 1.5 },
+                  { x: 48, y: 35, size: 14, label: 'Leiden', delay: 2 },
+                  { x: 55, y: 55, size: 15, label: 'Lyon', delay: 2.5 },
+                  { x: 68, y: 72, size: 16, label: 'Rome', delay: 3 },
+                  { x: 60, y: 35, size: 17, label: 'Wittenberg', delay: 3.5 },
+                  { x: 50, y: 42, size: 12, label: 'Antwerp', delay: 4 },
+                  { x: 42, y: 28, size: 10, label: 'London', delay: 4.5 },
+                  { x: 75, y: 55, size: 8, label: 'Vienna', delay: 5 },
+                  { x: 38, y: 80, size: 9, label: 'Salamanca', delay: 5.5 },
+                  { x: 55, y: 70, size: 10, label: 'Florence', delay: 6 },
+                  { x: 66, y: 48, size: 11, label: 'Basel', delay: 6.5 },
+                ].map((dot, i) => (
+                  <div
+                    key={i}
+                    style={{
+                      position: 'absolute',
+                      left: `${dot.x}%`,
+                      top: `${dot.y}%`,
+                      width: `${dot.size}px`,
+                      height: `${dot.size}px`,
+                      borderRadius: '50%',
+                      background: 'rgba(139, 92, 246, 0.8)',
+                      boxShadow: `0 0 ${dot.size}px ${dot.size / 2}px rgba(139, 92, 246, 0.4), 0 0 ${dot.size * 2}px rgba(139, 92, 246, 0.2)`,
+                      transform: 'translate(-50%, -50%)',
+                      animation: `pulse 3s ease-in-out infinite`,
+                      animationDelay: `${dot.delay * 0.3}s`,
+                    }}
+                  />
+                ))}
+
+                {/* Year display overlay */}
+                <div style={{
+                  position: 'absolute',
+                  top: '16px',
+                  left: '16px',
+                  background: 'rgba(15, 23, 42, 0.9)',
+                  borderRadius: '8px',
+                  padding: '8px 12px',
+                }}>
+                  <span style={{
+                    fontFamily: 'Inter, sans-serif',
+                    fontSize: '24px',
+                    fontWeight: 700,
+                    color: '#8b5cf6',
+                  }}>1550</span>
                 </div>
-                <div>
-                  <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '32px', fontWeight: 600, color: '#fff' }}>250</p>
-                  <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '12px', color: 'rgba(255,255,255,0.5)' }}>Years of data</p>
+
+                {/* Play button overlay */}
+                <div style={{
+                  position: 'absolute',
+                  inset: 0,
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                }}>
+                  <div style={{
+                    width: '64px',
+                    height: '64px',
+                    borderRadius: '50%',
+                    background: 'rgba(139, 92, 246, 0.9)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    boxShadow: '0 4px 20px rgba(139, 92, 246, 0.5)',
+                  }}>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                      <path d="M8 5v14l11-7z"/>
+                    </svg>
+                  </div>
                 </div>
+
+                {/* Stats bar at bottom of preview */}
+                <div style={{
+                  position: 'absolute',
+                  bottom: 0,
+                  left: 0,
+                  right: 0,
+                  background: 'linear-gradient(transparent, rgba(15, 23, 42, 0.95))',
+                  padding: '24px 16px 12px',
+                  display: 'flex',
+                  justifyContent: 'center',
+                  gap: '32px',
+                }}>
+                  <div style={{ textAlign: 'center' }}>
+                    <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '20px', fontWeight: 600, color: '#fff', margin: 0 }}>702</p>
+                    <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '10px', color: 'rgba(255,255,255,0.5)', margin: 0 }}>Printing centers</p>
+                  </div>
+                  <div style={{ textAlign: 'center' }}>
+                    <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '20px', fontWeight: 600, color: '#fff', margin: 0 }}>250</p>
+                    <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '10px', color: 'rgba(255,255,255,0.5)', margin: 0 }}>Years of data</p>
+                  </div>
+                  <div style={{ textAlign: 'center' }}>
+                    <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '20px', fontWeight: 600, color: '#fff', margin: 0 }}>533K</p>
+                    <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '10px', color: 'rgba(255,255,255,0.5)', margin: 0 }}>Latin editions</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* CTA text below preview */}
+              <div style={{ padding: '20px 24px', textAlign: 'center' }}>
+                <p style={{
+                  fontFamily: 'Cormorant Garamond, Georgia, serif',
+                  fontSize: '24px',
+                  color: '#c9a86c',
+                  margin: 0,
+                }}>
+                  Explore the Animated Map →
+                </p>
+                <p style={{
+                  fontFamily: 'Inter, sans-serif',
+                  fontSize: '13px',
+                  color: 'rgba(255,255,255,0.5)',
+                  marginTop: '8px',
+                }}>
+                  Watch Latin printing spread across Europe from 1450 to 1700
+                </p>
               </div>
             </div>
           </Link>
+
+          {/* CSS animation for pulsing dots */}
+          <style>{`
+            @keyframes pulse {
+              0%, 100% { opacity: 0.7; transform: translate(-50%, -50%) scale(1); }
+              50% { opacity: 1; transform: translate(-50%, -50%) scale(1.15); }
+            }
+          `}</style>
         </div>
       </section>
 
@@ -843,19 +979,27 @@ export default function Home() {
                   }}>{subject.name}</span>
                   <span style={{
                     fontFamily: 'Inter, sans-serif',
-                    fontSize: '12px',
+                    fontSize: '14px',
                     color: '#9e4a3a',
-                    fontWeight: 500,
-                  }}>{subject.translated} translated</span>
+                    fontWeight: 600,
+                  }}>{subject.translated}</span>
                 </div>
                 <p style={{
                   fontFamily: 'Inter, sans-serif',
-                  fontSize: '13px',
+                  fontSize: '12px',
                   color: '#888',
-                }}>~{subject.count.toLocaleString()} works</p>
+                }}>{subject.note}</p>
               </div>
             ))}
           </div>
+          <p style={{
+            fontFamily: 'Inter, sans-serif',
+            fontSize: '11px',
+            color: '#999',
+            marginTop: '16px',
+          }}>
+            Translation rates estimated from major scholarly series. <Link href="/blog/methodology" style={{ color: '#9e4a3a' }}>See methodology →</Link>
+          </p>
         </div>
       </section>
 

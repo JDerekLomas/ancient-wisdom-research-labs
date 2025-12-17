@@ -377,6 +377,29 @@ export default function DigitizationGap() {
             The goal: create a systematic map of what&apos;s accessible and what&apos;s not, so translation efforts can be directed where they&apos;re most needed.
           </p>
 
+          <hr style={{ border: 'none', borderTop: '1px solid #e8e4dc', margin: '48px 0 24px' }} />
+
+          <h3 style={{ fontSize: '14px', fontFamily: 'Inter, sans-serif', color: '#888', marginBottom: '16px' }}>Notes on Methodology</h3>
+
+          <div style={{ fontSize: '14px', color: '#666', lineHeight: 1.8 }}>
+            <p style={{ marginBottom: '16px' }}>
+              <strong>Sample methodology:</strong> We randomly selected 100 Latin works from each catalog (ISTC and USTC)
+              using database row sampling. For each work, we searched Google Books, Internet Archive, and HathiTrust
+              using title and author fields. A work was counted as &ldquo;digitized&rdquo; if any version (original or later edition)
+              appeared with viewable content.
+            </p>
+            <p style={{ marginBottom: '16px' }}>
+              <strong>Limitations:</strong> Sample sizes of 100 yield margins of error around ±10%.
+              HathiTrust results may undercount due to API matching issues with historical Latin titles.
+              Google Books &ldquo;snippet view&rdquo; was counted as available; full-text access varies by region and copyright status.
+            </p>
+            <p style={{ marginBottom: '16px' }}>
+              <strong>Sources:</strong> ISTC data from <a href="https://data.cerl.org/istc" target="_blank" rel="noopener noreferrer" style={{ color: '#9e4a3a' }}>CERL</a> (30,087 records).
+              USTC data from <a href="https://ustc.ac.uk" target="_blank" rel="noopener noreferrer" style={{ color: '#9e4a3a' }}>University of St Andrews</a> (1.65M records, queried December 2024).
+              See our <a href="/blog/methodology" style={{ color: '#9e4a3a' }}>full methodology page</a> for corpus statistics.
+            </p>
+          </div>
+
           <div style={{
             background: '#fdfcf9',
             border: '1px solid #e8e4dc',

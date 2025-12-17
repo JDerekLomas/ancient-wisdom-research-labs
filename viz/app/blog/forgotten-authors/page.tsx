@@ -17,16 +17,16 @@ export default function ForgottenAuthors() {
         marginBottom: '32px',
       }}>
         Jakob Martini wrote 836 works. Johann Gerhard wrote 697. Samuel Stryk wrote 642.
-        You&apos;ve never read a word they wrote—because almost none of it has been translated.
+        You&apos;ve never read a word they wrote—because almost none of it has been translated.<sup>1</sup>
       </p>
 
       <h2>The Numbers</h2>
 
       <p>
-        When we analyze the Universal Short Title Catalogue, a striking pattern emerges.
+        When we analyze the <a href="https://ustc.ac.uk" target="_blank" rel="noopener noreferrer" style={{ color: '#9e4a3a' }}>Universal Short Title Catalogue</a>, a striking pattern emerges.
         The most prolific Latin authors of the Renaissance aren&apos;t the names in our textbooks.
         Yes, Cicero leads with 4,659 editions and Erasmus follows with 2,825—authors we
-        recognize, whose work has been translated and studied.
+        recognize, whose work has been translated and studied.<sup>2</sup>
       </p>
 
       <p>
@@ -204,6 +204,26 @@ export default function ForgottenAuthors() {
         do. The question is whether we can make them accessible—and modern AI might finally
         make that possible.
       </p>
+
+      <hr style={{ border: 'none', borderTop: '1px solid #e0d8c8', margin: '48px 0 24px' }} />
+
+      <h3 style={{ fontSize: '14px', fontFamily: 'Inter, sans-serif', color: '#888', marginBottom: '16px' }}>Notes & Sources</h3>
+
+      <ol style={{ fontSize: '14px', color: '#666', paddingLeft: '20px', lineHeight: 1.8 }}>
+        <li>
+          Edition counts from <a href="https://ustc.ac.uk" target="_blank" rel="noopener noreferrer" style={{ color: '#9e4a3a' }}>Universal Short Title Catalogue</a> author searches, December 2025.
+          &ldquo;Works&rdquo; here means editions (printings); a single text reprinted 10 times counts as 10 editions.
+          Translation status verified against WorldCat and major scholarly series catalogs.
+        </li>
+        <li>
+          Classical authors like Cicero have high edition counts because their works were used as school texts and reprinted continuously.
+          See <a href="/blog/methodology" style={{ color: '#9e4a3a' }}>our methodology page</a> for how we distinguish editions from unique works.
+        </li>
+        <li>
+          The &ldquo;181 authors with 100+ works&rdquo; figure comes from filtering USTC data to exclude: (a) classical authors (active before 500 CE),
+          (b) authors with substantial modern English translations (defined as 5+ complete works translated since 1900).
+        </li>
+      </ol>
     </BlogLayout>
   );
 }

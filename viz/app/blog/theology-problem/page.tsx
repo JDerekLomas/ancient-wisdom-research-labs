@@ -3,7 +3,10 @@
 import BlogLayout from "../BlogLayout";
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from "recharts";
 
-// Stacked area chart data - Latin works by topic over time
+// Stacked area chart data - Latin editions by subject classification per decade
+// Source: USTC database queries, December 2024
+// Method: Filtered for Latin language, grouped by USTC subject classification and publication decade
+// Note: USTC subject assignments are based on cataloger judgment; works may span multiple categories
 const topicData = [
   { decade: 1470, Religious: 1264, Law: 421, Philosophy: 132, Medicine: 99, Science: 56, Literature: 403, History: 112 },
   { decade: 1480, Religious: 2410, Law: 530, Philosophy: 225, Medicine: 130, Science: 112, Literature: 372, History: 83 },
@@ -43,7 +46,7 @@ const COLORS = {
 export default function TheologyProblem() {
   return (
     <BlogLayout
-      title="The Elephant in the Room: 114,000 Latin Theological Works"
+      title="The Elephant in the Room: 170,000 Latin Theological Works"
       tag="Research"
       slug="theology-problem"
       prevPost={{ href: "/blog/forgotten-1600s", title: "Forgotten Authors of the 1600s" }}
@@ -64,8 +67,8 @@ export default function TheologyProblem() {
 
       <p>
         Theology and religious works constitute the single largest category in the USTC.
-        Of the 503,000 Latin works printed between 1450 and 1700, approximately
-        <strong> 114,000</strong>—nearly a quarter—are classified as religious.
+        Based on VD16 subject classifications and USTC data, approximately
+        <strong> 32% of all Latin printing</strong>—roughly 170,000 editions—falls under religious subjects.<sup><a href="/blog/methodology" style={{ color: '#9e4a3a', textDecoration: 'none' }}>1</a></sup>
       </p>
 
       {/* Stacked Area Chart */}
@@ -130,21 +133,24 @@ export default function TheologyProblem() {
         }}>
           Religious works (rust) consistently form the largest category. Note the peak in the 1610s during the Thirty Years&apos; War era.
         </p>
+        <p style={{
+          fontFamily: 'Inter, sans-serif',
+          fontSize: '10px',
+          color: '#999',
+          marginTop: '8px',
+        }}>
+          Data: USTC subject classification queries by decade, filtered for Latin-language records.
+          Subject categories are assigned by USTC catalogers based on title and content analysis.
+          See <a href="/blog/methodology" style={{ color: '#9e4a3a' }}>methodology</a> for caveats on subject classification.
+        </p>
       </figure>
 
       <p>
-        For comparison:
+        For comparison, other major categories each represent 5–15% of Latin output—theology alone accounts for nearly a third. No comprehensive catalog of works by field exists, so we report <a href="/blog/methodology" style={{ color: '#9e4a3a' }}>translation rates rather than work counts</a>.
       </p>
 
-      <ul>
-        <li>Law: ~68,000 works</li>
-        <li>Philosophy: ~42,000 works</li>
-        <li>Medicine: ~38,000 works</li>
-        <li>Natural Philosophy (Science): ~31,000 works</li>
-      </ul>
-
       <p>
-        Theology dwarfs everything else. And yet we&apos;ve deliberately placed it lower in our
+        Theology dwarfs everything else. And yet we&apos;ve deliberately placed it alongside other fields in our
         presentation of the untranslated corpus. Here&apos;s why.
       </p>
 
@@ -260,7 +266,7 @@ export default function TheologyProblem() {
         <li><strong>Secularization</strong> — Modern academia has moved away from
         confessional interests</li>
         <li><strong>Specialization</strong> — Theologians read Latin; why translate?</li>
-        <li><strong>Volume</strong> — 114,000 works is overwhelming</li>
+        <li><strong>Volume</strong> — 170,000+ editions is overwhelming</li>
         <li><strong>Controversy</strong> — Some texts are polemical, uncomfortable for
         modern readers</li>
       </ul>
@@ -310,7 +316,7 @@ export default function TheologyProblem() {
       </p>
 
       <p>
-        We&apos;re not ignoring the 114,000 religious works. We&apos;re building an audience that
+        We&apos;re not ignoring the 170,000+ religious editions. We&apos;re building an audience that
         can appreciate them.
       </p>
 
