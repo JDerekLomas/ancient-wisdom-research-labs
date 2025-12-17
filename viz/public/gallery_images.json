@@ -916,19 +916,6 @@
       "description": "The universe as a monochord instrument tuned by God's hand - music of the spheres"
     },
     {
-      "id": "fludd-integrae-naturae",
-      "title": "Mirror of Nature",
-      "artist": "Robert Fludd",
-      "year": 1617,
-      "source": "Utriusque Cosmi Historia",
-      "wikimedia_url": "https://commons.wikimedia.org/wiki/File:Integrae_naturae_speculum,_Fludd,_1617_Wellcome_M0013244.jpg",
-      "thumb_url": "/gallery/thumbs/fludd-integrae-naturae.jpg",
-      "image_url": "/gallery/full/fludd-integrae-naturae.jpg",
-      "license": "CC-BY 4.0",
-      "categories": ["cosmology", "hermetica"],
-      "description": "Anima Mundi (World Soul) chained to God and ape, surrounded by astrological symbols"
-    },
-    {
       "id": "fludd-anima-mundi",
       "title": "Anima Mundi",
       "artist": "Robert Fludd",

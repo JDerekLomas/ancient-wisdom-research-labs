@@ -73,10 +73,22 @@ export default function GalleryPage() {
     setVisibleCount(IMAGES_PER_PAGE);
   }, [selectedCategory]);
 
+  // Shuffle array using Fisher-Yates algorithm
+  const shuffleArray = <T,>(array: T[]): T[] => {
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+  };
+
   const filteredImages = useMemo(() => {
     if (!data) return [];
-    if (!selectedCategory) return data.images;
-    return data.images.filter((img) => img.categories.includes(selectedCategory));
+    const images = selectedCategory
+      ? data.images.filter((img) => img.categories.includes(selectedCategory))
+      : data.images;
+    return shuffleArray(images);
   }, [data, selectedCategory]);
 
   const visibleImages = useMemo(() => {
@@ -243,24 +255,19 @@ export default function GalleryPage() {
         {/* Responsive Masonry Styles */}
         <style jsx global>{`
           .masonry-grid {
-            column-count: 6;
+            column-count: 5;
           }
           @media (max-width: 1200px) {
-            .masonry-grid {
-              column-count: 5;
-            }
-          }
-          @media (max-width: 1000px) {
             .masonry-grid {
               column-count: 4;
             }
           }
-          @media (max-width: 768px) {
+          @media (max-width: 900px) {
             .masonry-grid {
               column-count: 3;
             }
           }
-          @media (max-width: 480px) {
+          @media (max-width: 600px) {
             .masonry-grid {
               column-count: 2;
             }
