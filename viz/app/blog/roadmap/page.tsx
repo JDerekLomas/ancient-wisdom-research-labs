@@ -44,6 +44,248 @@ interface Tier {
 
 const roadmapData = {
   tiers: {
+    tier_curiosities: {
+      description: "Fascinating Renaissance 'curiosities' with broad crossover appeal - monsters, machines, games, cryptography, and wonders",
+      works: [
+        {
+          id: "lycosthenes_prodigiorum",
+          author: "Conrad Lycosthenes",
+          author_dates: "1518-1561",
+          title: "Prodigiorum ac ostentorum chronicon",
+          original_date: "1557",
+          ustc_editions: 3,
+          genre: "Wonder Book/Monsters",
+          language_difficulty: "moderate",
+          estimated_length: "large (670 pages)",
+          translation_status: "completely_untranslated",
+          significance: "~1,500 monster woodcuts. Chronicle of prodigies from creation to 1557. Influenced Nostradamus. Most exhaustive early work on medieval superstition.",
+          digitization: "Wikimedia Commons (37 images), full scans available",
+          bph_relevance: "Natural wonders, prodigies, and signs in nature.",
+          scores: { historical_impact: 7, translation_gap: 10, feasibility: 4, audience: 10, total_score: 7.8 },
+          notes: "AMAZING illustrations. High viral potential. Could do selections by category."
+        },
+        {
+          id: "aldrovandi_monstrorum",
+          author: "Ulisse Aldrovandi",
+          author_dates: "1522-1605",
+          title: "Monstrorum historia",
+          original_date: "1642",
+          ustc_editions: 2,
+          genre: "Natural History/Monsters",
+          language_difficulty: "moderate",
+          estimated_length: "large (~750 pages)",
+          translation_status: "completely_untranslated",
+          significance: "~450 monster woodcuts by Coriolano. Dragons, mythical races, human deformities. Founder of modern natural history.",
+          digitization: "Internet Archive, Gallica (full), Wikimedia Commons",
+          bph_relevance: "Boundary of natural/supernatural, monstrous races tradition.",
+          scores: { historical_impact: 8, translation_gap: 10, feasibility: 4, audience: 10, total_score: 8.1 },
+          notes: "Stunning images. Could pair with Lycosthenes for 'Monster Studies' series."
+        },
+        {
+          id: "veranzio_machinae_novae",
+          author: "Fausto Veranzio",
+          author_dates: "1551-1617",
+          title: "Machinae novae",
+          original_date: "1615/1616",
+          ustc_editions: 1,
+          genre: "Machines/Engineering",
+          language_difficulty: "moderate",
+          estimated_length: "short (49 plates with descriptions)",
+          translation_status: "minimal",
+          significance: "First printed parachute illustration ('Homo Volans'). 56 machines including bridges, mills, clocks. Croatian polymath.",
+          digitization: "Internet Archive (NYPL), full scans",
+          scores: { historical_impact: 7, translation_gap: 9, feasibility: 8, audience: 9, total_score: 8.2 },
+          notes: "SHORT. Famous parachute image. High crossover to history of technology."
+        },
+        {
+          id: "besson_theatrum",
+          author: "Jacques Besson",
+          author_dates: "c.1540-1573",
+          title: "Theatrum instrumentorum et machinarum",
+          original_date: "1578",
+          ustc_editions: 6,
+          genre: "Machines/Engineering",
+          language_difficulty: "moderate",
+          estimated_length: "medium (60 plates)",
+          translation_status: "completely_untranslated",
+          significance: "60 engraved machine plates by du Cerceau. War machines, musical instruments, fire-fighting. 'Most beautifully illustrated book' of Renaissance.",
+          digitization: "Smithsonian Digital Library, Metropolitan Museum",
+          scores: { historical_impact: 7, translation_gap: 10, feasibility: 7, audience: 9, total_score: 8.3 },
+          notes: "Beautiful engravings. Captions only - needs scholarly apparatus."
+        },
+        {
+          id: "trithemius_steganographia",
+          author: "Johannes Trithemius",
+          author_dates: "1462-1516",
+          title: "Steganographia",
+          original_date: "c.1499 (pub. 1606)",
+          ustc_editions: 4,
+          genre: "Cryptography/Magic",
+          language_difficulty: "difficult",
+          estimated_length: "medium (3 books)",
+          translation_status: "partially_translated",
+          existing_translations: "Partial translations exist. Books I-II decoded as cryptography 1606, Book III decoded only in 1996.",
+          significance: "Appears to be about angel magic, actually conceals cryptographic methods. On Index Librorum Prohibitorum 1609-1900. Dr. John Dee owned a copy.",
+          digitization: "Internet Archive, National Library of Wales (Dee's copy), Esoteric Archives",
+          bph_relevance: "Angel magic, cryptography, esoteric communication.",
+          scores: { historical_impact: 8, translation_gap: 6, feasibility: 5, audience: 10, total_score: 7.4 },
+          notes: "Fascinating intersection of magic and cryptography. Needs fresh complete edition."
+        },
+        {
+          id: "bartholin_de_unicornu",
+          author: "Thomas Bartholin",
+          author_dates: "1616-1680",
+          title: "De unicornu observationes novae",
+          original_date: "1678",
+          ustc_editions: 2,
+          genre: "Natural History/Mythical",
+          language_difficulty: "moderate",
+          estimated_length: "medium",
+          translation_status: "completely_untranslated",
+          significance: "20+ engravings by Romeyn de Hooghe. Comprehensive unicorn treatise. Identified alicorns as narwhal tusks while defending medicinal use.",
+          digitization: "Heidelberg Digital (high-res), Internet Archive, PHAIDRA",
+          scores: { historical_impact: 6, translation_gap: 10, feasibility: 6, audience: 10, total_score: 8.0 },
+          notes: "UNICORNS. Extremely high popular appeal. Beautiful illustrations."
+        },
+        {
+          id: "barozzi_rithmomachia",
+          author: "Francesco Barozzi",
+          author_dates: "1537-1604",
+          title: "Il nobilissimo et antiquissimo giuoco Pythagoreo nominato Rythmomachia",
+          original_date: "1572",
+          ustc_editions: 1,
+          genre: "Games/Mathematics",
+          language_difficulty: "moderate",
+          estimated_length: "short",
+          translation_status: "completely_untranslated",
+          significance: "The 'Philosopher's Game' - medieval mathematical board game based on Boethius's number theory. Played in monasteries and universities.",
+          digitization: "Limited - check Italian libraries",
+          bph_relevance: "Pythagorean number mysticism, Boethian mathematics.",
+          scores: { historical_impact: 5, translation_gap: 10, feasibility: 8, audience: 9, total_score: 7.9 },
+          notes: "Obscure but fascinating. Could revive interest in historical games."
+        },
+        {
+          id: "kircher_ars_magna_lucis",
+          author: "Athanasius Kircher",
+          author_dates: "1602-1680",
+          title: "Ars Magna Lucis et Umbrae",
+          original_date: "1646/1671",
+          ustc_editions: 3,
+          genre: "Optics/Natural Philosophy",
+          language_difficulty: "moderate",
+          estimated_length: "large (935 pages)",
+          translation_status: "completely_untranslated",
+          significance: "First printed description of magic lantern (1671 ed). 38 plates on optics, sundials, camera obscura, metamorphosis machines. Foundational for cinema history.",
+          digitization: "Internet Archive, Oregon Special Collections",
+          bph_relevance: "Light symbolism, optical illusions, natural magic.",
+          scores: { historical_impact: 8, translation_gap: 10, feasibility: 3, audience: 9, total_score: 7.5 },
+          notes: "Magic lantern section alone would be major contribution. Selections feasible."
+        },
+        {
+          id: "guazzo_compendium_maleficarum",
+          author: "Francesco Maria Guazzo",
+          author_dates: "c.1570-c.1640",
+          title: "Compendium maleficarum",
+          original_date: "1608",
+          ustc_editions: 2,
+          genre: "Witchcraft/Demonology",
+          language_difficulty: "moderate",
+          estimated_length: "medium (3 books)",
+          translation_status: "outdated",
+          existing_translations: "Montague Summers (1929) - dated, sensationalist, expensive.",
+          significance: "33 original woodcuts - most illustrated witchcraft manual. Sabbath scenes, devil pacts, transformations. Inquisition source.",
+          digitization: "Internet Archive (Boston College)",
+          bph_relevance: "Demonology, witchcraft theory, visual culture of persecution.",
+          scores: { historical_impact: 7, translation_gap: 7, feasibility: 6, audience: 10, total_score: 7.6 },
+          notes: "Famous illustrations. Modern scholarly edition needed to replace Summers."
+        },
+        {
+          id: "horapollo_hieroglyphica",
+          author: "Horapollo",
+          author_dates: "5th century?",
+          title: "Hieroglyphica",
+          original_date: "1505 (printed)",
+          ustc_editions: 15,
+          genre: "Hieroglyphics/Symbolism",
+          language_difficulty: "moderate",
+          estimated_length: "medium (189 explanations)",
+          translation_status: "partially_translated",
+          existing_translations: "Boas (Princeton, 1950) exists but academic.",
+          significance: "195 woodcuts (1543 ed by Cousin/Goujon). Source for Renaissance symbolic imagery. Influenced Dürer's Triumphal Arch. Wrong about hieroglyphics but hugely influential.",
+          digitization: "Internet Archive, Studiolum",
+          bph_relevance: "Egyptian wisdom tradition, symbolic language, Renaissance Egyptomania.",
+          scores: { historical_impact: 8, translation_gap: 5, feasibility: 6, audience: 9, total_score: 7.0 },
+          notes: "Foundational for emblem tradition. Fresh illustrated edition valuable."
+        },
+        {
+          id: "apian_astronomicum",
+          author: "Peter Apian",
+          author_dates: "1495-1552",
+          title: "Astronomicum Caesareum",
+          original_date: "1540",
+          ustc_editions: 1,
+          genre: "Astronomy/Instruments",
+          language_difficulty: "moderate",
+          estimated_length: "medium",
+          translation_status: "completely_untranslated",
+          significance: "21 volvelles (paper computers), 58 hand-colored woodcuts, dragon diagrams. 'Most spectacular contribution of book-maker's art to 16th-c science.' Comet tails point away from sun.",
+          digitization: "Internet Archive, Library of Congress blog",
+          scores: { historical_impact: 8, translation_gap: 10, feasibility: 5, audience: 9, total_score: 8.1 },
+          notes: "Interactive paper instruments. Could pair with digital reconstruction."
+        },
+        {
+          id: "vesalius_fabrica",
+          author: "Andreas Vesalius",
+          author_dates: "1514-1564",
+          title: "De humani corporis fabrica",
+          original_date: "1543",
+          ustc_editions: 5,
+          genre: "Anatomy",
+          language_difficulty: "difficult",
+          estimated_length: "very_large (7 books)",
+          translation_status: "partially_translated",
+          existing_translations: "Richardson & Carman (2009, 2014) expensive. Not open access.",
+          significance: "200+ woodcuts possibly by Titian's workshop. 'Muscle men' in landscape. Revolutionized anatomy. Contradicted Galen.",
+          digitization: "NLM Historical Anatomies, Google Arts & Culture",
+          scores: { historical_impact: 10, translation_gap: 5, feasibility: 2, audience: 10, total_score: 6.8 },
+          notes: "Major work exists but not accessible. Open-access edition huge contribution."
+        },
+        {
+          id: "kircher_musurgia",
+          author: "Athanasius Kircher",
+          author_dates: "1602-1680",
+          title: "Musurgia universalis",
+          original_date: "1650",
+          ustc_editions: 1,
+          genre: "Music/Acoustics",
+          language_difficulty: "difficult",
+          estimated_length: "very_large (1,112 pages)",
+          translation_status: "completely_untranslated",
+          significance: "Bird song notation, hydraulic organs, speaking trumpets, automatic composition machine (Arca musarithmica). Most influential 17th-c music treatise.",
+          digitization: "Internet Archive (2 vols), St Andrews Special Collections",
+          bph_relevance: "Musical magic, harmony of spheres, sound and cosmos.",
+          scores: { historical_impact: 9, translation_gap: 10, feasibility: 2, audience: 8, total_score: 7.2 },
+          notes: "Selections: bird songs, automatic composition, hydraulic organ. Full translation impractical."
+        },
+        {
+          id: "tycho_mechanica",
+          author: "Tycho Brahe",
+          author_dates: "1546-1601",
+          title: "Astronomiae instauratae mechanica",
+          original_date: "1598",
+          ustc_editions: 2,
+          genre: "Astronomy/Instruments",
+          language_difficulty: "moderate",
+          estimated_length: "short (21 illustrations)",
+          translation_status: "partially_translated",
+          existing_translations: "19th century translations exist, not modern scholarly.",
+          significance: "21 hand-colored instrument illustrations. Uraniborg observatory plans. Only 60-100 copies printed for Emperor Rudolf II.",
+          digitization: "Internet Archive, Smithsonian, Glasgow, Bodleian",
+          scores: { historical_impact: 8, translation_gap: 6, feasibility: 7, audience: 8, total_score: 7.4 },
+          notes: "Beautiful hand-colored instruments. Modern critical edition valuable."
+        }
+      ]
+    },
     tier_0_famous_figures: {
       description: "Major untranslated works by famous Renaissance thinkers - high name recognition, strong fundraising potential",
       works: [
@@ -795,10 +1037,17 @@ const roadmapData = {
     quick_wins: ["fludd_tractatus_apologeticus", "agrippa_de_nobilitate", "kircher_arithmologia"],
     medium_projects: ["bruno_de_monade", "agrippa_de_incertitudine", "pico_disputationes_astrologia"],
     long_term: ["ficino_plato_commentaries", "bruno_de_immenso", "fludd_utriusque_selections"]
+  },
+  curiosities_sequence: {
+    quick_wins: ["veranzio_machinae_novae", "barozzi_rithmomachia", "tycho_mechanica"],
+    medium_projects: ["bartholin_de_unicornu", "besson_theatrum", "guazzo_compendium_maleficarum"],
+    illustrated_monsters: ["lycosthenes_prodigiorum", "aldrovandi_monstrorum"],
+    major_kircher: ["kircher_ars_magna_lucis", "kircher_musurgia", "apian_astronomicum"]
   }
 };
 
 const tierLabels: Record<string, string> = {
+  tier_curiosities: "Renaissance Curiosities: Monsters, Machines & Wonders",
   tier_0_famous_figures: "Famous Figures: Gaps of the Greats",
   tier_1_highest_priority: "Tier 1: Highest Priority",
   tier_2_lutheran_theology: "Tier 2: Lutheran Theology",
@@ -814,6 +1063,7 @@ const tierLabels: Record<string, string> = {
 };
 
 const tierColors: Record<string, { border: string; bg: string }> = {
+  tier_curiosities: { border: "#7b4b94", bg: "#7b4b9415" },
   tier_0_famous_figures: { border: "#8b5a2b", bg: "#8b5a2b15" },
   tier_1_highest_priority: { border: "#9e4a3a", bg: "#9e4a3a15" },
   tier_2_lutheran_theology: { border: "#546b8a", bg: "#546b8a15" },
@@ -1073,6 +1323,48 @@ export default function RoadmapPage() {
                   <li>Kircher - Oedipus Aegyptiacus</li>
                 </ul>
                 <p style={{ color: '#888', fontSize: '12px', fontFamily: 'Inter, sans-serif', marginTop: '8px' }}>Encyclopedic works</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Track D: Curiosities */}
+          <div style={{ marginBottom: '32px' }}>
+            <h3 style={{ fontSize: '20px', fontFamily: 'Cormorant Garamond, serif', color: '#444', marginBottom: '12px' }}>Track D: Renaissance Curiosities - Monsters, Machines & Wonders</h3>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '16px' }}>
+              <div style={{ background: '#fff', border: '2px solid #7b4b94', borderRadius: '8px', padding: '16px' }}>
+                <h4 style={{ color: '#7b4b94', fontFamily: 'Cormorant Garamond, serif', fontSize: '18px', fontWeight: 600, marginBottom: '8px' }}>Quick Wins</h4>
+                <ul style={{ fontSize: '14px', fontFamily: 'Newsreader, serif', color: '#444', listStyle: 'none', padding: 0, margin: 0 }}>
+                  <li style={{ marginBottom: '4px' }}>Veranzio - Machinae novae (49 plates)</li>
+                  <li style={{ marginBottom: '4px' }}>Barozzi - Rithmomachia (short)</li>
+                  <li>Tycho - Mechanica (21 illus)</li>
+                </ul>
+                <p style={{ color: '#888', fontSize: '12px', fontFamily: 'Inter, sans-serif', marginTop: '8px' }}>Short works, stunning images</p>
+              </div>
+              <div style={{ background: '#fff', border: '1px solid #e8e4dc', borderRadius: '8px', padding: '16px' }}>
+                <h4 style={{ color: '#7b4b94', fontFamily: 'Cormorant Garamond, serif', fontSize: '18px', fontWeight: 600, marginBottom: '8px' }}>Medium Projects</h4>
+                <ul style={{ fontSize: '14px', fontFamily: 'Newsreader, serif', color: '#444', listStyle: 'none', padding: 0, margin: 0 }}>
+                  <li style={{ marginBottom: '4px' }}>Bartholin - De unicornu 🦄</li>
+                  <li style={{ marginBottom: '4px' }}>Besson - Theatrum (60 plates)</li>
+                  <li>Guazzo - Compendium maleficarum</li>
+                </ul>
+                <p style={{ color: '#888', fontSize: '12px', fontFamily: 'Inter, sans-serif', marginTop: '8px' }}>Unicorns, machines, witches</p>
+              </div>
+              <div style={{ background: '#fff', border: '1px solid #e8e4dc', borderRadius: '8px', padding: '16px' }}>
+                <h4 style={{ color: '#7b4b94', fontFamily: 'Cormorant Garamond, serif', fontSize: '18px', fontWeight: 600, marginBottom: '8px' }}>Monster Studies</h4>
+                <ul style={{ fontSize: '14px', fontFamily: 'Newsreader, serif', color: '#444', listStyle: 'none', padding: 0, margin: 0 }}>
+                  <li style={{ marginBottom: '4px' }}>Lycosthenes - Prodigiorum (~1,500 cuts)</li>
+                  <li>Aldrovandi - Monstrorum (~450 cuts)</li>
+                </ul>
+                <p style={{ color: '#888', fontSize: '12px', fontFamily: 'Inter, sans-serif', marginTop: '8px' }}>High viral potential</p>
+              </div>
+              <div style={{ background: '#fff', border: '1px solid #e8e4dc', borderRadius: '8px', padding: '16px' }}>
+                <h4 style={{ color: '#7b4b94', fontFamily: 'Cormorant Garamond, serif', fontSize: '18px', fontWeight: 600, marginBottom: '8px' }}>Illustrated Science</h4>
+                <ul style={{ fontSize: '14px', fontFamily: 'Newsreader, serif', color: '#444', listStyle: 'none', padding: 0, margin: 0 }}>
+                  <li style={{ marginBottom: '4px' }}>Kircher - Ars Magna Lucis (magic lantern)</li>
+                  <li style={{ marginBottom: '4px' }}>Kircher - Musurgia (bird songs)</li>
+                  <li>Apian - Astronomicum (volvelles)</li>
+                </ul>
+                <p style={{ color: '#888', fontSize: '12px', fontFamily: 'Inter, sans-serif', marginTop: '8px' }}>Selections from major works</p>
               </div>
             </div>
           </div>
