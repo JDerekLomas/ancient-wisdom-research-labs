@@ -1,93 +1,130 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useMemo } from "react";
 
-interface Author {
-  name: string;
+interface YearData {
+  [year: string]: number;
+}
+
+interface AuthorData {
+  total: number;
   start: number;
   end: number;
-  editions: number;
+  years: YearData;
+}
+
+interface AuthorEditions {
+  [author: string]: AuthorData;
+}
+
+interface CategoryConfig {
+  name: string;
+  color: string;
+  authors: string[];
   type: string;
 }
 
-interface Category {
-  name: string;
-  color: string;
-  authors: Author[];
-}
-
-const data: Category[] = [
+const categories: CategoryConfig[] = [
   {
     name: "Classical Authors",
     color: "#9e4a3a",
-    authors: [
-      { name: "Cicero", start: 1465, end: 1700, editions: 4952, type: "Roman orator & philosopher" },
-      { name: "Aristotle", start: 1469, end: 1698, editions: 3051, type: "Greek philosopher" },
-      { name: "Ovid", start: 1471, end: 1700, editions: 1492, type: "Roman poet" },
-      { name: "Virgil", start: 1469, end: 1700, editions: 1338, type: "Roman poet" },
-      { name: "Terence", start: 1469, end: 1700, editions: 1107, type: "Roman playwright" },
-      { name: "Horace", start: 1474, end: 1700, editions: 1027, type: "Roman poet" },
-      { name: "Seneca", start: 1475, end: 1700, editions: 687, type: "Roman philosopher" },
-      { name: "Pliny the Elder", start: 1469, end: 1700, editions: 423, type: "Roman naturalist" },
-    ]
+    type: "Ancient Roman & Greek",
+    authors: ["Cicero", "Aristotle", "Ovid", "Virgil", "Terence", "Horace", "Seneca", "Pliny the Elder"],
   },
   {
     name: "Church Fathers & Medieval",
     color: "#8b5cf6",
-    authors: [
-      { name: "Thomas Aquinas", start: 1463, end: 1697, editions: 1119, type: "Scholastic theologian" },
-      { name: "Augustine", start: 1465, end: 1700, editions: 876, type: "Church Father" },
-      { name: "Bonaventure", start: 1472, end: 1700, editions: 534, type: "Franciscan theologian" },
-      { name: "Duns Scotus", start: 1474, end: 1700, editions: 456, type: "Scholastic philosopher" },
-      { name: "Bartolus", start: 1471, end: 1700, editions: 623, type: "Medieval jurist" },
-    ]
+    type: "Theological",
+    authors: ["Thomas Aquinas", "Augustine", "Bonaventure", "Duns Scotus", "Bartolus"],
   },
   {
     name: "Renaissance Humanists",
     color: "#546b8a",
-    authors: [
-      { name: "Erasmus", start: 1496, end: 1700, editions: 4379, type: "Prince of Humanists" },
-      { name: "Josse Bade", start: 1491, end: 1599, editions: 1284, type: "Scholar-printer" },
-      { name: "Justus Lipsius", start: 1569, end: 1700, editions: 534, type: "Neostoic philosopher" },
-      { name: "Poliziano", start: 1489, end: 1700, editions: 312, type: "Italian humanist" },
-    ]
+    type: "Humanist scholars",
+    authors: ["Erasmus", "Josse Bade", "Justus Lipsius", "Poliziano"],
   },
   {
     name: "Reformers",
     color: "#c9a86c",
-    authors: [
-      { name: "Melanchthon", start: 1510, end: 1698, editions: 3387, type: "Lutheran reformer" },
-      { name: "Luther", start: 1517, end: 1699, editions: 1176, type: "Protestant reformer" },
-      { name: "Calvin", start: 1532, end: 1700, editions: 687, type: "Reformed theologian" },
-      { name: "Beza", start: 1548, end: 1700, editions: 423, type: "Calvin's successor" },
-    ]
+    type: "Protestant thinkers",
+    authors: ["Melanchthon", "Luther", "Calvin", "Beza"],
   },
   {
     name: "Scientists & Physicians",
     color: "#8b9a7d",
-    authors: [
-      { name: "Galen", start: 1473, end: 1700, editions: 756, type: "Greek physician" },
-      { name: "Hippocrates", start: 1473, end: 1700, editions: 534, type: "Father of medicine" },
-      { name: "Avicenna", start: 1473, end: 1700, editions: 423, type: "Persian polymath" },
-      { name: "Euclid", start: 1482, end: 1700, editions: 312, type: "Greek mathematician" },
-    ]
+    type: "Natural philosophy",
+    authors: ["Galen", "Hippocrates", "Avicenna", "Euclid"],
   },
 ];
 
 const START_YEAR = 1450;
 const END_YEAR = 1720;
 const YEAR_RANGE = END_YEAR - START_YEAR;
+const DECADE_WIDTH = 27; // 270 years / 10 = 27 decades
 
 export default function EditionsTimeline() {
-  const [selected, setSelected] = useState<{ category: string; author: Author } | null>(null);
+  const [data, setData] = useState<AuthorEditions | null>(null);
+  const [selected, setSelected] = useState<{ category: string; author: string; data: AuthorData } | null>(null);
   const [hoveredYear, setHoveredYear] = useState<number | null>(null);
+
+  useEffect(() => {
+    fetch('/author_editions_by_year.json')
+      .then(res => res.json())
+      .then(setData)
+      .catch(console.error);
+  }, []);
 
   const yearToPercent = (year: number) => ((year - START_YEAR) / YEAR_RANGE) * 100;
 
   const decades = [1450, 1500, 1550, 1600, 1650, 1700];
 
-  // Find max editions for scaling bar height
-  const maxEditions = Math.max(...data.flatMap(c => c.authors.map(a => a.editions)));
+  // Aggregate year data into decades for visualization
+  const getDecadeData = useMemo(() => {
+    if (!data) return () => [];
+    return (author: string) => {
+      const authorData = data[author];
+      if (!authorData) return [];
+
+      const decadeMap: { [decade: number]: number } = {};
+      for (let d = 1450; d <= 1700; d += 10) {
+        decadeMap[d] = 0;
+      }
+
+      Object.entries(authorData.years).forEach(([year, count]) => {
+        const decade = Math.floor(parseInt(year) / 10) * 10;
+        if (decadeMap[decade] !== undefined) {
+          decadeMap[decade] += count;
+        }
+      });
+
+      return Object.entries(decadeMap)
+        .map(([decade, count]) => ({ decade: parseInt(decade), count }))
+        .sort((a, b) => a.decade - b.decade);
+    };
+  }, [data]);
+
+  // Find max editions in any decade for scaling
+  const maxDecadeCount = useMemo(() => {
+    if (!data) return 100;
+    let max = 0;
+    categories.forEach(cat => {
+      cat.authors.forEach(author => {
+        const decadeData = getDecadeData(author);
+        decadeData.forEach(d => {
+          if (d.count > max) max = d.count;
+        });
+      });
+    });
+    return max;
+  }, [data, getDecadeData]);
+
+  if (!data) {
+    return (
+      <div style={{ background: '#fdfcf9', padding: '48px', textAlign: 'center' }}>
+        <p style={{ fontFamily: 'Inter, sans-serif', color: '#888' }}>Loading edition data...</p>
+      </div>
+    );
+  }
 
   return (
     <div style={{ background: '#fdfcf9', padding: '24px 0' }}>
@@ -142,12 +179,12 @@ export default function EditionsTimeline() {
               zIndex: 10,
             }}
           >
-            {hoveredYear}
+            {hoveredYear}s
           </div>
         )}
       </div>
 
-      {/* Note about what this shows */}
+      {/* Note about visualization */}
       <div style={{
         marginLeft: '140px',
         marginRight: '24px',
@@ -159,12 +196,12 @@ export default function EditionsTimeline() {
         fontFamily: 'Inter, sans-serif',
         color: '#666',
       }}>
-        <strong>Note:</strong> Bars show when works were <em>printed</em>, not when authors lived.
-        Classical authors like Cicero were printed throughout the Renaissance.
+        <strong>Edition intensity:</strong> Bar height shows editions per decade.
+        Classical authors like Cicero were printed continuously; reformers peaked in specific periods.
       </div>
 
       {/* Categories and bars */}
-      {data.map((category) => (
+      {categories.map((category) => (
         <div key={category.name} style={{ marginBottom: '24px' }}>
           <div style={{
             display: 'flex',
@@ -191,19 +228,19 @@ export default function EditionsTimeline() {
 
           <div style={{ position: 'relative' }}>
             {category.authors.map((author) => {
-              const left = yearToPercent(author.start);
-              const width = yearToPercent(author.end) - left;
-              const isSelected = selected?.author.name === author.name;
-              // Scale bar height by edition count
-              const heightScale = 0.5 + (author.editions / maxEditions) * 0.5;
+              const authorData = data[author];
+              if (!authorData) return null;
+
+              const decadeData = getDecadeData(author);
+              const isSelected = selected?.author === author;
 
               return (
                 <div
-                  key={author.name}
+                  key={author}
                   style={{
                     display: 'flex',
                     alignItems: 'center',
-                    height: '36px',
+                    height: '48px',
                     marginBottom: '4px',
                   }}
                 >
@@ -219,7 +256,7 @@ export default function EditionsTimeline() {
                     overflow: 'hidden',
                     textOverflow: 'ellipsis',
                   }}>
-                    {author.name}
+                    {author}
                   </div>
 
                   <div
@@ -228,16 +265,19 @@ export default function EditionsTimeline() {
                       position: 'relative',
                       height: '100%',
                       marginRight: '24px',
+                      cursor: 'pointer',
                     }}
+                    onClick={() => setSelected(isSelected ? null : { category: category.name, author, data: authorData })}
                     onMouseMove={(e) => {
                       const rect = e.currentTarget.getBoundingClientRect();
                       const x = e.clientX - rect.left;
                       const percent = x / rect.width;
-                      const year = Math.round(START_YEAR + percent * YEAR_RANGE);
+                      const year = Math.floor((START_YEAR + percent * YEAR_RANGE) / 10) * 10;
                       setHoveredYear(year);
                     }}
                     onMouseLeave={() => setHoveredYear(null)}
                   >
+                    {/* Grid lines for centuries */}
                     {decades.map(year => (
                       <div
                         key={year}
@@ -252,47 +292,42 @@ export default function EditionsTimeline() {
                       />
                     ))}
 
-                    <div
-                      onClick={() => setSelected(isSelected ? null : { category: category.name, author })}
-                      style={{
-                        position: 'absolute',
-                        left: `${left}%`,
-                        width: `${width}%`,
-                        top: `${(1 - heightScale) * 16}px`,
-                        height: `${heightScale * 28}px`,
-                        background: isSelected ? category.color : `${category.color}cc`,
-                        borderRadius: '4px',
-                        cursor: 'pointer',
-                        transition: 'all 0.15s ease',
-                        boxShadow: isSelected ? `0 2px 8px ${category.color}66` : 'none',
-                        border: isSelected ? '2px solid #1a1612' : '2px solid transparent',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                      }}
-                      onMouseEnter={(e) => {
-                        if (!isSelected) {
-                          e.currentTarget.style.transform = 'scaleY(1.1)';
-                          e.currentTarget.style.background = category.color;
-                        }
-                      }}
-                      onMouseLeave={(e) => {
-                        if (!isSelected) {
-                          e.currentTarget.style.transform = 'scaleY(1)';
-                          e.currentTarget.style.background = `${category.color}cc`;
-                        }
-                      }}
-                    >
-                      <span style={{
-                        fontSize: '11px',
-                        fontFamily: 'Inter, sans-serif',
-                        color: '#fff',
-                        fontWeight: 600,
-                        opacity: width > 8 ? 1 : 0,
-                      }}>
-                        {author.editions.toLocaleString()}
-                      </span>
-                    </div>
+                    {/* Decade bars (sparkline-style) */}
+                    {decadeData.map(({ decade, count }) => {
+                      if (count === 0) return null;
+                      const left = yearToPercent(decade);
+                      const barWidth = (10 / YEAR_RANGE) * 100; // 10 years width
+                      const barHeight = Math.max(4, (count / maxDecadeCount) * 40);
+
+                      return (
+                        <div
+                          key={decade}
+                          style={{
+                            position: 'absolute',
+                            left: `${left}%`,
+                            width: `${barWidth}%`,
+                            bottom: '4px',
+                            height: `${barHeight}px`,
+                            background: isSelected ? category.color : `${category.color}bb`,
+                            borderRadius: '2px 2px 0 0',
+                            transition: 'all 0.15s ease',
+                          }}
+                        />
+                      );
+                    })}
+
+                    {/* Total count label */}
+                    <span style={{
+                      position: 'absolute',
+                      right: '4px',
+                      top: '4px',
+                      fontSize: '11px',
+                      fontFamily: 'Inter, sans-serif',
+                      color: '#888',
+                      fontWeight: 500,
+                    }}>
+                      {authorData.total.toLocaleString()}
+                    </span>
                   </div>
                 </div>
               );
@@ -312,10 +347,10 @@ export default function EditionsTimeline() {
           borderRadius: '12px',
           boxShadow: '0 8px 32px rgba(0,0,0,0.15)',
           padding: '20px 24px',
-          maxWidth: '450px',
+          maxWidth: '600px',
           width: 'calc(100% - 48px)',
           zIndex: 100,
-          border: `3px solid ${data.find(c => c.name === selected.category)?.color}`,
+          border: `3px solid ${categories.find(c => c.name === selected.category)?.color}`,
         }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
             <div>
@@ -326,7 +361,7 @@ export default function EditionsTimeline() {
                 color: '#1a1612',
                 margin: 0,
               }}>
-                {selected.author.name}
+                {selected.author}
               </h3>
               <p style={{
                 fontFamily: 'Inter, sans-serif',
@@ -334,7 +369,7 @@ export default function EditionsTimeline() {
                 color: '#888',
                 margin: '4px 0 0 0',
               }}>
-                {selected.author.type}
+                {categories.find(c => c.name === selected.category)?.type}
               </p>
             </div>
             <button
@@ -363,10 +398,10 @@ export default function EditionsTimeline() {
                 fontFamily: 'Inter, sans-serif',
                 fontSize: '32px',
                 fontWeight: 700,
-                color: data.find(c => c.name === selected.category)?.color,
+                color: categories.find(c => c.name === selected.category)?.color,
                 margin: 0,
               }}>
-                {selected.author.editions.toLocaleString()}
+                {selected.data.total.toLocaleString()}
               </p>
               <p style={{
                 fontFamily: 'Inter, sans-serif',
@@ -384,7 +419,7 @@ export default function EditionsTimeline() {
                 color: '#444',
                 margin: 0,
               }}>
-                Printed {selected.author.start}–{selected.author.end}
+                Printed {selected.data.start}–{selected.data.end}
               </p>
               <p style={{
                 fontFamily: 'Inter, sans-serif',
@@ -392,8 +427,66 @@ export default function EditionsTimeline() {
                 color: '#888',
                 margin: '4px 0 0 0',
               }}>
-                {selected.author.end - selected.author.start} years in print
+                {selected.data.end - selected.data.start} years in print
               </p>
+            </div>
+          </div>
+
+          {/* Mini sparkline chart */}
+          <div style={{
+            marginTop: '16px',
+            padding: '12px 0',
+            borderTop: '1px solid #e8e4dc',
+          }}>
+            <p style={{
+              fontFamily: 'Inter, sans-serif',
+              fontSize: '11px',
+              color: '#888',
+              margin: '0 0 8px 0',
+            }}>
+              Editions by decade
+            </p>
+            <div style={{
+              display: 'flex',
+              gap: '2px',
+              alignItems: 'flex-end',
+              height: '60px',
+            }}>
+              {getDecadeData(selected.author).map(({ decade, count }) => {
+                const maxInAuthor = Math.max(...getDecadeData(selected.author).map(d => d.count));
+                const barHeight = maxInAuthor > 0 ? (count / maxInAuthor) * 56 : 0;
+
+                return (
+                  <div
+                    key={decade}
+                    style={{
+                      flex: 1,
+                      display: 'flex',
+                      flexDirection: 'column',
+                      alignItems: 'center',
+                    }}
+                  >
+                    <div
+                      style={{
+                        width: '100%',
+                        height: `${Math.max(2, barHeight)}px`,
+                        background: categories.find(c => c.name === selected.category)?.color,
+                        borderRadius: '2px 2px 0 0',
+                      }}
+                    />
+                    {decade % 50 === 0 && (
+                      <span style={{
+                        fontSize: '9px',
+                        fontFamily: 'Inter, sans-serif',
+                        color: '#888',
+                        marginTop: '4px',
+                      }}>
+                        {decade}
+                      </span>
+                    )}
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
