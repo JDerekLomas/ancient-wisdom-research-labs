@@ -1,0 +1,352 @@
+{
+  "title": {
+    "text": {
+      "headline": "Lives of Renaissance Thinkers",
+      "text": "<p>The scholars, philosophers, and scientists who shaped the Renaissance—and wrote in Latin.</p>"
+    },
+    "media": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Sanzio_01.jpg/1200px-Sanzio_01.jpg",
+      "caption": "The School of Athens, Raphael (1509-1511)"
+    }
+  },
+  "events": [
+    {
+      "start_date": { "year": 1304 },
+      "end_date": { "year": 1374 },
+      "text": {
+        "headline": "Petrarch",
+        "text": "<p>Father of Humanism. Rediscovered Cicero's letters and sparked the revival of classical learning.</p><p><em>Key works: Africa, Secretum, Letters</em></p>"
+      },
+      "media": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Petrarch_by_Bargilla.jpg/440px-Petrarch_by_Bargilla.jpg",
+        "caption": "Petrarch (1304-1374)"
+      },
+      "group": "Humanism"
+    },
+    {
+      "start_date": { "year": 1401 },
+      "end_date": { "year": 1464 },
+      "text": {
+        "headline": "Nicholas of Cusa",
+        "text": "<p>Cardinal and philosopher. Proposed the Earth moves and the universe has no center—a century before Copernicus.</p><p><em>Key work: De docta ignorantia (On Learned Ignorance)</em></p>"
+      },
+      "media": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Nicholas_of_Cusa.jpg/440px-Nicholas_of_Cusa.jpg",
+        "caption": "Nicholas of Cusa"
+      },
+      "group": "Philosophy"
+    },
+    {
+      "start_date": { "year": 1433 },
+      "end_date": { "year": 1499 },
+      "text": {
+        "headline": "Marsilio Ficino",
+        "text": "<p>Translated Plato and the Hermetic Corpus into Latin, sparking the Renaissance. Founded the Florentine Academy.</p><p><em>Key works: Theologia Platonica, translations of Plato & Hermes</em></p>"
+      },
+      "media": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Marsilio_Ficino_-_Chiesa_fiorentina_di_S._Maria_del_Fiore.jpg/440px-Marsilio_Ficino_-_Chiesa_fiorentina_di_S._Maria_del_Fiore.jpg",
+        "caption": "Marsilio Ficino"
+      },
+      "group": "Humanism"
+    },
+    {
+      "start_date": { "year": 1449 },
+      "end_date": { "year": 1515 },
+      "text": {
+        "headline": "Aldus Manutius",
+        "text": "<p>Venetian printer who invented italic type and the pocket book. Published first printed editions of Aristotle, Plato, and many Greek classics.</p><p><em>Founded the Aldine Press</em></p>"
+      },
+      "media": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Aldus_Pius_Manutius.jpg/440px-Aldus_Pius_Manutius.jpg",
+        "caption": "Aldus Manutius"
+      },
+      "group": "Printing"
+    },
+    {
+      "start_date": { "year": 1463 },
+      "end_date": { "year": 1494 },
+      "text": {
+        "headline": "Pico della Mirandola",
+        "text": "<p>Prodigy who knew 22 languages. His 'Oration on the Dignity of Man' became the manifesto of Renaissance humanism.</p><p><em>Key works: Oration on the Dignity of Man, 900 Theses</em></p>"
+      },
+      "media": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Pico_della_Mirandola.jpg/440px-Pico_della_Mirandola.jpg",
+        "caption": "Pico della Mirandola"
+      },
+      "group": "Humanism"
+    },
+    {
+      "start_date": { "year": 1466 },
+      "end_date": { "year": 1536 },
+      "text": {
+        "headline": "Desiderius Erasmus",
+        "text": "<p>The 'Prince of Humanists.' Most famous scholar of his age, he corresponded with every major thinker in Europe.</p><p><em>Key works: In Praise of Folly, Adages, Greek New Testament</em></p>"
+      },
+      "media": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Holbein-erasmus.jpg/440px-Holbein-erasmus.jpg",
+        "caption": "Erasmus by Holbein"
+      },
+      "group": "Humanism"
+    },
+    {
+      "start_date": { "year": 1473 },
+      "end_date": { "year": 1543 },
+      "text": {
+        "headline": "Nicolaus Copernicus",
+        "text": "<p>Placed the Sun at the center of the universe. His book launched the Scientific Revolution.</p><p><em>Key work: De revolutionibus orbium coelestium</em></p>"
+      },
+      "media": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Nikolaus_Kopernikus.jpg/440px-Nikolaus_Kopernikus.jpg",
+        "caption": "Nicolaus Copernicus"
+      },
+      "group": "Science"
+    },
+    {
+      "start_date": { "year": 1478 },
+      "end_date": { "year": 1535 },
+      "text": {
+        "headline": "Thomas More",
+        "text": "<p>Lord Chancellor of England, executed by Henry VIII. His 'Utopia' invented a genre and a word.</p><p><em>Key work: Utopia</em></p>"
+      },
+      "media": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Hans_Holbein%2C_the_Younger_-_Sir_Thomas_More_-_Google_Art_Project.jpg/440px-Hans_Holbein%2C_the_Younger_-_Sir_Thomas_More_-_Google_Art_Project.jpg",
+        "caption": "Thomas More by Holbein"
+      },
+      "group": "Humanism"
+    },
+    {
+      "start_date": { "year": 1483 },
+      "end_date": { "year": 1546 },
+      "text": {
+        "headline": "Martin Luther",
+        "text": "<p>Sparked the Protestant Reformation. Translated the Bible into German but wrote theology in Latin.</p><p><em>Key works: 95 Theses, On the Bondage of the Will</em></p>"
+      },
+      "media": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Lucas_Cranach_d.%C3%84._-_Martin_Luther%2C_1528_%28Veste_Coburg%29.jpg/440px-Lucas_Cranach_d.%C3%84._-_Martin_Luther%2C_1528_%28Veste_Coburg%29.jpg",
+        "caption": "Martin Luther by Cranach"
+      },
+      "group": "Reformation"
+    },
+    {
+      "start_date": { "year": 1486 },
+      "end_date": { "year": 1535 },
+      "text": {
+        "headline": "Cornelius Agrippa",
+        "text": "<p>Occult philosopher whose 'Three Books of Occult Philosophy' systematized Renaissance magic.</p><p><em>Key works: De occulta philosophia, De vanitate scientiarum</em></p>"
+      },
+      "media": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Agrippa.png/440px-Agrippa.png",
+        "caption": "Cornelius Agrippa"
+      },
+      "group": "Occult Philosophy"
+    },
+    {
+      "start_date": { "year": 1493 },
+      "end_date": { "year": 1541 },
+      "text": {
+        "headline": "Paracelsus",
+        "text": "<p>Revolutionary physician who rejected Galen. Founded toxicology and pioneered the use of chemicals in medicine.</p><p><em>Key works: Paragranum, De natura rerum</em></p>"
+      },
+      "media": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Paracelsus.jpg/440px-Paracelsus.jpg",
+        "caption": "Paracelsus"
+      },
+      "group": "Science"
+    },
+    {
+      "start_date": { "year": 1497 },
+      "end_date": { "year": 1560 },
+      "text": {
+        "headline": "Philipp Melanchthon",
+        "text": "<p>Luther's right hand and 'Teacher of Germany.' Reformed education across Protestant Europe.</p><p><em>Key works: Loci Communes, Augsburg Confession</em></p>"
+      },
+      "media": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Lucas_Cranach_d.%C3%84._-_Bildnis_Philipp_Melanchthon_%281543%2C_Uffizien%29.jpg/440px-Lucas_Cranach_d.%C3%84._-_Bildnis_Philipp_Melanchthon_%281543%2C_Uffizien%29.jpg",
+        "caption": "Philipp Melanchthon by Cranach"
+      },
+      "group": "Reformation"
+    },
+    {
+      "start_date": { "year": 1514 },
+      "end_date": { "year": 1564 },
+      "text": {
+        "headline": "Andreas Vesalius",
+        "text": "<p>Father of modern anatomy. His illustrated 'Fabrica' corrected a thousand years of errors about the human body.</p><p><em>Key work: De humani corporis fabrica</em></p>"
+      },
+      "media": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Vesalius_Fabrica_p184.jpg/330px-Vesalius_Fabrica_p184.jpg",
+        "caption": "From Vesalius's Fabrica"
+      },
+      "group": "Science"
+    },
+    {
+      "start_date": { "year": 1527 },
+      "end_date": { "year": 1608 },
+      "text": {
+        "headline": "John Dee",
+        "text": "<p>Mathematician, astrologer, advisor to Elizabeth I. Coined the term 'British Empire' and sought angelic conversations.</p><p><em>Key works: Monas Hieroglyphica, Mathematical Preface</em></p>"
+      },
+      "media": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/John_Dee_Ashmolean.jpg/440px-John_Dee_Ashmolean.jpg",
+        "caption": "John Dee"
+      },
+      "group": "Occult Philosophy"
+    },
+    {
+      "start_date": { "year": 1535 },
+      "end_date": { "year": 1615 },
+      "text": {
+        "headline": "Giambattista della Porta",
+        "text": "<p>Polymath who wrote on natural magic, optics, and cryptography. Founded one of the first scientific academies.</p><p><em>Key work: Magia Naturalis (156 editions!)</em></p>"
+      },
+      "media": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Giambattista_della_Porta.jpeg/440px-Giambattista_della_Porta.jpeg",
+        "caption": "Giambattista della Porta"
+      },
+      "group": "Science"
+    },
+    {
+      "start_date": { "year": 1546 },
+      "end_date": { "year": 1601 },
+      "text": {
+        "headline": "Tycho Brahe",
+        "text": "<p>Greatest observational astronomer before the telescope. His precise data enabled Kepler's laws.</p><p><em>Key work: Astronomiae instauratae mechanica</em></p>"
+      },
+      "media": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Tycho_Brahe.JPG/440px-Tycho_Brahe.JPG",
+        "caption": "Tycho Brahe"
+      },
+      "group": "Science"
+    },
+    {
+      "start_date": { "year": 1548 },
+      "end_date": { "year": 1600 },
+      "text": {
+        "headline": "Giordano Bruno",
+        "text": "<p>Philosopher who proposed infinite worlds and a universe without center. Burned at the stake for heresy.</p><p><em>Key works: De l'infinito, De monade</em></p>"
+      },
+      "media": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Giordano_Bruno_Campo_dei_Fiori.jpg/440px-Giordano_Bruno_Campo_dei_Fiori.jpg",
+        "caption": "Bruno's statue in Campo de' Fiori"
+      },
+      "group": "Philosophy"
+    },
+    {
+      "start_date": { "year": 1561 },
+      "end_date": { "year": 1626 },
+      "text": {
+        "headline": "Francis Bacon",
+        "text": "<p>Prophet of the scientific method. Argued that knowledge should be built through systematic experiment.</p><p><em>Key works: Novum Organum, New Atlantis</em></p>"
+      },
+      "media": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Francis_Bacon%2C_Viscount_St_Alban_from_NPG_%282%29.jpg/440px-Francis_Bacon%2C_Viscount_St_Alban_from_NPG_%282%29.jpg",
+        "caption": "Francis Bacon"
+      },
+      "group": "Science"
+    },
+    {
+      "start_date": { "year": 1564 },
+      "end_date": { "year": 1642 },
+      "text": {
+        "headline": "Galileo Galilei",
+        "text": "<p>Turned the telescope to the heavens and saw moons orbiting Jupiter. Prosecuted by the Inquisition.</p><p><em>Key works: Sidereus Nuncius, Dialogo</em></p>"
+      },
+      "media": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Justus_Sustermans_-_Portrait_of_Galileo_Galilei%2C_1636.jpg/440px-Justus_Sustermans_-_Portrait_of_Galileo_Galilei%2C_1636.jpg",
+        "caption": "Galileo by Sustermans"
+      },
+      "group": "Science"
+    },
+    {
+      "start_date": { "year": 1571 },
+      "end_date": { "year": 1630 },
+      "text": {
+        "headline": "Johannes Kepler",
+        "text": "<p>Discovered the laws of planetary motion. Bridged mysticism and modern science.</p><p><em>Key works: Astronomia Nova, Harmonices Mundi</em></p>"
+      },
+      "media": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Johannes_Kepler_1610.jpg/440px-Johannes_Kepler_1610.jpg",
+        "caption": "Johannes Kepler"
+      },
+      "group": "Science"
+    },
+    {
+      "start_date": { "year": 1574 },
+      "end_date": { "year": 1637 },
+      "text": {
+        "headline": "Robert Fludd",
+        "text": "<p>Rosicrucian physician whose elaborate diagrams mapped the cosmos as a living organism.</p><p><em>Key work: Utriusque Cosmi Historia</em></p>"
+      },
+      "media": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Vitruvian_macrocosm.jpg/440px-Vitruvian_macrocosm.jpg",
+        "caption": "Man as microcosm, from Fludd"
+      },
+      "group": "Occult Philosophy"
+    },
+    {
+      "start_date": { "year": 1596 },
+      "end_date": { "year": 1650 },
+      "text": {
+        "headline": "René Descartes",
+        "text": "<p>'I think, therefore I am.' Founded modern philosophy and analytic geometry.</p><p><em>Key works: Meditationes, Principia Philosophiae</em></p>"
+      },
+      "media": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg/440px-Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg",
+        "caption": "Descartes by Frans Hals"
+      },
+      "group": "Philosophy"
+    },
+    {
+      "start_date": { "year": 1602 },
+      "end_date": { "year": 1680 },
+      "text": {
+        "headline": "Athanasius Kircher",
+        "text": "<p>The 'last man who knew everything.' Wrote on everything from hieroglyphics to volcanoes to China.</p><p><em>Key works: Oedipus Aegyptiacus, Mundus Subterraneus</em></p>"
+      },
+      "media": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Athanasius_Kircher_%28cropped%29.jpg/440px-Athanasius_Kircher_%28cropped%29.jpg",
+        "caption": "Athanasius Kircher"
+      },
+      "group": "Science"
+    },
+    {
+      "start_date": { "year": 1632 },
+      "end_date": { "year": 1677 },
+      "text": {
+        "headline": "Baruch Spinoza",
+        "text": "<p>Lens-grinder who wrote philosophy so radical he was excommunicated. Equated God with Nature.</p><p><em>Key work: Ethica</em></p>"
+      },
+      "media": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Spinoza.jpg/440px-Spinoza.jpg",
+        "caption": "Baruch Spinoza"
+      },
+      "group": "Philosophy"
+    },
+    {
+      "start_date": { "year": 1643 },
+      "end_date": { "year": 1727 },
+      "text": {
+        "headline": "Isaac Newton",
+        "text": "<p>Discovered gravity and calculus. His Principia unified terrestrial and celestial physics—in Latin.</p><p><em>Key work: Philosophiæ Naturalis Principia Mathematica</em></p>"
+      },
+      "media": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Portrait_of_Sir_Isaac_Newton%2C_1689.jpg/440px-Portrait_of_Sir_Isaac_Newton%2C_1689.jpg",
+        "caption": "Isaac Newton by Kneller"
+      },
+      "group": "Science"
+    },
+    {
+      "start_date": { "year": 1646 },
+      "end_date": { "year": 1716 },
+      "text": {
+        "headline": "Gottfried Wilhelm Leibniz",
+        "text": "<p>Invented calculus independently of Newton. Dreamed of a universal language and calculating machines.</p><p><em>Key works: Theodicy, Monadology</em></p>"
+      },
+      "media": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Gottfried_Wilhelm_von_Leibniz.jpg/440px-Gottfried_Wilhelm_von_Leibniz.jpg",
+        "caption": "Gottfried Leibniz"
+      },
+      "group": "Philosophy"
+    }
+  ]
+}
