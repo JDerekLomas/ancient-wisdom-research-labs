@@ -197,6 +197,35 @@ const lists: Record<string, ListSection> = {
       { author: "Kepler", title: "Mysterium cosmographicum", date: "1596", publisher: "Tübingen: Georg Gruppenbach", note: "PLATONIC SOLIDS nested in planetary orbits. Pythagorean geometry = cosmic structure. Divine mathematics in astronomy.", link: "https://archive.org/details/prodromusdissert00kepl" },
       { author: "Kepler", title: "Harmonices mundi", date: "1619", publisher: "Linz: Johann Planck", note: "HARMONY OF THE WORLD. Planetary motions produce music. Third law of motion discovered here. Climax of Pythagorean astronomy.", link: "https://archive.org/details/den-kbd-pil-210090002470-001" },
 
+      // OBSCURE USTC WORKS - DEEP CUTS
+
+      // Scholastic Psychology (lesser known)
+      { author: "Zabarella", title: "In tres Aristotelis libros de Anima commentarij", date: "1605", publisher: "Frankfurt: Lazarus Zetzner", note: "Paduan Aristotelian on soul and cognition. Most influential late scholastic De anima commentary. Taught Galileo.", link: "https://archive.org/details/bub_gb_GpWHx3lLo5sC" },
+      { author: "Cesalpino", title: "Daemonum investigatio peripatetica", date: "1593", publisher: "Florence: Giunta", note: "PERIPATETIC INVESTIGATION OF DEMONS. Can demons think? Aristotelian demonology. Also discovered blood circulation.", link: "https://archive.org/details/b33350073" },
+      { author: "Matteolo Perusino", title: "Tractatus de Memoria", date: "1490", publisher: "Bologna: Bazalerius de Bazaleriis", note: "Obscure but influential MEMORY treatise. Pre-dates Romberch. Medical approach to memory enhancement.", link: "https://archive.org/details/9413854.nlm.nih.gov" },
+
+      // Memory Theaters
+      { author: "Giulio Camillo", title: "L'idea del theatro", date: "1550", publisher: "Florence: Lorenzo Torrentino", note: "The MEMORY THEATER - physical structure encoding all knowledge. Seven grades, seven planets. Influenced Bruno.", link: "https://archive.org/details/bub_gb_NFck5cl1tLQC" },
+
+      // Renaissance Encyclopedic Minds
+      { author: "Cardano", title: "De subtilitate libri XXI", date: "1550", publisher: "Nuremberg: Johann Petreius", note: "21 books on EVERYTHING - cosmology, elements, metals, stones, plants, animals, man, soul, angels, God. Renaissance encyclopedia.", link: "https://archive.org/details/hin-wel-all-00000138-001" },
+      { author: "Scaliger", title: "Exotericarum exercitationum liber XV de Subtilitate", date: "1557", publisher: "Paris: Michel de Vascosan", note: "377 EXERCITATIONES attacking Cardano. Massive polemic. Scaliger vs Cardano = intellectual warfare of the century.", link: "https://archive.org/details/ARes26306" },
+
+      // Chymistry & Natural Philosophy
+      { author: "Van Helmont", title: "Ortus medicinae", date: "1648", publisher: "Amsterdam: Ludovicus Elzevir", note: "Birth of Medicine. Coined 'GAS'. Archeus as vital principle. Iatrochemistry. Anti-Galenic revolution.", link: "https://archive.org/details/b33276079" },
+      { author: "Kenelm Digby", title: "Discourse on the Powder of Sympathy", date: "1658", publisher: "London: R. Lownes", note: "WEAPON SALVE heals wounds at a distance. Action at a distance theory. Magnetism, sympathy, occult causation.", link: "https://archive.org/details/b3033925x" },
+      { author: "Glisson", title: "Anatomia hepatis", date: "1654", publisher: "London: Octavian Pulleyn", note: "Anatomy of the liver. Coined IRRITABILITY - tissues respond to stimuli. Foundation of neurophysiology.", link: "https://archive.org/details/b30327143" },
+
+      // Technical Arts as Philosophy
+      { author: "Biringuccio", title: "De la Pirotechnia", date: "1540", publisher: "Venice: Venturino Roffinello", note: "First printed book on METALLURGY and fire arts. Smelting, casting, gunpowder, fireworks. Artisan knowledge codified.", link: "https://archive.org/details/delapirotechnial00biri" },
+      { author: "Agricola", title: "De re metallica", date: "1556", publisher: "Basel: Hieronymus Froben", note: "Mining and metallurgy encyclopedia. 292 WOODCUTS of machines. Hoover (future US president) translated it.", link: "https://archive.org/details/hin-wel-all-00001767-001" },
+
+      // Mathematical Innovations
+      { author: "Robert Recorde", title: "The Whetstone of Witte", date: "1557", publisher: "London: John Kingston", note: "INVENTED THE EQUALS SIGN (=). 'To avoide the tediouse repetition of these woordes: is equalle to.' English algebra.", link: "https://archive.org/details/b30333179" },
+      { author: "Bombelli", title: "L'Algebra", date: "1572", publisher: "Bologna: Giovanni Rossi", note: "Introduced COMPLEX NUMBERS (√-1). Solved cubic equations. 'Sophistic' quantities become respectable.", link: "https://archive.org/details/lalgebra00bomb" },
+      { author: "Commandino", title: "Liber de centro gravitatis solidorum", date: "1565", publisher: "Bologna: Alessandro Benacci", note: "CENTER OF GRAVITY of solids. Revived Archimedes. Foundation of statics. Influenced Galileo.", link: "https://archive.org/details/ARes405151" },
+      { author: "Maurolico", title: "Opuscula mathematica", date: "1575", publisher: "Venice: Francesco Franceschi", note: "Mathematical optics, conic sections. Sicilian polymath. Principle of MATHEMATICAL INDUCTION first stated.", link: "https://archive.org/details/ita-bnc-mag-00000852-001" },
+
       { author: "Salomon de Caus", title: "Les raisons des forces mouvantes", date: "1615", publisher: "Frankfurt: Jan Norton", note: "Garden automata, mechanical birds, grottoes with moving figures. Influenced European court gardens.", link: "https://archive.org/details/ldpd_6429555_000" },
       { author: "Caspar Schott", title: "Magia universalis naturae et artis", date: "1657-59", publisher: "Würzburg: Heinrich Pigrin", note: "Kircher's student. 4 vols on optics, acoustics, mathematics, physics. Automata and mechanical devices.", link: "https://archive.org/details/bub_gb_tI0oTeeUzg0C" },
       { author: "Descartes", title: "De homine (Traité de l'homme)", date: "1662", publisher: "Leiden: Moyardus & Leffen (posthumous)", note: "The body as machine. Mechanistic physiology - nerves as pipes, brain as hydraulic system.", link: "https://archive.org/details/descartesrenetr00desc" },
