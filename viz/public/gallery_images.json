@@ -17,7 +17,8 @@
       "license": "Public Domain",
       "categories": [
         "cosmology",
-        "hermetica"
+        "hermetica",
+        "anatomy"
       ],
       "description": "The human body as microcosm reflecting the celestial macrocosm"
     },
@@ -49,7 +50,8 @@
       "license": "Public Domain",
       "categories": [
         "cosmology",
-        "astronomy"
+        "astronomy",
+        "cartography"
       ],
       "description": "Ptolemaic geocentric universe from Cellarius's celestial atlas"
     },
@@ -158,7 +160,8 @@
       "image_url": "/gallery/full/rosicrucian-temple.png",
       "license": "Public Domain",
       "categories": [
-        "rosicrucianism"
+        "rosicrucianism",
+        "architecture"
       ],
       "description": "Allegorical depiction of the Rosicrucian Brotherhood's invisible college"
     },
@@ -568,7 +571,8 @@
       "image_url": "/gallery/full/alchemical-lab.jpg",
       "license": "CC-BY 4.0",
       "categories": [
-        "alchemy"
+        "alchemy",
+        "medicine"
       ],
       "description": "An alchemist's laboratory with furnaces and distillation equipment"
     },
@@ -584,7 +588,8 @@
       "license": "Public Domain",
       "categories": [
         "portraits",
-        "magic"
+        "magic",
+        "medicine"
       ],
       "description": "French astrologer and prophet, author of Les Prophéties"
     },
@@ -660,7 +665,8 @@
       "license": "Public Domain",
       "categories": [
         "cosmology",
-        "hermetica"
+        "hermetica",
+        "rosicrucianism"
       ],
       "description": "Fludd's cosmological diagram showing the universe's structure"
     },
@@ -1144,7 +1150,8 @@
       "license": "Public Domain",
       "categories": [
         "alchemy",
-        "hermetica"
+        "hermetica",
+        "architecture"
       ],
       "description": "Famous lab-oratorium showing laboratory work and prayer oratory united - 'Pray and Work'"
     },
@@ -1206,7 +1213,8 @@
       "license": "Public Domain",
       "categories": [
         "natural philosophy",
-        "optics"
+        "optics",
+        "anatomy"
       ],
       "description": "Famous fold-out engraving of a flea - first scientific best-seller"
     },
@@ -1238,7 +1246,8 @@
       "license": "Public Domain",
       "categories": [
         "astronomy",
-        "cosmology"
+        "cosmology",
+        "cartography"
       ],
       "description": "Stunning baroque rendering of the Copernican heliocentric system"
     },
