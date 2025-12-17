@@ -2,15 +2,6 @@
 
 import Link from "next/link";
 
-interface Work {
-  author: string;
-  title: string;
-  date?: string;
-  note?: string;
-  illustrations?: string;
-  length?: string;
-}
-
 const lists = {
   foundation: {
     title: "The Foundation: Ficino",
