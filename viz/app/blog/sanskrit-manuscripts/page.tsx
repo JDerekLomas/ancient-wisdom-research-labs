@@ -89,8 +89,103 @@ export default function SanskritManuscripts() {
       <h2>How to Access the Database</h2>
 
       <p>
-        The search interface is at <a href="https://www.pandulipipatala.nic.in" target="_blank" rel="noopener noreferrer" style={{ color: '#9e4a3a' }}>pandulipipatala.nic.in</a>.
+        The official search interface is at <a href="https://www.pandulipipatala.nic.in" target="_blank" rel="noopener noreferrer" style={{ color: '#9e4a3a' }}>pandulipipatala.nic.in</a>.
+        However, the interface is JavaScript-heavy and can be difficult to navigate. Here&apos;s the trick:
       </p>
+
+      <figure style={{
+        background: '#fff',
+        border: '2px solid #9e4a3a',
+        borderRadius: '8px',
+        padding: '24px',
+        margin: '32px 0',
+      }}>
+        <h3 style={{ margin: '0 0 16px 0', fontSize: '16px', color: '#9e4a3a' }}>The Key Trick (from INDOLOGY mailing list)</h3>
+        <ol style={{ margin: 0, paddingLeft: '20px', lineHeight: 1.8 }}>
+          <li>Go to <a href="https://www.pandulipipatala.nic.in/advance-search" target="_blank" rel="noopener noreferrer" style={{ color: '#9e4a3a' }}>pandulipipatala.nic.in/advance-search</a></li>
+          <li>Set <strong>Digitization = Yes</strong></li>
+          <li>Set <strong>Public View = Yes</strong></li>
+          <li>This filters to the ~76,000 manuscripts that are BOTH digitized AND publicly viewable</li>
+          <li>Filter further by <strong>Subject</strong> (e.g., Dar&#347;ana &gt; Ny&#257;ya for logic)</li>
+        </ol>
+        <p style={{ fontSize: '13px', color: '#666', marginTop: '16px', marginBottom: 0 }}>
+          Note: The site requires JavaScript and can be slow. Some features may require registration.
+        </p>
+      </figure>
+
+      <h2>Alternative: Archive.org Collections</h2>
+
+      <p>
+        If the government portal is frustrating, <strong>Archive.org has actual manuscript images</strong> that
+        are freely downloadable. The <a href="https://archive.org/details/palmleafmanuscripts" target="_blank" rel="noopener noreferrer" style={{ color: '#9e4a3a' }}>Royal Asiatic Society Whish Collection</a> contains
+        Sanskrit palm leaf manuscripts from Kerala, digitized by the RAS London:
+      </p>
+
+      <figure style={{
+        background: '#f9f7f4',
+        border: '1px solid #e0d8c8',
+        borderRadius: '8px',
+        padding: '24px',
+        margin: '32px 0',
+      }}>
+        <h3 style={{ margin: '0 0 16px 0', fontSize: '16px', color: '#1a1612' }}>Sample Manuscripts (Downloaded)</h3>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '16px' }}>
+          <div style={{ textAlign: 'center' }}>
+            <a href="https://archive.org/details/raswhish145-147" target="_blank" rel="noopener noreferrer">
+              <img src="/manuscripts/tarkasangraha_p1.jpg" alt="Tarkasangraha palm leaf manuscript" style={{ width: '100%', borderRadius: '4px', border: '1px solid #e0d8c8' }} />
+            </a>
+            <p style={{ fontSize: '12px', color: '#666', marginTop: '8px' }}>
+              <strong>Tarkasa&#7749;graha</strong> (Logic primer)<br/>
+              Palm leaf, Malayalam script, 1822 CE
+            </p>
+          </div>
+          <div style={{ textAlign: 'center' }}>
+            <a href="https://archive.org/details/raswhish87-86" target="_blank" rel="noopener noreferrer">
+              <img src="/manuscripts/mahabharata_p1.jpg" alt="Mahabharata palm leaf manuscript" style={{ width: '100%', borderRadius: '4px', border: '1px solid #e0d8c8' }} />
+            </a>
+            <p style={{ fontSize: '12px', color: '#666', marginTop: '8px' }}>
+              <strong>Mah&#257;bh&#257;rata</strong> (Dro&#7751;a Parvan)<br/>
+              Palm leaf, Grantha script
+            </p>
+          </div>
+          <div style={{ textAlign: 'center' }}>
+            <a href="https://archive.org/details/raswhish105-104" target="_blank" rel="noopener noreferrer">
+              <img src="/manuscripts/vedanta_p1.jpg" alt="Vedanta palm leaf manuscript" style={{ width: '100%', borderRadius: '4px', border: '1px solid #e0d8c8' }} />
+            </a>
+            <p style={{ fontSize: '12px', color: '#666', marginTop: '8px' }}>
+              <strong>Siddh&#257;ntale&#347;asa&#7747;graha</strong><br/>
+              Ved&#257;nta philosophy, Grantha script
+            </p>
+          </div>
+        </div>
+        <p style={{ fontSize: '13px', color: '#666', marginTop: '16px', marginBottom: 0, textAlign: 'center' }}>
+          <a href="https://archive.org/details/palmleafmanuscripts?and%5B%5D=languageSorter%3A%22Sanskrit%22" target="_blank" rel="noopener noreferrer" style={{ color: '#9e4a3a' }}>
+            Browse all Sanskrit palm leaf manuscripts on Archive.org &rarr;
+          </a>
+        </p>
+      </figure>
+
+      <h3>How to Download Manuscript Images</h3>
+
+      <p>
+        For any Archive.org item (e.g., <code style={{ background: '#f5f0e8', padding: '2px 6px', borderRadius: '3px' }}>raswhish145-147</code>), you can download page images directly:
+      </p>
+
+      <pre style={{
+        background: '#1a1612',
+        color: '#e8e4dc',
+        padding: '16px',
+        borderRadius: '4px',
+        fontSize: '13px',
+        overflowX: 'auto',
+        margin: '16px 0'
+      }}>
+{`# Download page 1 as JPG
+curl -L "https://archive.org/download/raswhish145-147/page/n0.jpg" -o page1.jpg
+
+# Download page 10
+curl -L "https://archive.org/download/raswhish145-147/page/n10.jpg" -o page10.jpg`}
+      </pre>
 
       <figure style={{
         background: '#fff',
@@ -99,11 +194,8 @@ export default function SanskritManuscripts() {
         padding: '24px',
         margin: '32px 0',
       }}>
-        <h3 style={{ margin: '0 0 16px 0', fontSize: '16px', color: '#1a1612' }}>Quick Start: Finding Digitized Manuscripts</h3>
+        <h3 style={{ margin: '0 0 16px 0', fontSize: '16px', color: '#1a1612' }}>NAMAMI Search Fields</h3>
         <ol style={{ margin: 0, paddingLeft: '20px', lineHeight: 1.8 }}>
-          <li>Go to <code style={{ background: '#f5f0e8', padding: '2px 6px', borderRadius: '3px' }}>pandulipipatala.nic.in/advance-search</code></li>
-          <li>Set <strong>Digitization = Yes</strong></li>
-          <li>Set <strong>Public View = Yes</strong></li>
           <li>Filter by <strong>Subject</strong> (e.g., Dar&#347;ana &gt; Ny&#257;ya for logic)</li>
           <li>Filter by <strong>Language</strong> (200+ options including Sanskrit, Pali, Prakrit)</li>
           <li>Filter by <strong>Script</strong> (50+ options including Devanagari, Grantha, Sharada)</li>
@@ -335,7 +427,55 @@ export default function SanskritManuscripts() {
 
       <h2>Other Resources</h2>
 
+      <figure style={{
+        background: '#f5f0e8',
+        border: '1px solid #e0d8c8',
+        borderRadius: '8px',
+        padding: '24px',
+        margin: '32px 0',
+      }}>
+        <h3 style={{ margin: '0 0 16px 0', fontSize: '16px', color: '#1a1612' }}>Best Places to Find Actual Manuscript Images</h3>
+        <table style={{
+          width: '100%',
+          fontFamily: 'Inter, sans-serif',
+          fontSize: '14px',
+          borderCollapse: 'collapse',
+        }}>
+          <thead>
+            <tr style={{ borderBottom: '2px solid #e0d8c8' }}>
+              <th style={{ textAlign: 'left', padding: '12px 8px', color: '#1a1612', fontWeight: 600 }}>Source</th>
+              <th style={{ textAlign: 'left', padding: '12px 8px', color: '#1a1612', fontWeight: 600 }}>What&apos;s There</th>
+              <th style={{ textAlign: 'right', padding: '12px 8px', color: '#1a1612', fontWeight: 600 }}>Access</th>
+            </tr>
+          </thead>
+          <tbody>
+            {[
+              ["Archive.org Palm Leaf Collection", "RAS Whish manuscripts (Kerala, 19th c.)", "Free, downloadable"],
+              ["Archive.org IGNCA Collection", "ASI Sanskrit texts, catalogues", "Free, downloadable"],
+              ["sanskritdocuments.org", "175+ scanned books, DLI mirror", "Free, downloadable"],
+              ["BDRC (library.bdrc.io)", "Tibetan + Sanskrit Buddhist texts", "Free, online viewer"],
+              ["Cambridge Digital Library", "1,600+ South Asian manuscripts", "Free, online viewer"],
+              ["NAMAMI (pandulipipatala.nic.in)", "76,000 publicly viewable", "Free, JavaScript required"],
+            ].map(([source, content, access], i) => (
+              <tr key={i} style={{ borderBottom: '1px solid #e0d8c8' }}>
+                <td style={{ padding: '12px 8px', color: '#1a1612', fontWeight: 500 }}>{source}</td>
+                <td style={{ padding: '12px 8px', color: '#444', fontSize: '13px' }}>{content}</td>
+                <td style={{ padding: '12px 8px', textAlign: 'right', color: '#9e4a3a', fontSize: '13px' }}>{access}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </figure>
+
       <ul>
+        <li>
+          <strong><a href="https://archive.org/details/palmleafmanuscripts?and%5B%5D=languageSorter%3A%22Sanskrit%22" target="_blank" rel="noopener noreferrer" style={{ color: '#9e4a3a' }}>
+          Archive.org Sanskrit Palm Leaf Collection</a></strong> &ndash; Actual manuscript images, freely downloadable
+        </li>
+        <li>
+          <strong><a href="https://sanskritdocuments.org/scannedbooks/" target="_blank" rel="noopener noreferrer" style={{ color: '#9e4a3a' }}>
+          Sanskrit Documents Scanned Books</a></strong> &ndash; 175+ Sanskrit books, mirrors 422,000 PDFs from Digital Library of India
+        </li>
         <li>
           <strong><a href="https://archive.org/details/india-office-sanskrit-manuscripts-catalouge" target="_blank" rel="noopener noreferrer" style={{ color: '#9e4a3a' }}>
           India Office Sanskrit Catalogue</a></strong> &ndash; British Library&apos;s 80,000+ South Asian manuscripts
@@ -343,6 +483,10 @@ export default function SanskritManuscripts() {
         <li>
           <strong><a href="https://cudl.lib.cam.ac.uk/collections/sanskrit" target="_blank" rel="noopener noreferrer" style={{ color: '#9e4a3a' }}>
           Cambridge Digital Library</a></strong> &ndash; 1,600+ Sanskrit works being digitized
+        </li>
+        <li>
+          <strong><a href="https://library.bdrc.io/" target="_blank" rel="noopener noreferrer" style={{ color: '#9e4a3a' }}>
+          Buddhist Digital Resource Center (BDRC)</a></strong> &ndash; Tibetan + Sanskrit Buddhist manuscripts
         </li>
         <li>
           <strong><a href="https://www.aai.uni-hamburg.de/en/forschung/ngmcp" target="_blank" rel="noopener noreferrer" style={{ color: '#9e4a3a' }}>
