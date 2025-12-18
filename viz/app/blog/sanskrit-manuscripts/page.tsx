@@ -7,7 +7,7 @@ export default function SanskritManuscripts() {
       tag="Research"
       slug="sanskrit-manuscripts"
       prevPost={{ href: "/blog/roadmap", title: "Translation Roadmap" }}
-      nextPost={{ href: "/blog/methodology", title: "Methodology" }}
+      nextPost={{ href: "/blog/pythagoras-sankhya", title: "Pythagoras & Sāṃkhya" }}
     >
       <p style={{
         fontFamily: 'Newsreader, Georgia, serif',
