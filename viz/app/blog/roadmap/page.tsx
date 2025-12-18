@@ -260,6 +260,31 @@ const lists: Record<string, ListSection> = {
       { author: "Huygens", title: "Horologium oscillatorium", date: "1673", publisher: "Paris: F. Muguet", note: "PENDULUM CLOCK theory. Isochronous oscillation. Foundation of precision timekeeping and CONTROL THEORY.", link: "https://archive.org/details/bub_gb_SOjZR1P1eE8C" },
       { author: "Wiener", title: "Cybernetics", date: "1948", publisher: "New York: Wiley", note: "CYBERNETICS founded. 'Control and communication in the animal and the machine.' Feedback loops, homeostasis, information.", link: "https://archive.org/details/NorbertWienerCybernetics" },
 
+      // NON-WESTERN TRADITIONS - ARABIC, SANSKRIT, CHINESE
+
+      // ARABIC - Automata, Algorithms, Philosophy of Mind
+      { author: "Banu Musa", title: "Kitab al-Hiyal (Book of Ingenious Devices)", date: "c.850 CE (Latin excerpts)", publisher: "[Medieval Latin translations]", note: "Three brothers in Baghdad. 100 MECHANICAL DEVICES - automata, trick vessels, self-trimming lamps. Arabic engineering brilliance.", link: "https://archive.org/details/bookofingeniousd0000banu" },
+      { author: "al-Khwarizmi", title: "Kitab al-Jabr wa'l-Muqabala", date: "c.820 CE (Latin c.1145)", publisher: "[Robert of Chester trans.]", note: "Gave us 'ALGEBRA' and 'ALGORITHM'. Systematic equation-solving. Foundation of computational thinking.", link: "https://archive.org/details/algebraofmohamme00khuw" },
+      { author: "Ibn Tufayl", title: "Hayy ibn Yaqzan", date: "c.1160 (Latin 1671)", publisher: "Oxford: Edward Pococke", note: "SELF-TAUGHT PHILOSOPHER - child raised by gazelle discovers truth through reason alone. Influenced Locke's tabula rasa.", link: "https://archive.org/details/philosophusautod0000ibnt" },
+      { author: "Ibn Sina (Avicenna)", title: "Kitab al-Shifa (Healing)", date: "c.1027 (Latin selections)", publisher: "[Medieval translations]", note: "Encyclopedia of philosophy. FLYING MAN thought experiment - know yourself without body. Proof of immaterial soul.", link: "https://archive.org/details/avicennalatinus" },
+      { author: "Ibn Rushd (Averroes)", title: "Tahafut al-Tahafut", date: "1180 (Latin 1328)", publisher: "Venice: [medieval trans.]", note: "Incoherence of the Incoherence. Defense of reason against al-Ghazali. UNITY OF INTELLECT - all minds share one divine reason.", link: "https://archive.org/details/tahafut-al-tahafut" },
+
+      // SANSKRIT - Grammar, Logic, Consciousness
+      { author: "Panini", title: "Ashtadhyayi", date: "c.400 BCE", publisher: "[Sanskrit, studied via commentaries]", note: "FIRST FORMAL GRAMMAR - 4,000 rules generating all Sanskrit. Recursive, generative. Influenced Chomsky. 'Most rigorous grammar ever written.'", link: "https://archive.org/details/dli.ernet.252837" },
+      { author: "Gautama", title: "Nyaya Sutra", date: "c.200 BCE", publisher: "[Sanskrit with bhasyas]", note: "Indian LOGIC. 16 categories of reasoning. Syllogism, inference, analogy. Debated by Buddhists and Hindus for millennia.", link: "https://archive.org/details/nyayasutras00gautgoog" },
+      { author: "Dignaga", title: "Pramanasamuccaya", date: "c.480 CE", publisher: "[Tibetan/Sanskrit]", note: "Buddhist EPISTEMOLOGY. Two valid sources: perception and inference. Apoha theory - meaning through exclusion. Logic as path to liberation.", link: "https://archive.org/details/buddhist-logic-2vols.-th.-stcherbatsky" },
+      { author: "Dharmakirti", title: "Pramanavarttika", date: "c.650 CE", publisher: "[Tibetan/Sanskrit]", note: "Refinement of Dignaga. MOMENTARINESS of perception. No permanent self. Buddhist logic's pinnacle.", link: "https://archive.org/details/buddhist-logic-2vols.-th.-stcherbatsky" },
+      { author: "Vaisheshika Sutra", title: "Kanada's Atomic Theory", date: "c.200 BCE", publisher: "[Sanskrit philosophical texts]", note: "ATOMIC THEORY of matter. Paramanu (atoms) combine to form reality. Categories of existence. Indian natural philosophy." },
+      { author: "Patanjali", title: "Yoga Sutras", date: "c.200 BCE", publisher: "[Sanskrit with commentaries]", note: "STATES OF CONSCIOUSNESS systematized. Chitta-vritti-nirodha - stilling mental fluctuations. Attention, concentration, samadhi.", link: "https://archive.org/details/YogaSutrasOfPatanjali1912" },
+
+      // CHINESE - Logic, Automata, Mind
+      { author: "Mohist Canon", title: "Mo Jing", date: "c.300 BCE", publisher: "[Chinese, Latin excerpts rare]", note: "Chinese LOGIC and optics. Definitions, paradoxes, causation. Camera obscura. Rival to Aristotle in rigor. Mohism lost to Confucianism.", link: "https://archive.org/details/later-mohist-logic-ethics-science" },
+      { author: "Gongsun Long", title: "White Horse Dialogue", date: "c.300 BCE", publisher: "[School of Names]", note: "'WHITE HORSE IS NOT HORSE' - semantic paradoxes. Chinese sophistry. Universals vs particulars. Logic through paradox.", link: "https://archive.org/details/schoolofnameschi0000kung" },
+      { author: "Liezi", title: "Liezi (Book of Lieh-tzu)", date: "c.300 BCE", publisher: "[Chinese, Latin 17th c.]", note: "Contains AUTOMATON STORY - Yan Shi presents mechanical man to King Mu. Earliest robot fiction. 'Made of leather, wood, glue.'", link: "https://archive.org/details/bookofliehtzuaco0000liez" },
+      { author: "Zhuangzi", title: "Zhuangzi", date: "c.300 BCE", publisher: "[Chinese classics]", note: "DREAM ARGUMENT - am I a man dreaming of a butterfly, or a butterfly dreaming of being a man? Relativism of consciousness.", link: "https://archive.org/details/zhuangzicomplete0000unse" },
+      { author: "Xunzi", title: "Xunzi (chapters on language)", date: "c.250 BCE", publisher: "[Chinese philosophical texts]", note: "RECTIFICATION OF NAMES - correct naming enables correct thinking. Language shapes cognition. Chinese philosophy of language.", link: "https://archive.org/details/xunzicompletetra0000xunz" },
+      { author: "Yi Jing", title: "I Ching (Book of Changes)", date: "c.1000 BCE", publisher: "[Latin 1687 via Jesuits]", note: "BINARY SYSTEM of yin/yang lines. 64 hexagrams. Leibniz saw it and developed binary arithmetic. Ancient Chinese 'bits'.", link: "https://archive.org/details/IChingBookOfChangesBlofeld1965" },
+
       { author: "Descartes", title: "De homine (Traité de l'homme)", date: "1662", publisher: "Leiden: Moyardus & Leffen (posthumous)", note: "The body as machine. Mechanistic physiology - nerves as pipes, brain as hydraulic system.", link: "https://archive.org/details/descartesrenetr00desc" },
       { author: "Pomponazzi", title: "De immortalitate animae", date: "1516", publisher: "Bologna: Giustiniano da Rubiera", note: "Denied immortality of soul on Aristotelian grounds. Caused scandal. Proto-materialist.", link: "https://archive.org/details/bub_gb_lmgme9cnK6AC" },
       { author: "Telesio", title: "De rerum natura iuxta propria principia", date: "1586", publisher: "Naples: Horatius Salvianus", note: "Anti-Aristotelian naturalism. Nature explained by heat/cold, not forms. Influenced Bacon.", link: "https://archive.org/details/bub_gb_zRYhb55j_LoC" },
@@ -294,6 +319,105 @@ const lists: Record<string, ListSection> = {
       { author: "Condillac", title: "Traité des sensations", date: "1754", publisher: "Paris: De Bure", note: "The STATUE thought experiment - consciousness built from pure sensation. Radical sensationalism.", link: "https://archive.org/details/traitedessensati0000cond" },
       { author: "Hartley", title: "Observations on Man", date: "1749", publisher: "London: Samuel Richardson", note: "ASSOCIATIONISM - all mental life from association of ideas. Vibrations in nerves. Proto-neuroscience.", link: "https://archive.org/details/observationsonm00pistgoog" },
       { author: "Wundt", title: "Grundzüge der physiologischen Psychologie", date: "1874", publisher: "Leipzig: Wilhelm Engelmann", note: "Founded EXPERIMENTAL PSYCHOLOGY. First psychology laboratory (1879). Scientific study of consciousness.", link: "https://archive.org/details/grundzgederphys06wundgoog" },
+    ]
+  },
+  sanskrit_logic: {
+    title: "Sanskrit Logic & Philosophy of Mind",
+    description: "India produced 30+ million manuscripts - 100x more than Greek and Latin combined. Less than 1% translated. These texts on logic, language, and consciousness anticipate modern AI by millennia.",
+    works: [
+      // TIER 1: MOST AI-RELEVANT
+
+      // PHILOSOPHY OF LANGUAGE
+      { author: "Bhartṛhari", title: "Vākyapadīya", date: "5th c. CE", publisher: "[Sanskrit manuscripts]", note: "SPHOṬA THEORY - meaning isn't in sounds but in the 'burst' of whole word/sentence. Anticipates holistic semantics, Gestalt, compositionality debates in NLP.", link: "https://archive.org/details/Vakyapadiya" },
+      { author: "Bhartṛhari", title: "Vākyapadīya Kāṇḍa I (Subramania Iyer ed.)", date: "5th c. CE (1966 ed.)", publisher: "Deccan College, Poona", note: "Critical edition with English translation. BRAHMAN IS WORD - language as foundation of reality.", link: "https://archive.org/details/VakyapadiyaOfBhartrhariKandaI1966K.A.SubramaniaIyer" },
+
+      // JAIN MANY-VALUED LOGIC
+      { author: "Mallisena Sūri", title: "Syādvāda-mañjarī", date: "13th c. CE", publisher: "Motilal Banarsidass (F.W. Thomas trans. 1968)", note: "SEVEN-VALUED LOGIC (Saptabhaṅgī) - 2000 years before Łukasiewicz! Maybe is, maybe isn't, maybe both, maybe indescribable... English trans. available but rare.", link: "https://archive.org/details/ZtQL_syadvada-manjari-of-shri-mallisena-suri-hindi-trans.-by-dr.-jagadisha-jain-shri-ravaji-bhai-des" },
+      { author: "Samantabhadra", title: "Āptamīmāṃsā", date: "2nd c. CE", publisher: "[Sanskrit with English]", note: "ANEKĀNTAVĀDA - non-one-sidedness. Reality has multiple aspects no single predicate captures. Partial knowledge, multi-perspective reasoning.", link: "https://archive.org/details/AptaMimamsaWeb" },
+
+      // NAVYA-NYĀYA - FORMAL LOGIC
+      { author: "Gaṅgeśa", title: "Tattvacintāmaṇi (Pratyakṣa Khaṇḍa)", date: "13th c. CE", publisher: "Asiatic Society, Calcutta (1888)", note: "JEWEL OF THOUGHT - founded Navya-Nyāya. 850 pages on perception. Technical metalanguage for inference.", link: "https://archive.org/details/in.ernet.dli.2015.369567" },
+      { author: "Gaṅgeśa", title: "Tattvacintāmaṇi (Anumāna Khaṇḍa)", date: "13th c. CE", publisher: "Bloomsbury (Stephen Phillips, 2024)", note: "INFERENCE section - vyāpti (pervasion), how to establish universal rules. NOW FULLY TRANSLATED (3-vol Phillips edition).", link: "https://archive.org/details/in.ernet.dli.2015.345411" },
+      { author: "Raghunātha Śiromaṇi", title: "Tattvacintāmaṇi-Dīdhiti", date: "16th c. CE", publisher: "[Various Sanskrit eds.]", note: "THE CORE OF NAVYA-NYĀYA. Developed formal metalanguage. India's 'Principia Mathematica'. UNTRANSLATED.", link: "https://archive.org/details/pramanyavadagadadharatattvachintamanigangesadidhitied.ananthacharyap.b.checked_202003_640_Y" },
+
+      // BUDDHIST COGNITIVE SCIENCE
+      { author: "Vasubandhu", title: "Abhidharmakośa-bhāṣya", date: "4th c. CE", publisher: "[Sanskrit + Yasomitra commentary]", note: "TAXONOMY OF 75 MENTAL FACTORS - attention, intention, perception, memory, reasoning. Closest to cognitive architecture in ancient thought.", link: "https://archive.org/details/abhidharmakosawithbhashyaofvasubandhuandsuptarthacommentaryofyasomitra" },
+      { author: "Vasubandhu", title: "Abhidharmakośa (Poussin translation)", date: "4th c. CE (French 1923)", publisher: "Paris: Paul Geuthner", note: "French translation of the 'Treasury of Higher Knowledge'. Buddhist psychology systematized.", link: "https://archive.org/details/labhidharmakosat01vasuuoft" },
+
+      // BUDDHIST EPISTEMOLOGY
+      { author: "Dignāga", title: "Pramāṇasamuccaya", date: "c. 480 CE", publisher: "University of Mysore", note: "COMPENDIUM OF VALID COGNITION. Two sources: perception and inference. Foundation of Buddhist logic.", link: "https://archive.org/details/dignangapramanasamuccayaeditedrestoredtosanskritrangaswamyiyengarh.r.universityofmysore_806_h" },
+      { author: "Dharmakīrti", title: "Pramāṇavārttika", date: "c. 650 CE", publisher: "Bauddha Bharati (1968)", note: "APOHA THEORY - meaning through exclusion. 'Cow' = 'not non-cow'. Anticipates contrastive learning. 771MB scan.", link: "https://archive.org/details/PramanaVarttikaAcharyaDharmakirti" },
+      { author: "Dharmakīrti", title: "Pramāṇavārttika Parts I-II (Yogindranand)", date: "c. 650 CE", publisher: "[Sanskrit critical ed.]", note: "High-resolution (600 PPI) Sanskrit text. Only chapters 1 & 4 have partial trans. (Nagatomi, Tillemans). NO COMPLETE English.", link: "https://archive.org/details/PramanavartikOfDharmakirtiPartISwamiYogindranand" },
+
+      // TIER 2: HIGHLY RELEVANT
+
+      // NYĀYA FOUNDATIONS
+      { author: "Gautama", title: "Nyāya Sūtra with Vātsyāyana Bhāṣya", date: "c. 200 BCE / 450 CE", publisher: "Panini Office (1913)", note: "FOUNDATION OF INDIAN LOGIC. 528 aphorisms on inference, perception, debate. 1913 translation exists but archaic.", link: "https://archive.org/details/NyayaSutra" },
+      { author: "Jayanta Bhaṭṭa", title: "Nyāya-mañjarī", date: "9th c. CE", publisher: "MLBD", note: "COMPENDIUM OF SPECULATIVE LOGIC. Synthesizes Nyāya on valid knowledge, inference patterns, debate fallacies.", link: "https://archive.org/details/nyayamanjarijayantabhattacompendiumofindianspeculativelogicjanakivallabhabhattacharyamlbd_20200_751_v" },
+      { author: "Annambhaṭṭa", title: "Tarkasaṅgraha", date: "17th c. CE", publisher: "[Various]", note: "15-PAGE PRIMER covering all Nyāya-Vaiśeṣika basics. 7 categories, 4 knowledge sources, inference structure. Perfect starting point.", link: "https://archive.org/details/TarkaSangrahaWithNyayaBodhiniAnandJhaNyayacharya" },
+      { author: "Udayana", title: "Nyāya-kusumāñjali", date: "10th c. CE", publisher: "Chowkhamba (1957)", note: "9 LOGICAL PROOFS FOR GOD. Rigorous inference patterns on causation, design, infinite regress.", link: "https://archive.org/details/nyayakusumanjali_201404" },
+
+      // SEMANTICS & LANGUAGE
+      { author: "Jaimini / Śabara", title: "Mīmāṃsā Sūtra with Śabara Bhāṣya", date: "c. 200 BCE / 100 CE", publisher: "Mohan Lal Sandal (1923)", note: "PHILOSOPHY OF MEANING - how words refer, sentence vs word meaning, injunctive force. Foundation of Indian semantics.", link: "https://archive.org/details/mimamsasutra00jaimuoft" },
+      { author: "Kumārila Bhaṭṭa", title: "Ślokavārttika", date: "7th c. CE", publisher: "[Sanskrit]", note: "Defense of Vedic authority through LINGUISTIC ANALYSIS. Word-meaning relations, eternality of language.", link: "https://archive.org/details/Shlokavartika.of.Kumaril.Bhatt" },
+
+      // ONTOLOGY & CATEGORIES
+      { author: "Kaṇāda", title: "Vaiśeṣika Sūtra", date: "c. 200 BCE", publisher: "Nandalal Sinha (1911)", note: "ATOMIC THEORY OF MATTER. Paramāṇu (atoms) combine to form reality. 7 categories of existence.", link: "https://archive.org/details/thevaiasesikasut00kanauoft" },
+      { author: "Praśastapāda", title: "Padārthadharmasaṅgraha with Nyāyakandalī", date: "c. 550 CE / 991 CE", publisher: "Ganganatha Jha (Chowkambha)", note: "Systematic VAIŚEṢIKA with Śrīdhara's commentary. Categories, qualities, relations.", link: "https://archive.org/details/padarthadharmasangrahaofprasastapadawithnyayakandaliofsridharaed.ganganathajhachowkambha_202003_711_W" },
+      { author: "Udayana", title: "Kiraṇāvalī", date: "11th c. CE", publisher: "Gaekwad's Oriental Series (Jetly ed.)", note: "GARLAND OF RAYS on substances. Major Nyāya-Vaiśeṣika synthesis. PARTIAL trans. (Hirano's samavāya chapter).", link: "https://archive.org/details/dravyakiranavaliudayanacharya1301alm6shlf3devanagarinyayavaisheshikam" },
+
+      // CONSCIOUSNESS & MIND
+      { author: "Patañjali / Vyāsa", title: "Yoga Sūtra with Vyāsa Bhāṣya", date: "c. 200 BCE / 400 CE", publisher: "[Sanskrit critical ed.]", note: "SYSTEMATIC CONSCIOUSNESS - 5 mental modifications (vṛtti), attention mechanisms, memory (saṃskāra), samādhi states.", link: "https://archive.org/details/YogaSutramVyasa" },
+      { author: "Patañjali", title: "Yoga Sūtra with 3 Commentaries", date: "c. 200 BCE", publisher: "[Sanskrit]", note: "Vyāsa, Vācaspati Miśra, and Bhoja commentaries. Multiple interpretive traditions on consciousness.", link: "https://archive.org/details/patanjaliyoga" },
+
+      // ALGORITHMS & COMPUTATION
+      { author: "Baudhāyana et al.", title: "Śulba Sūtras", date: "c. 800-500 BCE", publisher: "[Critical study]", note: "ALGORITHMIC GEOMETRY - Pythagorean theorem (before Pythagoras), square root algorithms, geometric constructions with rope/stakes.", link: "https://archive.org/details/sulba-sutras-critical-study-k.-jayashankara" },
+      { author: "Pāṇini", title: "Aṣṭādhyāyī (6-vol critical ed.)", date: "c. 400 BCE", publisher: "Rama Nath Sharma", note: "4,000 RULES GENERATING ALL SANSKRIT. Recursive, generative. 'Most rigorous grammar ever written.' Influenced Chomsky.", link: "https://archive.org/details/the-ashtadhyayi-of-panini-ram-nath-sharma" },
+
+      // BIBLIOGRAPHY & REFERENCE
+      { author: "Ganguly", title: "A Bibliography of Nyāya Philosophy", date: "1993", publisher: "National Library, Calcutta", note: "2,358 DOCUMENTS catalogued - 1,030 manuscripts. Navya-Nyāya: 1,020 docs. Essential reference for prioritizing translations.", link: "https://archive.org/details/dli.ministry.28111" },
+    ]
+  },
+  arabic_philosophy: {
+    title: "Arabic Logic, Automata & Algorithms",
+    description: "The Islamic Golden Age (750-1258 CE) preserved Greek philosophy and created new sciences. Arabic gave us 'algorithm' and 'algebra'. These texts on logic, automata, and the mind shaped both medieval Europe and modern computing.",
+    works: [
+      // ALGORITHMS & COMPUTATION
+      { author: "al-Khwārizmī", title: "Kitāb al-Jabr wa'l-Muqābala", date: "c. 820 CE", publisher: "[Arabic manuscript]", note: "Gave us ALGEBRA and ALGORITHM (from his name). Systematic equation-solving. Foundation of computational thinking.", link: "https://archive.org/details/aljabar_alkhwarizmi" },
+      { author: "al-Khwārizmī", title: "Algebra (Rosen translation, 1831)", date: "c. 820 CE (trans. 1831)", publisher: "London: Oriental Translation Fund", note: "First English translation. Arabic text with English. 'Compendious Book on Calculation by Completion and Balancing.'", link: "https://archive.org/details/algebraofmohamme00khuwuoft" },
+      { author: "Robert of Chester", title: "Latin Translation of al-Khwārizmī's Algebra", date: "c. 1145 CE", publisher: "[Medieval Latin]", note: "How ALGORITHM entered Europe. Latin translation that shaped medieval mathematics.", link: "https://archive.org/details/robertofchesters00khuw" },
+
+      // AUTOMATA & MECHANICAL DEVICES
+      { author: "al-Jazarī", title: "Kitāb fī ma'rifat al-ḥiyal al-handasiyya", date: "1206 CE", publisher: "[Arabic + Donald Hill trans.]", note: "BOOK OF INGENIOUS DEVICES - 100 mechanical devices. Programmable automata, water clocks, musical robots. 'Climax of Muslim achievement.'", link: "https://archive.org/details/cover_20200113_2057" },
+      { author: "Banū Mūsā", title: "Kitāb al-Ḥiyal (Modern Turkish)", date: "c. 850 CE", publisher: "[Turkish interpretation]", note: "100 MECHANICAL DEVICES - self-trimming lamps, trick vessels, automata. First programmable flute player. 'Well beyond Hero of Alexandria.'", link: "https://archive.org/stream/212050000k1/kitab%20al-hiyal%20versi%20modern%20turki_djvu.txt" },
+
+      // LOGIC (MANTIQ)
+      { author: "Ibn Sīnā (Avicenna)", title: "al-Shifā': al-Qiyās (Propositional Logic)", date: "c. 1027 CE", publisher: "D. Reidel (1973)", note: "PROPOSITIONAL LOGIC from The Healing. Parallel Arabic-English. Foundation of Islamic logic tradition.", link: "https://archive.org/details/LogicAvicenna" },
+      { author: "Ibn Sīnā (Avicenna)", title: "al-Shifā': Physics (Parallel Text)", date: "c. 1027 CE", publisher: "BYU/KFAS", note: "First complete English translation of Avicenna's PHYSICS. Natural philosophy, causation, motion.", link: "https://archive.org/details/avicenna-the-physics-of-the-healing-kitab-al-shifa-a-parallel-english-arabic-text-in-two-volumes" },
+      { author: "al-Fārābī", title: "Kitāb al-Ḥurūf (Book of Letters)", date: "c. 900 CE", publisher: "Zaytuna (Butterworth trans. 2024)", note: "PHILOSOPHY OF LANGUAGE - relation of logic to grammar. How Arabic maps to universal thought. FIRST COMPLETE English trans. 2024!", link: "https://archive.org/details/KitabAlHurufBookOfLettersAlFarabi" },
+      { author: "al-Fārābī", title: "Risālah fī al-'Aql (Epistle on the Intellect)", date: "c. 900 CE", publisher: "[Arabic/French]", note: "THEORY OF INTELLECT - active intellect, potential intellect. How mind acquires knowledge.", link: "https://archive.org/details/epitre-sur-lintellect-risalah-fi-l-aql-al-farabi" },
+      { author: "al-Fārābī", title: "Philosophy of Plato and Aristotle", date: "c. 900 CE", publisher: "[English trans.]", note: "How to read the Greeks. Classification of sciences. 'Second Teacher' after Aristotle.", link: "https://archive.org/details/al-farabis-philosophy-of-plato-and-aristotle" },
+      { author: "al-Abharī", title: "Īsāghūjī fī al-manṭiq", date: "13th c. CE", publisher: "[Arabic with trans.]", note: "LOGIC PRIMER - 'for beginners in any of the sciences.' Introduction to categories, propositions, syllogisms.", link: "https://archive.org/stream/abhari-eec/EECalverley-Abhari-mcd_djvu.txt" },
+      { author: "Ibn Taymiyya", title: "al-Radd 'alā al-Manṭiqiyyīn", date: "1309 CE", publisher: "[Arabic/English]", note: "REFUTATION OF LOGIC - critique of Aristotelian logic from Islamic perspective. Alternative epistemology.", link: "https://archive.org/details/AlRadAlMantiq" },
+      { author: "[Various]", title: "Collection of Books on Manṭiq", date: "Various", publisher: "[Arabic/Persian/Urdu]", note: "Multiple logic textbooks - 'Summary of Logic', 'Basic Concepts', primers. Islamic logic curriculum.", link: "https://archive.org/details/1555962405776-2_202203" },
+
+      // PHILOSOPHY OF MIND
+      { author: "Ibn Ṭufayl", title: "Ḥayy ibn Yaqẓān", date: "c. 1160 CE", publisher: "[Arabic + English]", note: "SELF-TAUGHT PHILOSOPHER - child raised alone discovers truth through pure reason. Influenced Locke's tabula rasa, Robinson Crusoe.", link: "https://archive.org/details/historyofhayyibn00ibnu" },
+      { author: "Ibn Ṭufayl", title: "Ḥayy ibn Yaqẓān (Arabic, 1992)", date: "c. 1160 CE", publisher: "Faruk Saad edition", note: "Arabic critical edition. Thought experiment: can mind know reality without society or revelation?", link: "https://archive.org/details/ibn-tufail-faruk-saad-hayy-ibn-yaqzan-1992" },
+      { author: "Ibn Rushd (Averroes)", title: "Tahāfut al-Tahāfut", date: "1180 CE", publisher: "[Arabic/English]", note: "INCOHERENCE OF THE INCOHERENCE - defense of reason against al-Ghazālī. UNITY OF INTELLECT - all minds share one active reason.", link: "https://archive.org/details/TahafutAlTahafutEn" },
+      { author: "Ibn Rushd (Averroes)", title: "Commentary on Aristotle's Metaphysics", date: "12th c. CE", publisher: "[English trans.]", note: "How Europe recovered Aristotle. 'The Commentator.' Most scholarly interpreter of Greek philosophy.", link: "https://archive.org/details/a-translation-with-introduction-of-ibn-rushds-commentary-on-aristotles-metaphysics" },
+      { author: "Ibn Rushd (Averroes)", title: "Kitāb Faṣl al-Maqāl", date: "12th c. CE", publisher: "[Arabic]", note: "DECISIVE TREATISE - can philosophy and religion coexist? Harmony of reason and revelation.", link: "https://archive.org/details/fkhettab_gmail_29" },
+      { author: "al-Ghazālī", title: "Tahāfut al-Falāsifa", date: "1095 CE", publisher: "[Arabic/English]", note: "INCOHERENCE OF THE PHILOSOPHERS - 20 critiques of Aristotelian philosophy. Sparked Ibn Rushd's response.", link: "https://archive.org/details/TheIncoherenceOfThePhilosophersTahafutAlFalasifa" },
+
+      // ASTRONOMY & MATHEMATICS
+      { author: "al-Bīrūnī", title: "Kitāb al-Qānūn al-Mas'ūdī", date: "c. 1030 CE", publisher: "[Arabic]", note: "CANON MASUDICUS - encyclopedia of astronomical sciences. 'Masterpiece of Eastern science.' Unpublished for 1000 years.", link: "https://archive.org/details/kitabalqanunalma02biru" },
+      { author: "al-Bīrūnī", title: "Book of Instruction on Astrology", date: "c. 1029 CE", publisher: "[Arabic + English]", note: "Astronomical algorithms, calendar calculations, spherical trigonometry. Practical computation.", link: "https://archive.org/details/TheBookOfInstructionOnTheElementsOfTheArtOfAstrologyByAlBiruni" },
+      { author: "al-Bīrūnī", title: "Kitāb fī Taḥqīq mā li'l-Hind", date: "c. 1030 CE", publisher: "[Arabic]", note: "India's philosophy, astronomy, mathematics documented by Arabic scholar. Cross-cultural transmission.", link: "https://archive.org/details/in.ernet.dli.2015.361250" },
+
+      // SECONDARY SOURCES
+      { author: "Walbridge", title: "God and Logic in Islam", date: "2011", publisher: "[English]", note: "History of manṭiq (logic) in Islamic thought. How Greeks were received, transformed, debated.", link: "https://archive.org/stream/GodAndLogicInIslamByWalbridge/god%20and%20logic%20in%20islam%20by%20walbridge_djvu.txt" },
+      { author: "Abed", title: "Aristotelian Logic and the Arabic Language in al-Fārābī", date: "1991", publisher: "SUNY Press", note: "How Arabic grammar shaped logical categories. Language and thought in Islamic philosophy.", link: "https://archive.org/details/aristotelianlogi0000abed" },
+      { author: "[Various]", title: "Classical Arabic Philosophy: An Anthology", date: "2007", publisher: "[English]", note: "Translations from al-Kindī, al-Fārābī, Ibn Sīnā, Ibn Rushd. Logic, natural philosophy, metaphysics, ethics.", link: "https://archive.org/details/classicalarabicp0000unse" },
     ]
   }
 };
