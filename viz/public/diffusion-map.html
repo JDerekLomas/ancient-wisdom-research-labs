@@ -134,7 +134,7 @@
     <div id="container">
         <div id="sidebar">
             <h1>Idea Diffusion</h1>
-            <p class="subtitle">Watch how Renaissance bestsellers spread across Europe</p>
+            <p class="subtitle">Watch how classical literature spread across Renaissance Europe</p>
 
             <div class="section">
                 <div class="section-title">Select a Work</div>
@@ -241,76 +241,149 @@
             'dublin': [53.35, -6.26],
             'oxford': [51.75, -1.25],
             'cambridge': [52.21, 0.12],
+            'turin': [45.07, 7.69],
+            'torino': [45.07, 7.69],
+            'granada': [37.18, -3.60],
+            'ghent': [51.05, 3.72],
+            'wroclaw': [51.11, 17.04],
+            'zwolle': [52.52, 6.09],
+            'utrecht': [52.09, 5.12],
+            'erfurt': [50.98, 11.03],
+            'seville': [37.39, -5.99],
+            'sevilla': [37.39, -5.99],
+            'parma': [44.80, 10.33],
+            'brescia': [45.54, 10.21],
+            'treviso': [45.67, 12.24],
             's.l.': [48.0, 10.0], // Unknown location - center of Germany
         };
 
-        // Sample diffusion data
+        // Classical and intellectual works with actual diffusion data
         const works = [
             {
-                id: 'ars-minor',
-                title: 'Ars Minor',
-                author: 'Donatus',
-                origin: 'mainz',
-                firstYear: 1453,
+                id: 'virgil',
+                title: 'Opera (Aeneid, Georgics, Eclogues)',
+                author: 'Virgil',
+                origin: 'strasbourg',
+                firstYear: 1470,
                 spread: [
-                    ['mainz', 1453], ['strasbourg', 1470], ['augsburg', 1475], ['treviso', 1475],
-                    ['cologne', 1478], ['lübeck', 1478], ['ulm', 1478], ['deventer', 1479],
-                    ['gouda', 1479], ['basel', 1480], ['rostock', 1480], ['delft', 1482],
-                    ['nuremberg', 1482], ['antwerpen', 1483], ['gent', 1483], ['london', 1483],
-                    ['leipzig', 1485], ['brno', 1486], ['paris', 1489], ['barcelona', 1500],
-                    ['venice', 1502], ['rome', 1510], ['florence', 1515], ['vienna', 1520]
+                    ['strasbourg', 1470], ['paris', 1472], ['heidelberg', 1495], ['lyon', 1502],
+                    ['turin', 1510], ['venice', 1514], ['basel', 1523], ['antwerpen', 1527],
+                    ['granada', 1545], ['leiden', 1586], ['geneva', 1592], ['london', 1597],
+                    ['amsterdam', 1601], ['louvain', 1601], ['barcelona', 1616]
                 ]
             },
             {
-                id: 'doctrinale',
-                title: 'Doctrinale',
-                author: 'Alexander de Villa Dei',
+                id: 'cicero',
+                title: 'Epistolae ad Familiares (Letters)',
+                author: 'Cicero',
+                origin: 'rome',
+                firstYear: 1467,
+                spread: [
+                    ['rome', 1467], ['venice', 1469], ['milan', 1472], ['naples', 1474],
+                    ['bologna', 1477], ['louvain', 1477], ['parma', 1479], ['leipzig', 1492],
+                    ['paris', 1535], ['antwerpen', 1569], ['lyon', 1575], ['cologne', 1577],
+                    ['salamanca', 1579], ['london', 1584], ['geneva', 1605], ['amsterdam', 1618]
+                ]
+            },
+            {
+                id: 'terence',
+                title: 'Comoediae Sex (Six Comedies)',
+                author: 'Terence',
+                origin: 'florence',
+                firstYear: 1505,
+                spread: [
+                    ['florence', 1505], ['lyon', 1531], ['paris', 1542], ['ghent', 1546],
+                    ['leipzig', 1552], ['louvain', 1552], ['antwerpen', 1553], ['cologne', 1554],
+                    ['wroclaw', 1566], ['salamanca', 1570], ['venice', 1570], ['barcelona', 1577],
+                    ['leiden', 1588], ['cambridge', 1589], ['london', 1597]
+                ]
+            },
+            {
+                id: 'juvenal',
+                title: 'Satyrae (Satires)',
+                author: 'Juvenal',
+                origin: 'rome',
+                firstYear: 1469,
+                spread: [
+                    ['rome', 1469], ['venice', 1470], ['paris', 1472], ['brescia', 1473],
+                    ['louvain', 1475], ['milan', 1485], ['zwolle', 1493], ['leipzig', 1497],
+                    ['lyon', 1498], ['amsterdam', 1650], ['utrecht', 1685]
+                ]
+            },
+            {
+                id: 'sallust',
+                title: 'Opera (Catiline, Jugurtha)',
+                author: 'Sallust',
                 origin: 'venice',
                 firstYear: 1470,
                 spread: [
-                    ['venice', 1470], ['rome', 1472], ['paris', 1473], ['strasbourg', 1474],
-                    ['nuremberg', 1475], ['cologne', 1476], ['basel', 1478], ['lyon', 1480],
-                    ['deventer', 1482], ['leipzig', 1485], ['antwerpen', 1488], ['london', 1490],
-                    ['florence', 1492], ['vienna', 1495], ['cracow', 1498], ['barcelona', 1500]
+                    ['venice', 1470], ['paris', 1471], ['rome', 1473], ['basel', 1474],
+                    ['milan', 1474], ['barcelona', 1475], ['brescia', 1475], ['valencia', 1475],
+                    ['florence', 1478], ['turin', 1494], ['lyon', 1518], ['antwerpen', 1606],
+                    ['amsterdam', 1621]
+                ]
+            },
+            {
+                id: 'horace',
+                title: 'Opera (Odes, Satires, Epistles)',
+                author: 'Horace',
+                origin: 'venice',
+                firstYear: 1471,
+                spread: [
+                    ['venice', 1471], ['milan', 1474], ['naples', 1474], ['treviso', 1481],
+                    ['florence', 1482], ['leipzig', 1492], ['strasbourg', 1498], ['paris', 1503],
+                    ['lyon', 1546], ['antwerpen', 1556], ['geneva', 1592], ['amsterdam', 1601],
+                    ['leiden', 1611]
                 ]
             },
             {
                 id: 'aesop',
                 title: 'Fabulae (Fables)',
                 author: 'Aesop',
-                origin: 'augsburg',
-                firstYear: 1476,
+                origin: 'valencia',
+                firstYear: 1473,
                 spread: [
-                    ['augsburg', 1476], ['ulm', 1477], ['strasbourg', 1479], ['nuremberg', 1480],
-                    ['cologne', 1481], ['venice', 1483], ['paris', 1485], ['basel', 1486],
-                    ['antwerpen', 1488], ['florence', 1490], ['london', 1492], ['lyon', 1495],
-                    ['rome', 1498], ['leipzig', 1500], ['vienna', 1505], ['cracow', 1510]
+                    ['valencia', 1473], ['salamanca', 1486], ['deventer', 1490], ['zwolle', 1494],
+                    ['antwerpen', 1496], ['erfurt', 1500], ['louvain', 1513], ['basel', 1526],
+                    ['nuremberg', 1528], ['augsburg', 1534], ['lyon', 1540], ['granada', 1545],
+                    ['london', 1592], ['seville', 1601]
                 ]
             },
             {
-                id: 'imitation',
-                title: 'De Imitatione Christi',
-                author: 'Thomas à Kempis',
-                origin: 'augsburg',
-                firstYear: 1471,
+                id: 'secrets',
+                title: 'Liber Secretorum (Book of Secrets)',
+                author: 'Pseudo-Albertus Magnus',
+                origin: 'strasbourg',
+                firstYear: 1474,
                 spread: [
-                    ['augsburg', 1471], ['nuremberg', 1473], ['venice', 1474], ['strasbourg', 1476],
-                    ['paris', 1478], ['cologne', 1480], ['basel', 1482], ['florence', 1484],
-                    ['rome', 1486], ['lyon', 1488], ['antwerpen', 1490], ['london', 1492],
-                    ['vienna', 1495], ['cracow', 1498], ['barcelona', 1500], ['lisbon', 1505]
+                    ['strasbourg', 1474], ['bologna', 1478], ['rome', 1481], ['cologne', 1485],
+                    ['london', 1485], ['antwerpen', 1487], ['venice', 1487], ['naples', 1490],
+                    ['lyon', 1491], ['leipzig', 1492], ['paris', 1492], ['augsburg', 1496],
+                    ['vienna', 1500]
                 ]
             },
             {
-                id: 'legenda-aurea',
-                title: 'Legenda Aurea',
+                id: 'legenda',
+                title: 'Legenda Aurea (Golden Legend)',
                 author: 'Jacobus de Voragine',
                 origin: 'strasbourg',
+                firstYear: 1472,
+                spread: [
+                    ['strasbourg', 1472], ['basel', 1474], ['paris', 1474], ['augsburg', 1475],
+                    ['cologne', 1476], ['nuremberg', 1476], ['ulm', 1477], ['lyon', 1478],
+                    ['venice', 1478], ['deventer', 1479], ['geneva', 1480]
+                ]
+            },
+            {
+                id: 'persius',
+                title: 'Satyrae (Satires)',
+                author: 'Persius',
+                origin: 'rome',
                 firstYear: 1470,
                 spread: [
-                    ['strasbourg', 1470], ['cologne', 1472], ['augsburg', 1473], ['nuremberg', 1475],
-                    ['venice', 1477], ['paris', 1479], ['basel', 1480], ['lyon', 1482],
-                    ['rome', 1484], ['florence', 1486], ['london', 1488], ['antwerpen', 1490],
-                    ['vienna', 1493], ['cracow', 1496], ['barcelona', 1499], ['lisbon', 1502]
+                    ['rome', 1470], ['basel', 1474], ['venice', 1480], ['treviso', 1481],
+                    ['lyon', 1485], ['brescia', 1486], ['milan', 1490], ['paris', 1490],
+                    ['leipzig', 1492], ['vienna', 1492], ['heidelberg', 1510]
                 ]
             }
         ];
