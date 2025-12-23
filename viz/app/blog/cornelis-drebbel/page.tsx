@@ -200,6 +200,28 @@ export default function CornelisDrebbel() {
         for automation itself.
       </p>
 
+      {/* Nautilus Oven Illustration */}
+      <figure style={{ margin: '0 0 32px 0' }}>
+        <img
+          src="/gallery/full/drebbel-oven-nautilus.png"
+          alt="Artistic rendering of Drebbel's circulating oven"
+          style={{
+            width: '100%',
+            borderRadius: '8px',
+            border: '1px solid #e8e4dc'
+          }}
+        />
+        <figcaption style={{
+          fontFamily: 'Inter, sans-serif',
+          fontSize: '12px',
+          color: '#888',
+          marginTop: '12px',
+          textAlign: 'center',
+        }}>
+          Artist&apos;s rendering of Drebbel&apos;s circulating oven. The nested metal boxes, with water as a heat buffer and the thermostat controlling the damper, maintained constant temperature for hatching eggs or alchemical processes.
+        </figcaption>
+      </figure>
+
       <div style={{
         background: '#1a1612',
         color: '#fff',
@@ -311,6 +333,28 @@ export default function CornelisDrebbel() {
           <strong>150 years before oxygen was officially &quot;discovered.&quot;</strong>
         </p>
       </div>
+
+      {/* Modern Replica Image */}
+      <figure style={{ margin: '0 0 32px 0' }}>
+        <img
+          src="/gallery/full/drebbel-replica-historicuk.jpg"
+          alt="Modern replica of Drebbel's submarine at Richmond upon Thames"
+          style={{
+            width: '100%',
+            borderRadius: '8px',
+            border: '1px solid #e8e4dc'
+          }}
+        />
+        <figcaption style={{
+          fontFamily: 'Inter, sans-serif',
+          fontSize: '12px',
+          color: '#888',
+          marginTop: '12px',
+          textAlign: 'center',
+        }}>
+          A full-scale replica of Drebbel&apos;s submarine, built by Mark Edwards for the BBC in 2002. It is displayed near Richmond Bridge in London, close to where the original was tested.
+        </figcaption>
+      </figure>
 
       {/* Air Conditioning Section */}
       <h2 style={{
