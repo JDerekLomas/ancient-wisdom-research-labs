@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The World of Cornelis Drebbel: Netherlands, Prague, England</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #0a0a12;
+            --bg-card: rgba(20, 20, 35, 0.95);
+            --gold: #c9a227;
+            --gold-light: #e8d48b;
+            --text: #e8e6e3;
+            --text-muted: #8a8a9a;
+            --netherlands: #e07b39;
+            --prague: #9b59b6;
+            --england: #3498db;
+            --family: #e74c3c;
+            --science: #2ecc71;
+            --art: #f39c12;
+            --alchemy: #8e44ad;
+            --royalty: #c0392b;
+            --literature: #1abc9c;
+            --optics: #16a085;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-dark);
+            background-image:
+                radial-gradient(ellipse at 20% 30%, rgba(224, 123, 57, 0.05) 0%, transparent 40%),
+                radial-gradient(ellipse at 80% 30%, rgba(155, 89, 182, 0.05) 0%, transparent 40%),
+                radial-gradient(ellipse at 50% 80%, rgba(52, 152, 219, 0.05) 0%, transparent 40%);
+            color: var(--text);
+            overflow: hidden;
+            min-height: 100vh;
+        }
+
+        #container {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+
+        svg {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        .node { cursor: pointer; }
+        .node circle {
+            stroke-width: 2px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            filter: drop-shadow(0 0 8px rgba(0,0,0,0.5));
+        }
+        .node:hover circle {
+            stroke-width: 3px;
+            filter: drop-shadow(0 0 20px currentColor);
+        }
+        .node.highlighted circle {
+            stroke-width: 4px;
+            filter: drop-shadow(0 0 25px currentColor);
+        }
+        .node.dimmed circle { opacity: 0.15; }
+        .node.dimmed text { opacity: 0.1; }
+
+        .node text {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 11px;
+            font-weight: 600;
+            fill: var(--text);
+            pointer-events: none;
+            text-shadow: 0 0 8px var(--bg-dark), 0 0 16px var(--bg-dark);
+            transition: opacity 0.3s;
+        }
+
+        .link {
+            fill: none;
+            stroke-opacity: 0.25;
+            transition: all 0.3s;
+        }
+        .link.highlighted {
+            stroke-opacity: 0.9;
+            stroke-width: 2.5px !important;
+        }
+        .link.dimmed { stroke-opacity: 0.03; }
+
+        #header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 24px 32px;
+            background: linear-gradient(to bottom, rgba(10,10,18,0.95) 0%, transparent 100%);
+            pointer-events: none;
+            z-index: 100;
+        }
+        #header h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 28px;
+            font-weight: 400;
+            color: var(--gold);
+            letter-spacing: 0.02em;
+            margin-bottom: 4px;
+        }
+        #header p {
+            font-size: 13px;
+            color: var(--text-muted);
+            font-weight: 300;
+        }
+        #header span { color: var(--gold-light); }
+
+        #legend {
+            position: absolute;
+            bottom: 24px;
+            left: 24px;
+            background: var(--bg-card);
+            padding: 16px 20px;
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.06);
+            backdrop-filter: blur(20px);
+            max-width: 200px;
+        }
+        #legend h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 14px;
+            color: var(--gold);
+            margin-bottom: 12px;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin: 6px 0;
+            font-size: 11px;
+            color: var(--text-muted);
+        }
+        .legend-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+
+        #stats {
+            position: absolute;
+            bottom: 24px;
+            right: 24px;
+            background: var(--bg-card);
+            padding: 16px 20px;
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.06);
+            backdrop-filter: blur(20px);
+            text-align: right;
+        }
+        #stats h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 14px;
+            color: var(--gold);
+            margin-bottom: 10px;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+        #stats .stat {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin: 4px 0;
+        }
+        #stats .stat-value {
+            color: var(--text);
+            font-weight: 500;
+            margin-left: 6px;
+        }
+
+        #tooltip {
+            position: absolute;
+            background: var(--bg-card);
+            padding: 12px 16px;
+            border-radius: 8px;
+            border: 1px solid rgba(255,255,255,0.1);
+            font-size: 12px;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.2s;
+            max-width: 280px;
+            z-index: 200;
+        }
+        #tooltip.visible { opacity: 1; }
+        #tooltip h4 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 16px;
+            color: var(--gold);
+            margin-bottom: 4px;
+        }
+        #tooltip .dates { color: var(--text-muted); margin-bottom: 6px; }
+        #tooltip .role { color: var(--text); font-style: italic; }
+
+        #detail-panel {
+            position: absolute;
+            top: 100px;
+            right: 24px;
+            width: 340px;
+            max-height: calc(100vh - 140px);
+            background: var(--bg-card);
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.06);
+            backdrop-filter: blur(20px);
+            padding: 24px;
+            overflow-y: auto;
+            display: none;
+            z-index: 150;
+        }
+        #detail-panel.visible { display: block; }
+        #detail-panel .close-btn {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            font-size: 24px;
+            cursor: pointer;
+            line-height: 1;
+        }
+        #detail-panel .close-btn:hover { color: var(--text); }
+        #detail-panel h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 22px;
+            color: var(--gold);
+            margin-bottom: 4px;
+            padding-right: 30px;
+        }
+        #detail-panel .meta {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+        }
+        #detail-panel .role {
+            font-size: 14px;
+            color: var(--text);
+            font-style: italic;
+            margin-bottom: 16px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+        #detail-panel .section {
+            margin-bottom: 16px;
+        }
+        #detail-panel .section-title {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--gold);
+            margin-bottom: 8px;
+        }
+        #detail-panel .works-list {
+            list-style: none;
+            font-size: 13px;
+            color: var(--text);
+        }
+        #detail-panel .works-list li {
+            margin: 4px 0;
+            padding-left: 12px;
+            border-left: 2px solid var(--gold);
+        }
+        #detail-panel .connections {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+        #detail-panel .connection-group h4 {
+            font-size: 12px;
+            color: var(--gold-light);
+            margin-bottom: 6px;
+        }
+        #detail-panel .connection-list {
+            list-style: none;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        #detail-panel .connection-list li {
+            margin: 3px 0;
+            cursor: pointer;
+            padding: 2px 0;
+        }
+        #detail-panel .connection-list li:hover { color: var(--text); }
+        #detail-panel .connection-list .type {
+            font-size: 10px;
+            opacity: 0.6;
+            margin-left: 4px;
+        }
+        #detail-panel .note {
+            background: rgba(255,255,255,0.05);
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-top: 12px;
+            line-height: 1.5;
+        }
+
+        #instructions {
+            position: absolute;
+            top: 100px;
+            left: 24px;
+            font-size: 11px;
+            color: var(--text-muted);
+            line-height: 2;
+        }
+        #instructions kbd {
+            background: rgba(255,255,255,0.1);
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: inherit;
+        }
+
+        #controls {
+            position: absolute;
+            top: 200px;
+            left: 24px;
+            background: var(--bg-card);
+            padding: 16px 20px;
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.06);
+            backdrop-filter: blur(20px);
+        }
+        #controls h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 12px;
+            color: var(--gold);
+            margin-bottom: 10px;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+        #controls label {
+            display: block;
+            font-size: 11px;
+            color: var(--text-muted);
+            margin: 6px 0;
+            cursor: pointer;
+        }
+        #controls label:hover { color: var(--text); }
+        #controls input { margin-right: 8px; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <svg></svg>
+
+        <div id="header">
+            <h1>The World of Cornelis Drebbel</h1>
+            <p>Three spheres of influence: <span style="color: var(--netherlands);">Netherlands</span>, <span style="color: var(--prague);">Prague</span>, <span style="color: var(--england);">England</span> — <span id="node-count">0</span> figures, <span id="edge-count">0</span> connections</p>
+        </div>
+
+        <div id="instructions">
+            <kbd>Drag</kbd> nodes to explore<br>
+            <kbd>Hover</kbd> for details<br>
+            <kbd>Click</kbd> to see connections<br>
+            <kbd>Scroll</kbd> to zoom
+        </div>
+
+        <div id="legend">
+            <h3>Locations</h3>
+            <div class="legend-item"><div class="legend-dot" style="background: var(--netherlands);"></div> Netherlands</div>
+            <div class="legend-item"><div class="legend-dot" style="background: var(--prague);"></div> Prague</div>
+            <div class="legend-item"><div class="legend-dot" style="background: var(--england);"></div> England</div>
+            <div class="legend-item"><div class="legend-dot" style="background: var(--family);"></div> Drebbel Family</div>
+            <div class="legend-item"><div class="legend-dot" style="background: var(--science);"></div> Natural Philosophy</div>
+            <div class="legend-item"><div class="legend-dot" style="background: var(--optics);"></div> Optics / Instruments</div>
+        </div>
+
+        <div id="controls">
+            <h3>Connection Types</h3>
+            <label><input type="checkbox" class="edge-filter" value="teacher" checked> Teacher / Mentor</label>
+            <label><input type="checkbox" class="edge-filter" value="family" checked> Family</label>
+            <label><input type="checkbox" class="edge-filter" value="colleague" checked> Colleague</label>
+            <label><input type="checkbox" class="edge-filter" value="patron" checked> Patron</label>
+            <label><input type="checkbox" class="edge-filter" value="influenced" checked> Influenced</label>
+            <label><input type="checkbox" class="edge-filter" value="collaborated" checked> Collaborated</label>
+        </div>
+
+        <div id="stats">
+            <h3>Network</h3>
+            <div class="stat">Figures<span class="stat-value" id="stat-nodes">0</span></div>
+            <div class="stat">Connections<span class="stat-value" id="stat-edges">0</span></div>
+            <div class="stat">Timespan<span class="stat-value">1526–1695</span></div>
+        </div>
+
+        <div id="tooltip"></div>
+
+        <div id="detail-panel">
+            <button class="close-btn">&times;</button>
+            <h2 id="detail-name"></h2>
+            <div class="meta" id="detail-meta"></div>
+            <div class="role" id="detail-role"></div>
+
+            <div class="section" id="works-section">
+                <div class="section-title">Key Works / Contributions</div>
+                <ul class="works-list" id="detail-works"></ul>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Connections</div>
+                <div class="connections">
+                    <div class="connection-group">
+                        <h4>Connected from</h4>
+                        <ul class="connection-list" id="detail-influenced-by"></ul>
+                    </div>
+                    <div class="connection-group">
+                        <h4>Connected to</h4>
+                        <ul class="connection-list" id="detail-influenced"></ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="note" id="detail-note"></div>
+        </div>
+    </div>
+
+    <script>
+const graphData = {
+  "nodes": [
+    // DREBBEL - CENTER
+    {
+      "id": "drebbel",
+      "label": "Cornelis Drebbel",
+      "birth": 1572,
+      "death": 1633,
+      "place": "Alkmaar → London",
+      "group": "family",
+      "role": "Inventor, alchemist, engineer",
+      "key_works": [
+        "Perpetuum Mobile (1604)",
+        "Wonder-vondt van de eeuwighe bewegingh (1607)",
+        "Een kort Tractaet van de Natuere der Elementen (1621)",
+        "First navigable submarine (1620)",
+        "Self-regulating oven / thermostat (1598)"
+      ],
+      "note": "Dutch polymath who invented the thermostat, submarine, and compound microscope. His work influenced the Royal Society, Francis Bacon, and the development of cybernetics."
+    },
+
+    // NETHERLANDS - HAARLEM ACADEMY
+    {
+      "id": "goltzius",
+      "label": "Hendrik Goltzius",
+      "birth": 1558,
+      "death": 1617,
+      "place": "Haarlem",
+      "group": "netherlands",
+      "role": "Engraver, painter, alchemist",
+      "key_works": [
+        "The Standard Bearer (1587)",
+        "Farnese Hercules engravings",
+        "The Seven Liberal Arts"
+      ],
+      "note": "Drebbel's master and brother-in-law. Leader of the Haarlem Academy. Shared alchemical interests with Drebbel."
+    },
+    {
+      "id": "vanmander",
+      "label": "Karel van Mander",
+      "birth": 1548,
+      "death": 1606,
+      "place": "Haarlem",
+      "group": "netherlands",
+      "role": "Painter, writer, humanist",
+      "key_works": [
+        "Het Schilder-Boeck (1604)"
+      ],
+      "note": "Co-founder of Haarlem Academy with Goltzius. His Schilder-Boeck was the Northern Vasari."
+    },
+    {
+      "id": "cornelisz",
+      "label": "Cornelis Corneliszoon",
+      "birth": 1562,
+      "death": 1638,
+      "place": "Haarlem",
+      "group": "netherlands",
+      "role": "Painter",
+      "key_works": [
+        "The Fall of the Titans",
+        "Bathsheba at Her Bath"
+      ],
+      "note": "Third member of the Haarlem Mannerists alongside Goltzius and Van Mander."
+    },
+    {
+      "id": "sophia",
+      "label": "Sophia Goltzius",
+      "birth": 1570,
+      "death": 1625,
+      "place": "Alkmaar",
+      "group": "family",
+      "role": "Drebbel's wife",
+      "key_works": [],
+      "note": "Younger sister of Hendrik Goltzius. Married Drebbel in 1595."
+    },
+
+    // NETHERLANDS - MIDDELBURG LENS MAKERS
+    {
+      "id": "lippershey",
+      "label": "Hans Lippershey",
+      "birth": 1570,
+      "death": 1619,
+      "place": "Middelburg",
+      "group": "optics",
+      "role": "Spectacle maker, telescope inventor",
+      "key_works": [
+        "First telescope patent application (1608)"
+      ],
+      "note": "Drebbel learned lens grinding from Lippershey in Middelburg around 1600."
+    },
+    {
+      "id": "janssen",
+      "label": "Zacharias Janssen",
+      "birth": 1585,
+      "death": 1632,
+      "place": "Middelburg",
+      "group": "optics",
+      "role": "Spectacle maker",
+      "key_works": [
+        "Claimed microscope invention"
+      ],
+      "note": "Colleague of Lippershey. Drebbel knew both Middelburg lens makers."
+    },
+
+    // NETHERLANDS - PUBLISHERS
+    {
+      "id": "schagen",
+      "label": "Gerrit Pietersz Schagen",
+      "birth": 1560,
+      "death": 1620,
+      "place": "Alkmaar",
+      "group": "netherlands",
+      "role": "Publisher, bookseller",
+      "key_works": [
+        "Published Wonder-vondt (1607)"
+      ],
+      "note": "Alkmaar bookseller who published Drebbel's first philosophical work."
+    },
+
+    // PRAGUE - RUDOLF II'S COURT
+    {
+      "id": "rudolf",
+      "label": "Rudolf II",
+      "birth": 1552,
+      "death": 1612,
+      "place": "Prague",
+      "group": "prague",
+      "role": "Holy Roman Emperor",
+      "key_works": [
+        "Patron of arts, alchemy, astronomy"
+      ],
+      "note": "Invited Drebbel to Prague in 1610. Great patron of alchemists, astronomers, and occultists."
+    },
+    {
+      "id": "sendivogius",
+      "label": "Michael Sendivogius",
+      "birth": 1566,
+      "death": 1636,
+      "place": "Prague",
+      "group": "alchemy",
+      "role": "Alchemist",
+      "key_works": [
+        "Novum Lumen Chymicum (1604)",
+        "Discovery of oxygen from saltpeter"
+      ],
+      "note": "Taught Drebbel that heating saltpeter produces 'food of life' (oxygen) — knowledge Drebbel used in his submarine."
+    },
+    {
+      "id": "kepler",
+      "label": "Johannes Kepler",
+      "birth": 1571,
+      "death": 1630,
+      "place": "Prague",
+      "group": "science",
+      "role": "Astronomer, mathematician",
+      "key_works": [
+        "Astronomia nova (1609)",
+        "Dioptrice (1611)"
+      ],
+      "note": "At Rudolf's court 1600-1612. Overlapped with Drebbel in Prague."
+    },
+    {
+      "id": "khunrath",
+      "label": "Heinrich Khunrath",
+      "birth": 1560,
+      "death": 1605,
+      "place": "Prague",
+      "group": "alchemy",
+      "role": "Alchemist, Hermetic philosopher",
+      "key_works": [
+        "Amphitheatrum Sapientiae Aeternae (1595/1609)"
+      ],
+      "note": "Died before Drebbel arrived, but his Hermetic philosophy shaped the milieu Drebbel entered."
+    },
+    {
+      "id": "dee",
+      "label": "John Dee",
+      "birth": 1527,
+      "death": 1608,
+      "place": "Prague / London",
+      "group": "alchemy",
+      "role": "Mathematician, occultist",
+      "key_works": [
+        "Monas Hieroglyphica (1564)",
+        "Enochian magic"
+      ],
+      "note": "At Rudolf's court 1584-1589. Died before Drebbel arrived, but influenced the same networks via Khunrath and Edward Dyer."
+    },
+    {
+      "id": "kelley",
+      "label": "Edward Kelley",
+      "birth": 1555,
+      "death": 1597,
+      "place": "Prague",
+      "group": "alchemy",
+      "role": "Alchemist, medium",
+      "key_works": [
+        "Dee's scryer for angel magic"
+      ],
+      "note": "Dee's partner in Prague. Stayed after Dee left. Part of the alchemical tradition at Rudolf's court."
+    },
+
+    // ENGLAND - ROYALTY
+    {
+      "id": "james",
+      "label": "King James I",
+      "birth": 1566,
+      "death": 1625,
+      "place": "London",
+      "group": "royalty",
+      "role": "King of England & Scotland",
+      "key_works": [
+        "Daemonologie (1597)"
+      ],
+      "note": "Drebbel's patron from 1604. Rode in the submarine on the Thames. Housed Drebbel at Eltham Palace."
+    },
+    {
+      "id": "henry",
+      "label": "Prince Henry",
+      "birth": 1594,
+      "death": 1612,
+      "place": "London",
+      "group": "royalty",
+      "role": "Prince of Wales",
+      "key_works": [],
+      "note": "The 'Renaissance Prince.' Drebbel's major sponsor 1608-1612. Secured Drebbel's release from Prague prison. Died at 18."
+    },
+
+    // ENGLAND - PHILOSOPHERS & SCIENTISTS
+    {
+      "id": "bacon",
+      "label": "Francis Bacon",
+      "birth": 1561,
+      "death": 1626,
+      "place": "London",
+      "group": "science",
+      "role": "Philosopher, statesman",
+      "key_works": [
+        "Novum Organum (1620)",
+        "New Atlantis (1627)"
+      ],
+      "note": "Salomon's House in New Atlantis was partly inspired by Drebbel's inventions. On the commission that approved Drebbel's lodgings at Eltham."
+    },
+    {
+      "id": "boyle",
+      "label": "Robert Boyle",
+      "birth": 1627,
+      "death": 1691,
+      "place": "London",
+      "group": "science",
+      "role": "Natural philosopher, chemist",
+      "key_works": [
+        "The Sceptical Chymist (1661)"
+      ],
+      "note": "Investigated Drebbel's submarine and 'quintessence of air.' Called Drebbel 'a deservedly famous mechanician and chymist.'"
+    },
+    {
+      "id": "hooke",
+      "label": "Robert Hooke",
+      "birth": 1635,
+      "death": 1703,
+      "place": "London",
+      "group": "science",
+      "role": "Natural philosopher",
+      "key_works": [
+        "Micrographia (1665)"
+      ],
+      "note": "May have learned glass grinding from Kuffler (Drebbel's son-in-law). Developed Drebbel's microscope work."
+    },
+    {
+      "id": "huygens_const",
+      "label": "Constantijn Huygens",
+      "birth": 1596,
+      "death": 1687,
+      "place": "The Hague / London",
+      "group": "science",
+      "role": "Diplomat, poet, scientist",
+      "key_works": [
+        "Autobiography"
+      ],
+      "note": "Bought one of Drebbel's microscopes. Called Drebbel a 'moon' to Bacon's 'sun.' Taught lens grinding to his son Christiaan."
+    },
+    {
+      "id": "huygens_chr",
+      "label": "Christiaan Huygens",
+      "birth": 1629,
+      "death": 1695,
+      "place": "The Hague",
+      "group": "science",
+      "role": "Mathematician, astronomer",
+      "key_works": [
+        "Horologium Oscillatorium (1673)",
+        "Traité de la Lumière (1690)"
+      ],
+      "note": "Credited Drebbel with inventing the compound microscope. Learned lens grinding from his father, who learned from Drebbel."
+    },
+
+    // ENGLAND - WRITERS
+    {
+      "id": "jonson",
+      "label": "Ben Jonson",
+      "birth": 1572,
+      "death": 1637,
+      "place": "London",
+      "group": "literature",
+      "role": "Playwright, poet",
+      "key_works": [
+        "The Alchemist (1610)",
+        "Epicoene (1609)"
+      ],
+      "note": "Mocked Drebbel as 'vulgar mechanick' but used his effects for court masques. Called the submarine an 'invisible eel.'"
+    },
+    {
+      "id": "shakespeare",
+      "label": "William Shakespeare",
+      "birth": 1564,
+      "death": 1616,
+      "place": "London",
+      "group": "literature",
+      "role": "Playwright, poet",
+      "key_works": [
+        "The Tempest (1611)"
+      ],
+      "note": "Prospero may be partly inspired by Drebbel (and Dee). The Tempest written during Drebbel's fame at court."
+    },
+
+    // ENGLAND - KUFFLER FAMILY (DREBBEL'S LEGACY)
+    {
+      "id": "abraham_kuffler",
+      "label": "Abraham Kuffler",
+      "birth": 1598,
+      "death": 1657,
+      "place": "London",
+      "group": "family",
+      "role": "Inventor, dye maker",
+      "key_works": [
+        "Bow Dye Works (1643)"
+      ],
+      "note": "Drebbel's son-in-law (married Anna 1623). Continued scarlet dye business. Promoted Drebbel's inventions."
+    },
+    {
+      "id": "johannes_kuffler",
+      "label": "Johannes Sibertus Kuffler",
+      "birth": 1595,
+      "death": 1677,
+      "place": "London",
+      "group": "family",
+      "role": "Inventor, chemist",
+      "key_works": [
+        "Petitioned Parliament for £10,000 to demonstrate 'secret of sinking ships'"
+      ],
+      "note": "Drebbel's son-in-law (married Catharina 1627). PhD Padua. Taught Robert Hooke glass grinding."
+    },
+    {
+      "id": "augustus_kuffler",
+      "label": "Augustus Kuffler",
+      "birth": 1630,
+      "death": 1690,
+      "place": "London",
+      "group": "family",
+      "role": "Chemist",
+      "key_works": [
+        "Chymical Operations manuscript (1690, Cambridge)"
+      ],
+      "note": "Drebbel's grandson. Preserved family alchemical knowledge in manuscript form."
+    },
+
+    // ROSICRUCIAN / HERMETIC NETWORK
+    {
+      "id": "morsius",
+      "label": "Joachim Morsius",
+      "birth": 1593,
+      "death": 1643,
+      "place": "Hamburg",
+      "group": "alchemy",
+      "role": "Editor, Rosicrucian",
+      "key_works": [
+        "Edited Drebbel's De Quinta Essentia (1621)"
+      ],
+      "note": "Drebbel's signature appears in Morsius's album amicorum. Key figure in Rosicrucian networks."
+    },
+    {
+      "id": "dyer",
+      "label": "Edward Dyer",
+      "birth": 1543,
+      "death": 1607,
+      "place": "London",
+      "group": "alchemy",
+      "role": "Poet, alchemist, courtier",
+      "key_works": [
+        "My Mind to Me a Kingdom Is"
+      ],
+      "note": "Friend of John Dee. 'Reputed to have had a connection with the Rosicrucian Cornelis Drebbel.'"
+    },
+
+    // GALILEO CONNECTION
+    {
+      "id": "galileo",
+      "label": "Galileo Galilei",
+      "birth": 1564,
+      "death": 1642,
+      "place": "Italy",
+      "group": "science",
+      "role": "Astronomer, physicist",
+      "key_works": [
+        "Sidereus Nuncius (1610)",
+        "Dialogue (1632)"
+      ],
+      "note": "Saw Drebbel's microscope in Rome (1624) and built an improved version. May have used Drebbel lenses."
+    }
+  ],
+  "links": [
+    // NETHERLANDS - Haarlem Academy
+    {"source": "goltzius", "target": "drebbel", "type": "teacher", "label": "Master & brother-in-law"},
+    {"source": "vanmander", "target": "drebbel", "type": "teacher", "label": "Teacher at Haarlem Academy"},
+    {"source": "goltzius", "target": "vanmander", "type": "colleague", "label": "Co-founded Haarlem Academy"},
+    {"source": "goltzius", "target": "cornelisz", "type": "colleague", "label": "Haarlem Mannerists"},
+    {"source": "vanmander", "target": "cornelisz", "type": "colleague", "label": "Haarlem Mannerists"},
+    {"source": "sophia", "target": "drebbel", "type": "family", "label": "Wife"},
+    {"source": "sophia", "target": "goltzius", "type": "family", "label": "Sister"},
+    {"source": "schagen", "target": "drebbel", "type": "collaborated", "label": "Publisher"},
+
+    // NETHERLANDS - Middelburg optics
+    {"source": "lippershey", "target": "drebbel", "type": "teacher", "label": "Taught lens grinding"},
+    {"source": "janssen", "target": "drebbel", "type": "colleague", "label": "Fellow lens maker"},
+    {"source": "lippershey", "target": "janssen", "type": "colleague", "label": "Middelburg spectacle makers"},
+
+    // PRAGUE - Rudolf's court
+    {"source": "rudolf", "target": "drebbel", "type": "patron", "label": "Invited to Prague 1610"},
+    {"source": "sendivogius", "target": "drebbel", "type": "collaborated", "label": "Taught oxygen/saltpeter"},
+    {"source": "rudolf", "target": "sendivogius", "type": "patron", "label": "Court alchemist"},
+    {"source": "rudolf", "target": "kepler", "type": "patron", "label": "Imperial mathematician"},
+    {"source": "rudolf", "target": "khunrath", "type": "patron", "label": "Court alchemist"},
+    {"source": "rudolf", "target": "dee", "type": "patron", "label": "Invited 1584"},
+    {"source": "dee", "target": "kelley", "type": "collaborated", "label": "Angelic magic partner"},
+    {"source": "dee", "target": "khunrath", "type": "influenced", "label": "Met Bremen 1589"},
+    {"source": "khunrath", "target": "drebbel", "type": "influenced", "label": "Hermetic tradition"},
+
+    // ENGLAND - Royalty
+    {"source": "james", "target": "drebbel", "type": "patron", "label": "Patron from 1604"},
+    {"source": "henry", "target": "drebbel", "type": "patron", "label": "Major sponsor 1608-1612"},
+    {"source": "henry", "target": "james", "type": "family", "label": "Son"},
+
+    // ENGLAND - Bacon & Science
+    {"source": "bacon", "target": "drebbel", "type": "collaborated", "label": "Co-operated in London"},
+    {"source": "drebbel", "target": "bacon", "type": "influenced", "label": "Inspired Salomon's House"},
+    {"source": "drebbel", "target": "boyle", "type": "influenced", "label": "Investigated submarine"},
+    {"source": "drebbel", "target": "hooke", "type": "influenced", "label": "Via Kuffler"},
+    {"source": "johannes_kuffler", "target": "hooke", "type": "teacher", "label": "Taught glass grinding"},
+    {"source": "drebbel", "target": "huygens_const", "type": "collaborated", "label": "Sold microscope"},
+    {"source": "huygens_const", "target": "huygens_chr", "type": "teacher", "label": "Father, taught lens grinding"},
+    {"source": "drebbel", "target": "huygens_chr", "type": "influenced", "label": "Credited microscope invention"},
+    {"source": "boyle", "target": "hooke", "type": "collaborated", "label": "Royal Society"},
+    {"source": "huygens_chr", "target": "boyle", "type": "colleague", "label": "Royal Society connection"},
+
+    // ENGLAND - Writers
+    {"source": "drebbel", "target": "jonson", "type": "collaborated", "label": "Stage effects for masques"},
+    {"source": "drebbel", "target": "shakespeare", "type": "influenced", "label": "Possible Prospero inspiration"},
+    {"source": "bacon", "target": "jonson", "type": "collaborated", "label": "'Good pens who forsake me not'"},
+
+    // KUFFLER FAMILY
+    {"source": "drebbel", "target": "abraham_kuffler", "type": "family", "label": "Son-in-law"},
+    {"source": "drebbel", "target": "johannes_kuffler", "type": "family", "label": "Son-in-law"},
+    {"source": "abraham_kuffler", "target": "johannes_kuffler", "type": "family", "label": "Brothers"},
+    {"source": "johannes_kuffler", "target": "augustus_kuffler", "type": "family", "label": "Father"},
+
+    // ROSICRUCIAN / HERMETIC
+    {"source": "morsius", "target": "drebbel", "type": "collaborated", "label": "Edited Quinta Essentia"},
+    {"source": "dyer", "target": "drebbel", "type": "colleague", "label": "Rosicrucian connection"},
+    {"source": "dyer", "target": "dee", "type": "colleague", "label": "Friend and associate"},
+
+    // GALILEO
+    {"source": "drebbel", "target": "galileo", "type": "influenced", "label": "Microscope seen in Rome 1624"}
+  ]
+};
+
+// Color mapping
+const groupColors = {
+    'netherlands': '#e07b39',
+    'prague': '#9b59b6',
+    'england': '#3498db',
+    'family': '#e74c3c',
+    'science': '#2ecc71',
+    'art': '#f39c12',
+    'alchemy': '#8e44ad',
+    'royalty': '#c0392b',
+    'literature': '#1abc9c',
+    'optics': '#16a085'
+};
+
+// Initialize
+const svg = d3.select("svg");
+const container = document.getElementById("container");
+const width = container.clientWidth;
+const height = container.clientHeight;
+
+// Update stats
+document.getElementById("node-count").textContent = graphData.nodes.length;
+document.getElementById("edge-count").textContent = graphData.links.length;
+document.getElementById("stat-nodes").textContent = graphData.nodes.length;
+document.getElementById("stat-edges").textContent = graphData.links.length;
+
+// Create zoom behavior
+const zoom = d3.zoom()
+    .scaleExtent([0.3, 3])
+    .on("zoom", (event) => {
+        g.attr("transform", event.transform);
+    });
+
+svg.call(zoom);
+
+const g = svg.append("g");
+
+// Create force simulation
+const simulation = d3.forceSimulation(graphData.nodes)
+    .force("link", d3.forceLink(graphData.links).id(d => d.id).distance(100))
+    .force("charge", d3.forceManyBody().strength(-400))
+    .force("center", d3.forceCenter(width / 2, height / 2))
+    .force("collision", d3.forceCollide().radius(40));
+
+// Draw links
+const link = g.append("g")
+    .selectAll("line")
+    .data(graphData.links)
+    .join("line")
+    .attr("class", "link")
+    .attr("stroke", "#666")
+    .attr("stroke-width", 1.5);
+
+// Draw nodes
+const node = g.append("g")
+    .selectAll("g")
+    .data(graphData.nodes)
+    .join("g")
+    .attr("class", "node")
+    .call(d3.drag()
+        .on("start", dragstarted)
+        .on("drag", dragged)
+        .on("end", dragended));
+
+// Add circles
+node.append("circle")
+    .attr("r", d => d.id === "drebbel" ? 20 : 12)
+    .attr("fill", d => groupColors[d.group] || "#888")
+    .attr("stroke", d => d3.color(groupColors[d.group] || "#888").brighter(0.5))
+    .style("filter", d => d.id === "drebbel" ? "drop-shadow(0 0 15px gold)" : "");
+
+// Add labels
+node.append("text")
+    .text(d => d.label)
+    .attr("x", 0)
+    .attr("y", d => d.id === "drebbel" ? 32 : 22)
+    .attr("text-anchor", "middle");
+
+// Tooltip
+const tooltip = document.getElementById("tooltip");
+
+node.on("mouseover", (event, d) => {
+    tooltip.innerHTML = `
+        <h4>${d.label}</h4>
+        <div class="dates">${d.birth}–${d.death} | ${d.place}</div>
+        <div class="role">${d.role}</div>
+    `;
+    tooltip.classList.add("visible");
+    tooltip.style.left = (event.pageX + 15) + "px";
+    tooltip.style.top = (event.pageY - 10) + "px";
+})
+.on("mousemove", (event) => {
+    tooltip.style.left = (event.pageX + 15) + "px";
+    tooltip.style.top = (event.pageY - 10) + "px";
+})
+.on("mouseout", () => {
+    tooltip.classList.remove("visible");
+});
+
+// Click for detail panel
+node.on("click", (event, d) => {
+    event.stopPropagation();
+    showDetail(d);
+    highlightConnections(d);
+});
+
+svg.on("click", () => {
+    hideDetail();
+    resetHighlight();
+});
+
+function showDetail(d) {
+    const panel = document.getElementById("detail-panel");
+    document.getElementById("detail-name").textContent = d.label;
+    document.getElementById("detail-meta").textContent = `${d.birth}–${d.death} | ${d.place}`;
+    document.getElementById("detail-role").textContent = d.role;
+
+    const worksList = document.getElementById("detail-works");
+    worksList.innerHTML = (d.key_works || []).map(w => `<li>${w}</li>`).join("");
+
+    document.getElementById("detail-note").textContent = d.note || "";
+
+    // Find connections
+    const incoming = graphData.links.filter(l => l.target.id === d.id || l.target === d.id);
+    const outgoing = graphData.links.filter(l => l.source.id === d.id || l.source === d.id);
+
+    document.getElementById("detail-influenced-by").innerHTML = incoming.map(l => {
+        const sourceId = l.source.id || l.source;
+        const sourceNode = graphData.nodes.find(n => n.id === sourceId);
+        return `<li>${sourceNode ? sourceNode.label : sourceId} <span class="type">${l.type}</span></li>`;
+    }).join("");
+
+    document.getElementById("detail-influenced").innerHTML = outgoing.map(l => {
+        const targetId = l.target.id || l.target;
+        const targetNode = graphData.nodes.find(n => n.id === targetId);
+        return `<li>${targetNode ? targetNode.label : targetId} <span class="type">${l.type}</span></li>`;
+    }).join("");
+
+    panel.classList.add("visible");
+}
+
+function hideDetail() {
+    document.getElementById("detail-panel").classList.remove("visible");
+}
+
+document.querySelector(".close-btn").addEventListener("click", (e) => {
+    e.stopPropagation();
+    hideDetail();
+    resetHighlight();
+});
+
+function highlightConnections(d) {
+    const connectedIds = new Set([d.id]);
+    graphData.links.forEach(l => {
+        const sourceId = l.source.id || l.source;
+        const targetId = l.target.id || l.target;
+        if (sourceId === d.id) connectedIds.add(targetId);
+        if (targetId === d.id) connectedIds.add(sourceId);
+    });
+
+    node.classed("highlighted", n => n.id === d.id)
+        .classed("dimmed", n => !connectedIds.has(n.id));
+
+    link.classed("highlighted", l => {
+        const sourceId = l.source.id || l.source;
+        const targetId = l.target.id || l.target;
+        return sourceId === d.id || targetId === d.id;
+    })
+    .classed("dimmed", l => {
+        const sourceId = l.source.id || l.source;
+        const targetId = l.target.id || l.target;
+        return sourceId !== d.id && targetId !== d.id;
+    });
+}
+
+function resetHighlight() {
+    node.classed("highlighted", false).classed("dimmed", false);
+    link.classed("highlighted", false).classed("dimmed", false);
+}
+
+// Simulation tick
+simulation.on("tick", () => {
+    link
+        .attr("x1", d => d.source.x)
+        .attr("y1", d => d.source.y)
+        .attr("x2", d => d.target.x)
+        .attr("y2", d => d.target.y);
+
+    node.attr("transform", d => `translate(${d.x},${d.y})`);
+});
+
+// Drag functions
+function dragstarted(event, d) {
+    if (!event.active) simulation.alphaTarget(0.3).restart();
+    d.fx = d.x;
+    d.fy = d.y;
+}
+
+function dragged(event, d) {
+    d.fx = event.x;
+    d.fy = event.y;
+}
+
+function dragended(event, d) {
+    if (!event.active) simulation.alphaTarget(0);
+    d.fx = null;
+    d.fy = null;
+}
+
+// Edge type filtering
+document.querySelectorAll(".edge-filter").forEach(checkbox => {
+    checkbox.addEventListener("change", () => {
+        const activeTypes = Array.from(document.querySelectorAll(".edge-filter:checked")).map(c => c.value);
+        link.style("display", d => activeTypes.includes(d.type) ? "block" : "none");
+    });
+});
+
+// Initial zoom to fit
+svg.call(zoom.transform, d3.zoomIdentity.translate(width/2, height/2).scale(0.8).translate(-width/2, -height/2));
+    </script>
+</body>
+</html>

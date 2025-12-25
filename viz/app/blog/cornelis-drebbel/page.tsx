@@ -38,8 +38,8 @@ export default function CornelisDrebbel() {
       </figure>
 
       <p style={{ marginBottom: '24px' }}>
-        Earlier this year, I was synchronistically gifted a wooden submarine — a replica of Cornelis Drebbel&apos;s first functional sub.
-        It sits on my desk as a reminder that the most important inventors are often the least remembered.
+        Earlier this year, I was invited to see a wooden submarine — a four-meter replica of Cornelis Drebbel&apos;s first functional sub,
+        hidden away in a secret location in Amsterdam. It&apos;s a reminder that the most important inventors are often the least remembered.
       </p>
 
       <p style={{ marginBottom: '24px' }}>
@@ -71,8 +71,7 @@ export default function CornelisDrebbel() {
       </h2>
 
       {/* Perpetuum Mobile Image
-          Source: Wikimedia Commons - https://commons.wikimedia.org/wiki/File:Drebbel-Clock.jpg
-          Or: https://commons.wikimedia.org/wiki/File:1612_Perpetuum_Mobile.jpg
+          Source: Stadtbibliothek Lübeck - https://digital-stadtbibliothek.luebeck.de/viewer/image/1447234995253/249/#topDocAnchor
       */}
       <figure style={{ margin: '0 0 32px 0' }}>
         <img
@@ -95,6 +94,7 @@ export default function CornelisDrebbel() {
           textAlign: 'center',
         }}>
           The Perpetui Mobilis as depicted in Drebbel&apos;s time. The device used daily fluctuations in atmospheric pressure to power a clock indefinitely.
+          Source: <a href="https://digital-stadtbibliothek.luebeck.de/viewer/image/1447234995253/249/" style={{ color: '#888' }}>Stadtbibliothek Lübeck</a>.
         </figcaption>
       </figure>
 
@@ -162,11 +162,13 @@ export default function CornelisDrebbel() {
         have noted, &quot;the first feedback system invented since antiquity.&quot;
       </p>
 
-      {/* Thermostat/Furnace Image - Drebbel's actual oven diagram */}
+      {/* Thermostat/Furnace Image - Chinese woodblock of Drebbel's athanor
+          Source: drebbel.net - https://drebbel.net/2013%20Drebbels%20Athanor.pdf
+      */}
       <figure style={{ margin: '0 0 32px 0' }}>
         <img
           src="/gallery/full/drebbel-oven-diagram.png"
-          alt="Diagram of Drebbel's self-regulating oven showing the thermostat mechanism"
+          alt="Chinese woodblock diagram of Drebbel's self-regulating oven showing the thermostat mechanism"
           style={{
             width: '100%',
             maxWidth: '700px',
@@ -183,7 +185,8 @@ export default function CornelisDrebbel() {
           marginTop: '12px',
           textAlign: 'center',
         }}>
-          Drebbel&apos;s self-regulating oven: an L-shaped glass tube filled with alcohol and mercury controlled a damper to maintain constant temperature.
+          Chinese woodblock diagram of Drebbel&apos;s self-regulating athanor: an L-shaped glass tube filled with alcohol and mercury controlled a damper to maintain constant temperature.
+          Source: <a href="https://drebbel.net/2013%20Drebbels%20Athanor.pdf" style={{ color: '#888' }}>drebbel.net</a>.
         </figcaption>
       </figure>
 
@@ -334,11 +337,13 @@ export default function CornelisDrebbel() {
         </p>
       </div>
 
-      {/* Modern Replica Image */}
+      {/* Modern Replica Image
+          Source: Dutch The Media - https://www.dutchthemedia.com/blogs/dutch-miscellany-4/cornelis-drebbel-inventor-of-the-submarine
+      */}
       <figure style={{ margin: '0 0 32px 0' }}>
         <img
-          src="/gallery/full/drebbel-replica-historicuk.jpg"
-          alt="Modern replica of Drebbel's submarine at Richmond upon Thames"
+          src="/gallery/full/drebbel-replica-amsterdam.jpg"
+          alt="Modern replica of Drebbel's submarine in Amsterdam"
           style={{
             width: '100%',
             borderRadius: '8px',
@@ -352,7 +357,8 @@ export default function CornelisDrebbel() {
           marginTop: '12px',
           textAlign: 'center',
         }}>
-          A full-scale replica of Drebbel&apos;s submarine, built by Mark Edwards for the BBC in 2002. It is displayed near Richmond Bridge in London, close to where the original was tested.
+          A four-meter replica of Drebbel&apos;s submarine, kept in a secret location in Amsterdam.
+          Source: <a href="https://www.dutchthemedia.com/blogs/dutch-miscellany-4/cornelis-drebbel-inventor-of-the-submarine" style={{ color: '#888' }}>Dutch The Media</a>.
         </figcaption>
       </figure>
 
@@ -834,6 +840,242 @@ export default function CornelisDrebbel() {
         }}>
           Four hundred years later, the inventions speak for themselves.
         </p>
+      </div>
+
+      {/* Gallery: Paintings featuring Drebbel's Perpetuum Mobile */}
+      <h2 style={{
+        fontFamily: 'Cormorant Garamond, Georgia, serif',
+        fontSize: '28px',
+        fontWeight: 400,
+        color: '#1a1612',
+        marginTop: '48px',
+        marginBottom: '24px',
+      }}>
+        Gallery: The Perpetuum Mobile in 17th-Century Art
+      </h2>
+
+      <p style={{ marginBottom: '24px' }}>
+        Drebbel&apos;s Perpetuum Mobile became a status symbol for collectors across Europe.
+        At least <strong>thirteen paintings</strong> from 1610–1650 depict the device in Kunstkammer
+        (cabinet of curiosities) scenes — a testament to its fame. Peter Paul Rubens himself procured
+        one for the French scholar Nicolas-Claude Fabri de Peiresc in 1625.
+      </p>
+
+      <div style={{
+        display: 'grid',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+        gap: '24px',
+        marginBottom: '32px',
+      }}>
+        {[
+          {
+            title: "The Archdukes Albert and Isabella Visiting a Collector's Cabinet",
+            artist: "Jan Brueghel the Elder & Hieronymus Francken II",
+            date: "c. 1621–1623",
+            location: "Walters Art Museum, Baltimore",
+            url: "https://art.thewalters.org/object/37.2010/",
+            note: "The Perpetuum Mobile is visible on the table at left"
+          },
+          {
+            title: "The Gallery of Cornelis van der Geest",
+            artist: "Willem van Haecht",
+            date: "1628",
+            location: "Rubenshuis, Antwerp",
+            url: "https://rubenshuis.be/en/willem-van-haecht-gallery-cornelis-van-der-geest",
+            note: "Recently restored; currently on loan at the Prado until Feb 2026"
+          },
+          {
+            title: "The Vanity of Human Life",
+            artist: "Jan Brueghel the Elder & Peter Paul Rubens",
+            date: "c. 1610–1625",
+            location: "Private collection",
+            url: "https://drebbel.net/wiki/index.php?title=Perpetuum_Paintings",
+            note: "One of the earliest depictions"
+          },
+          {
+            title: "Allegory of Hearing",
+            artist: "Jan van Kessel the Elder",
+            date: "1625",
+            location: "Museo del Prado, Madrid",
+            url: "https://drebbel.net/wiki/index.php?title=Perpetuum_Paintings",
+            note: "Part of the Five Senses series"
+          },
+          {
+            title: "Das Kabinett des Rubens",
+            artist: "Cornelis de Baellieur",
+            date: "1630–1635",
+            location: "Various collections",
+            url: "https://drebbel.net/wiki/index.php?title=Perpetuum_Paintings",
+            note: "Shows Rubens' own cabinet"
+          },
+          {
+            title: "Las Ciencias y las Artes",
+            artist: "Adriaen van Stalbemt",
+            date: "c. 1650",
+            location: "Museo del Prado, Madrid",
+            url: "https://drebbel.net/wiki/index.php?title=Perpetuum_Paintings",
+            note: "One of the last depictions in this tradition"
+          },
+        ].map((painting, i) => (
+          <div key={i} style={{
+            background: '#fff',
+            border: '1px solid #e8e4dc',
+            borderRadius: '8px',
+            padding: '20px',
+          }}>
+            <p style={{
+              fontFamily: 'Cormorant Garamond, Georgia, serif',
+              fontSize: '18px',
+              fontWeight: 600,
+              color: '#1a1612',
+              marginBottom: '8px',
+              lineHeight: 1.3,
+            }}>
+              <a href={painting.url} style={{ color: '#1a1612', textDecoration: 'none' }} target="_blank" rel="noopener noreferrer">
+                {painting.title}
+              </a>
+            </p>
+            <p style={{
+              fontFamily: 'Inter, sans-serif',
+              fontSize: '13px',
+              color: '#666',
+              marginBottom: '4px',
+            }}>
+              {painting.artist}, {painting.date}
+            </p>
+            <p style={{
+              fontFamily: 'Inter, sans-serif',
+              fontSize: '12px',
+              color: '#9e4a3a',
+              marginBottom: '8px',
+            }}>
+              {painting.location}
+            </p>
+            <p style={{
+              fontFamily: 'Newsreader, Georgia, serif',
+              fontSize: '14px',
+              fontStyle: 'italic',
+              color: '#888',
+              margin: 0,
+            }}>
+              {painting.note}
+            </p>
+          </div>
+        ))}
+      </div>
+
+      {/* Manuscripts & Archives Section */}
+      <h2 style={{
+        fontFamily: 'Cormorant Garamond, Georgia, serif',
+        fontSize: '28px',
+        fontWeight: 400,
+        color: '#1a1612',
+        marginTop: '48px',
+        marginBottom: '24px',
+      }}>
+        Manuscripts &amp; Archives
+      </h2>
+
+      <p style={{ marginBottom: '24px' }}>
+        Drebbel&apos;s written legacy survives in scattered archives across Europe and America.
+        The Kuffler family — his sons-in-law and their descendants — preserved many of his secrets
+        and continued his work for generations.
+      </p>
+
+      <div style={{
+        background: '#fff',
+        border: '1px solid #e8e4dc',
+        borderRadius: '8px',
+        padding: '24px',
+        marginBottom: '32px',
+      }}>
+        <p style={{
+          fontFamily: 'Inter, sans-serif',
+          fontSize: '12px',
+          letterSpacing: '0.05em',
+          color: '#888',
+          marginBottom: '16px',
+        }}>
+          DREBBEL&apos;S WRITINGS
+        </p>
+        <ul style={{ paddingLeft: '20px', margin: 0 }}>
+          <li style={{ marginBottom: '12px' }}>
+            <strong><em>Een kort Tractaet van de Natuere der Elementen</em></strong> (1621) —
+            Published in Haarlem. The original Dutch treatise on the nature of the elements.
+            <a href="http://www.drebbel.net/Tractaet.pdf" style={{ color: '#9e4a3a' }}> PDF at drebbel.net</a>
+          </li>
+          <li style={{ marginBottom: '12px' }}>
+            <strong><em>Wonder-vondt van de eeuwighe bewegingh</em></strong> (1604/1607) —
+            &quot;Miracle of the eternal movement,&quot; describing his Perpetuum Mobile
+          </li>
+          <li style={{ marginBottom: '12px' }}>
+            <strong><em>De Quinta Essentia</em></strong> (1621) —
+            On the fifth essence, edited by Joachim Morsius. Drebbel&apos;s signature appears in Morsius&apos;s album amicorum
+          </li>
+        </ul>
+      </div>
+
+      <div style={{
+        background: '#fff',
+        border: '1px solid #e8e4dc',
+        borderRadius: '8px',
+        padding: '24px',
+        marginBottom: '32px',
+      }}>
+        <p style={{
+          fontFamily: 'Inter, sans-serif',
+          fontSize: '12px',
+          letterSpacing: '0.05em',
+          color: '#888',
+          marginBottom: '16px',
+        }}>
+          KUFFLER FAMILY ARCHIVES
+        </p>
+        <ul style={{ paddingLeft: '20px', margin: 0 }}>
+          <li style={{ marginBottom: '12px' }}>
+            <strong>Cambridge University</strong> — &quot;A very Good Collection of Approved Receipts of Chymical Operations&quot; (1690),
+            a manuscript by Augustus Kuffler (Drebbel&apos;s grandson) with pen and ink diagrams of alchemical processes
+          </li>
+          <li style={{ marginBottom: '12px' }}>
+            <strong>Massachusetts Historical Society</strong> — Letters from Abraham Kuffler&apos;s brother to John Winthrop,
+            discussing minerals and family affairs
+          </li>
+          <li style={{ marginBottom: '12px' }}>
+            <strong>Carpentras, France</strong> — Letters from 1622 describing Drebbel&apos;s microscopes
+          </li>
+          <li style={{ marginBottom: '12px' }}>
+            <strong>Calendar of State Papers, Domestic (1661–62)</strong> — Petition from Johannes Sibertus Kuffler and Jacob Drebbel
+            requesting £10,000 to demonstrate &quot;their father Cornelius Drebble&apos;s secret of sinking or destroying ships in a moment&quot;
+          </li>
+          <li style={{ marginBottom: '12px' }}>
+            <strong>Winthrop Collection</strong> — A book annotated: &quot;This was once the booke of that famous philosopher and naturalist, CORNELIUS DREBBEL&quot;
+          </li>
+        </ul>
+      </div>
+
+      <div style={{
+        background: '#fff',
+        border: '1px solid #e8e4dc',
+        borderRadius: '8px',
+        padding: '24px',
+        marginBottom: '32px',
+      }}>
+        <p style={{
+          fontFamily: 'Inter, sans-serif',
+          fontSize: '12px',
+          letterSpacing: '0.05em',
+          color: '#888',
+          marginBottom: '16px',
+        }}>
+          TECHNICAL DRAWINGS OF THE PERPETUUM MOBILE
+        </p>
+        <ul style={{ paddingLeft: '20px', margin: 0 }}>
+          <li style={{ marginBottom: '8px' }}><strong>John Speed</strong> (1604) — Earliest known technical draft</li>
+          <li style={{ marginBottom: '8px' }}><strong>Heinrich Hiesserle von Chodaw</strong> (1607/1612) — Functional description with drawing</li>
+          <li style={{ marginBottom: '8px' }}><strong>Antonini</strong> (1612)</li>
+          <li style={{ marginBottom: '8px' }}><strong>Thymme</strong> (1612)</li>
+          <li style={{ marginBottom: '8px' }}><strong>William Sanderson</strong>, <strong>Jakob Fetzer</strong>, <strong>Joachim Morsius</strong> — Various drawings</li>
+        </ul>
       </div>
 
       {/* Sources Section */}
