@@ -35,6 +35,30 @@ const pinnedPosts = [
 // All posts in reverse chronological order (newest first)
 const posts = [
   {
+    slug: "ficino-network",
+    title: "Mapping the Transmission: From Ficino's Academy to Copernicus",
+    date: "Dec 25, 2025",
+    excerpt: "An interactive network visualization of 57 Renaissance scholars connected by 116 documented relationships. Each node links to real USTC publication data—3,078 editions reveal patterns of intellectual transmission.",
+    tag: "Visualization",
+    category: "Data",
+  },
+  {
+    slug: "women-writers",
+    title: "The Rediscovery of Medieval Women Writers",
+    date: "Dec 23, 2025",
+    excerpt: "Marguerite Porete: 950x growth. Christine de Pizan: 280x. Margery Kempe: 400x. Google Ngram data reveals how feminist scholarship recovered an entire literary tradition that Victorian scholars had rendered invisible.",
+    tag: "Research",
+    category: "Data",
+  },
+  {
+    slug: "incunabula-citations",
+    title: "Which Renaissance Books Are Scholars Actually Reading?",
+    date: "Dec 22, 2025",
+    excerpt: "We scraped Google Scholar to find out which pre-1700 esoteric texts are most cited in modern academic literature. The results reveal surprising gaps between historical importance and contemporary scholarly attention.",
+    tag: "Data",
+    category: "Data",
+  },
+  {
     slug: "cornelis-drebbel",
     title: "Cornelis Drebbel: The Dutch Alchemist Who Invented the Future",
     date: "Dec 21, 2025",
