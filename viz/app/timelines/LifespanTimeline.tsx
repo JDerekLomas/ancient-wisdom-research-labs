@@ -24,6 +24,7 @@ const TAGS: Tag[] = [
   { name: "Philosophy", color: "#546b8a" },
   { name: "Science", color: "#8b9a7d" },
   { name: "Patrons & Politics", color: "#d4a574" },
+  { name: "Women Authors", color: "#e07b9a" },
 ];
 
 const people: Person[] = [
@@ -115,6 +116,62 @@ const people: Person[] = [
   { name: "Robert Hooke", birth: 1635, death: 1703, description: "Microscopy, cells, Hooke's Law; rival of Newton", works: "Micrographia", wikipedia: "https://en.wikipedia.org/wiki/Robert_Hooke", tags: ["Science"] },
   { name: "Newton", birth: 1643, death: 1727, description: "Gravity, calculus, optics; secret alchemist", works: "Principia Mathematica", wikipedia: "https://en.wikipedia.org/wiki/Isaac_Newton", tags: ["Science", "Occult Philosophy"] },
   { name: "Leibniz", birth: 1646, death: 1716, description: "Invented calculus, monads", works: "Monadology", wikipedia: "https://en.wikipedia.org/wiki/Gottfried_Wilhelm_Leibniz", tags: ["Philosophy", "Science"] },
+
+  // ===== WOMEN AUTHORS =====
+  // Ancient Philosophers
+  { name: "Themistoclea", birth: -580, death: -500, description: "Priestess at Delphi, taught Pythagoras", works: "Oral teachings", wikipedia: "https://en.wikipedia.org/wiki/Themistoclea", tags: ["Women Authors", "Philosophy"] },
+  { name: "Aspasia of Miletus", birth: -470, death: -400, description: "Taught rhetoric to Socrates & Pericles", works: "Funeral oration", wikipedia: "https://en.wikipedia.org/wiki/Aspasia", tags: ["Women Authors", "Philosophy"] },
+  { name: "Hypatia", birth: 360, death: 415, description: "Neoplatonist philosopher, murdered by mob", works: "Commentaries on astronomy", wikipedia: "https://en.wikipedia.org/wiki/Hypatia", tags: ["Women Authors", "Philosophy", "Science"] },
+
+  // Medieval Mystics & Writers
+  { name: "Hrotsvitha", birth: 935, death: 1002, description: "First German poet, nun-playwright", works: "Six plays in Latin", wikipedia: "https://en.wikipedia.org/wiki/Hrotsvitha", tags: ["Women Authors"] },
+  { name: "Murasaki Shikibu", birth: 973, death: 1025, description: "Japanese court lady, world's first novelist", works: "Tale of Genji", wikipedia: "https://en.wikipedia.org/wiki/Murasaki_Shikibu", tags: ["Women Authors"] },
+  { name: "Hildegard of Bingen", birth: 1098, death: 1179, description: "Visionary abbess, polymath, composer", works: "Scivias, Ordo Virtutum", wikipedia: "https://en.wikipedia.org/wiki/Hildegard_of_Bingen", tags: ["Women Authors", "Science", "Philosophy"] },
+  { name: "Marie de France", birth: 1130, death: 1200, description: "Anglo-Norman poet, first woman to write in French", works: "Lais", wikipedia: "https://en.wikipedia.org/wiki/Marie_de_France", tags: ["Women Authors"] },
+  { name: "Mechthild of Magdeburg", birth: 1207, death: 1282, description: "German mystic, Beguine", works: "Flowing Light of the Godhead", wikipedia: "https://en.wikipedia.org/wiki/Mechthild_of_Magdeburg", tags: ["Women Authors", "Philosophy"] },
+  { name: "Marguerite Porete", birth: 1250, death: 1310, description: "Mystical theologian, burned as heretic", works: "Mirror of Simple Souls", wikipedia: "https://en.wikipedia.org/wiki/Marguerite_Porete", tags: ["Women Authors", "Philosophy"] },
+  { name: "Julian of Norwich", birth: 1343, death: 1416, description: "English anchoress, first woman to write in English", works: "Revelations of Divine Love", wikipedia: "https://en.wikipedia.org/wiki/Julian_of_Norwich", tags: ["Women Authors", "Philosophy"] },
+  { name: "Catherine of Siena", birth: 1347, death: 1380, description: "Dominican mystic, Doctor of the Church", works: "Dialogue, 400+ letters", wikipedia: "https://en.wikipedia.org/wiki/Catherine_of_Siena", tags: ["Women Authors", "Philosophy", "Patrons & Politics"] },
+  { name: "Christine de Pizan", birth: 1364, death: 1430, description: "First professional woman writer", works: "City of Ladies", wikipedia: "https://en.wikipedia.org/wiki/Christine_de_Pizan", tags: ["Women Authors", "Humanism", "Philosophy"] },
+  { name: "Margery Kempe", birth: 1373, death: 1438, description: "English mystic, first autobiography in English", works: "Book of Margery Kempe", wikipedia: "https://en.wikipedia.org/wiki/Margery_Kempe", tags: ["Women Authors"] },
+
+  // Italian Humanists
+  { name: "Isotta Nogarola", birth: 1418, death: 1466, description: "Veronese humanist, debated Adam & Eve", works: "Letters, dialogues", wikipedia: "https://en.wikipedia.org/wiki/Isotta_Nogarola", tags: ["Women Authors", "Humanism"] },
+  { name: "Battista Malatesta", birth: 1383, death: 1450, description: "Humanist, delivered oration to Emperor", works: "Orations", wikipedia: "https://en.wikipedia.org/wiki/Battista_da_Montefeltro_Malatesta", tags: ["Women Authors", "Humanism"] },
+  { name: "Costanza Varano", birth: 1426, death: 1447, description: "Child prodigy, Latin orator", works: "Orations", wikipedia: "https://en.wikipedia.org/wiki/Costanza_Varano", tags: ["Women Authors", "Humanism"] },
+  { name: "Lucrezia Tornabuoni", birth: 1427, death: 1482, description: "Lorenzo de' Medici's mother, poet & patron", works: "Laude, sacred poetry", wikipedia: "https://en.wikipedia.org/wiki/Lucrezia_Tornabuoni", tags: ["Women Authors", "Patrons & Politics"] },
+  { name: "Cassandra Fedele", birth: 1465, death: 1558, description: "Venetian prodigy, addressed Doge & scholars", works: "Orations, letters", wikipedia: "https://en.wikipedia.org/wiki/Cassandra_Fedele", tags: ["Women Authors", "Humanism"] },
+  { name: "Laura Cereta", birth: 1469, death: 1499, description: "Brescian humanist, defender of women's education", works: "Letters", wikipedia: "https://en.wikipedia.org/wiki/Laura_Cereta", tags: ["Women Authors", "Humanism"] },
+  { name: "Isabella d'Este", birth: 1474, death: 1539, description: "First Lady of the Renaissance, art patron", works: "Letters", wikipedia: "https://en.wikipedia.org/wiki/Isabella_d%27Este", tags: ["Women Authors", "Patrons & Politics", "Humanism"] },
+
+  // Renaissance Poets & Writers
+  { name: "Beatriz Galindo", birth: 1465, death: 1534, description: "La Latina - tutored Queen Isabella", works: "Commentaries on Aristotle", wikipedia: "https://en.wikipedia.org/wiki/Beatriz_Galindo", tags: ["Women Authors", "Humanism"] },
+  { name: "Vittoria Colonna", birth: 1490, death: 1547, description: "Greatest Italian woman poet, Michelangelo's friend", works: "Rime", wikipedia: "https://en.wikipedia.org/wiki/Vittoria_Colonna", tags: ["Women Authors", "Reformation"] },
+  { name: "Marguerite de Navarre", birth: 1492, death: 1549, description: "Queen, protected reformers, wrote tales", works: "Heptaméron", wikipedia: "https://en.wikipedia.org/wiki/Marguerite_de_Navarre", tags: ["Women Authors", "Reformation", "Patrons & Politics"] },
+  { name: "Veronica Gambara", birth: 1485, death: 1550, description: "Italian poet, ruler of Correggio", works: "Rime", wikipedia: "https://en.wikipedia.org/wiki/Veronica_Gambara", tags: ["Women Authors", "Patrons & Politics"] },
+  { name: "Gaspara Stampa", birth: 1523, death: 1554, description: "Venetian courtesan-poet, love sonnets", works: "Rime", wikipedia: "https://en.wikipedia.org/wiki/Gaspara_Stampa", tags: ["Women Authors"] },
+  { name: "Louise Labé", birth: 1524, death: 1566, description: "Lyonnaise poet, belle cordière", works: "Sonnets, Débat de Folie et d'Amour", wikipedia: "https://en.wikipedia.org/wiki/Louise_Lab%C3%A9", tags: ["Women Authors"] },
+  { name: "Teresa of Ávila", birth: 1515, death: 1582, description: "Carmelite mystic, Doctor of the Church", works: "Interior Castle", wikipedia: "https://en.wikipedia.org/wiki/Teresa_of_%C3%81vila", tags: ["Women Authors", "Reformation", "Philosophy"] },
+  { name: "Sofonisba Anguissola", birth: 1532, death: 1625, description: "First famous woman painter, self-portraits", works: "Self-portraits, letters", wikipedia: "https://en.wikipedia.org/wiki/Sofonisba_Anguissola", tags: ["Women Authors"] },
+  { name: "Veronica Franco", birth: 1546, death: 1591, description: "Venetian courtesan, poet, defended women", works: "Terze rime", wikipedia: "https://en.wikipedia.org/wiki/Veronica_Franco", tags: ["Women Authors"] },
+  { name: "Mary Sidney", birth: 1561, death: 1621, description: "Countess of Pembroke, patron, translator", works: "Psalms, Antonie", wikipedia: "https://en.wikipedia.org/wiki/Mary_Sidney", tags: ["Women Authors", "Patrons & Politics"] },
+  { name: "Sophie Brahe", birth: 1559, death: 1643, description: "Danish astronomer, Tycho's sister", works: "Astronomical observations", wikipedia: "https://en.wikipedia.org/wiki/Sophia_Brahe", tags: ["Women Authors", "Science"] },
+  { name: "Moderata Fonte", birth: 1555, death: 1592, description: "Venetian author, proto-feminist", works: "Worth of Women", wikipedia: "https://en.wikipedia.org/wiki/Moderata_Fonte", tags: ["Women Authors", "Philosophy"] },
+  { name: "Lucrezia Marinella", birth: 1571, death: 1653, description: "Venetian philosopher, defended women", works: "Nobility and Excellence of Women", wikipedia: "https://en.wikipedia.org/wiki/Lucrezia_Marinella", tags: ["Women Authors", "Philosophy"] },
+
+  // Seventeenth Century
+  { name: "Aemilia Lanyer", birth: 1569, death: 1645, description: "First English woman to publish poetry collection", works: "Salve Deus Rex Judaeorum", wikipedia: "https://en.wikipedia.org/wiki/Aemilia_Lanyer", tags: ["Women Authors"] },
+  { name: "Marie de Gournay", birth: 1565, death: 1645, description: "Montaigne's 'adopted daughter', feminist", works: "Equality of Men and Women", wikipedia: "https://en.wikipedia.org/wiki/Marie_de_Gournay", tags: ["Women Authors", "Philosophy"] },
+  { name: "Elizabeth Cary", birth: 1585, death: 1639, description: "First English woman to write original play", works: "Tragedy of Mariam", wikipedia: "https://en.wikipedia.org/wiki/Elizabeth_Cary,_Viscountess_Falkland", tags: ["Women Authors"] },
+  { name: "Mary Wroth", birth: 1587, death: 1651, description: "First English woman to write prose romance", works: "Urania", wikipedia: "https://en.wikipedia.org/wiki/Mary_Wroth", tags: ["Women Authors"] },
+  { name: "Anna Maria van Schurman", birth: 1607, death: 1678, description: "Dutch polymath, knew 14 languages", works: "Opuscula", wikipedia: "https://en.wikipedia.org/wiki/Anna_Maria_van_Schurman", tags: ["Women Authors", "Humanism", "Philosophy"] },
+  { name: "Princess Elisabeth", birth: 1618, death: 1680, description: "Descartes' correspondent, philosopher", works: "Correspondence", wikipedia: "https://en.wikipedia.org/wiki/Elisabeth_of_the_Palatinate", tags: ["Women Authors", "Philosophy"] },
+  { name: "Margaret Cavendish", birth: 1623, death: 1673, description: "Prolific writer, natural philosopher", works: "Blazing World", wikipedia: "https://en.wikipedia.org/wiki/Margaret_Cavendish,_Duchess_of_Newcastle-upon-Tyne", tags: ["Women Authors", "Philosophy", "Science"] },
+  { name: "Anne Conway", birth: 1631, death: 1679, description: "Philosopher, influenced Leibniz", works: "Principles of Philosophy", wikipedia: "https://en.wikipedia.org/wiki/Anne_Conway_(philosopher)", tags: ["Women Authors", "Philosophy"] },
+  { name: "Sor Juana", birth: 1648, death: 1695, description: "Mexican nun-poet, defended women's intellect", works: "Respuesta a Sor Filotea", wikipedia: "https://en.wikipedia.org/wiki/Sor_Juana_In%C3%A9s_de_la_Cruz", tags: ["Women Authors", "Philosophy"] },
+  { name: "Aphra Behn", birth: 1640, death: 1689, description: "First professional English woman writer", works: "Oroonoko", wikipedia: "https://en.wikipedia.org/wiki/Aphra_Behn", tags: ["Women Authors"] },
+  { name: "Mary Astell", birth: 1666, death: 1731, description: "First English feminist philosopher", works: "A Serious Proposal", wikipedia: "https://en.wikipedia.org/wiki/Mary_Astell", tags: ["Women Authors", "Philosophy"] },
+  { name: "Maria Sibylla Merian", birth: 1647, death: 1717, description: "Entomologist, traveled to Suriname", works: "Metamorphosis Insectorum", wikipedia: "https://en.wikipedia.org/wiki/Maria_Sibylla_Merian", tags: ["Women Authors", "Science"] },
 ];
 
 const START_YEAR = 1300;

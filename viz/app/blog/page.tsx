@@ -43,6 +43,14 @@ const posts = [
     category: "Data",
   },
   {
+    slug: "early-women-authors",
+    title: "A Timeline of Early Women Authors",
+    date: "Dec 25, 2025",
+    excerpt: "From Themistoclea (550 BCE) to Mary Astell (1700): 2,200 years of women's writing. The Pythagoreans, the German mystics, the Italian humanists, and the first feminists—now recovered from Victorian erasure.",
+    tag: "Research",
+    category: "Data",
+  },
+  {
     slug: "women-writers",
     title: "The Rediscovery of Medieval Women Writers",
     date: "Dec 23, 2025",
