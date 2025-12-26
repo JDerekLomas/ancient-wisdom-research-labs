@@ -342,8 +342,8 @@ export default function CornelisDrebbel() {
       */}
       <figure style={{ margin: '0 0 32px 0' }}>
         <img
-          src="/gallery/full/drebbel-replica-amsterdam.jpg"
-          alt="Modern replica of Drebbel's submarine in Amsterdam"
+          src="/gallery/full/drebbel-submarine-amsterdam.jpg"
+          alt="Prototype of Drebbel's submarine at the Amsterdam Maritime Museum"
           style={{
             width: '100%',
             borderRadius: '8px',
@@ -357,7 +357,7 @@ export default function CornelisDrebbel() {
           marginTop: '12px',
           textAlign: 'center',
         }}>
-          A four-meter replica of Drebbel&apos;s submarine, kept in a secret location in Amsterdam.
+          A four-meter prototype of Drebbel&apos;s submarine at the Amsterdam Maritime Museum.
           Source: <a href="https://www.dutchthemedia.com/blogs/dutch-miscellany-4/cornelis-drebbel-inventor-of-the-submarine" style={{ color: '#888' }}>Dutch The Media</a>.
         </figcaption>
       </figure>
@@ -619,11 +619,11 @@ export default function CornelisDrebbel() {
 
       <figure style={{ margin: '0 0 32px 0' }}>
         <img
-          src="/gallery/full/drebbel-china-3.jpg"
-          alt="Historical diagram of Drebbel's egg incubator"
+          src="/gallery/full/drebbel-china-woodblock.jpg"
+          alt="Chinese woodblock print of Drebbel's thermostat incubator"
           style={{
             width: '100%',
-            maxWidth: '600px',
+            maxWidth: '700px',
             display: 'block',
             margin: '0 auto',
             borderRadius: '8px',
@@ -637,7 +637,8 @@ export default function CornelisDrebbel() {
           marginTop: '12px',
           textAlign: 'center',
         }}>
-          A diagram of Drebbel&apos;s thermostatically-controlled incubator, showing the feedback mechanism that maintained constant temperature.
+          Chinese woodblock print of Drebbel&apos;s thermostat incubator. The caption describes how the alcohol-mercury thermostatic control maintains constant temperature: as temperature rises, alcohol vapour pushes mercury to lift a float (B), closing the damper (F) via a connecting rod (H).
+          Source: <a href="https://drebbel.net/2013%20Drebbels%20Athanor.pdf" style={{ color: '#888' }}>drebbel.net</a>.
         </figcaption>
       </figure>
 
