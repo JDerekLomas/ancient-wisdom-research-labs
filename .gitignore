@@ -20,3 +20,5 @@ node_modules/
 .next/
 .vercel
 viz/uploads/
+scripts/ustc_full.csv
+scripts/enrichments_all.csv
