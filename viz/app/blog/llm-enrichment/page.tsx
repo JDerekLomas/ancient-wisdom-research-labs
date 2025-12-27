@@ -149,7 +149,124 @@ export default function LLMEnrichment() {
         1600.&rdquo; The catalogue becomes a research tool instead of just an inventory.
       </p>
 
-      <h2>The Numbers</h2>
+      <h2>Why 630,000 Out of 1.6 Million?</h2>
+
+      <p>
+        The full USTC contains 1,628,578 records. We enriched 630,862 of them—about 39%.
+        This wasn&apos;t random sampling; we deliberately filtered to focus on intellectually
+        significant works while excluding material that wouldn&apos;t benefit from LLM enrichment.
+      </p>
+
+      <h3 style={{ color: '#9e4a3a', fontSize: '18px', marginTop: '32px' }}>What We Included</h3>
+
+      <p>
+        We selected USTC categories representing substantive intellectual content:
+      </p>
+
+      <figure style={{
+        background: '#f5f0e8',
+        border: '1px solid #e0d8c8',
+        borderRadius: '8px',
+        padding: '24px',
+        margin: '32px 0',
+      }}>
+        <table style={{
+          width: '100%',
+          fontFamily: 'Inter, sans-serif',
+          fontSize: '14px',
+          borderCollapse: 'collapse',
+        }}>
+          <thead>
+            <tr style={{ borderBottom: '2px solid #e0d8c8' }}>
+              <th style={{ textAlign: 'left', padding: '10px 8px', color: '#1a1612', fontWeight: 600 }}>Category</th>
+              <th style={{ textAlign: 'right', padding: '10px 8px', color: '#1a1612', fontWeight: 600 }}>Records</th>
+              <th style={{ textAlign: 'left', padding: '10px 8px', color: '#1a1612', fontWeight: 600 }}>Why Include</th>
+            </tr>
+          </thead>
+          <tbody>
+            {[
+              ["Religious", "355,980", "Theology, devotional works, church debates"],
+              ["Jurisprudence", "92,904", "Legal commentaries, case law, political theory"],
+              ["History & Chronicles", "34,988", "Historical scholarship, primary sources"],
+              ["Medical Texts", "28,099", "Scientific and practical medicine"],
+              ["Educational Books", "25,261", "Textbooks, pedagogical works"],
+              ["Classical Authors", "23,867", "Editions and translations of ancient texts"],
+              ["Literature", "31,791", "Poetry, drama, prose fiction"],
+              ["Philosophy & Morality", "15,029", "Philosophical treatises, ethics"],
+              ["Science", "7,632", "Natural philosophy, astronomy, mathematics"],
+            ].map(([cat, count, reason], i) => (
+              <tr key={i} style={{ borderBottom: '1px solid #e0d8c8' }}>
+                <td style={{ padding: '10px 8px', color: '#1a1612' }}>{cat}</td>
+                <td style={{ padding: '10px 8px', textAlign: 'right', fontFamily: 'monospace', color: '#9e4a3a' }}>{count}</td>
+                <td style={{ padding: '10px 8px', color: '#666', fontSize: '13px' }}>{reason}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </figure>
+
+      <h3 style={{ color: '#9e4a3a', fontSize: '18px', marginTop: '32px' }}>What We Excluded</h3>
+
+      <p>
+        Nearly a million records were excluded for specific reasons:
+      </p>
+
+      <figure style={{
+        background: '#f5f0e8',
+        border: '1px solid #e0d8c8',
+        borderRadius: '8px',
+        padding: '24px',
+        margin: '32px 0',
+      }}>
+        <table style={{
+          width: '100%',
+          fontFamily: 'Inter, sans-serif',
+          fontSize: '14px',
+          borderCollapse: 'collapse',
+        }}>
+          <thead>
+            <tr style={{ borderBottom: '2px solid #e0d8c8' }}>
+              <th style={{ textAlign: 'left', padding: '10px 8px', color: '#1a1612', fontWeight: 600 }}>Category</th>
+              <th style={{ textAlign: 'right', padding: '10px 8px', color: '#1a1612', fontWeight: 600 }}>Records</th>
+              <th style={{ textAlign: 'left', padding: '10px 8px', color: '#1a1612', fontWeight: 600 }}>Why Exclude</th>
+            </tr>
+          </thead>
+          <tbody>
+            {[
+              ["English language", "~164,000", "No translation needed"],
+              ["Newspapers", "213,294", "Ephemeral; titles don't convey content"],
+              ["University Publications", "153,327", "Mostly administrative (theses lists, calendars)"],
+              ["Ordinances & Edicts", "134,340", "Government documents; formulaic titles"],
+              ["News Books", "57,147", "Ephemeral current events"],
+              ["Funeral Orations", "55,029", "Formulaic; \"Funeral oration for X\""],
+              ["Wedding Pamphlets", "16,616", "Formulaic occasional literature"],
+              ["Almanacs", "18,011", "Ephemeral calendrical material"],
+            ].map(([cat, count, reason], i) => (
+              <tr key={i} style={{ borderBottom: '1px solid #e0d8c8' }}>
+                <td style={{ padding: '10px 8px', color: '#1a1612' }}>{cat}</td>
+                <td style={{ padding: '10px 8px', textAlign: 'right', fontFamily: 'monospace', color: '#666' }}>{count}</td>
+                <td style={{ padding: '10px 8px', color: '#666', fontSize: '13px' }}>{reason}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </figure>
+
+      <p>
+        The excluded categories share common traits: either the titles are formulaic
+        (&ldquo;Funeral oration for Johann Schmidt, 1623&rdquo;), the content is ephemeral
+        (newspapers, almanacs), or the material is administrative rather than intellectual
+        (university calendars, government edicts). LLM enrichment adds little value here—you
+        can&apos;t infer subject tags or religious affiliation from &ldquo;Prussian News, Issue 47.&rdquo;
+      </p>
+
+      <p>
+        English-language works were excluded because our primary goal was translation.
+        A book already in English doesn&apos;t need its title translated, which is the most
+        valuable enrichment for discovery.
+      </p>
+
+      <h2>The Results</h2>
 
       <figure style={{
         background: '#f5f0e8',
@@ -172,13 +289,6 @@ export default function LLMEnrichment() {
           ))}
         </div>
       </figure>
-
-      <p>
-        We focused on &ldquo;intellectual&rdquo; categories—Religious, Jurisprudence, Philosophy,
-        Science, Classical Authors, Medical Texts, History—and excluded ephemera like
-        newspapers, funeral orations, and wedding pamphlets. English-language titles were
-        also excluded since they don&apos;t need translation.
-      </p>
 
       <h2>Explore the Data</h2>
 
